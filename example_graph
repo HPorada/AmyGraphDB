@@ -1,0 +1,124 @@
+digraph example_graph {
+	fontsize=18 label="Searching with starting node" scale=2
+	node [fixedsize=false shape=circle width=0.5]
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/1" [label=1]
+	"amyloids/IAPP" -> "sequences/1"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/8" [label=8]
+	"amyloids/IAPP" -> "sequences/8"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/9" [label=9]
+	"amyloids/IAPP" -> "sequences/9"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/11" [label=11]
+	"amyloids/IAPP" -> "sequences/11"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/44" [label=44]
+	"amyloids/IAPP" -> "sequences/44"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/47" [label=47]
+	"amyloids/IAPP" -> "sequences/47"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/82" [label=82]
+	"amyloids/IAPP" -> "sequences/82"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/97" [label=97]
+	"amyloids/IAPP" -> "sequences/97"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/107" [label=107]
+	"amyloids/IAPP" -> "sequences/107"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/108" [label=108]
+	"amyloids/IAPP" -> "sequences/108"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/109" [label=109]
+	"amyloids/IAPP" -> "sequences/109"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/136" [label=136]
+	"amyloids/IAPP" -> "sequences/136"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/175" [label=175]
+	"amyloids/IAPP" -> "sequences/175"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/213" [label=213]
+	"amyloids/IAPP" -> "sequences/213"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/214" [label=214]
+	"amyloids/IAPP" -> "sequences/214"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/215" [label=215]
+	"amyloids/IAPP" -> "sequences/215"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/216" [label=216]
+	"amyloids/IAPP" -> "sequences/216"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/217" [label=217]
+	"amyloids/IAPP" -> "sequences/217"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/218" [label=218]
+	"amyloids/IAPP" -> "sequences/218"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/219" [label=219]
+	"amyloids/IAPP" -> "sequences/219"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/220" [label=220]
+	"amyloids/IAPP" -> "sequences/220"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/221" [label=221]
+	"amyloids/IAPP" -> "sequences/221"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/222" [label=222]
+	"amyloids/IAPP" -> "sequences/222"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/225" [label=225]
+	"amyloids/IAPP" -> "sequences/225"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/226" [label=226]
+	"amyloids/IAPP" -> "sequences/226"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/227" [label=227]
+	"amyloids/IAPP" -> "sequences/227"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/228" [label=228]
+	"amyloids/IAPP" -> "sequences/228"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/229" [label=229]
+	"amyloids/IAPP" -> "sequences/229"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/237" [label=237]
+	"amyloids/IAPP" -> "sequences/237"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/241" [label=241]
+	"amyloids/IAPP" -> "sequences/241"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/242" [label=242]
+	"amyloids/IAPP" -> "sequences/242"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/243" [label=243]
+	"amyloids/IAPP" -> "sequences/243"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/272" [label=272]
+	"amyloids/IAPP" -> "sequences/272"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/273" [label=273]
+	"amyloids/IAPP" -> "sequences/273"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/274" [label=274]
+	"amyloids/IAPP" -> "sequences/274"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/275" [label=275]
+	"amyloids/IAPP" -> "sequences/275"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/321" [label=321]
+	"amyloids/IAPP" -> "sequences/321"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/332" [label=332]
+	"amyloids/IAPP" -> "sequences/332"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/333" [label=333]
+	"amyloids/IAPP" -> "sequences/333"
+	"amyloids/IAPP" [label=IAPP]
+	"sequences/334" [label=334]
+	"amyloids/IAPP" -> "sequences/334"
+}

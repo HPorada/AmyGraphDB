@@ -1,3 +1,7 @@
+import json
+from graphviz import Digraph
+
+
 from arango import ArangoClient
 
 client = ArangoClient(hosts='http://localhost:8529')
@@ -67,16 +71,25 @@ def search_for_all_connected(database, starting_amyloid):
     aql = database.aql
 
     cursor = database.aql.execute(
-        'for v, p in 1..1 outbound @start amyseq return p',
+        'for v, e, p in 1..2 outbound @start amyseq return p',
         bind_vars={'start': starting_amyloid}
     )
 
     # amyseqE
 
-    inter = [doc for doc in cursor]
+    #print(list(cursor.fetchall()))
+
+    #result = cursor.fetchall()
+
+    #col = list(cursor.find())
+
+    inter = [i for i in cursor]
 
     for x in inter:
         print(x)
+
+    with open("./test.json", "w") as outfile:
+        json.dump(inter, outfile)
 
 
 def search_for_most_common(database, limit, type):  # type interactor lub interactee
@@ -96,5 +109,27 @@ def search_for_most_common(database, limit, type):  # type interactor lub intera
 # check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information")
 # search_for_fragment(db_Sep, 'DAEFRHDSGY')
 # search_for_key_word(db_Sep, 'pH')
-# search_for_all_connected(db_Sep, 'amyloids/IAPP')
-search_for_most_common(db_Sep, 10, 'interactor')
+search_for_all_connected(db_Sep, 'amyloids/IAPP')
+# search_for_most_common(db_Sep, 10, 'interactor')
+
+# arango_graph = ""
+
+with open("./test.json", "r") as file:
+    arango_graph = json.load(file)
+
+graph_name = 'example_graph'
+
+g = Digraph(graph_name, filename=graph_name, format='jpeg', engine='neato')
+g.attr(scale='2', label='Searching with starting node', fontsize='18')
+g.attr('node', shape='circle', fixedsize='false', width='0.5')
+
+for item in arango_graph:
+    for vertex in item['vertices']:
+        g.node(vertex['_id'], label=vertex['_key'])
+    for edge in item['edges']:
+        g.edge(edge['_from'], edge['_to'])
+
+# Render to file into some directory
+# g.render(directory='/tmp/', filename=graph_name)
+# Or just show rendered file using system default program
+g.view()
