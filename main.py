@@ -1,6 +1,7 @@
 import json
-from graphviz import Digraph
+import socket
 
+from graphviz import Digraph
 
 from arango import ArangoClient
 
@@ -14,6 +15,8 @@ db_Sep = client.db('AmyloidsSep', username='root', password='Amyloids')
 # ExtendedE
 db_Nov = client.db('AmyloidsNov', username='root', password='Amyloids')
 
+s = socket.socket()
+s.settimeout(100)
 
 # print(db.graph('ExtendedWithEdges'))
 # graph = db.graph('ExtendedWithEdges')
@@ -75,14 +78,6 @@ def search_for_all_connected(database, starting_amyloid):
         bind_vars={'start': starting_amyloid}
     )
 
-    # amyseqE
-
-    #print(list(cursor.fetchall()))
-
-    #result = cursor.fetchall()
-
-    #col = list(cursor.find())
-
     inter = [i for i in cursor]
 
     for x in inter:
@@ -106,13 +101,39 @@ def search_for_most_common(database, limit, type):  # type interactor lub intera
         print(x)
 
 
+def search_by_questions(database):
+    aql = database.aql
+
+    cursor = database.aql.execute(
+        "for vertex in union("
+        "(for v in interactionsE return v._id),"
+        "(for v in sequencesE return v._id),"
+        "(for v in intseqE return v._id),"
+        "(for v in amyloids return v._id),"
+        "(for v in amyseqE return v._id),"
+        "(for v in organismsE return v._id),"
+        "(for v in orgamyE return v._id))"
+        "for v, e, p in 1..2 any vertex graph 'Extended'"
+        "filter v.question_3 == 'No information'"
+        "filter v.question_2 == 'Yes; implied by kinetics.'return p"
+    )
+
+    inter = [i for i in cursor]
+
+    for x in inter:
+        print(x)
+
+    with open("./test.json", "w") as outfile:
+        json.dump(inter, outfile)
+
+
 # check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information")
 # search_for_fragment(db_Sep, 'DAEFRHDSGY')
 # search_for_key_word(db_Sep, 'pH')
-search_for_all_connected(db_Sep, 'amyloids/IAPP')
+# search_for_all_connected(db_Sep, 'amyloids/IAPP')
 # search_for_most_common(db_Sep, 10, 'interactor')
 
-# arango_graph = ""
+search_by_questions(db_Sep)
 
 with open("./test.json", "r") as file:
     arango_graph = json.load(file)
