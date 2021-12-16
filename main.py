@@ -1,14 +1,11 @@
 import json
 import socket
 
-import simple_queries as q
+import simple_queries as simple
 import subgraph_queries as sq
 import visualisation_functions as vf
-
-from graphviz import Digraph
 from arango import ArangoClient
-import networkx as nx
-import matplotlib.pyplot as plt
+
 
 client = ArangoClient(hosts='http://localhost:8529')
 
@@ -129,7 +126,7 @@ def search_by_questions(database):
         json.dump(inter, outfile)
 
 
-#f.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information")
+# f.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information")
 
 # search_for_fragment(db_Sep, 'DAEFRHDSGY')
 # search_for_key_word(db_Sep, 'pH')
@@ -138,7 +135,8 @@ def search_by_questions(database):
 
 # search_by_questions(db_Sep)
 
-sq.subgraph(db_Nov, "Slower aggregation", "Yes; implied by kinetics.", "No information", "check")
+# sq.subgraph(db_Nov, "Slower aggregation", "No information", "No information", "check2")
+simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
 
-vf.graphviz_graph('check.json')
-vf.networkx_graph('check.json')
+vf.graphviz_graph('result.json')
+vf.networkx_graph('result.json')
