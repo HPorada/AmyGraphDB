@@ -16,7 +16,7 @@ def check_questions_simple(database, q1, q2, q3, filename="result"):
     # for x in inter:
     #     print(x)
 
-    with open(f"./{filename}.json", "w") as outfile:
+    with open(f"./json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
