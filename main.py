@@ -135,7 +135,7 @@ def search_by_questions(database):
 
 # search_by_questions(db_Sep)
 
-# sq.subgraph(db_Nov, "Slower aggregation", "No information", "No information", "check2")
+# sq.subgraph_from_interactions(db_Nov, "Slower aggregation", "No information", "No information", "check2")
 simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
 
 vf.graphviz_graph('result.json')
