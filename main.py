@@ -1,7 +1,9 @@
 import json
 import socket
 
-import functions as f
+import simple_queries as q
+import subgraph_queries as sq
+import visualisation_functions as vf
 
 from graphviz import Digraph
 from arango import ArangoClient
@@ -20,12 +22,6 @@ db_Nov = client.db('AmyloidsNov', username='root', password='Amyloids')
 
 s = socket.socket()
 s.settimeout(100)
-
-
-# ArangoDatabase.ClientSetting.HttpRequestTimeout = TimeSpan.FromMilliseconds(Timeout.Infinite)
-
-# print(db.graph('ExtendedWithEdges'))
-# graph = db.graph('ExtendedWithEdges')
 
 
 def check_questions_simple(database, q1, q2, q3):
@@ -89,7 +85,7 @@ def search_for_all_connected(database, starting_amyloid):
     for x in inter:
         print(x)
 
-    with open("./test.json", "w") as outfile:
+    with open("json_data/test.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
@@ -105,151 +101,6 @@ def search_for_most_common(database, limit, type):  # type interactor lub intera
 
     for x in inter:
         print(x)
-
-
-def podgraf(database):
-    aql = database.aql
-
-    cursor = database.aql.execute(
-
-        """let ints = (
-
-    for i in interactionsE
-        
-        let q1 = (
-            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
-                filter v._id == "question1/Faster_aggregation"
-                return {"interactions": i}
-        )
-            
-        let q2 = (
-            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
-                filter v._id == "question2/Yes_implied_by_kinetics"
-                return {"interactions": i}
-        )
-          
-        let q3 = (  
-            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
-                filter v._id == "question3/No_information"
-                return {"interactions": i}
-        )
-    
-    let final = intersection(q1, q2, q3)
-    
-    for item in final 
-        return {"interactions": item.interactions}
-)
-
-        
-let ints_paths = (
-        for i in ints
-            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
-                return {"paths": p}
-)
-
-
-let seqs = (
-    for i in ints
-        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
-            return {"paths": p, "sequences": v}
-)
-        
-
-let amys = (
-    for item in seqs
-        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
-            return distinct {"paths": p, "amyloids": v}
-)  
-
-
-let orgs = (
-    for item in amys
-        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
-            return distinct {"paths": p, "organisms": v}
-)
-
-
-let props = (
-    for item in orgs
-        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
-            return distinct {"paths": p, "properties": v}
-)
-   
-    
-for item in union(
-    for item in ints_paths return item.paths,
-    for item in seqs return item.paths,
-    for item in amys return item.paths,
-    for item in orgs return item.paths,
-    for item in props return item.paths
-)
-    return item"""
-
-        # "let ints = ("
-        # "for i in interactionsE("
-        #
-        # "let q1 = ("
-        #     "for v, e, p in 1..1 outbound i._id graph \"ExtendedAndEdges\""
-        #         "filter v._id == \"question1/Faster_aggregation\""
-        #         "return {\"interactions\": i})"
-        #
-        # "let q2 = ("
-        #     "for v, e, p in 1..1 outbound i._id graph \"ExtendedAndEdges\""
-        #         "filter v._id == \"question2/Yes_implied_by_kinetics\""
-        #         "return {\"interactions\": i})"
-        #
-        # "let q3 = ("
-        #     "for v, e, p in 1..1 outbound i._id graph \"ExtendedAndEdges\""
-        #         "filter v._id == \"question3/No_information\""
-        #         "return {\"interactions\": i})"
-        #
-        # "let final = intersection(q1, q2, q3)"
-        #
-        # "for item in final"
-        #     "return {\"interactions\": item.interactions}"
-        # ")"
-        #
-        # "let ints_paths = ("
-        #     "for i in ints"
-        #         "for v, e, p in 1..1 outbound i.interactions._id graph \"ExtendedAndEdges\""
-        #         "return {\"paths\": p})"
-        #
-        # "let seqs = ("
-        #     "for i in ints"
-        #         "for v, e, p in 1..1 inbound i.interactions._id graph \"ExtendedAndEdges\""
-        #         "return {\"paths\": p, \"sequences\": v})"
-        #
-        # "let amys = ("
-        #     "for item in seqs"
-        #         "for v, e, p in 1..1 inbound item.sequences._id graph \"ExtendedAndEdges\""
-        #         "return distinct {\"paths\": p, \"amyloids\": v})"
-        #
-        # "let orgs = ("
-        #     "for item in amys"
-        #         "for v, e, p in 1..1 inbound item.amyloids._id graph \"ExtendedAndEdges\""
-        #         "return distinct {\"paths\": p, \"organisms\": v})"
-        #
-        # "let props = ("
-        #     "for item in orgs("
-        #         "for v, e, p in 1..1 inbound item.organisms._id graph \"ExtendedAndEdges\""
-        #         "return distinct {\"paths\": p, \"properties\": v}))"
-        #
-        # "for item in union("
-        #     "for item in ints_paths return item.paths,"
-        #     "for item in seqs return item.paths,"
-        #     "for item in amys return item.paths,"
-        #     "for item in orgs return item.paths,"
-        #     "for item in props return item.paths)"
-        # "return item"
-    )
-
-    inter = [i for i in cursor]
-
-    for x in inter:
-        print(x)
-
-    with open("./podgraf.json", "w") as outfile:
-        json.dump(inter, outfile)
 
 
 def search_by_questions(database):
@@ -274,11 +125,11 @@ def search_by_questions(database):
     for x in inter:
         print(x)
 
-    with open("./test.json", "w") as outfile:
+    with open("json_data/test.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
-f.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information")
+#f.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information")
 
 # search_for_fragment(db_Sep, 'DAEFRHDSGY')
 # search_for_key_word(db_Sep, 'pH')
@@ -287,55 +138,7 @@ f.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics
 
 # search_by_questions(db_Sep)
 
-# podgraf(db_Nov)
+sq.subgraph(db_Nov, "Slower aggregation", "Yes; implied by kinetics.", "No information", "check")
 
-
-def graphviz_graph(filename):
-    with open(filename, "r") as file:
-        arango_graph = json.load(file)
-
-    graph_name = 'example_graph_2'
-
-    g = Digraph(graph_name, filename=graph_name, format='jpeg', engine='neato')
-    g.attr(scale='2', label='Searching with starting node', fontsize='18')
-    g.attr('node', shape='circle', fixedsize='false', width='0.5')
-
-    for item in arango_graph:
-        for vertex in item['vertices']:
-            g.node(vertex['_id'], label=vertex['_key'])
-        for edge in item['edges']:
-            g.edge(edge['_from'], edge['_to'])
-
-    # Render to file into some directory
-    # g.render(directory='/tmp/', filename=graph_name)
-    # Or just show rendered file using system default program
-    g.view()
-
-
-def networkx_graph(filename):
-    with open(filename) as file:
-        json_data = json.loads(file.read())
-
-    G = nx.DiGraph()
-
-    for i in range(len(json_data)):
-        G.add_nodes_from(
-            (elem['_id'])
-            for elem in json_data[i]['vertices']
-        )
-
-        G.add_edges_from(
-            (elem['_from'], elem['_to'])
-            for elem in json_data[i]['edges']
-        )
-
-    nx.draw(
-        G,
-        with_labels=True
-    )
-
-    plt.show()
-
-
-graphviz_graph('podgraf.json')
-networkx_graph('podgraf.json')
+vf.graphviz_graph('check.json')
+vf.networkx_graph('check.json')
