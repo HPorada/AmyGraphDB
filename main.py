@@ -107,6 +107,151 @@ def search_for_most_common(database, limit, type):  # type interactor lub intera
         print(x)
 
 
+def podgraf(database):
+    aql = database.aql
+
+    cursor = database.aql.execute(
+
+        """let ints = (
+
+    for i in interactionsE
+        
+        let q1 = (
+            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                filter v._id == "question1/Faster_aggregation"
+                return {"interactions": i}
+        )
+            
+        let q2 = (
+            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                filter v._id == "question2/Yes_implied_by_kinetics"
+                return {"interactions": i}
+        )
+          
+        let q3 = (  
+            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                filter v._id == "question3/No_information"
+                return {"interactions": i}
+        )
+    
+    let final = intersection(q1, q2, q3)
+    
+    for item in final 
+        return {"interactions": item.interactions}
+)
+
+        
+let ints_paths = (
+        for i in ints
+            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                return {"paths": p}
+)
+
+
+let seqs = (
+    for i in ints
+        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+            return {"paths": p, "sequences": v}
+)
+        
+
+let amys = (
+    for item in seqs
+        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+            return distinct {"paths": p, "amyloids": v}
+)  
+
+
+let orgs = (
+    for item in amys
+        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+            return distinct {"paths": p, "organisms": v}
+)
+
+
+let props = (
+    for item in orgs
+        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+            return distinct {"paths": p, "properties": v}
+)
+   
+    
+for item in union(
+    for item in ints_paths return item.paths,
+    for item in seqs return item.paths,
+    for item in amys return item.paths,
+    for item in orgs return item.paths,
+    for item in props return item.paths
+)
+    return item"""
+
+        # "let ints = ("
+        # "for i in interactionsE("
+        #
+        # "let q1 = ("
+        #     "for v, e, p in 1..1 outbound i._id graph \"ExtendedAndEdges\""
+        #         "filter v._id == \"question1/Faster_aggregation\""
+        #         "return {\"interactions\": i})"
+        #
+        # "let q2 = ("
+        #     "for v, e, p in 1..1 outbound i._id graph \"ExtendedAndEdges\""
+        #         "filter v._id == \"question2/Yes_implied_by_kinetics\""
+        #         "return {\"interactions\": i})"
+        #
+        # "let q3 = ("
+        #     "for v, e, p in 1..1 outbound i._id graph \"ExtendedAndEdges\""
+        #         "filter v._id == \"question3/No_information\""
+        #         "return {\"interactions\": i})"
+        #
+        # "let final = intersection(q1, q2, q3)"
+        #
+        # "for item in final"
+        #     "return {\"interactions\": item.interactions}"
+        # ")"
+        #
+        # "let ints_paths = ("
+        #     "for i in ints"
+        #         "for v, e, p in 1..1 outbound i.interactions._id graph \"ExtendedAndEdges\""
+        #         "return {\"paths\": p})"
+        #
+        # "let seqs = ("
+        #     "for i in ints"
+        #         "for v, e, p in 1..1 inbound i.interactions._id graph \"ExtendedAndEdges\""
+        #         "return {\"paths\": p, \"sequences\": v})"
+        #
+        # "let amys = ("
+        #     "for item in seqs"
+        #         "for v, e, p in 1..1 inbound item.sequences._id graph \"ExtendedAndEdges\""
+        #         "return distinct {\"paths\": p, \"amyloids\": v})"
+        #
+        # "let orgs = ("
+        #     "for item in amys"
+        #         "for v, e, p in 1..1 inbound item.amyloids._id graph \"ExtendedAndEdges\""
+        #         "return distinct {\"paths\": p, \"organisms\": v})"
+        #
+        # "let props = ("
+        #     "for item in orgs("
+        #         "for v, e, p in 1..1 inbound item.organisms._id graph \"ExtendedAndEdges\""
+        #         "return distinct {\"paths\": p, \"properties\": v}))"
+        #
+        # "for item in union("
+        #     "for item in ints_paths return item.paths,"
+        #     "for item in seqs return item.paths,"
+        #     "for item in amys return item.paths,"
+        #     "for item in orgs return item.paths,"
+        #     "for item in props return item.paths)"
+        # "return item"
+    )
+
+    inter = [i for i in cursor]
+
+    for x in inter:
+        print(x)
+
+    with open("./podgraf.json", "w") as outfile:
+        json.dump(inter, outfile)
+
+
 def search_by_questions(database):
     aql = database.aql
 
@@ -135,13 +280,15 @@ def search_by_questions(database):
 
 f.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information")
 
-
 # search_for_fragment(db_Sep, 'DAEFRHDSGY')
 # search_for_key_word(db_Sep, 'pH')
 # search_for_all_connected(db_Sep, 'amyloids/IAPP')
 # search_for_most_common(db_Sep, 10, 'interactor')
 
 # search_by_questions(db_Sep)
+
+# podgraf(db_Nov)
+
 
 def graphviz_graph(filename):
     with open(filename, "r") as file:
@@ -190,5 +337,5 @@ def networkx_graph(filename):
     plt.show()
 
 
-graphviz_graph('test.json')
-networkx_graph('test.json')
+graphviz_graph('podgraf.json')
+networkx_graph('podgraf.json')
