@@ -138,9 +138,31 @@ def search_by_questions(database):
 
 # sq.subgraph_from_interactions(db_Nov, "Slower aggregation", "No information", "No information", "check2")
 # simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
-sq.subgraph_from_sequence(db_Nov, "MGIIAGIIKVIKSLIEQFTGK", "sequence2")
+# sq.subgraph_from_sequence(db_Nov, "MGIIAGIIKVIKSLIEQFTGK", "sequence2")
 # sq.subgraph_from_amyloid(db_Nov, "δ-toxin", "amyloid4")
 # sq.subgraph_from_organism(db_Nov, "Frankia_sp._KB5", "organism")
 
-vf.graphviz_graph('sequence2.json')
-vf.networkx_graph('sequence2.json')
+# vf.graphviz_graph('sequence2.json')
+# vf.networkx_graph('organism.json')
+
+
+
+
+
+
+# with open("./json_data/test.json") as file:
+#     json_data = json.loads(file.read())
+#
+# for i in json_data:
+#
+# G = nx.Graph(json_data)
+#
+# nx.draw(
+#     G,
+#     with_labels=True
+# )
+#
+# plt.show()
+# nx.write_gml(G, "from_dict.gml")
+#
+# #print(item)
