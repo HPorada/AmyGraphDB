@@ -5,7 +5,8 @@ import simple_queries as simple
 import subgraph_queries as sq
 import visualisation_functions as vf
 from arango import ArangoClient
-
+import networkx as nx
+import matplotlib.pyplot as plt
 
 client = ArangoClient(hosts='http://localhost:8529')
 
@@ -138,8 +139,8 @@ def search_by_questions(database):
 # sq.subgraph_from_interactions(db_Nov, "Slower aggregation", "No information", "No information", "check2")
 # simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
 sq.subgraph_from_sequence(db_Nov, "MGIIAGIIKVIKSLIEQFTGK", "sequence2")
-#sq.subgraph_from_amyloid(db_Nov, "δ-toxin", "amyloid4")
-#sq.subgraph_from_organism(db_Nov, "Frankia_sp._KB5", "organism")
+# sq.subgraph_from_amyloid(db_Nov, "δ-toxin", "amyloid4")
+# sq.subgraph_from_organism(db_Nov, "Frankia_sp._KB5", "organism")
 
 vf.graphviz_graph('sequence2.json')
 vf.networkx_graph('sequence2.json')
