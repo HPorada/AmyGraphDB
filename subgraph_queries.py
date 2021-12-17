@@ -127,13 +127,13 @@ def subgraph_from_sequence(database, sequence, filename="result"):
         let seqs2 = (
             for item in ints
                 for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
-                    return {"paths": p, "sequences": v}
+                    return distinct {"paths": p, "sequences": v}
         )
         
         let amys2 = (
             for item in seqs2
                 for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
-                    return {"paths": p, "amyloids": v}
+                    return distinct {"paths": p, "amyloids": v}
         )
         
         let orgs2 = (
@@ -214,13 +214,13 @@ def subgraph_from_amyloid(database, amyloid, filename="result"):
         let seqs2 = (
             for item in ints
                 for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
-                    return {"paths": p, "sequences": v}
+                    return distinct {"paths": p, "sequences": v}
         )
         
         let amys2 = (
             for item in seqs2
                 for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
-                    return {"paths": p, "amyloids": v}
+                    return distinct {"paths": p, "amyloids": v}
         )
         
         let orgs2 = (
@@ -300,13 +300,13 @@ def subgraph_from_organism(database, organism, filename="result"):
         let seqs2 = (
             for item in ints
                 for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
-                    return {"paths": p, "sequences": v}
+                    return distinct{"paths": p, "sequences": v}
         )
         
         let amys2 = (
             for item in seqs2
                 for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
-                    return {"paths": p, "amyloids": v}
+                    return distinct{"paths": p, "amyloids": v}
         )
         
         let orgs2 = (

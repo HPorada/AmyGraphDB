@@ -295,18 +295,6 @@ digraph "organism.json" {
 	"interactionsE/1081" [label=1081]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1081"
-	"interactionsE/1081" [label=1081]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1081"
-	"interactionsE/1081" [label=1081]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1081"
-	"interactionsE/1082" [label=1082]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1082"
-	"interactionsE/1082" [label=1082]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1082"
 	"interactionsE/1082" [label=1082]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1082"
@@ -319,18 +307,6 @@ digraph "organism.json" {
 	"interactionsE/1083" [label=1083]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1083"
-	"interactionsE/1083" [label=1083]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1083"
-	"interactionsE/1083" [label=1083]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1083"
-	"interactionsE/1084" [label=1084]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1084"
-	"interactionsE/1084" [label=1084]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1084"
 	"interactionsE/1084" [label=1084]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1084"
@@ -343,18 +319,6 @@ digraph "organism.json" {
 	"interactionsE/1085" [label=1085]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1085"
-	"interactionsE/1085" [label=1085]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1085"
-	"interactionsE/1085" [label=1085]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1085"
-	"interactionsE/1086" [label=1086]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1086"
-	"interactionsE/1086" [label=1086]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1086"
 	"interactionsE/1086" [label=1086]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1086"
@@ -367,18 +331,6 @@ digraph "organism.json" {
 	"interactionsE/1087" [label=1087]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1087"
-	"interactionsE/1087" [label=1087]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1087"
-	"interactionsE/1087" [label=1087]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1087"
-	"interactionsE/1088" [label=1088]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1088"
-	"interactionsE/1088" [label=1088]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1088"
 	"interactionsE/1088" [label=1088]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1088"
@@ -391,18 +343,6 @@ digraph "organism.json" {
 	"interactionsE/1089" [label=1089]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1089"
-	"interactionsE/1089" [label=1089]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1089"
-	"interactionsE/1089" [label=1089]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1089"
-	"interactionsE/1090" [label=1090]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1090"
-	"interactionsE/1090" [label=1090]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1090"
 	"interactionsE/1090" [label=1090]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1090"
@@ -415,18 +355,6 @@ digraph "organism.json" {
 	"interactionsE/1091" [label=1091]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1091"
-	"interactionsE/1091" [label=1091]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1091"
-	"interactionsE/1091" [label=1091]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1091"
-	"interactionsE/1092" [label=1092]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1092"
-	"interactionsE/1092" [label=1092]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1092"
 	"interactionsE/1092" [label=1092]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1092"
@@ -439,18 +367,6 @@ digraph "organism.json" {
 	"interactionsE/1093" [label=1093]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1093"
-	"interactionsE/1093" [label=1093]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1093"
-	"interactionsE/1093" [label=1093]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1093"
-	"interactionsE/1094" [label=1094]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1094"
-	"interactionsE/1094" [label=1094]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1094"
 	"interactionsE/1094" [label=1094]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1094"
@@ -463,18 +379,6 @@ digraph "organism.json" {
 	"interactionsE/1095" [label=1095]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1095"
-	"interactionsE/1095" [label=1095]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1095"
-	"interactionsE/1095" [label=1095]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1095"
-	"interactionsE/1096" [label=1096]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1096"
-	"interactionsE/1096" [label=1096]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1096"
 	"interactionsE/1096" [label=1096]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1096"
@@ -487,18 +391,6 @@ digraph "organism.json" {
 	"interactionsE/1097" [label=1097]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1097"
-	"interactionsE/1097" [label=1097]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1097"
-	"interactionsE/1097" [label=1097]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1097"
-	"interactionsE/1098" [label=1098]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1098"
-	"interactionsE/1098" [label=1098]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1098"
 	"interactionsE/1098" [label=1098]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1098"
@@ -511,18 +403,6 @@ digraph "organism.json" {
 	"interactionsE/1099" [label=1099]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1099"
-	"interactionsE/1099" [label=1099]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1099"
-	"interactionsE/1099" [label=1099]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1099"
-	"interactionsE/1100" [label=1100]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1100"
-	"interactionsE/1100" [label=1100]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1100"
 	"interactionsE/1100" [label=1100]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1100"
@@ -535,18 +415,6 @@ digraph "organism.json" {
 	"interactionsE/1101" [label=1101]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1101"
-	"interactionsE/1101" [label=1101]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1101"
-	"interactionsE/1101" [label=1101]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1101"
-	"interactionsE/1102" [label=1102]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1102"
-	"interactionsE/1102" [label=1102]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1102"
 	"interactionsE/1102" [label=1102]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1102"
@@ -559,18 +427,6 @@ digraph "organism.json" {
 	"interactionsE/1103" [label=1103]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1103"
-	"interactionsE/1103" [label=1103]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1103"
-	"interactionsE/1103" [label=1103]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1103"
-	"interactionsE/1104" [label=1104]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1104"
-	"interactionsE/1104" [label=1104]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1104"
 	"interactionsE/1104" [label=1104]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1104"
@@ -583,18 +439,6 @@ digraph "organism.json" {
 	"interactionsE/1105" [label=1105]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1105"
-	"interactionsE/1105" [label=1105]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1105"
-	"interactionsE/1105" [label=1105]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1105"
-	"interactionsE/1106" [label=1106]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1106"
-	"interactionsE/1106" [label=1106]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1106"
 	"interactionsE/1106" [label=1106]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1106"
@@ -607,18 +451,6 @@ digraph "organism.json" {
 	"interactionsE/1107" [label=1107]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1107"
-	"interactionsE/1107" [label=1107]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1107"
-	"interactionsE/1107" [label=1107]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1107"
-	"interactionsE/1108" [label=1108]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1108"
-	"interactionsE/1108" [label=1108]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1108"
 	"interactionsE/1108" [label=1108]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1108"
@@ -631,18 +463,6 @@ digraph "organism.json" {
 	"interactionsE/1109" [label=1109]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1109"
-	"interactionsE/1109" [label=1109]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1109"
-	"interactionsE/1109" [label=1109]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1109"
-	"interactionsE/1110" [label=1110]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1110"
-	"interactionsE/1110" [label=1110]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1110"
 	"interactionsE/1110" [label=1110]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1110"
@@ -655,18 +475,6 @@ digraph "organism.json" {
 	"interactionsE/1111" [label=1111]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1111"
-	"interactionsE/1111" [label=1111]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1111"
-	"interactionsE/1111" [label=1111]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1111"
-	"interactionsE/1112" [label=1112]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1112"
-	"interactionsE/1112" [label=1112]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1112"
 	"interactionsE/1112" [label=1112]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1112"
@@ -679,18 +487,6 @@ digraph "organism.json" {
 	"interactionsE/1113" [label=1113]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1113"
-	"interactionsE/1113" [label=1113]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1113"
-	"interactionsE/1113" [label=1113]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1113"
-	"interactionsE/1114" [label=1114]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1114"
-	"interactionsE/1114" [label=1114]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1114"
 	"interactionsE/1114" [label=1114]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1114"
@@ -703,18 +499,6 @@ digraph "organism.json" {
 	"interactionsE/1115" [label=1115]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1115"
-	"interactionsE/1115" [label=1115]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1115"
-	"interactionsE/1115" [label=1115]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1115"
-	"interactionsE/1116" [label=1116]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1116"
-	"interactionsE/1116" [label=1116]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1116"
 	"interactionsE/1116" [label=1116]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1116"
@@ -727,18 +511,6 @@ digraph "organism.json" {
 	"interactionsE/1117" [label=1117]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1117"
-	"interactionsE/1117" [label=1117]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1117"
-	"interactionsE/1117" [label=1117]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1117"
-	"interactionsE/1118" [label=1118]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1118"
-	"interactionsE/1118" [label=1118]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1118"
 	"interactionsE/1118" [label=1118]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1118"
@@ -751,18 +523,6 @@ digraph "organism.json" {
 	"interactionsE/1119" [label=1119]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1119"
-	"interactionsE/1119" [label=1119]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1119"
-	"interactionsE/1119" [label=1119]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1119"
-	"interactionsE/1120" [label=1120]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1120"
-	"interactionsE/1120" [label=1120]
-	"sequencesE/PPT_1" [label=PPT_1]
-	"sequencesE/PPT_1" -> "interactionsE/1120"
 	"interactionsE/1120" [label=1120]
 	"sequencesE/PPT_1" [label=PPT_1]
 	"sequencesE/PPT_1" -> "interactionsE/1120"
@@ -775,18 +535,6 @@ digraph "organism.json" {
 	"interactionsE/1186" [label=1186]
 	"sequencesE/PPT_8" [label=PPT_8]
 	"sequencesE/PPT_8" -> "interactionsE/1186"
-	"interactionsE/1186" [label=1186]
-	"sequencesE/PPT_8" [label=PPT_8]
-	"sequencesE/PPT_8" -> "interactionsE/1186"
-	"interactionsE/1186" [label=1186]
-	"sequencesE/PPT_8" [label=PPT_8]
-	"sequencesE/PPT_8" -> "interactionsE/1186"
-	"interactionsE/1288" [label=1288]
-	"sequencesE/PPT_8" [label=PPT_8]
-	"sequencesE/PPT_8" -> "interactionsE/1288"
-	"interactionsE/1288" [label=1288]
-	"sequencesE/PPT_8" [label=PPT_8]
-	"sequencesE/PPT_8" -> "interactionsE/1288"
 	"interactionsE/1288" [label=1288]
 	"sequencesE/PPT_8" [label=PPT_8]
 	"sequencesE/PPT_8" -> "interactionsE/1288"
@@ -799,18 +547,6 @@ digraph "organism.json" {
 	"interactionsE/1187" [label=1187]
 	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
 	"sequencesE/PPT_8_Met" -> "interactionsE/1187"
-	"interactionsE/1187" [label=1187]
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"sequencesE/PPT_8_Met" -> "interactionsE/1187"
-	"interactionsE/1187" [label=1187]
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"sequencesE/PPT_8_Met" -> "interactionsE/1187"
-	"interactionsE/1289" [label=1289]
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"sequencesE/PPT_8_Met" -> "interactionsE/1289"
-	"interactionsE/1289" [label=1289]
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"sequencesE/PPT_8_Met" -> "interactionsE/1289"
 	"interactionsE/1289" [label=1289]
 	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
 	"sequencesE/PPT_8_Met" -> "interactionsE/1289"
@@ -820,528 +556,9 @@ digraph "organism.json" {
 	"sequencesE/PPT_1" [label=PPT_1]
 	"amyloidsE/BASS3" [label=BASS3]
 	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
-	"sequencesE/PPT_1" [label=PPT_1]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_1"
 	"sequencesE/PPT_8" [label=PPT_8]
 	"amyloidsE/BASS3" [label=BASS3]
 	"amyloidsE/BASS3" -> "sequencesE/PPT_8"
-	"sequencesE/PPT_8" [label=PPT_8]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8"
-	"sequencesE/PPT_8" [label=PPT_8]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8"
-	"sequencesE/PPT_8" [label=PPT_8]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8"
-	"sequencesE/PPT_8" [label=PPT_8]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8"
-	"sequencesE/PPT_8" [label=PPT_8]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8"
-	"sequencesE/PPT_8" [label=PPT_8]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8"
-	"sequencesE/PPT_8" [label=PPT_8]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8"
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8_Met"
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8_Met"
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8_Met"
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8_Met"
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8_Met"
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8_Met"
-	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
-	"amyloidsE/BASS3" [label=BASS3]
-	"amyloidsE/BASS3" -> "sequencesE/PPT_8_Met"
 	"sequencesE/PPT_8_Met" [label=PPT_8_Met]
 	"amyloidsE/BASS3" [label=BASS3]
 	"amyloidsE/BASS3" -> "sequencesE/PPT_8_Met"

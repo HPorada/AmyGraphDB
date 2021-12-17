@@ -67,13 +67,7 @@ digraph "amyloid4.json" {
 	"sequencesE/23" [label=23]
 	"amyloidsE/PSMbeta2" [label=PSMbeta2]
 	"amyloidsE/PSMbeta2" -> "sequencesE/23"
-	"sequencesE/36" [label=36]
-	"amyloidsE/delta-toxin" [label="delta-toxin"]
-	"amyloidsE/delta-toxin" -> "sequencesE/36"
 	"sequencesE/20" [label=20]
 	"amyloidsE/PSMalpha3" [label=PSMalpha3]
 	"amyloidsE/PSMalpha3" -> "sequencesE/20"
-	"sequencesE/36" [label=36]
-	"amyloidsE/delta-toxin" [label="delta-toxin"]
-	"amyloidsE/delta-toxin" -> "sequencesE/36"
 }

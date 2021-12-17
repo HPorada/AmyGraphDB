@@ -1,0 +1,190 @@
+digraph "sequence2.json" {
+	fontsize=18 label="Searching with starting node" scale=2
+	node [fixedsize=false shape=circle width=0.5]
+	"sequencesE/21" [label=21]
+	"interactionsE/42" [label=42]
+	"sequencesE/21" -> "interactionsE/42"
+	"sequencesE/21" [label=21]
+	"interactionsE/43" [label=43]
+	"sequencesE/21" -> "interactionsE/43"
+	"sequencesE/21" [label=21]
+	"interactionsE/44" [label=44]
+	"sequencesE/21" -> "interactionsE/44"
+	"sequencesE/21" [label=21]
+	"interactionsE/45" [label=45]
+	"sequencesE/21" -> "interactionsE/45"
+	"sequencesE/21" [label=21]
+	"interactionsE/48" [label=48]
+	"sequencesE/21" -> "interactionsE/48"
+	"sequencesE/21" [label=21]
+	"interactionsE/51" [label=51]
+	"sequencesE/21" -> "interactionsE/51"
+	"sequencesE/21" [label=21]
+	"interactionsE/54" [label=54]
+	"sequencesE/21" -> "interactionsE/54"
+	"sequencesE/21" [label=21]
+	"interactionsE/57" [label=57]
+	"sequencesE/21" -> "interactionsE/57"
+	"sequencesE/21" [label=21]
+	"interactionsE/83" [label=83]
+	"sequencesE/21" -> "interactionsE/83"
+	"interactionsE/42" [label=42]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/42" -> "question1/Faster_aggregation"
+	"interactionsE/42" [label=42]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/42" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/42" [label=42]
+	"question3/No_information" [label=No_information]
+	"interactionsE/42" -> "question3/No_information"
+	"interactionsE/43" [label=43]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/43" -> "question1/Faster_aggregation"
+	"interactionsE/43" [label=43]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/43" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/43" [label=43]
+	"question3/No_information" [label=No_information]
+	"interactionsE/43" -> "question3/No_information"
+	"interactionsE/44" [label=44]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/44" -> "question1/Faster_aggregation"
+	"interactionsE/44" [label=44]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/44" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/44" [label=44]
+	"question3/No_information" [label=No_information]
+	"interactionsE/44" -> "question3/No_information"
+	"interactionsE/45" [label=45]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/45" -> "question1/Faster_aggregation"
+	"interactionsE/45" [label=45]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/45" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/45" [label=45]
+	"question3/No_information" [label=No_information]
+	"interactionsE/45" -> "question3/No_information"
+	"interactionsE/48" [label=48]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/48" -> "question1/Faster_aggregation"
+	"interactionsE/48" [label=48]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/48" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/48" [label=48]
+	"question3/No_information" [label=No_information]
+	"interactionsE/48" -> "question3/No_information"
+	"interactionsE/51" [label=51]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/51" -> "question1/Faster_aggregation"
+	"interactionsE/51" [label=51]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/51" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/51" [label=51]
+	"question3/No_information" [label=No_information]
+	"interactionsE/51" -> "question3/No_information"
+	"interactionsE/54" [label=54]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/54" -> "question1/Faster_aggregation"
+	"interactionsE/54" [label=54]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/54" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/54" [label=54]
+	"question3/No_information" [label=No_information]
+	"interactionsE/54" -> "question3/No_information"
+	"interactionsE/57" [label=57]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/57" -> "question1/Faster_aggregation"
+	"interactionsE/57" [label=57]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/57" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/57" [label=57]
+	"question3/No_information" [label=No_information]
+	"interactionsE/57" -> "question3/No_information"
+	"interactionsE/83" [label=83]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/83" -> "question1/Faster_aggregation"
+	"interactionsE/83" [label=83]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/83" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/83" [label=83]
+	"question3/No_information" [label=No_information]
+	"interactionsE/83" -> "question3/No_information"
+	"sequencesE/21" [label=21]
+	"amyloidsE/PSMalpha1" [label=PSMalpha1]
+	"amyloidsE/PSMalpha1" -> "sequencesE/21"
+	"interactionsE/42" [label=42]
+	"sequencesE/20" [label=20]
+	"sequencesE/20" -> "interactionsE/42"
+	"interactionsE/42" [label=42]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/42"
+	"interactionsE/43" [label=43]
+	"sequencesE/22" [label=22]
+	"sequencesE/22" -> "interactionsE/43"
+	"interactionsE/43" [label=43]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/43"
+	"interactionsE/44" [label=44]
+	"sequencesE/23" [label=23]
+	"sequencesE/23" -> "interactionsE/44"
+	"interactionsE/44" [label=44]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/44"
+	"interactionsE/45" [label=45]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/45"
+	"interactionsE/45" [label=45]
+	"sequencesE/22" [label=22]
+	"sequencesE/22" -> "interactionsE/45"
+	"interactionsE/48" [label=48]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/48"
+	"interactionsE/48" [label=48]
+	"sequencesE/20" [label=20]
+	"sequencesE/20" -> "interactionsE/48"
+	"interactionsE/51" [label=51]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/51"
+	"interactionsE/51" [label=51]
+	"sequencesE/23" [label=23]
+	"sequencesE/23" -> "interactionsE/51"
+	"interactionsE/54" [label=54]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/54"
+	"interactionsE/54" [label=54]
+	"sequencesE/24" [label=24]
+	"sequencesE/24" -> "interactionsE/54"
+	"interactionsE/57" [label=57]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/57"
+	"interactionsE/57" [label=57]
+	"sequencesE/25" [label=25]
+	"sequencesE/25" -> "interactionsE/57"
+	"interactionsE/83" [label=83]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/83"
+	"interactionsE/83" [label=83]
+	"sequencesE/36" [label=36]
+	"sequencesE/36" -> "interactionsE/83"
+	"sequencesE/20" [label=20]
+	"amyloidsE/PSMalpha3" [label=PSMalpha3]
+	"amyloidsE/PSMalpha3" -> "sequencesE/20"
+	"sequencesE/21" [label=21]
+	"amyloidsE/PSMalpha1" [label=PSMalpha1]
+	"amyloidsE/PSMalpha1" -> "sequencesE/21"
+	"sequencesE/22" [label=22]
+	"amyloidsE/PSMbeta1" [label=PSMbeta1]
+	"amyloidsE/PSMbeta1" -> "sequencesE/22"
+	"sequencesE/23" [label=23]
+	"amyloidsE/PSMbeta2" [label=PSMbeta2]
+	"amyloidsE/PSMbeta2" -> "sequencesE/23"
+	"sequencesE/24" [label=24]
+	"amyloidsE/PSMalpha2" [label=PSMalpha2]
+	"amyloidsE/PSMalpha2" -> "sequencesE/24"
+	"sequencesE/25" [label=25]
+	"amyloidsE/PSMalpha4" [label=PSMalpha4]
+	"amyloidsE/PSMalpha4" -> "sequencesE/25"
+	"sequencesE/36" [label=36]
+	"amyloidsE/delta-toxin" [label="delta-toxin"]
+	"amyloidsE/delta-toxin" -> "sequencesE/36"
+}
