@@ -136,7 +136,9 @@ def search_by_questions(database):
 # search_by_questions(db_Sep)
 
 # sq.subgraph_from_interactions(db_Nov, "Slower aggregation", "No information", "No information", "check2")
-simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+# simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+# sq.subgraph_from_sequence(db_Nov, "MGIIAGIIKVIKSLIEQFTGK", "sequence")
+sq.subgraph_from_amyloid(db_Nov, "δ-toxin", "amyloid4")
 
-vf.graphviz_graph('result.json')
-vf.networkx_graph('result.json')
+vf.graphviz_graph('amyloid4.json')
+vf.networkx_graph('amyloid4.json')

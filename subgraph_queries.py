@@ -169,3 +169,89 @@ def subgraph_from_sequence(database, sequence, filename="result"):
 
     with open(f"json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
+
+
+def subgraph_from_amyloid(database, amyloid, filename="result"):
+    aql = database.aql
+
+    cursor = database.aql.execute(
+        """let amys = (
+                for a in amyloidsE
+                    filter a.name == @amy
+                    return {"amyloids": a}
+        )
+        
+        let orgs = (
+            for item in amys
+                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                    return distinct {"paths": p, "organisms": v}
+        )
+        
+        let props = (
+            for item in orgs
+                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                    return distinct {"paths": p, "properties": v}
+        )
+        
+        let seqs = (
+            for item in amys
+                for v, e, p in 1..1 outbound item.amyloids._id graph "ExtendedAndEdges"
+                    return {"paths": p, "sequences": v}
+        )
+        
+        let ints = (
+            for item in seqs
+                for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                    return {"paths": p, "interactions": v}
+        )
+        
+        let ques = (
+            for item in ints
+                for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                    return {"paths": p, "questions": v}
+        )
+        
+        let seqs2 = (
+            for item in ints
+                for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                    return {"paths": p, "sequences": v}
+        )
+        
+        let amys2 = (
+            for item in seqs2
+                for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                    return {"paths": p, "amyloids": v}
+        )
+        
+        let orgs2 = (
+            for item in amys2
+                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                    return distinct {"paths": p, "organisms": v}
+        )
+        
+        let props2 = (
+            for item in orgs2
+                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                    return distinct {"paths": p, "properties": v}
+        )
+        
+        for item in union(
+            for item in ints return item.paths,
+            for item in ques return item.paths,
+            for item in seqs return item.paths,
+            for item in orgs return item.paths,
+            for item in props return item.paths,
+            for item in seqs2 return item.paths,
+            for item in amys2 return item.paths,
+            for item in orgs2 return item.paths,
+            for item in props2 return item.paths
+        
+        )
+            return item""",
+        bind_vars={'amy': amyloid}
+    )
+
+    inter = [i for i in cursor]
+
+    with open(f"json_data/{filename}.json", "w") as outfile:
+        json.dump(inter, outfile)

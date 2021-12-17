@@ -1,0 +1,2446 @@
+digraph "amyloid3.json" {
+	fontsize=18 label="Searching with starting node" scale=2
+	node [fixedsize=false shape=circle width=0.5]
+	"sequencesE/4" [label=4]
+	"interactionsE/3" [label=3]
+	"sequencesE/4" -> "interactionsE/3"
+	"sequencesE/4" [label=4]
+	"interactionsE/4" [label=4]
+	"sequencesE/4" -> "interactionsE/4"
+	"sequencesE/4" [label=4]
+	"interactionsE/112" [label=112]
+	"sequencesE/4" -> "interactionsE/112"
+	"sequencesE/4" [label=4]
+	"interactionsE/113" [label=113]
+	"sequencesE/4" -> "interactionsE/113"
+	"sequencesE/4" [label=4]
+	"interactionsE/114" [label=114]
+	"sequencesE/4" -> "interactionsE/114"
+	"sequencesE/4" [label=4]
+	"interactionsE/115" [label=115]
+	"sequencesE/4" -> "interactionsE/115"
+	"sequencesE/42" [label=42]
+	"interactionsE/91" [label=91]
+	"sequencesE/42" -> "interactionsE/91"
+	"sequencesE/43" [label=43]
+	"interactionsE/96" [label=96]
+	"sequencesE/43" -> "interactionsE/96"
+	"sequencesE/43" [label=43]
+	"interactionsE/97" [label=97]
+	"sequencesE/43" -> "interactionsE/97"
+	"sequencesE/43" [label=43]
+	"interactionsE/151" [label=151]
+	"sequencesE/43" -> "interactionsE/151"
+	"sequencesE/43" [label=43]
+	"interactionsE/152" [label=152]
+	"sequencesE/43" -> "interactionsE/152"
+	"sequencesE/43" [label=43]
+	"interactionsE/153" [label=153]
+	"sequencesE/43" -> "interactionsE/153"
+	"sequencesE/43" [label=43]
+	"interactionsE/154" [label=154]
+	"sequencesE/43" -> "interactionsE/154"
+	"sequencesE/43" [label=43]
+	"interactionsE/155" [label=155]
+	"sequencesE/43" -> "interactionsE/155"
+	"sequencesE/43" [label=43]
+	"interactionsE/156" [label=156]
+	"sequencesE/43" -> "interactionsE/156"
+	"sequencesE/43" [label=43]
+	"interactionsE/157" [label=157]
+	"sequencesE/43" -> "interactionsE/157"
+	"sequencesE/78" [label=78]
+	"interactionsE/164" [label=164]
+	"sequencesE/78" -> "interactionsE/164"
+	"sequencesE/78" [label=78]
+	"interactionsE/165" [label=165]
+	"sequencesE/78" -> "interactionsE/165"
+	"sequencesE/78" [label=78]
+	"interactionsE/166" [label=166]
+	"sequencesE/78" -> "interactionsE/166"
+	"sequencesE/78" [label=78]
+	"interactionsE/167" [label=167]
+	"sequencesE/78" -> "interactionsE/167"
+	"sequencesE/78" [label=78]
+	"interactionsE/192" [label=192]
+	"sequencesE/78" -> "interactionsE/192"
+	"sequencesE/78" [label=78]
+	"interactionsE/192" [label=192]
+	"sequencesE/78" -> "interactionsE/192"
+	"sequencesE/84" [label=84]
+	"interactionsE/183" [label=183]
+	"sequencesE/84" -> "interactionsE/183"
+	"sequencesE/84" [label=84]
+	"interactionsE/184" [label=184]
+	"sequencesE/84" -> "interactionsE/184"
+	"sequencesE/84" [label=84]
+	"interactionsE/185" [label=185]
+	"sequencesE/84" -> "interactionsE/185"
+	"sequencesE/84" [label=84]
+	"interactionsE/332" [label=332]
+	"sequencesE/84" -> "interactionsE/332"
+	"sequencesE/84" [label=84]
+	"interactionsE/831" [label=831]
+	"sequencesE/84" -> "interactionsE/831"
+	"sequencesE/84" [label=84]
+	"interactionsE/832" [label=832]
+	"sequencesE/84" -> "interactionsE/832"
+	"sequencesE/89" [label=89]
+	"interactionsE/208" [label=208]
+	"sequencesE/89" -> "interactionsE/208"
+	"sequencesE/89" [label=89]
+	"interactionsE/457" [label=457]
+	"sequencesE/89" -> "interactionsE/457"
+	"sequencesE/89" [label=89]
+	"interactionsE/458" [label=458]
+	"sequencesE/89" -> "interactionsE/458"
+	"sequencesE/89" [label=89]
+	"interactionsE/491" [label=491]
+	"sequencesE/89" -> "interactionsE/491"
+	"sequencesE/89" [label=89]
+	"interactionsE/491" [label=491]
+	"sequencesE/89" -> "interactionsE/491"
+	"sequencesE/89" [label=89]
+	"interactionsE/496" [label=496]
+	"sequencesE/89" -> "interactionsE/496"
+	"sequencesE/89" [label=89]
+	"interactionsE/497" [label=497]
+	"sequencesE/89" -> "interactionsE/497"
+	"sequencesE/89" [label=89]
+	"interactionsE/498" [label=498]
+	"sequencesE/89" -> "interactionsE/498"
+	"sequencesE/89" [label=89]
+	"interactionsE/499" [label=499]
+	"sequencesE/89" -> "interactionsE/499"
+	"sequencesE/89" [label=89]
+	"interactionsE/569" [label=569]
+	"sequencesE/89" -> "interactionsE/569"
+	"sequencesE/89" [label=89]
+	"interactionsE/570" [label=570]
+	"sequencesE/89" -> "interactionsE/570"
+	"sequencesE/89" [label=89]
+	"interactionsE/609" [label=609]
+	"sequencesE/89" -> "interactionsE/609"
+	"sequencesE/89" [label=89]
+	"interactionsE/638" [label=638]
+	"sequencesE/89" -> "interactionsE/638"
+	"sequencesE/89" [label=89]
+	"interactionsE/639" [label=639]
+	"sequencesE/89" -> "interactionsE/639"
+	"sequencesE/89" [label=89]
+	"interactionsE/640" [label=640]
+	"sequencesE/89" -> "interactionsE/640"
+	"sequencesE/89" [label=89]
+	"interactionsE/641" [label=641]
+	"sequencesE/89" -> "interactionsE/641"
+	"sequencesE/89" [label=89]
+	"interactionsE/642" [label=642]
+	"sequencesE/89" -> "interactionsE/642"
+	"sequencesE/89" [label=89]
+	"interactionsE/643" [label=643]
+	"sequencesE/89" -> "interactionsE/643"
+	"sequencesE/89" [label=89]
+	"interactionsE/644" [label=644]
+	"sequencesE/89" -> "interactionsE/644"
+	"sequencesE/89" [label=89]
+	"interactionsE/645" [label=645]
+	"sequencesE/89" -> "interactionsE/645"
+	"sequencesE/89" [label=89]
+	"interactionsE/646" [label=646]
+	"sequencesE/89" -> "interactionsE/646"
+	"sequencesE/89" [label=89]
+	"interactionsE/647" [label=647]
+	"sequencesE/89" -> "interactionsE/647"
+	"sequencesE/89" [label=89]
+	"interactionsE/648" [label=648]
+	"sequencesE/89" -> "interactionsE/648"
+	"sequencesE/89" [label=89]
+	"interactionsE/649" [label=649]
+	"sequencesE/89" -> "interactionsE/649"
+	"sequencesE/89" [label=89]
+	"interactionsE/650" [label=650]
+	"sequencesE/89" -> "interactionsE/650"
+	"sequencesE/89" [label=89]
+	"interactionsE/651" [label=651]
+	"sequencesE/89" -> "interactionsE/651"
+	"sequencesE/89" [label=89]
+	"interactionsE/652" [label=652]
+	"sequencesE/89" -> "interactionsE/652"
+	"sequencesE/89" [label=89]
+	"interactionsE/653" [label=653]
+	"sequencesE/89" -> "interactionsE/653"
+	"sequencesE/89" [label=89]
+	"interactionsE/654" [label=654]
+	"sequencesE/89" -> "interactionsE/654"
+	"sequencesE/89" [label=89]
+	"interactionsE/654" [label=654]
+	"sequencesE/89" -> "interactionsE/654"
+	"sequencesE/89" [label=89]
+	"interactionsE/655" [label=655]
+	"sequencesE/89" -> "interactionsE/655"
+	"sequencesE/89" [label=89]
+	"interactionsE/655" [label=655]
+	"sequencesE/89" -> "interactionsE/655"
+	"sequencesE/89" [label=89]
+	"interactionsE/660" [label=660]
+	"sequencesE/89" -> "interactionsE/660"
+	"sequencesE/89" [label=89]
+	"interactionsE/661" [label=661]
+	"sequencesE/89" -> "interactionsE/661"
+	"sequencesE/89" [label=89]
+	"interactionsE/662" [label=662]
+	"sequencesE/89" -> "interactionsE/662"
+	"sequencesE/89" [label=89]
+	"interactionsE/663" [label=663]
+	"sequencesE/89" -> "interactionsE/663"
+	"sequencesE/89" [label=89]
+	"interactionsE/664" [label=664]
+	"sequencesE/89" -> "interactionsE/664"
+	"sequencesE/89" [label=89]
+	"interactionsE/744" [label=744]
+	"sequencesE/89" -> "interactionsE/744"
+	"sequencesE/111" [label=111]
+	"interactionsE/294" [label=294]
+	"sequencesE/111" -> "interactionsE/294"
+	"sequencesE/111" [label=111]
+	"interactionsE/296" [label=296]
+	"sequencesE/111" -> "interactionsE/296"
+	"sequencesE/111" [label=111]
+	"interactionsE/384" [label=384]
+	"sequencesE/111" -> "interactionsE/384"
+	"sequencesE/111" [label=111]
+	"interactionsE/385" [label=385]
+	"sequencesE/111" -> "interactionsE/385"
+	"sequencesE/111" [label=111]
+	"interactionsE/386" [label=386]
+	"sequencesE/111" -> "interactionsE/386"
+	"sequencesE/111" [label=111]
+	"interactionsE/387" [label=387]
+	"sequencesE/111" -> "interactionsE/387"
+	"sequencesE/111" [label=111]
+	"interactionsE/481" [label=481]
+	"sequencesE/111" -> "interactionsE/481"
+	"sequencesE/126" [label=126]
+	"interactionsE/331" [label=331]
+	"sequencesE/126" -> "interactionsE/331"
+	"sequencesE/126" [label=126]
+	"interactionsE/831" [label=831]
+	"sequencesE/126" -> "interactionsE/831"
+	"sequencesE/126" [label=126]
+	"interactionsE/832" [label=832]
+	"sequencesE/126" -> "interactionsE/832"
+	"sequencesE/126" [label=126]
+	"interactionsE/836" [label=836]
+	"sequencesE/126" -> "interactionsE/836"
+	"sequencesE/126" [label=126]
+	"interactionsE/837" [label=837]
+	"sequencesE/126" -> "interactionsE/837"
+	"sequencesE/127" [label=127]
+	"interactionsE/333" [label=333]
+	"sequencesE/127" -> "interactionsE/333"
+	"sequencesE/127" [label=127]
+	"interactionsE/498" [label=498]
+	"sequencesE/127" -> "interactionsE/498"
+	"sequencesE/127" [label=127]
+	"interactionsE/640" [label=640]
+	"sequencesE/127" -> "interactionsE/640"
+	"sequencesE/127" [label=127]
+	"interactionsE/648" [label=648]
+	"sequencesE/127" -> "interactionsE/648"
+	"sequencesE/127" [label=127]
+	"interactionsE/649" [label=649]
+	"sequencesE/127" -> "interactionsE/649"
+	"sequencesE/128" [label=128]
+	"interactionsE/334" [label=334]
+	"sequencesE/128" -> "interactionsE/334"
+	"sequencesE/128" [label=128]
+	"interactionsE/497" [label=497]
+	"sequencesE/128" -> "interactionsE/497"
+	"sequencesE/128" [label=128]
+	"interactionsE/639" [label=639]
+	"sequencesE/128" -> "interactionsE/639"
+	"sequencesE/129" [label=129]
+	"interactionsE/335" [label=335]
+	"sequencesE/129" -> "interactionsE/335"
+	"sequencesE/130" [label=130]
+	"interactionsE/336" [label=336]
+	"sequencesE/130" -> "interactionsE/336"
+	"sequencesE/131" [label=131]
+	"interactionsE/337" [label=337]
+	"sequencesE/131" -> "interactionsE/337"
+	"sequencesE/176" [label=176]
+	"interactionsE/451" [label=451]
+	"sequencesE/176" -> "interactionsE/451"
+	"sequencesE/246" [label=246]
+	"interactionsE/643" [label=643]
+	"sequencesE/246" -> "interactionsE/643"
+	"sequencesE/248" [label=248]
+	"interactionsE/646" [label=646]
+	"sequencesE/248" -> "interactionsE/646"
+	"sequencesE/249" [label=249]
+	"interactionsE/647" [label=647]
+	"sequencesE/249" -> "interactionsE/647"
+	"sequencesE/250" [label=250]
+	"interactionsE/659" [label=659]
+	"sequencesE/250" -> "interactionsE/659"
+	"sequencesE/289" [label=289]
+	"interactionsE/729" [label=729]
+	"sequencesE/289" -> "interactionsE/729"
+	"sequencesE/290" [label=290]
+	"interactionsE/730" [label=730]
+	"sequencesE/290" -> "interactionsE/730"
+	"sequencesE/300" [label=300]
+	"interactionsE/746" [label=746]
+	"sequencesE/300" -> "interactionsE/746"
+	"sequencesE/328" [label=328]
+	"interactionsE/836" [label=836]
+	"sequencesE/328" -> "interactionsE/836"
+	"sequencesE/328" [label=328]
+	"interactionsE/837" [label=837]
+	"sequencesE/328" -> "interactionsE/837"
+	"interactionsE/3" [label=3]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/3" -> "question1/Slower_aggregation"
+	"interactionsE/3" [label=3]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/3" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/3" [label=3]
+	"question3/No_information" [label=No_information]
+	"interactionsE/3" -> "question3/No_information"
+	"interactionsE/4" [label=4]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/4" -> "question1/No_aggregation"
+	"interactionsE/4" [label=4]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/4" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/4" [label=4]
+	"question3/No" [label=No]
+	"interactionsE/4" -> "question3/No"
+	"interactionsE/112" [label=112]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/112" -> "question1/Slower_aggregation"
+	"interactionsE/112" [label=112]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/112" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/112" [label=112]
+	"question3/No" [label=No]
+	"interactionsE/112" -> "question3/No"
+	"interactionsE/113" [label=113]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/113" -> "question1/Slower_aggregation"
+	"interactionsE/113" [label=113]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/113" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/113" [label=113]
+	"question3/No_information" [label=No_information]
+	"interactionsE/113" -> "question3/No_information"
+	"interactionsE/114" [label=114]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/114" -> "question1/Faster_aggregation"
+	"interactionsE/114" [label=114]
+	"question2/No" [label=No]
+	"interactionsE/114" -> "question2/No"
+	"interactionsE/114" [label=114]
+	"question3/No_information" [label=No_information]
+	"interactionsE/114" -> "question3/No_information"
+	"interactionsE/115" [label=115]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/115" -> "question1/Faster_aggregation"
+	"interactionsE/115" [label=115]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/115" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/115" [label=115]
+	"question3/No" [label=No]
+	"interactionsE/115" -> "question3/No"
+	"interactionsE/91" [label=91]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/91" -> "question1/Faster_aggregation"
+	"interactionsE/91" [label=91]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/91" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/91" [label=91]
+	"question3/No_information" [label=No_information]
+	"interactionsE/91" -> "question3/No_information"
+	"interactionsE/96" [label=96]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/96" -> "question1/Slower_aggregation"
+	"interactionsE/96" [label=96]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/96" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/96" [label=96]
+	"question3/No_information" [label=No_information]
+	"interactionsE/96" -> "question3/No_information"
+	"interactionsE/97" [label=97]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/97" -> "question1/Slower_aggregation"
+	"interactionsE/97" [label=97]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/97" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/97" [label=97]
+	"question3/No_information" [label=No_information]
+	"interactionsE/97" -> "question3/No_information"
+	"interactionsE/151" [label=151]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/151" -> "question1/No_effect"
+	"interactionsE/151" [label=151]
+	"question2/No" [label=No]
+	"interactionsE/151" -> "question2/No"
+	"interactionsE/151" [label=151]
+	"question3/No_information" [label=No_information]
+	"interactionsE/151" -> "question3/No_information"
+	"interactionsE/152" [label=152]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/152" -> "question1/No_effect"
+	"interactionsE/152" [label=152]
+	"question2/No" [label=No]
+	"interactionsE/152" -> "question2/No"
+	"interactionsE/152" [label=152]
+	"question3/No_information" [label=No_information]
+	"interactionsE/152" -> "question3/No_information"
+	"interactionsE/153" [label=153]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/153" -> "question1/Slower_aggregation"
+	"interactionsE/153" [label=153]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/153" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/153" [label=153]
+	"question3/No_information" [label=No_information]
+	"interactionsE/153" -> "question3/No_information"
+	"interactionsE/154" [label=154]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/154" -> "question1/Slower_aggregation"
+	"interactionsE/154" [label=154]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/154" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/154" [label=154]
+	"question3/No_information" [label=No_information]
+	"interactionsE/154" -> "question3/No_information"
+	"interactionsE/155" [label=155]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/155" -> "question1/No_effect"
+	"interactionsE/155" [label=155]
+	"question2/No" [label=No]
+	"interactionsE/155" -> "question2/No"
+	"interactionsE/155" [label=155]
+	"question3/No_information" [label=No_information]
+	"interactionsE/155" -> "question3/No_information"
+	"interactionsE/156" [label=156]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/156" -> "question1/Slower_aggregation"
+	"interactionsE/156" [label=156]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/156" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/156" [label=156]
+	"question3/No_information" [label=No_information]
+	"interactionsE/156" -> "question3/No_information"
+	"interactionsE/157" [label=157]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/157" -> "question1/No_effect"
+	"interactionsE/157" [label=157]
+	"question2/No" [label=No]
+	"interactionsE/157" -> "question2/No"
+	"interactionsE/157" [label=157]
+	"question3/No_information" [label=No_information]
+	"interactionsE/157" -> "question3/No_information"
+	"interactionsE/164" [label=164]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/164" -> "question1/Faster_aggregation"
+	"interactionsE/164" [label=164]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/164" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/164" [label=164]
+	"question3/Yes" [label=Yes]
+	"interactionsE/164" -> "question3/Yes"
+	"interactionsE/165" [label=165]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/165" -> "question1/Faster_aggregation"
+	"interactionsE/165" [label=165]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/165" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/165" [label=165]
+	"question3/Yes" [label=Yes]
+	"interactionsE/165" -> "question3/Yes"
+	"interactionsE/166" [label=166]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/166" -> "question1/Faster_aggregation"
+	"interactionsE/166" [label=166]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/166" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/166" [label=166]
+	"question3/Yes" [label=Yes]
+	"interactionsE/166" -> "question3/Yes"
+	"interactionsE/167" [label=167]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/167" -> "question1/Faster_aggregation"
+	"interactionsE/167" [label=167]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/167" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/167" [label=167]
+	"question3/Yes" [label=Yes]
+	"interactionsE/167" -> "question3/Yes"
+	"interactionsE/192" [label=192]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/192" -> "question1/Faster_aggregation"
+	"interactionsE/192" [label=192]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/192" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/192" [label=192]
+	"question3/No" [label=No]
+	"interactionsE/192" -> "question3/No"
+	"interactionsE/192" [label=192]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/192" -> "question1/Faster_aggregation"
+	"interactionsE/192" [label=192]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/192" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/192" [label=192]
+	"question3/No" [label=No]
+	"interactionsE/192" -> "question3/No"
+	"interactionsE/183" [label=183]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/183" -> "question1/Faster_aggregation"
+	"interactionsE/183" [label=183]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/183" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/183" [label=183]
+	"question3/No_information" [label=No_information]
+	"interactionsE/183" -> "question3/No_information"
+	"interactionsE/184" [label=184]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/184" -> "question1/Faster_aggregation"
+	"interactionsE/184" [label=184]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/184" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/184" [label=184]
+	"question3/No_information" [label=No_information]
+	"interactionsE/184" -> "question3/No_information"
+	"interactionsE/185" [label=185]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/185" -> "question1/Slower_aggregation"
+	"interactionsE/185" [label=185]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/185" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/185" [label=185]
+	"question3/No_information" [label=No_information]
+	"interactionsE/185" -> "question3/No_information"
+	"interactionsE/332" [label=332]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/332" -> "question1/No_aggregation"
+	"interactionsE/332" [label=332]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/332" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/332" [label=332]
+	"question3/No_information" [label=No_information]
+	"interactionsE/332" -> "question3/No_information"
+	"interactionsE/831" [label=831]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/831" -> "question1/Faster_aggregation"
+	"interactionsE/831" [label=831]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/831" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/831" [label=831]
+	"question3/Yes" [label=Yes]
+	"interactionsE/831" -> "question3/Yes"
+	"interactionsE/832" [label=832]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/832" -> "question1/Slower_aggregation"
+	"interactionsE/832" [label=832]
+	"question2/No" [label=No]
+	"interactionsE/832" -> "question2/No"
+	"interactionsE/832" [label=832]
+	"question3/No" [label=No]
+	"interactionsE/832" -> "question3/No"
+	"interactionsE/208" [label=208]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/208" -> "question1/Faster_aggregation"
+	"interactionsE/208" [label=208]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/208" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/208" [label=208]
+	"question3/Yes" [label=Yes]
+	"interactionsE/208" -> "question3/Yes"
+	"interactionsE/457" [label=457]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/457" -> "question1/Faster_aggregation"
+	"interactionsE/457" [label=457]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/457" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/457" [label=457]
+	"question3/No_information" [label=No_information]
+	"interactionsE/457" -> "question3/No_information"
+	"interactionsE/458" [label=458]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/458" -> "question1/No_effect"
+	"interactionsE/458" [label=458]
+	"question2/No" [label=No]
+	"interactionsE/458" -> "question2/No"
+	"interactionsE/458" [label=458]
+	"question3/No_information" [label=No_information]
+	"interactionsE/458" -> "question3/No_information"
+	"interactionsE/491" [label=491]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/491" -> "question1/Faster_aggregation"
+	"interactionsE/491" [label=491]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/491" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/491" [label=491]
+	"question3/No" [label=No]
+	"interactionsE/491" -> "question3/No"
+	"interactionsE/491" [label=491]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/491" -> "question1/Faster_aggregation"
+	"interactionsE/491" [label=491]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/491" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/491" [label=491]
+	"question3/No" [label=No]
+	"interactionsE/491" -> "question3/No"
+	"interactionsE/496" [label=496]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/496" -> "question1/Faster_aggregation"
+	"interactionsE/496" [label=496]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/496" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/496" [label=496]
+	"question3/No" [label=No]
+	"interactionsE/496" -> "question3/No"
+	"interactionsE/497" [label=497]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/497" -> "question1/Faster_aggregation"
+	"interactionsE/497" [label=497]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/497" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/497" [label=497]
+	"question3/No" [label=No]
+	"interactionsE/497" -> "question3/No"
+	"interactionsE/498" [label=498]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/498" -> "question1/Faster_aggregation"
+	"interactionsE/498" [label=498]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/498" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/498" [label=498]
+	"question3/No" [label=No]
+	"interactionsE/498" -> "question3/No"
+	"interactionsE/499" [label=499]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/499" -> "question1/Slower_aggregation"
+	"interactionsE/499" [label=499]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/499" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/499" [label=499]
+	"question3/Yes" [label=Yes]
+	"interactionsE/499" -> "question3/Yes"
+	"interactionsE/569" [label=569]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/569" -> "question1/Faster_aggregation"
+	"interactionsE/569" [label=569]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/569" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/569" [label=569]
+	"question3/No_information" [label=No_information]
+	"interactionsE/569" -> "question3/No_information"
+	"interactionsE/570" [label=570]
+	"question1/nan" [label=nan]
+	"interactionsE/570" -> "question1/nan"
+	"interactionsE/570" [label=570]
+	"question2/No" [label=No]
+	"interactionsE/570" -> "question2/No"
+	"interactionsE/570" [label=570]
+	"question3/No" [label=No]
+	"interactionsE/570" -> "question3/No"
+	"interactionsE/609" [label=609]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/609" -> "question1/Slower_aggregation"
+	"interactionsE/609" [label=609]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/609" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/609" [label=609]
+	"question3/Yes" [label=Yes]
+	"interactionsE/609" -> "question3/Yes"
+	"interactionsE/638" [label=638]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/638" -> "question1/Faster_aggregation"
+	"interactionsE/638" [label=638]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/638" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/638" [label=638]
+	"question3/No_information" [label=No_information]
+	"interactionsE/638" -> "question3/No_information"
+	"interactionsE/639" [label=639]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/639" -> "question1/Faster_aggregation"
+	"interactionsE/639" [label=639]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/639" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/639" [label=639]
+	"question3/No" [label=No]
+	"interactionsE/639" -> "question3/No"
+	"interactionsE/640" [label=640]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/640" -> "question1/Faster_aggregation"
+	"interactionsE/640" [label=640]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/640" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/640" [label=640]
+	"question3/No" [label=No]
+	"interactionsE/640" -> "question3/No"
+	"interactionsE/641" [label=641]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/641" -> "question1/Faster_aggregation"
+	"interactionsE/641" [label=641]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/641" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/641" [label=641]
+	"question3/No_information" [label=No_information]
+	"interactionsE/641" -> "question3/No_information"
+	"interactionsE/642" [label=642]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/642" -> "question1/No_effect"
+	"interactionsE/642" [label=642]
+	"question2/No" [label=No]
+	"interactionsE/642" -> "question2/No"
+	"interactionsE/642" [label=642]
+	"question3/No_information" [label=No_information]
+	"interactionsE/642" -> "question3/No_information"
+	"interactionsE/643" [label=643]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/643" -> "question1/Faster_aggregation"
+	"interactionsE/643" [label=643]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/643" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/643" [label=643]
+	"question3/No" [label=No]
+	"interactionsE/643" -> "question3/No"
+	"interactionsE/644" [label=644]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/644" -> "question1/Faster_aggregation"
+	"interactionsE/644" [label=644]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/644" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/644" [label=644]
+	"question3/No_information" [label=No_information]
+	"interactionsE/644" -> "question3/No_information"
+	"interactionsE/645" [label=645]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/645" -> "question1/Faster_aggregation"
+	"interactionsE/645" [label=645]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/645" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/645" [label=645]
+	"question3/No_information" [label=No_information]
+	"interactionsE/645" -> "question3/No_information"
+	"interactionsE/646" [label=646]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/646" -> "question1/Faster_aggregation"
+	"interactionsE/646" [label=646]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/646" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/646" [label=646]
+	"question3/No" [label=No]
+	"interactionsE/646" -> "question3/No"
+	"interactionsE/647" [label=647]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/647" -> "question1/Faster_aggregation"
+	"interactionsE/647" [label=647]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/647" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/647" [label=647]
+	"question3/No" [label=No]
+	"interactionsE/647" -> "question3/No"
+	"interactionsE/648" [label=648]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/648" -> "question1/Slower_aggregation"
+	"interactionsE/648" [label=648]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/648" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/648" [label=648]
+	"question3/No" [label=No]
+	"interactionsE/648" -> "question3/No"
+	"interactionsE/649" [label=649]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/649" -> "question1/Slower_aggregation"
+	"interactionsE/649" [label=649]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/649" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/649" [label=649]
+	"question3/No" [label=No]
+	"interactionsE/649" -> "question3/No"
+	"interactionsE/650" [label=650]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/650" -> "question1/Faster_aggregation"
+	"interactionsE/650" [label=650]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/650" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/650" [label=650]
+	"question3/No_information" [label=No_information]
+	"interactionsE/650" -> "question3/No_information"
+	"interactionsE/651" [label=651]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/651" -> "question1/Slower_aggregation"
+	"interactionsE/651" [label=651]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/651" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/651" [label=651]
+	"question3/No_information" [label=No_information]
+	"interactionsE/651" -> "question3/No_information"
+	"interactionsE/652" [label=652]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/652" -> "question1/Faster_aggregation"
+	"interactionsE/652" [label=652]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/652" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/652" [label=652]
+	"question3/No_information" [label=No_information]
+	"interactionsE/652" -> "question3/No_information"
+	"interactionsE/653" [label=653]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/653" -> "question1/No_effect"
+	"interactionsE/653" [label=653]
+	"question2/No" [label=No]
+	"interactionsE/653" -> "question2/No"
+	"interactionsE/653" [label=653]
+	"question3/No_information" [label=No_information]
+	"interactionsE/653" -> "question3/No_information"
+	"interactionsE/654" [label=654]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/654" -> "question1/Faster_aggregation"
+	"interactionsE/654" [label=654]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/654" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/654" [label=654]
+	"question3/No" [label=No]
+	"interactionsE/654" -> "question3/No"
+	"interactionsE/654" [label=654]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/654" -> "question1/Faster_aggregation"
+	"interactionsE/654" [label=654]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/654" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/654" [label=654]
+	"question3/No" [label=No]
+	"interactionsE/654" -> "question3/No"
+	"interactionsE/655" [label=655]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/655" -> "question1/Faster_aggregation"
+	"interactionsE/655" [label=655]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/655" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/655" [label=655]
+	"question3/No" [label=No]
+	"interactionsE/655" -> "question3/No"
+	"interactionsE/655" [label=655]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/655" -> "question1/Faster_aggregation"
+	"interactionsE/655" [label=655]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/655" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/655" [label=655]
+	"question3/No" [label=No]
+	"interactionsE/655" -> "question3/No"
+	"interactionsE/660" [label=660]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/660" -> "question1/Slower_aggregation"
+	"interactionsE/660" [label=660]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/660" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/660" [label=660]
+	"question3/No" [label=No]
+	"interactionsE/660" -> "question3/No"
+	"interactionsE/661" [label=661]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/661" -> "question1/Faster_aggregation"
+	"interactionsE/661" [label=661]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/661" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/661" [label=661]
+	"question3/Yes" [label=Yes]
+	"interactionsE/661" -> "question3/Yes"
+	"interactionsE/662" [label=662]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/662" -> "question1/Faster_aggregation"
+	"interactionsE/662" [label=662]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/662" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/662" [label=662]
+	"question3/Yes" [label=Yes]
+	"interactionsE/662" -> "question3/Yes"
+	"interactionsE/663" [label=663]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/663" -> "question1/Faster_aggregation"
+	"interactionsE/663" [label=663]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/663" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/663" [label=663]
+	"question3/Yes" [label=Yes]
+	"interactionsE/663" -> "question3/Yes"
+	"interactionsE/664" [label=664]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/664" -> "question1/Faster_aggregation"
+	"interactionsE/664" [label=664]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/664" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/664" [label=664]
+	"question3/Yes" [label=Yes]
+	"interactionsE/664" -> "question3/Yes"
+	"interactionsE/744" [label=744]
+	"question1/No_information" [label=No_information]
+	"interactionsE/744" -> "question1/No_information"
+	"interactionsE/744" [label=744]
+	"question2/Yes_direct_evidence" [label=Yes_direct_evidence]
+	"interactionsE/744" -> "question2/Yes_direct_evidence"
+	"interactionsE/744" [label=744]
+	"question3/Yes" [label=Yes]
+	"interactionsE/744" -> "question3/Yes"
+	"interactionsE/294" [label=294]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/294" -> "question1/Slower_aggregation"
+	"interactionsE/294" [label=294]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/294" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/294" [label=294]
+	"question3/No_information" [label=No_information]
+	"interactionsE/294" -> "question3/No_information"
+	"interactionsE/296" [label=296]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/296" -> "question1/Faster_aggregation"
+	"interactionsE/296" [label=296]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/296" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/296" [label=296]
+	"question3/No" [label=No]
+	"interactionsE/296" -> "question3/No"
+	"interactionsE/384" [label=384]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/384" -> "question1/No_aggregation"
+	"interactionsE/384" [label=384]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/384" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/384" [label=384]
+	"question3/No" [label=No]
+	"interactionsE/384" -> "question3/No"
+	"interactionsE/385" [label=385]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/385" -> "question1/Faster_aggregation"
+	"interactionsE/385" [label=385]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/385" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/385" [label=385]
+	"question3/No_information" [label=No_information]
+	"interactionsE/385" -> "question3/No_information"
+	"interactionsE/386" [label=386]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/386" -> "question1/Faster_aggregation"
+	"interactionsE/386" [label=386]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/386" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/386" [label=386]
+	"question3/No_information" [label=No_information]
+	"interactionsE/386" -> "question3/No_information"
+	"interactionsE/387" [label=387]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/387" -> "question1/Faster_aggregation"
+	"interactionsE/387" [label=387]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/387" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/387" [label=387]
+	"question3/No_information" [label=No_information]
+	"interactionsE/387" -> "question3/No_information"
+	"interactionsE/481" [label=481]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/481" -> "question1/Faster_aggregation"
+	"interactionsE/481" [label=481]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/481" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/481" [label=481]
+	"question3/No" [label=No]
+	"interactionsE/481" -> "question3/No"
+	"interactionsE/331" [label=331]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/331" -> "question1/No_aggregation"
+	"interactionsE/331" [label=331]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/331" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/331" [label=331]
+	"question3/No_information" [label=No_information]
+	"interactionsE/331" -> "question3/No_information"
+	"interactionsE/831" [label=831]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/831" -> "question1/Faster_aggregation"
+	"interactionsE/831" [label=831]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/831" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/831" [label=831]
+	"question3/Yes" [label=Yes]
+	"interactionsE/831" -> "question3/Yes"
+	"interactionsE/832" [label=832]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/832" -> "question1/Slower_aggregation"
+	"interactionsE/832" [label=832]
+	"question2/No" [label=No]
+	"interactionsE/832" -> "question2/No"
+	"interactionsE/832" [label=832]
+	"question3/No" [label=No]
+	"interactionsE/832" -> "question3/No"
+	"interactionsE/836" [label=836]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/836" -> "question1/Faster_aggregation"
+	"interactionsE/836" [label=836]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/836" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/836" [label=836]
+	"question3/No" [label=No]
+	"interactionsE/836" -> "question3/No"
+	"interactionsE/837" [label=837]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/837" -> "question1/Faster_aggregation"
+	"interactionsE/837" [label=837]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/837" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/837" [label=837]
+	"question3/No" [label=No]
+	"interactionsE/837" -> "question3/No"
+	"interactionsE/333" [label=333]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/333" -> "question1/No_aggregation"
+	"interactionsE/333" [label=333]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/333" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/333" [label=333]
+	"question3/No_information" [label=No_information]
+	"interactionsE/333" -> "question3/No_information"
+	"interactionsE/498" [label=498]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/498" -> "question1/Faster_aggregation"
+	"interactionsE/498" [label=498]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/498" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/498" [label=498]
+	"question3/No" [label=No]
+	"interactionsE/498" -> "question3/No"
+	"interactionsE/640" [label=640]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/640" -> "question1/Faster_aggregation"
+	"interactionsE/640" [label=640]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/640" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/640" [label=640]
+	"question3/No" [label=No]
+	"interactionsE/640" -> "question3/No"
+	"interactionsE/648" [label=648]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/648" -> "question1/Slower_aggregation"
+	"interactionsE/648" [label=648]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/648" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/648" [label=648]
+	"question3/No" [label=No]
+	"interactionsE/648" -> "question3/No"
+	"interactionsE/649" [label=649]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/649" -> "question1/Slower_aggregation"
+	"interactionsE/649" [label=649]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/649" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/649" [label=649]
+	"question3/No" [label=No]
+	"interactionsE/649" -> "question3/No"
+	"interactionsE/334" [label=334]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/334" -> "question1/Faster_aggregation"
+	"interactionsE/334" [label=334]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/334" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/334" [label=334]
+	"question3/No_information" [label=No_information]
+	"interactionsE/334" -> "question3/No_information"
+	"interactionsE/497" [label=497]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/497" -> "question1/Faster_aggregation"
+	"interactionsE/497" [label=497]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/497" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/497" [label=497]
+	"question3/No" [label=No]
+	"interactionsE/497" -> "question3/No"
+	"interactionsE/639" [label=639]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/639" -> "question1/Faster_aggregation"
+	"interactionsE/639" [label=639]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/639" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/639" [label=639]
+	"question3/No" [label=No]
+	"interactionsE/639" -> "question3/No"
+	"interactionsE/335" [label=335]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/335" -> "question1/No_aggregation"
+	"interactionsE/335" [label=335]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/335" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/335" [label=335]
+	"question3/No_information" [label=No_information]
+	"interactionsE/335" -> "question3/No_information"
+	"interactionsE/336" [label=336]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/336" -> "question1/No_aggregation"
+	"interactionsE/336" [label=336]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/336" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/336" [label=336]
+	"question3/No_information" [label=No_information]
+	"interactionsE/336" -> "question3/No_information"
+	"interactionsE/337" [label=337]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/337" -> "question1/No_aggregation"
+	"interactionsE/337" [label=337]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/337" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/337" [label=337]
+	"question3/No_information" [label=No_information]
+	"interactionsE/337" -> "question3/No_information"
+	"interactionsE/451" [label=451]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/451" -> "question1/Slower_aggregation"
+	"interactionsE/451" [label=451]
+	"question2/Yes_direct_evidence" [label=Yes_direct_evidence]
+	"interactionsE/451" -> "question2/Yes_direct_evidence"
+	"interactionsE/451" [label=451]
+	"question3/Yes" [label=Yes]
+	"interactionsE/451" -> "question3/Yes"
+	"interactionsE/643" [label=643]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/643" -> "question1/Faster_aggregation"
+	"interactionsE/643" [label=643]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/643" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/643" [label=643]
+	"question3/No" [label=No]
+	"interactionsE/643" -> "question3/No"
+	"interactionsE/646" [label=646]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/646" -> "question1/Faster_aggregation"
+	"interactionsE/646" [label=646]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/646" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/646" [label=646]
+	"question3/No" [label=No]
+	"interactionsE/646" -> "question3/No"
+	"interactionsE/647" [label=647]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/647" -> "question1/Faster_aggregation"
+	"interactionsE/647" [label=647]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/647" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/647" [label=647]
+	"question3/No" [label=No]
+	"interactionsE/647" -> "question3/No"
+	"interactionsE/659" [label=659]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/659" -> "question1/Slower_aggregation"
+	"interactionsE/659" [label=659]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/659" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/659" [label=659]
+	"question3/No" [label=No]
+	"interactionsE/659" -> "question3/No"
+	"interactionsE/729" [label=729]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/729" -> "question1/Faster_aggregation"
+	"interactionsE/729" [label=729]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/729" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/729" [label=729]
+	"question3/No_information" [label=No_information]
+	"interactionsE/729" -> "question3/No_information"
+	"interactionsE/730" [label=730]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/730" -> "question1/No_effect"
+	"interactionsE/730" [label=730]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/730" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/730" [label=730]
+	"question3/No_information" [label=No_information]
+	"interactionsE/730" -> "question3/No_information"
+	"interactionsE/746" [label=746]
+	"question1/No_effect" [label=No_effect]
+	"interactionsE/746" -> "question1/No_effect"
+	"interactionsE/746" [label=746]
+	"question2/No_information" [label=No_information]
+	"interactionsE/746" -> "question2/No_information"
+	"interactionsE/746" [label=746]
+	"question3/Yes" [label=Yes]
+	"interactionsE/746" -> "question3/Yes"
+	"interactionsE/836" [label=836]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/836" -> "question1/Faster_aggregation"
+	"interactionsE/836" [label=836]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/836" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/836" [label=836]
+	"question3/No" [label=No]
+	"interactionsE/836" -> "question3/No"
+	"interactionsE/837" [label=837]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/837" -> "question1/Faster_aggregation"
+	"interactionsE/837" [label=837]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/837" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/837" [label=837]
+	"question3/No" [label=No]
+	"interactionsE/837" -> "question3/No"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/4" [label=4]
+	"amyloidsE/Insulin" -> "sequencesE/4"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/42" [label=42]
+	"amyloidsE/Insulin" -> "sequencesE/42"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/111" [label=111]
+	"amyloidsE/Insulin" -> "sequencesE/111"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/128" [label=128]
+	"amyloidsE/Insulin" -> "sequencesE/128"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/129" [label=129]
+	"amyloidsE/Insulin" -> "sequencesE/129"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/130" [label=130]
+	"amyloidsE/Insulin" -> "sequencesE/130"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/131" [label=131]
+	"amyloidsE/Insulin" -> "sequencesE/131"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/176" [label=176]
+	"amyloidsE/Insulin" -> "sequencesE/176"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/246" [label=246]
+	"amyloidsE/Insulin" -> "sequencesE/246"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/248" [label=248]
+	"amyloidsE/Insulin" -> "sequencesE/248"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/249" [label=249]
+	"amyloidsE/Insulin" -> "sequencesE/249"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/250" [label=250]
+	"amyloidsE/Insulin" -> "sequencesE/250"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/289" [label=289]
+	"amyloidsE/Insulin" -> "sequencesE/289"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/290" [label=290]
+	"amyloidsE/Insulin" -> "sequencesE/290"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/300" [label=300]
+	"amyloidsE/Insulin" -> "sequencesE/300"
+	"amyloidsE/Insulin" [label=Insulin]
+	"sequencesE/328" [label=328]
+	"amyloidsE/Insulin" -> "sequencesE/328"
+	"interactionsE/3" [label=3]
+	"sequencesE/4" [label=4]
+	"sequencesE/4" -> "interactionsE/3"
+	"interactionsE/3" [label=3]
+	"sequencesE/3" [label=3]
+	"sequencesE/3" -> "interactionsE/3"
+	"interactionsE/4" [label=4]
+	"sequencesE/4" [label=4]
+	"sequencesE/4" -> "interactionsE/4"
+	"interactionsE/4" [label=4]
+	"sequencesE/3" [label=3]
+	"sequencesE/3" -> "interactionsE/4"
+	"interactionsE/112" [label=112]
+	"sequencesE/4" [label=4]
+	"sequencesE/4" -> "interactionsE/112"
+	"interactionsE/112" [label=112]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/112"
+	"interactionsE/113" [label=113]
+	"sequencesE/4" [label=4]
+	"sequencesE/4" -> "interactionsE/113"
+	"interactionsE/113" [label=113]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/113"
+	"interactionsE/114" [label=114]
+	"sequencesE/4" [label=4]
+	"sequencesE/4" -> "interactionsE/114"
+	"interactionsE/114" [label=114]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/114"
+	"interactionsE/115" [label=115]
+	"sequencesE/4" [label=4]
+	"sequencesE/4" -> "interactionsE/115"
+	"interactionsE/115" [label=115]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/115"
+	"interactionsE/91" [label=91]
+	"sequencesE/42" [label=42]
+	"sequencesE/42" -> "interactionsE/91"
+	"interactionsE/91" [label=91]
+	"sequencesE/37" [label=37]
+	"sequencesE/37" -> "interactionsE/91"
+	"interactionsE/96" [label=96]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/96"
+	"interactionsE/96" [label=96]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/96"
+	"interactionsE/97" [label=97]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/97"
+	"interactionsE/97" [label=97]
+	"sequencesE/44" [label=44]
+	"sequencesE/44" -> "interactionsE/97"
+	"interactionsE/151" [label=151]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/151"
+	"interactionsE/151" [label=151]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/151"
+	"interactionsE/152" [label=152]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/152"
+	"interactionsE/152" [label=152]
+	"sequencesE/44" [label=44]
+	"sequencesE/44" -> "interactionsE/152"
+	"interactionsE/153" [label=153]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/153"
+	"interactionsE/153" [label=153]
+	"sequencesE/44" [label=44]
+	"sequencesE/44" -> "interactionsE/153"
+	"interactionsE/154" [label=154]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/154"
+	"interactionsE/154" [label=154]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/154"
+	"interactionsE/155" [label=155]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/155"
+	"interactionsE/155" [label=155]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/155"
+	"interactionsE/156" [label=156]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/156"
+	"interactionsE/156" [label=156]
+	"sequencesE/44" [label=44]
+	"sequencesE/44" -> "interactionsE/156"
+	"interactionsE/157" [label=157]
+	"sequencesE/43" [label=43]
+	"sequencesE/43" -> "interactionsE/157"
+	"interactionsE/157" [label=157]
+	"sequencesE/44" [label=44]
+	"sequencesE/44" -> "interactionsE/157"
+	"interactionsE/164" [label=164]
+	"sequencesE/77" [label=77]
+	"sequencesE/77" -> "interactionsE/164"
+	"interactionsE/164" [label=164]
+	"sequencesE/78" [label=78]
+	"sequencesE/78" -> "interactionsE/164"
+	"interactionsE/165" [label=165]
+	"sequencesE/78" [label=78]
+	"sequencesE/78" -> "interactionsE/165"
+	"interactionsE/165" [label=165]
+	"sequencesE/77" [label=77]
+	"sequencesE/77" -> "interactionsE/165"
+	"interactionsE/166" [label=166]
+	"sequencesE/37" [label=37]
+	"sequencesE/37" -> "interactionsE/166"
+	"interactionsE/166" [label=166]
+	"sequencesE/78" [label=78]
+	"sequencesE/78" -> "interactionsE/166"
+	"interactionsE/167" [label=167]
+	"sequencesE/78" [label=78]
+	"sequencesE/78" -> "interactionsE/167"
+	"interactionsE/167" [label=167]
+	"sequencesE/37" [label=37]
+	"sequencesE/37" -> "interactionsE/167"
+	"interactionsE/192" [label=192]
+	"sequencesE/78" [label=78]
+	"sequencesE/78" -> "interactionsE/192"
+	"interactionsE/192" [label=192]
+	"sequencesE/78" [label=78]
+	"sequencesE/78" -> "interactionsE/192"
+	"interactionsE/192" [label=192]
+	"sequencesE/78" [label=78]
+	"sequencesE/78" -> "interactionsE/192"
+	"interactionsE/192" [label=192]
+	"sequencesE/78" [label=78]
+	"sequencesE/78" -> "interactionsE/192"
+	"interactionsE/183" [label=183]
+	"sequencesE/84" [label=84]
+	"sequencesE/84" -> "interactionsE/183"
+	"interactionsE/183" [label=183]
+	"sequencesE/2" [label=2]
+	"sequencesE/2" -> "interactionsE/183"
+	"interactionsE/184" [label=184]
+	"sequencesE/2" [label=2]
+	"sequencesE/2" -> "interactionsE/184"
+	"interactionsE/184" [label=184]
+	"sequencesE/84" [label=84]
+	"sequencesE/84" -> "interactionsE/184"
+	"interactionsE/185" [label=185]
+	"sequencesE/84" [label=84]
+	"sequencesE/84" -> "interactionsE/185"
+	"interactionsE/185" [label=185]
+	"sequencesE/2" [label=2]
+	"sequencesE/2" -> "interactionsE/185"
+	"interactionsE/332" [label=332]
+	"sequencesE/84" [label=84]
+	"sequencesE/84" -> "interactionsE/332"
+	"interactionsE/332" [label=332]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/332"
+	"interactionsE/831" [label=831]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/831"
+	"interactionsE/831" [label=831]
+	"sequencesE/84" [label=84]
+	"sequencesE/84" -> "interactionsE/831"
+	"interactionsE/832" [label=832]
+	"sequencesE/84" [label=84]
+	"sequencesE/84" -> "interactionsE/832"
+	"interactionsE/832" [label=832]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/832"
+	"interactionsE/208" [label=208]
+	"sequencesE/3" [label=3]
+	"sequencesE/3" -> "interactionsE/208"
+	"interactionsE/208" [label=208]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/208"
+	"interactionsE/457" [label=457]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/457"
+	"interactionsE/457" [label=457]
+	"sequencesE/54" [label=54]
+	"sequencesE/54" -> "interactionsE/457"
+	"interactionsE/458" [label=458]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/458"
+	"interactionsE/458" [label=458]
+	"sequencesE/54" [label=54]
+	"sequencesE/54" -> "interactionsE/458"
+	"interactionsE/491" [label=491]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/491"
+	"interactionsE/491" [label=491]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/491"
+	"interactionsE/491" [label=491]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/491"
+	"interactionsE/491" [label=491]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/491"
+	"interactionsE/496" [label=496]
+	"sequencesE/191" [label=191]
+	"sequencesE/191" -> "interactionsE/496"
+	"interactionsE/496" [label=496]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/496"
+	"interactionsE/497" [label=497]
+	"sequencesE/128" [label=128]
+	"sequencesE/128" -> "interactionsE/497"
+	"interactionsE/497" [label=497]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/497"
+	"interactionsE/498" [label=498]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/498"
+	"interactionsE/498" [label=498]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/498"
+	"interactionsE/499" [label=499]
+	"sequencesE/195" [label=195]
+	"sequencesE/195" -> "interactionsE/499"
+	"interactionsE/499" [label=499]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/499"
+	"interactionsE/569" [label=569]
+	"sequencesE/224" [label=224]
+	"sequencesE/224" -> "interactionsE/569"
+	"interactionsE/569" [label=569]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/569"
+	"interactionsE/570" [label=570]
+	"sequencesE/180" [label=180]
+	"sequencesE/180" -> "interactionsE/570"
+	"interactionsE/570" [label=570]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/570"
+	"interactionsE/609" [label=609]
+	"sequencesE/235" [label=235]
+	"sequencesE/235" -> "interactionsE/609"
+	"interactionsE/609" [label=609]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/609"
+	"interactionsE/638" [label=638]
+	"sequencesE/191" [label=191]
+	"sequencesE/191" -> "interactionsE/638"
+	"interactionsE/638" [label=638]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/638"
+	"interactionsE/639" [label=639]
+	"sequencesE/128" [label=128]
+	"sequencesE/128" -> "interactionsE/639"
+	"interactionsE/639" [label=639]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/639"
+	"interactionsE/640" [label=640]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/640"
+	"interactionsE/640" [label=640]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/640"
+	"interactionsE/641" [label=641]
+	"sequencesE/244" [label=244]
+	"sequencesE/244" -> "interactionsE/641"
+	"interactionsE/641" [label=641]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/641"
+	"interactionsE/642" [label=642]
+	"sequencesE/245" [label=245]
+	"sequencesE/245" -> "interactionsE/642"
+	"interactionsE/642" [label=642]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/642"
+	"interactionsE/643" [label=643]
+	"sequencesE/246" [label=246]
+	"sequencesE/246" -> "interactionsE/643"
+	"interactionsE/643" [label=643]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/643"
+	"interactionsE/644" [label=644]
+	"sequencesE/247" [label=247]
+	"sequencesE/247" -> "interactionsE/644"
+	"interactionsE/644" [label=644]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/644"
+	"interactionsE/645" [label=645]
+	"sequencesE/247" [label=247]
+	"sequencesE/247" -> "interactionsE/645"
+	"interactionsE/645" [label=645]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/645"
+	"interactionsE/646" [label=646]
+	"sequencesE/248" [label=248]
+	"sequencesE/248" -> "interactionsE/646"
+	"interactionsE/646" [label=646]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/646"
+	"interactionsE/647" [label=647]
+	"sequencesE/249" [label=249]
+	"sequencesE/249" -> "interactionsE/647"
+	"interactionsE/647" [label=647]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/647"
+	"interactionsE/648" [label=648]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/648"
+	"interactionsE/648" [label=648]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/648"
+	"interactionsE/649" [label=649]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/649"
+	"interactionsE/649" [label=649]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/649"
+	"interactionsE/650" [label=650]
+	"sequencesE/195" [label=195]
+	"sequencesE/195" -> "interactionsE/650"
+	"interactionsE/650" [label=650]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/650"
+	"interactionsE/651" [label=651]
+	"sequencesE/195" [label=195]
+	"sequencesE/195" -> "interactionsE/651"
+	"interactionsE/651" [label=651]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/651"
+	"interactionsE/652" [label=652]
+	"sequencesE/235" [label=235]
+	"sequencesE/235" -> "interactionsE/652"
+	"interactionsE/652" [label=652]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/652"
+	"interactionsE/653" [label=653]
+	"sequencesE/235" [label=235]
+	"sequencesE/235" -> "interactionsE/653"
+	"interactionsE/653" [label=653]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/653"
+	"interactionsE/654" [label=654]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/654"
+	"interactionsE/654" [label=654]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/654"
+	"interactionsE/654" [label=654]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/654"
+	"interactionsE/654" [label=654]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/654"
+	"interactionsE/655" [label=655]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/655"
+	"interactionsE/655" [label=655]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/655"
+	"interactionsE/655" [label=655]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/655"
+	"interactionsE/655" [label=655]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/655"
+	"interactionsE/660" [label=660]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/660"
+	"interactionsE/660" [label=660]
+	"sequencesE/148" [label=148]
+	"sequencesE/148" -> "interactionsE/660"
+	"interactionsE/661" [label=661]
+	"sequencesE/146" [label=146]
+	"sequencesE/146" -> "interactionsE/661"
+	"interactionsE/661" [label=661]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/661"
+	"interactionsE/662" [label=662]
+	"sequencesE/115" [label=115]
+	"sequencesE/115" -> "interactionsE/662"
+	"interactionsE/662" [label=662]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/662"
+	"interactionsE/663" [label=663]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/663"
+	"interactionsE/663" [label=663]
+	"sequencesE/146" [label=146]
+	"sequencesE/146" -> "interactionsE/663"
+	"interactionsE/664" [label=664]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/664"
+	"interactionsE/664" [label=664]
+	"sequencesE/115" [label=115]
+	"sequencesE/115" -> "interactionsE/664"
+	"interactionsE/744" [label=744]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/744"
+	"interactionsE/744" [label=744]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/744"
+	"interactionsE/294" [label=294]
+	"sequencesE/26" [label=26]
+	"sequencesE/26" -> "interactionsE/294"
+	"interactionsE/294" [label=294]
+	"sequencesE/111" [label=111]
+	"sequencesE/111" -> "interactionsE/294"
+	"interactionsE/296" [label=296]
+	"sequencesE/26" [label=26]
+	"sequencesE/26" -> "interactionsE/296"
+	"interactionsE/296" [label=296]
+	"sequencesE/111" [label=111]
+	"sequencesE/111" -> "interactionsE/296"
+	"interactionsE/384" [label=384]
+	"sequencesE/147" [label=147]
+	"sequencesE/147" -> "interactionsE/384"
+	"interactionsE/384" [label=384]
+	"sequencesE/111" [label=111]
+	"sequencesE/111" -> "interactionsE/384"
+	"interactionsE/385" [label=385]
+	"sequencesE/148" [label=148]
+	"sequencesE/148" -> "interactionsE/385"
+	"interactionsE/385" [label=385]
+	"sequencesE/111" [label=111]
+	"sequencesE/111" -> "interactionsE/385"
+	"interactionsE/386" [label=386]
+	"sequencesE/146" [label=146]
+	"sequencesE/146" -> "interactionsE/386"
+	"interactionsE/386" [label=386]
+	"sequencesE/111" [label=111]
+	"sequencesE/111" -> "interactionsE/386"
+	"interactionsE/387" [label=387]
+	"sequencesE/115" [label=115]
+	"sequencesE/115" -> "interactionsE/387"
+	"interactionsE/387" [label=387]
+	"sequencesE/111" [label=111]
+	"sequencesE/111" -> "interactionsE/387"
+	"interactionsE/481" [label=481]
+	"sequencesE/111" [label=111]
+	"sequencesE/111" -> "interactionsE/481"
+	"interactionsE/481" [label=481]
+	"sequencesE/6" [label=6]
+	"sequencesE/6" -> "interactionsE/481"
+	"interactionsE/331" [label=331]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/331"
+	"interactionsE/331" [label=331]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/331"
+	"interactionsE/831" [label=831]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/831"
+	"interactionsE/831" [label=831]
+	"sequencesE/84" [label=84]
+	"sequencesE/84" -> "interactionsE/831"
+	"interactionsE/832" [label=832]
+	"sequencesE/84" [label=84]
+	"sequencesE/84" -> "interactionsE/832"
+	"interactionsE/832" [label=832]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/832"
+	"interactionsE/836" [label=836]
+	"sequencesE/328" [label=328]
+	"sequencesE/328" -> "interactionsE/836"
+	"interactionsE/836" [label=836]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/836"
+	"interactionsE/837" [label=837]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/837"
+	"interactionsE/837" [label=837]
+	"sequencesE/328" [label=328]
+	"sequencesE/328" -> "interactionsE/837"
+	"interactionsE/333" [label=333]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/333"
+	"interactionsE/333" [label=333]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/333"
+	"interactionsE/498" [label=498]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/498"
+	"interactionsE/498" [label=498]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/498"
+	"interactionsE/640" [label=640]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/640"
+	"interactionsE/640" [label=640]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/640"
+	"interactionsE/648" [label=648]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/648"
+	"interactionsE/648" [label=648]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/648"
+	"interactionsE/649" [label=649]
+	"sequencesE/127" [label=127]
+	"sequencesE/127" -> "interactionsE/649"
+	"interactionsE/649" [label=649]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/649"
+	"interactionsE/334" [label=334]
+	"sequencesE/128" [label=128]
+	"sequencesE/128" -> "interactionsE/334"
+	"interactionsE/334" [label=334]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/334"
+	"interactionsE/497" [label=497]
+	"sequencesE/128" [label=128]
+	"sequencesE/128" -> "interactionsE/497"
+	"interactionsE/497" [label=497]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/497"
+	"interactionsE/639" [label=639]
+	"sequencesE/128" [label=128]
+	"sequencesE/128" -> "interactionsE/639"
+	"interactionsE/639" [label=639]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/639"
+	"interactionsE/335" [label=335]
+	"sequencesE/129" [label=129]
+	"sequencesE/129" -> "interactionsE/335"
+	"interactionsE/335" [label=335]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/335"
+	"interactionsE/336" [label=336]
+	"sequencesE/130" [label=130]
+	"sequencesE/130" -> "interactionsE/336"
+	"interactionsE/336" [label=336]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/336"
+	"interactionsE/337" [label=337]
+	"sequencesE/131" [label=131]
+	"sequencesE/131" -> "interactionsE/337"
+	"interactionsE/337" [label=337]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/337"
+	"interactionsE/451" [label=451]
+	"sequencesE/175" [label=175]
+	"sequencesE/175" -> "interactionsE/451"
+	"interactionsE/451" [label=451]
+	"sequencesE/176" [label=176]
+	"sequencesE/176" -> "interactionsE/451"
+	"interactionsE/643" [label=643]
+	"sequencesE/246" [label=246]
+	"sequencesE/246" -> "interactionsE/643"
+	"interactionsE/643" [label=643]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/643"
+	"interactionsE/646" [label=646]
+	"sequencesE/248" [label=248]
+	"sequencesE/248" -> "interactionsE/646"
+	"interactionsE/646" [label=646]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/646"
+	"interactionsE/647" [label=647]
+	"sequencesE/249" [label=249]
+	"sequencesE/249" -> "interactionsE/647"
+	"interactionsE/647" [label=647]
+	"sequencesE/89" [label=89]
+	"sequencesE/89" -> "interactionsE/647"
+	"interactionsE/659" [label=659]
+	"sequencesE/148" [label=148]
+	"sequencesE/148" -> "interactionsE/659"
+	"interactionsE/659" [label=659]
+	"sequencesE/250" [label=250]
+	"sequencesE/250" -> "interactionsE/659"
+	"interactionsE/729" [label=729]
+	"sequencesE/3" [label=3]
+	"sequencesE/3" -> "interactionsE/729"
+	"interactionsE/729" [label=729]
+	"sequencesE/289" [label=289]
+	"sequencesE/289" -> "interactionsE/729"
+	"interactionsE/730" [label=730]
+	"sequencesE/277" [label=277]
+	"sequencesE/277" -> "interactionsE/730"
+	"interactionsE/730" [label=730]
+	"sequencesE/290" [label=290]
+	"sequencesE/290" -> "interactionsE/730"
+	"interactionsE/746" [label=746]
+	"sequencesE/300" [label=300]
+	"sequencesE/300" -> "interactionsE/746"
+	"interactionsE/746" [label=746]
+	"sequencesE/1" [label=1]
+	"sequencesE/1" -> "interactionsE/746"
+	"interactionsE/836" [label=836]
+	"sequencesE/328" [label=328]
+	"sequencesE/328" -> "interactionsE/836"
+	"interactionsE/836" [label=836]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/836"
+	"interactionsE/837" [label=837]
+	"sequencesE/126" [label=126]
+	"sequencesE/126" -> "interactionsE/837"
+	"interactionsE/837" [label=837]
+	"sequencesE/328" [label=328]
+	"sequencesE/328" -> "interactionsE/837"
+	"sequencesE/4" [label=4]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/4"
+	"sequencesE/3" [label=3]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/3"
+	"sequencesE/4" [label=4]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/4"
+	"sequencesE/3" [label=3]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/3"
+	"sequencesE/4" [label=4]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/4"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/4" [label=4]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/4"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/4" [label=4]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/4"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/4" [label=4]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/4"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/42" [label=42]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/42"
+	"sequencesE/37" [label=37]
+	"amyloidsE/Lysozyme" [label=Lysozyme]
+	"amyloidsE/Lysozyme" -> "sequencesE/37"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/44" [label=44]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/44"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/44" [label=44]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/44"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/44" [label=44]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/44"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/44" [label=44]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/44"
+	"sequencesE/43" [label=43]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/43"
+	"sequencesE/44" [label=44]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/44"
+	"sequencesE/77" [label=77]
+	"amyloidsE/Albumin" [label=Albumin]
+	"amyloidsE/Albumin" -> "sequencesE/77"
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"sequencesE/77" [label=77]
+	"amyloidsE/Albumin" [label=Albumin]
+	"amyloidsE/Albumin" -> "sequencesE/77"
+	"sequencesE/37" [label=37]
+	"amyloidsE/Lysozyme" [label=Lysozyme]
+	"amyloidsE/Lysozyme" -> "sequencesE/37"
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"sequencesE/37" [label=37]
+	"amyloidsE/Lysozyme" [label=Lysozyme]
+	"amyloidsE/Lysozyme" -> "sequencesE/37"
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"sequencesE/78" [label=78]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/78"
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"sequencesE/2" [label=2]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/2"
+	"sequencesE/2" [label=2]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/2"
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"sequencesE/2" [label=2]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/2"
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/3" [label=3]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/3"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/54" [label=54]
+	"amyloidsE/Sup35" [label=Sup35]
+	"amyloidsE/Sup35" -> "sequencesE/54"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/54" [label=54]
+	"amyloidsE/Sup35" [label=Sup35]
+	"amyloidsE/Sup35" -> "sequencesE/54"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/191" [label=191]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/191"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/128" [label=128]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/128"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/195" [label=195]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/195"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/224" [label=224]
+	"amyloidsE/Lysozyme" [label=Lysozyme]
+	"amyloidsE/Lysozyme" -> "sequencesE/224"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/180" [label=180]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/180"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/235" [label=235]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/235"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/191" [label=191]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/191"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/128" [label=128]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/128"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/244" [label=244]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/244"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/245" [label=245]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/245"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/246" [label=246]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/246"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/247" [label=247]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/247"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/247" [label=247]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/247"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/248" [label=248]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/248"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/249" [label=249]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/249"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/195" [label=195]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/195"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/195" [label=195]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/195"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/235" [label=235]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/235"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/235" [label=235]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/235"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/148" [label=148]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/148"
+	"sequencesE/146" [label=146]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/146"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/115" [label=115]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/115"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/146" [label=146]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/146"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/115" [label=115]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/115"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/26" [label=26]
+	"amyloidsE/Sup35" [label=Sup35]
+	"amyloidsE/Sup35" -> "sequencesE/26"
+	"sequencesE/111" [label=111]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/111"
+	"sequencesE/26" [label=26]
+	"amyloidsE/Sup35" [label=Sup35]
+	"amyloidsE/Sup35" -> "sequencesE/26"
+	"sequencesE/111" [label=111]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/111"
+	"sequencesE/147" [label=147]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/147"
+	"sequencesE/111" [label=111]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/111"
+	"sequencesE/148" [label=148]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/148"
+	"sequencesE/111" [label=111]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/111"
+	"sequencesE/146" [label=146]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/146"
+	"sequencesE/111" [label=111]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/111"
+	"sequencesE/115" [label=115]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/115"
+	"sequencesE/111" [label=111]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/111"
+	"sequencesE/111" [label=111]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/111"
+	"sequencesE/6" [label=6]
+	"amyloidsE/alpha-synuclein" [label="alpha-synuclein"]
+	"amyloidsE/alpha-synuclein" -> "sequencesE/6"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"sequencesE/84" [label=84]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/84"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/328" [label=328]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/328"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/328" [label=328]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/328"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/127" [label=127]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/127"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/128" [label=128]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/128"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/128" [label=128]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/128"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/128" [label=128]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/128"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/129" [label=129]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/129"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/130" [label=130]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/130"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/131" [label=131]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/131"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/175" [label=175]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/175"
+	"sequencesE/176" [label=176]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/176"
+	"sequencesE/246" [label=246]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/246"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/248" [label=248]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/248"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/249" [label=249]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/249"
+	"sequencesE/89" [label=89]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/89"
+	"sequencesE/148" [label=148]
+	"amyloidsE/alpha-crystallin" [label="alpha-crystallin"]
+	"amyloidsE/alpha-crystallin" -> "sequencesE/148"
+	"sequencesE/250" [label=250]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/250"
+	"sequencesE/3" [label=3]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/3"
+	"sequencesE/289" [label=289]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/289"
+	"sequencesE/277" [label=277]
+	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/277"
+	"sequencesE/290" [label=290]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/290"
+	"sequencesE/300" [label=300]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/300"
+	"sequencesE/1" [label=1]
+	"amyloidsE/IAPP" [label=IAPP]
+	"amyloidsE/IAPP" -> "sequencesE/1"
+	"sequencesE/328" [label=328]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/328"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/126" [label=126]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/126"
+	"sequencesE/328" [label=328]
+	"amyloidsE/Insulin" [label=Insulin]
+	"amyloidsE/Insulin" -> "sequencesE/328"
+}

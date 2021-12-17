@@ -1,0 +1,79 @@
+digraph "amyloid4.json" {
+	fontsize=18 label="Searching with starting node" scale=2
+	node [fixedsize=false shape=circle width=0.5]
+	"sequencesE/36" [label=36]
+	"interactionsE/83" [label=83]
+	"sequencesE/36" -> "interactionsE/83"
+	"sequencesE/36" [label=36]
+	"interactionsE/84" [label=84]
+	"sequencesE/36" -> "interactionsE/84"
+	"sequencesE/36" [label=36]
+	"interactionsE/85" [label=85]
+	"sequencesE/36" -> "interactionsE/85"
+	"interactionsE/83" [label=83]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/83" -> "question1/Faster_aggregation"
+	"interactionsE/83" [label=83]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/83" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/83" [label=83]
+	"question3/No_information" [label=No_information]
+	"interactionsE/83" -> "question3/No_information"
+	"interactionsE/84" [label=84]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/84" -> "question1/Faster_aggregation"
+	"interactionsE/84" [label=84]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/84" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/84" [label=84]
+	"question3/No_information" [label=No_information]
+	"interactionsE/84" -> "question3/No_information"
+	"interactionsE/85" [label=85]
+	"question1/No_aggregation" [label=No_aggregation]
+	"interactionsE/85" -> "question1/No_aggregation"
+	"interactionsE/85" [label=85]
+	"question2/Formation_of_fibrils_by_the_interactee_is_inhibited" [label=Formation_of_fibrils_by_the_interactee_is_inhibited]
+	"interactionsE/85" -> "question2/Formation_of_fibrils_by_the_interactee_is_inhibited"
+	"interactionsE/85" [label=85]
+	"question3/No" [label=No]
+	"interactionsE/85" -> "question3/No"
+	"amyloidsE/delta-toxin" [label="delta-toxin"]
+	"sequencesE/36" [label=36]
+	"amyloidsE/delta-toxin" -> "sequencesE/36"
+	"interactionsE/83" [label=83]
+	"sequencesE/21" [label=21]
+	"sequencesE/21" -> "interactionsE/83"
+	"interactionsE/83" [label=83]
+	"sequencesE/36" [label=36]
+	"sequencesE/36" -> "interactionsE/83"
+	"interactionsE/84" [label=84]
+	"sequencesE/23" [label=23]
+	"sequencesE/23" -> "interactionsE/84"
+	"interactionsE/84" [label=84]
+	"sequencesE/36" [label=36]
+	"sequencesE/36" -> "interactionsE/84"
+	"interactionsE/85" [label=85]
+	"sequencesE/20" [label=20]
+	"sequencesE/20" -> "interactionsE/85"
+	"interactionsE/85" [label=85]
+	"sequencesE/36" [label=36]
+	"sequencesE/36" -> "interactionsE/85"
+	"sequencesE/21" [label=21]
+	"amyloidsE/PSMalpha1" [label=PSMalpha1]
+	"amyloidsE/PSMalpha1" -> "sequencesE/21"
+	"sequencesE/36" [label=36]
+	"amyloidsE/delta-toxin" [label="delta-toxin"]
+	"amyloidsE/delta-toxin" -> "sequencesE/36"
+	"sequencesE/23" [label=23]
+	"amyloidsE/PSMbeta2" [label=PSMbeta2]
+	"amyloidsE/PSMbeta2" -> "sequencesE/23"
+	"sequencesE/36" [label=36]
+	"amyloidsE/delta-toxin" [label="delta-toxin"]
+	"amyloidsE/delta-toxin" -> "sequencesE/36"
+	"sequencesE/20" [label=20]
+	"amyloidsE/PSMalpha3" [label=PSMalpha3]
+	"amyloidsE/PSMalpha3" -> "sequencesE/20"
+	"sequencesE/36" [label=36]
+	"amyloidsE/delta-toxin" [label="delta-toxin"]
+	"amyloidsE/delta-toxin" -> "sequencesE/36"
+}

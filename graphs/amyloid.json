@@ -1,0 +1,1468 @@
+digraph "amyloid.json" {
+	fontsize=18 label="Searching with starting node" scale=2
+	node [fixedsize=false shape=circle width=0.5]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1236" [label=1236]
+	"sequencesE/PPT_21" -> "interactionsE/1236"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1236" [label=1236]
+	"sequencesE/PPT_21" -> "interactionsE/1236"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1237" [label=1237]
+	"sequencesE/PPT_21" -> "interactionsE/1237"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1237" [label=1237]
+	"sequencesE/PPT_21" -> "interactionsE/1237"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1238" [label=1238]
+	"sequencesE/PPT_21" -> "interactionsE/1238"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1238" [label=1238]
+	"sequencesE/PPT_21" -> "interactionsE/1238"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1239" [label=1239]
+	"sequencesE/PPT_21" -> "interactionsE/1239"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1239" [label=1239]
+	"sequencesE/PPT_21" -> "interactionsE/1239"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1240" [label=1240]
+	"sequencesE/PPT_21" -> "interactionsE/1240"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1240" [label=1240]
+	"sequencesE/PPT_21" -> "interactionsE/1240"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1241" [label=1241]
+	"sequencesE/PPT_21" -> "interactionsE/1241"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1241" [label=1241]
+	"sequencesE/PPT_21" -> "interactionsE/1241"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1242" [label=1242]
+	"sequencesE/PPT_21" -> "interactionsE/1242"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1242" [label=1242]
+	"sequencesE/PPT_21" -> "interactionsE/1242"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1243" [label=1243]
+	"sequencesE/PPT_21" -> "interactionsE/1243"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1243" [label=1243]
+	"sequencesE/PPT_21" -> "interactionsE/1243"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1244" [label=1244]
+	"sequencesE/PPT_21" -> "interactionsE/1244"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1244" [label=1244]
+	"sequencesE/PPT_21" -> "interactionsE/1244"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1245" [label=1245]
+	"sequencesE/PPT_21" -> "interactionsE/1245"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1245" [label=1245]
+	"sequencesE/PPT_21" -> "interactionsE/1245"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1246" [label=1246]
+	"sequencesE/PPT_21" -> "interactionsE/1246"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1246" [label=1246]
+	"sequencesE/PPT_21" -> "interactionsE/1246"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1247" [label=1247]
+	"sequencesE/PPT_21" -> "interactionsE/1247"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1247" [label=1247]
+	"sequencesE/PPT_21" -> "interactionsE/1247"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1248" [label=1248]
+	"sequencesE/PPT_21" -> "interactionsE/1248"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1248" [label=1248]
+	"sequencesE/PPT_21" -> "interactionsE/1248"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1249" [label=1249]
+	"sequencesE/PPT_21" -> "interactionsE/1249"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1249" [label=1249]
+	"sequencesE/PPT_21" -> "interactionsE/1249"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1250" [label=1250]
+	"sequencesE/PPT_21" -> "interactionsE/1250"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1250" [label=1250]
+	"sequencesE/PPT_21" -> "interactionsE/1250"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1251" [label=1251]
+	"sequencesE/PPT_21" -> "interactionsE/1251"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1251" [label=1251]
+	"sequencesE/PPT_21" -> "interactionsE/1251"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1252" [label=1252]
+	"sequencesE/PPT_21" -> "interactionsE/1252"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1253" [label=1253]
+	"sequencesE/PPT_21" -> "interactionsE/1253"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1253" [label=1253]
+	"sequencesE/PPT_21" -> "interactionsE/1253"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1254" [label=1254]
+	"sequencesE/PPT_21" -> "interactionsE/1254"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1254" [label=1254]
+	"sequencesE/PPT_21" -> "interactionsE/1254"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1255" [label=1255]
+	"sequencesE/PPT_21" -> "interactionsE/1255"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1255" [label=1255]
+	"sequencesE/PPT_21" -> "interactionsE/1255"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1256" [label=1256]
+	"sequencesE/PPT_21" -> "interactionsE/1256"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1257" [label=1257]
+	"sequencesE/PPT_21" -> "interactionsE/1257"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1257" [label=1257]
+	"sequencesE/PPT_21" -> "interactionsE/1257"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"interactionsE/1258" [label=1258]
+	"sequencesE/PPT_21" -> "interactionsE/1258"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1252" [label=1252]
+	"sequencesE/PPT_22" -> "interactionsE/1252"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1256" [label=1256]
+	"sequencesE/PPT_22" -> "interactionsE/1256"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1258" [label=1258]
+	"sequencesE/PPT_22" -> "interactionsE/1258"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1259" [label=1259]
+	"sequencesE/PPT_22" -> "interactionsE/1259"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1259" [label=1259]
+	"sequencesE/PPT_22" -> "interactionsE/1259"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1260" [label=1260]
+	"sequencesE/PPT_22" -> "interactionsE/1260"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1260" [label=1260]
+	"sequencesE/PPT_22" -> "interactionsE/1260"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1261" [label=1261]
+	"sequencesE/PPT_22" -> "interactionsE/1261"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1261" [label=1261]
+	"sequencesE/PPT_22" -> "interactionsE/1261"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1262" [label=1262]
+	"sequencesE/PPT_22" -> "interactionsE/1262"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1262" [label=1262]
+	"sequencesE/PPT_22" -> "interactionsE/1262"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1263" [label=1263]
+	"sequencesE/PPT_22" -> "interactionsE/1263"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1263" [label=1263]
+	"sequencesE/PPT_22" -> "interactionsE/1263"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1264" [label=1264]
+	"sequencesE/PPT_22" -> "interactionsE/1264"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1264" [label=1264]
+	"sequencesE/PPT_22" -> "interactionsE/1264"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1265" [label=1265]
+	"sequencesE/PPT_22" -> "interactionsE/1265"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1265" [label=1265]
+	"sequencesE/PPT_22" -> "interactionsE/1265"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1266" [label=1266]
+	"sequencesE/PPT_22" -> "interactionsE/1266"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1266" [label=1266]
+	"sequencesE/PPT_22" -> "interactionsE/1266"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1267" [label=1267]
+	"sequencesE/PPT_22" -> "interactionsE/1267"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1267" [label=1267]
+	"sequencesE/PPT_22" -> "interactionsE/1267"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1268" [label=1268]
+	"sequencesE/PPT_22" -> "interactionsE/1268"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1268" [label=1268]
+	"sequencesE/PPT_22" -> "interactionsE/1268"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1269" [label=1269]
+	"sequencesE/PPT_22" -> "interactionsE/1269"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1269" [label=1269]
+	"sequencesE/PPT_22" -> "interactionsE/1269"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1270" [label=1270]
+	"sequencesE/PPT_22" -> "interactionsE/1270"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1270" [label=1270]
+	"sequencesE/PPT_22" -> "interactionsE/1270"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1271" [label=1271]
+	"sequencesE/PPT_22" -> "interactionsE/1271"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1271" [label=1271]
+	"sequencesE/PPT_22" -> "interactionsE/1271"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1272" [label=1272]
+	"sequencesE/PPT_22" -> "interactionsE/1272"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1272" [label=1272]
+	"sequencesE/PPT_22" -> "interactionsE/1272"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1273" [label=1273]
+	"sequencesE/PPT_22" -> "interactionsE/1273"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1273" [label=1273]
+	"sequencesE/PPT_22" -> "interactionsE/1273"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1274" [label=1274]
+	"sequencesE/PPT_22" -> "interactionsE/1274"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1274" [label=1274]
+	"sequencesE/PPT_22" -> "interactionsE/1274"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1275" [label=1275]
+	"sequencesE/PPT_22" -> "interactionsE/1275"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1275" [label=1275]
+	"sequencesE/PPT_22" -> "interactionsE/1275"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1276" [label=1276]
+	"sequencesE/PPT_22" -> "interactionsE/1276"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1276" [label=1276]
+	"sequencesE/PPT_22" -> "interactionsE/1276"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1277" [label=1277]
+	"sequencesE/PPT_22" -> "interactionsE/1277"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1277" [label=1277]
+	"sequencesE/PPT_22" -> "interactionsE/1277"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1278" [label=1278]
+	"sequencesE/PPT_22" -> "interactionsE/1278"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1278" [label=1278]
+	"sequencesE/PPT_22" -> "interactionsE/1278"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1279" [label=1279]
+	"sequencesE/PPT_22" -> "interactionsE/1279"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1279" [label=1279]
+	"sequencesE/PPT_22" -> "interactionsE/1279"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1280" [label=1280]
+	"sequencesE/PPT_22" -> "interactionsE/1280"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"interactionsE/1280" [label=1280]
+	"sequencesE/PPT_22" -> "interactionsE/1280"
+	"interactionsE/1252" [label=1252]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/1252" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/1252" [label=1252]
+	"question3/No_information" [label=No_information]
+	"interactionsE/1252" -> "question3/No_information"
+	"interactionsE/1256" [label=1256]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/1256" -> "question1/Faster_aggregation"
+	"interactionsE/1256" [label=1256]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/1256" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/1256" [label=1256]
+	"question3/No_information" [label=No_information]
+	"interactionsE/1256" -> "question3/No_information"
+	"interactionsE/1258" [label=1258]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/1258" -> "question1/Faster_aggregation"
+	"interactionsE/1258" [label=1258]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/1258" -> "question1/Faster_aggregation"
+	"interactionsE/1258" [label=1258]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/1258" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/1258" [label=1258]
+	"question3/No_information" [label=No_information]
+	"interactionsE/1258" -> "question3/No_information"
+	"interactionsE/1252" [label=1252]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/1252" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/1252" [label=1252]
+	"question3/No_information" [label=No_information]
+	"interactionsE/1252" -> "question3/No_information"
+	"interactionsE/1256" [label=1256]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/1256" -> "question1/Faster_aggregation"
+	"interactionsE/1256" [label=1256]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/1256" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/1256" [label=1256]
+	"question3/No_information" [label=No_information]
+	"interactionsE/1256" -> "question3/No_information"
+	"interactionsE/1258" [label=1258]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/1258" -> "question1/Faster_aggregation"
+	"interactionsE/1258" [label=1258]
+	"question1/Faster_aggregation" [label=Faster_aggregation]
+	"interactionsE/1258" -> "question1/Faster_aggregation"
+	"interactionsE/1258" [label=1258]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/1258" -> "question2/Yes_implied_by_kinetics"
+	"interactionsE/1258" [label=1258]
+	"question3/No_information" [label=No_information]
+	"interactionsE/1258" -> "question3/No_information"
+	"amyloidsE/nowy" [label=nowy]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"amyloidsE/nowy" [label=nowy]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"amyloidsE/nowy" [label=nowy]
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" -> "amyloidsE/nowy"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"phsE/neutrophilic" [label=neutrophilic]
+	"phsE/neutrophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"phsE/neutrophilic" [label=neutrophilic]
+	"phsE/neutrophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"phsE/neutrophilic" [label=neutrophilic]
+	"phsE/neutrophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"phsE/neutrophilic" [label=neutrophilic]
+	"phsE/neutrophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"temperaturesE/mesophilic" [label=mesophilic]
+	"temperaturesE/mesophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"temperaturesE/mesophilic" [label=mesophilic]
+	"temperaturesE/mesophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"temperaturesE/mesophilic" [label=mesophilic]
+	"temperaturesE/mesophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"temperaturesE/mesophilic" [label=mesophilic]
+	"temperaturesE/mesophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"interactionsE/1236" [label=1236]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1236"
+	"interactionsE/1236" [label=1236]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1236"
+	"interactionsE/1236" [label=1236]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1236"
+	"interactionsE/1236" [label=1236]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1236"
+	"interactionsE/1237" [label=1237]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1237"
+	"interactionsE/1237" [label=1237]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1237"
+	"interactionsE/1237" [label=1237]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1237"
+	"interactionsE/1237" [label=1237]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1237"
+	"interactionsE/1238" [label=1238]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1238"
+	"interactionsE/1238" [label=1238]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1238"
+	"interactionsE/1238" [label=1238]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1238"
+	"interactionsE/1238" [label=1238]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1238"
+	"interactionsE/1239" [label=1239]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1239"
+	"interactionsE/1239" [label=1239]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1239"
+	"interactionsE/1239" [label=1239]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1239"
+	"interactionsE/1239" [label=1239]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1239"
+	"interactionsE/1240" [label=1240]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1240"
+	"interactionsE/1240" [label=1240]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1240"
+	"interactionsE/1240" [label=1240]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1240"
+	"interactionsE/1240" [label=1240]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1240"
+	"interactionsE/1241" [label=1241]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1241"
+	"interactionsE/1241" [label=1241]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1241"
+	"interactionsE/1241" [label=1241]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1241"
+	"interactionsE/1241" [label=1241]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1241"
+	"interactionsE/1242" [label=1242]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1242"
+	"interactionsE/1242" [label=1242]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1242"
+	"interactionsE/1242" [label=1242]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1242"
+	"interactionsE/1242" [label=1242]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1242"
+	"interactionsE/1243" [label=1243]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1243"
+	"interactionsE/1243" [label=1243]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1243"
+	"interactionsE/1243" [label=1243]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1243"
+	"interactionsE/1243" [label=1243]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1243"
+	"interactionsE/1244" [label=1244]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1244"
+	"interactionsE/1244" [label=1244]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1244"
+	"interactionsE/1244" [label=1244]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1244"
+	"interactionsE/1244" [label=1244]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1244"
+	"interactionsE/1245" [label=1245]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1245"
+	"interactionsE/1245" [label=1245]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1245"
+	"interactionsE/1245" [label=1245]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1245"
+	"interactionsE/1245" [label=1245]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1245"
+	"interactionsE/1246" [label=1246]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1246"
+	"interactionsE/1246" [label=1246]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1246"
+	"interactionsE/1246" [label=1246]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1246"
+	"interactionsE/1246" [label=1246]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1246"
+	"interactionsE/1247" [label=1247]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1247"
+	"interactionsE/1247" [label=1247]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1247"
+	"interactionsE/1247" [label=1247]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1247"
+	"interactionsE/1247" [label=1247]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1247"
+	"interactionsE/1248" [label=1248]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1248"
+	"interactionsE/1248" [label=1248]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1248"
+	"interactionsE/1248" [label=1248]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1248"
+	"interactionsE/1248" [label=1248]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1248"
+	"interactionsE/1249" [label=1249]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1249"
+	"interactionsE/1249" [label=1249]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1249"
+	"interactionsE/1249" [label=1249]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1249"
+	"interactionsE/1249" [label=1249]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1249"
+	"interactionsE/1250" [label=1250]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1250"
+	"interactionsE/1250" [label=1250]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1250"
+	"interactionsE/1250" [label=1250]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1250"
+	"interactionsE/1250" [label=1250]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1250"
+	"interactionsE/1251" [label=1251]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1251"
+	"interactionsE/1251" [label=1251]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1251"
+	"interactionsE/1251" [label=1251]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1251"
+	"interactionsE/1251" [label=1251]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1251"
+	"interactionsE/1252" [label=1252]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1252"
+	"interactionsE/1252" [label=1252]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1252"
+	"interactionsE/1253" [label=1253]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1253"
+	"interactionsE/1253" [label=1253]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1253"
+	"interactionsE/1253" [label=1253]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1253"
+	"interactionsE/1253" [label=1253]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1253"
+	"interactionsE/1254" [label=1254]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1254"
+	"interactionsE/1254" [label=1254]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1254"
+	"interactionsE/1254" [label=1254]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1254"
+	"interactionsE/1254" [label=1254]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1254"
+	"interactionsE/1255" [label=1255]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1255"
+	"interactionsE/1255" [label=1255]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1255"
+	"interactionsE/1255" [label=1255]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1255"
+	"interactionsE/1255" [label=1255]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1255"
+	"interactionsE/1256" [label=1256]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1256"
+	"interactionsE/1256" [label=1256]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1256"
+	"interactionsE/1257" [label=1257]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1257"
+	"interactionsE/1257" [label=1257]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1257"
+	"interactionsE/1257" [label=1257]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1257"
+	"interactionsE/1257" [label=1257]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1257"
+	"interactionsE/1258" [label=1258]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1258"
+	"interactionsE/1258" [label=1258]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1258"
+	"interactionsE/1252" [label=1252]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1252"
+	"interactionsE/1252" [label=1252]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1252"
+	"interactionsE/1256" [label=1256]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1256"
+	"interactionsE/1256" [label=1256]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1256"
+	"interactionsE/1258" [label=1258]
+	"sequencesE/PPT_21" [label=PPT_21]
+	"sequencesE/PPT_21" -> "interactionsE/1258"
+	"interactionsE/1258" [label=1258]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1258"
+	"interactionsE/1259" [label=1259]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1259"
+	"interactionsE/1259" [label=1259]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1259"
+	"interactionsE/1259" [label=1259]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1259"
+	"interactionsE/1259" [label=1259]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1259"
+	"interactionsE/1260" [label=1260]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1260"
+	"interactionsE/1260" [label=1260]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1260"
+	"interactionsE/1260" [label=1260]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1260"
+	"interactionsE/1260" [label=1260]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1260"
+	"interactionsE/1261" [label=1261]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1261"
+	"interactionsE/1261" [label=1261]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1261"
+	"interactionsE/1261" [label=1261]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1261"
+	"interactionsE/1261" [label=1261]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1261"
+	"interactionsE/1262" [label=1262]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1262"
+	"interactionsE/1262" [label=1262]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1262"
+	"interactionsE/1262" [label=1262]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1262"
+	"interactionsE/1262" [label=1262]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1262"
+	"interactionsE/1263" [label=1263]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1263"
+	"interactionsE/1263" [label=1263]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1263"
+	"interactionsE/1263" [label=1263]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1263"
+	"interactionsE/1263" [label=1263]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1263"
+	"interactionsE/1264" [label=1264]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1264"
+	"interactionsE/1264" [label=1264]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1264"
+	"interactionsE/1264" [label=1264]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1264"
+	"interactionsE/1264" [label=1264]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1264"
+	"interactionsE/1265" [label=1265]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1265"
+	"interactionsE/1265" [label=1265]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1265"
+	"interactionsE/1265" [label=1265]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1265"
+	"interactionsE/1265" [label=1265]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1265"
+	"interactionsE/1266" [label=1266]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1266"
+	"interactionsE/1266" [label=1266]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1266"
+	"interactionsE/1266" [label=1266]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1266"
+	"interactionsE/1266" [label=1266]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1266"
+	"interactionsE/1267" [label=1267]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1267"
+	"interactionsE/1267" [label=1267]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1267"
+	"interactionsE/1267" [label=1267]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1267"
+	"interactionsE/1267" [label=1267]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1267"
+	"interactionsE/1268" [label=1268]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1268"
+	"interactionsE/1268" [label=1268]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1268"
+	"interactionsE/1268" [label=1268]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1268"
+	"interactionsE/1268" [label=1268]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1268"
+	"interactionsE/1269" [label=1269]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1269"
+	"interactionsE/1269" [label=1269]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1269"
+	"interactionsE/1269" [label=1269]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1269"
+	"interactionsE/1269" [label=1269]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1269"
+	"interactionsE/1270" [label=1270]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1270"
+	"interactionsE/1270" [label=1270]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1270"
+	"interactionsE/1270" [label=1270]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1270"
+	"interactionsE/1270" [label=1270]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1270"
+	"interactionsE/1271" [label=1271]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1271"
+	"interactionsE/1271" [label=1271]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1271"
+	"interactionsE/1271" [label=1271]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1271"
+	"interactionsE/1271" [label=1271]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1271"
+	"interactionsE/1272" [label=1272]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1272"
+	"interactionsE/1272" [label=1272]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1272"
+	"interactionsE/1272" [label=1272]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1272"
+	"interactionsE/1272" [label=1272]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1272"
+	"interactionsE/1273" [label=1273]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1273"
+	"interactionsE/1273" [label=1273]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1273"
+	"interactionsE/1273" [label=1273]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1273"
+	"interactionsE/1273" [label=1273]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1273"
+	"interactionsE/1274" [label=1274]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1274"
+	"interactionsE/1274" [label=1274]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1274"
+	"interactionsE/1274" [label=1274]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1274"
+	"interactionsE/1274" [label=1274]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1274"
+	"interactionsE/1275" [label=1275]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1275"
+	"interactionsE/1275" [label=1275]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1275"
+	"interactionsE/1275" [label=1275]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1275"
+	"interactionsE/1275" [label=1275]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1275"
+	"interactionsE/1276" [label=1276]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1276"
+	"interactionsE/1276" [label=1276]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1276"
+	"interactionsE/1276" [label=1276]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1276"
+	"interactionsE/1276" [label=1276]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1276"
+	"interactionsE/1277" [label=1277]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1277"
+	"interactionsE/1277" [label=1277]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1277"
+	"interactionsE/1277" [label=1277]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1277"
+	"interactionsE/1277" [label=1277]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1277"
+	"interactionsE/1278" [label=1278]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1278"
+	"interactionsE/1278" [label=1278]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1278"
+	"interactionsE/1278" [label=1278]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1278"
+	"interactionsE/1278" [label=1278]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1278"
+	"interactionsE/1279" [label=1279]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1279"
+	"interactionsE/1279" [label=1279]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1279"
+	"interactionsE/1279" [label=1279]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1279"
+	"interactionsE/1279" [label=1279]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1279"
+	"interactionsE/1280" [label=1280]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1280"
+	"interactionsE/1280" [label=1280]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1280"
+	"interactionsE/1280" [label=1280]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1280"
+	"interactionsE/1280" [label=1280]
+	"sequencesE/PPT_22" [label=PPT_22]
+	"sequencesE/PPT_22" -> "interactionsE/1280"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_21" [label=PPT_21]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_21"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"sequencesE/PPT_22" [label=PPT_22]
+	"amyloidsE/nowy" [label=nowy]
+	"amyloidsE/nowy" -> "sequencesE/PPT_22"
+	"amyloidsE/nowy" [label=nowy]
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" -> "amyloidsE/nowy"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"phsE/neutrophilic" [label=neutrophilic]
+	"phsE/neutrophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"phsE/neutrophilic" [label=neutrophilic]
+	"phsE/neutrophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"phsE/neutrophilic" [label=neutrophilic]
+	"phsE/neutrophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"phsE/neutrophilic" [label=neutrophilic]
+	"phsE/neutrophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"temperaturesE/mesophilic" [label=mesophilic]
+	"temperaturesE/mesophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"temperaturesE/mesophilic" [label=mesophilic]
+	"temperaturesE/mesophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"temperaturesE/mesophilic" [label=mesophilic]
+	"temperaturesE/mesophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+	"organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata" [label="Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"]
+	"temperaturesE/mesophilic" [label=mesophilic]
+	"temperaturesE/mesophilic" -> "organismsE/Colletotrichum_gloeosporioides_Cg-14_Glomerella_cingulata"
+}
