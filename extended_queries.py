@@ -16,8 +16,8 @@ def filter_extended(database, q1, q2, q3, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    for x in inter:
-        print(x)
+    # for x in inter:
+    #     print(x)
 
-    # with open(f"./json_data/{filename}.json", "w") as outfile:
-    #     json.dump(inter, outfile)
+    with open(f"./json_data/{filename}.json", "w") as outfile:
+        json.dump(inter, outfile)

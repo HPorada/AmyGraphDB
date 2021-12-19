@@ -3,6 +3,8 @@ import socket
 
 import simple_queries as sim
 import extended_queries as ext
+import extended_v2_queries as ext2
+
 import subgraph_queries as sq
 import visualisation_functions as vf
 from arango import ArangoClient
@@ -22,7 +24,7 @@ db_Nov = client.db('AmyloidsNov', username='root', password='Amyloids')
 s = socket.socket()
 s.settimeout(100)
 
-ext.filter_extended(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+ext2.filter_extended_v2(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
 
 
 def check_questions_simple(database, q1, q2, q3):
