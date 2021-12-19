@@ -24,8 +24,8 @@ db_Nov = client.db('AmyloidsNov', username='root', password='Amyloids')
 s = socket.socket()
 s.settimeout(100)
 
-ext2.filter_extended_v2(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
-
+#ext2.filter_extended_v2(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+sim.contains_simple(db_Sep, 'DAEFRHDSGY', "result")
 
 def check_questions_simple(database, q1, q2, q3):
     aql = database.aql
@@ -149,9 +149,6 @@ def search_by_questions(database):
 
 # vf.graphviz_graph('sequence2.json')
 # vf.networkx_graph('organism.json')
-
-
-
 
 
 
