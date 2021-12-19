@@ -38,6 +38,6 @@ def contains_simple(database, fragment, filename="result"):
 
     # for x in inter:
     #     print(x)
-contains_simple
+
     with open(f"./json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
