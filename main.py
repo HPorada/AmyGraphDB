@@ -26,7 +26,8 @@ s.settimeout(100)
 
 #ext2.filter_extended_v2(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
 #sim.contains_simple(db_Sep, 'DAEFRHDSGY', "result")
-ext.contains_extended(db_Sep, 'DAEFRHDSGY', "result")
+#ext.contains_extended(db_Sep, 'DAEFRHDSGY', "result")
+ext2.contains_extended_v2(db_Nov, 'DAEFRHDSGY', "result")
 
 def check_questions_simple(database, q1, q2, q3):
     aql = database.aql
