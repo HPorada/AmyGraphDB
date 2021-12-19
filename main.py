@@ -21,6 +21,8 @@ db_Nov = client.db('AmyloidsNov', username='root', password='Amyloids')
 s = socket.socket()
 s.settimeout(100)
 
+simple.filter_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+
 
 def check_questions_simple(database, q1, q2, q3):
     aql = database.aql
