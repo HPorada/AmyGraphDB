@@ -51,3 +51,23 @@ def filter_extended_v2(database, q1, q2, q3, filename="result"):
 
     with open(f"./json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
+
+
+def contains_extended_v2(database, fragment, filename="result"):
+    aql = database.aql
+
+    cursor = database.aql.execute(
+        """for item in sequencesE
+            for v, e, p in 1..1 any item._id graph "ExtendedAndEdges"
+                filter contains(item.sequence, @fragment)
+                return p""",
+        bind_vars={'fragment': fragment}
+    )
+
+    inter = [doc for doc in cursor]
+
+    # for x in inter:
+    #     print(x)
+
+    with open(f"./json_data/{filename}.json", "w") as outfile:
+        json.dump(inter, outfile)
