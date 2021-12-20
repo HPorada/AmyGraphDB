@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2021-12-20">
+    <creator>NetworkX 2.6.3</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <nodes>
+      <node id="interactionsE/366" label="interactionsE/366" />
+      <node id="question1/Faster_aggregation" label="question1/Faster_aggregation" />
+      <node id="question2/No_information" label="question2/No_information" />
+      <node id="question3/No_information" label="question3/No_information" />
+      <node id="interactionsE/399" label="interactionsE/399" />
+      <node id="interactionsE/622" label="interactionsE/622" />
+      <node id="interactionsE/623" label="interactionsE/623" />
+      <node id="interactionsE/624" label="interactionsE/624" />
+      <node id="interactionsE/625" label="interactionsE/625" />
+      <node id="sequencesE/138" label="sequencesE/138" />
+      <node id="sequencesE/154" label="sequencesE/154" />
+      <node id="sequencesE/151" label="sequencesE/151" />
+      <node id="sequencesE/2" label="sequencesE/2" />
+      <node id="sequencesE/3" label="sequencesE/3" />
+      <node id="amyloidsE/Medin" label="amyloidsE/Medin" />
+      <node id="amyloidsE/beta2-microglobulin" label="amyloidsE/beta2-microglobulin" />
+      <node id="amyloidsE/Amyloid_beta" label="amyloidsE/Amyloid_beta" />
+    </nodes>
+    <edges>
+      <edge source="interactionsE/366" target="question1/Faster_aggregation" id="0" />
+      <edge source="interactionsE/366" target="question2/No_information" id="1" />
+      <edge source="interactionsE/366" target="question3/No_information" id="2" />
+      <edge source="interactionsE/399" target="question1/Faster_aggregation" id="3" />
+      <edge source="interactionsE/399" target="question2/No_information" id="4" />
+      <edge source="interactionsE/399" target="question3/No_information" id="5" />
+      <edge source="interactionsE/622" target="question1/Faster_aggregation" id="6" />
+      <edge source="interactionsE/622" target="question2/No_information" id="7" />
+      <edge source="interactionsE/622" target="question3/No_information" id="8" />
+      <edge source="interactionsE/623" target="question1/Faster_aggregation" id="9" />
+      <edge source="interactionsE/623" target="question2/No_information" id="10" />
+      <edge source="interactionsE/623" target="question3/No_information" id="11" />
+      <edge source="interactionsE/624" target="question1/Faster_aggregation" id="12" />
+      <edge source="interactionsE/624" target="question2/No_information" id="13" />
+      <edge source="interactionsE/624" target="question3/No_information" id="14" />
+      <edge source="interactionsE/625" target="question1/Faster_aggregation" id="15" />
+      <edge source="interactionsE/625" target="question2/No_information" id="16" />
+      <edge source="interactionsE/625" target="question3/No_information" id="17" />
+      <edge source="sequencesE/138" target="interactionsE/366" id="18" />
+      <edge source="sequencesE/154" target="interactionsE/399" id="19" />
+      <edge source="sequencesE/151" target="interactionsE/399" id="20" />
+      <edge source="sequencesE/2" target="interactionsE/622" id="21" />
+      <edge source="sequencesE/2" target="interactionsE/624" id="22" />
+      <edge source="sequencesE/2" target="interactionsE/625" id="23" />
+      <edge source="sequencesE/3" target="interactionsE/623" id="24" />
+      <edge source="sequencesE/3" target="interactionsE/624" id="25" />
+      <edge source="sequencesE/3" target="interactionsE/625" id="26" />
+      <edge source="amyloidsE/Medin" target="sequencesE/138" id="27" />
+      <edge source="amyloidsE/beta2-microglobulin" target="sequencesE/154" id="28" />
+      <edge source="amyloidsE/beta2-microglobulin" target="sequencesE/151" id="29" />
+      <edge source="amyloidsE/Amyloid_beta" target="sequencesE/2" id="30" />
+      <edge source="amyloidsE/Amyloid_beta" target="sequencesE/3" id="31" />
+    </edges>
+  </graph>
+</gexf>

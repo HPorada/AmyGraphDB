@@ -49,6 +49,7 @@ def networkx_graph(filename):
         with_labels=True
     )
 
-    nx.write_graphml_lxml(G, f"{filename}.gml")
+    #nx.write_graphml_lxml(G, f"{filename}.gml")
+    nx.write_gexf(G, f"{filename}.gexf")
 
     plt.show()
