@@ -8,12 +8,12 @@ import plotly.graph_objects as go
 
 
 def graphviz_graph(filename):
-    with open(f".\json_data\{filename}", "r") as file:
+    with open(f".\json_data\{filename}.json", "r") as file:
         arango_graph = json.load(file)
 
     graph_name = filename
 
-    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine='dot')
+    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine='neato')
     g.attr(scale='2', label='Searching with starting node', fontsize='18')
     g.attr('node', shape='rectangle', style='filled', fillcolor='', fixedsize='false', width='0.5')
 
@@ -26,15 +26,22 @@ def graphviz_graph(filename):
 
             elif re.search("^interactionsE", vertex['_id']) is not None:
 
-                shape = question1_shape_graphviz(vertex['question_1'])
-                color = question2_color_graphviz(vertex['question_2'])
+                if 'question_1' in vertex:
+                    shape = question1_shape_graphviz(vertex['question_1'])
+                else:
+                    shape = 'box'
+
+                if 'question_2' in vertex:
+                    color = question2_color_graphviz(vertex['question_2'])
+                else:
+                    color = ''
 
                 g.attr('node', shape=shape, style='filled', fillcolor=color)
                 g.node(vertex['_id'], label="int:" + vertex['_key'])
                 g.attr('node', shape='rectangle', fillcolor='', fixedsize='false', width='0.5')
 
             elif re.search("^amyloidsE", vertex['_id']) is not None:
-                g.attr('node', shape='ellipse')
+                g.attr('node', shape='ellipse', fillcolor='aqua')
                 g.node(vertex['_id'], label=vertex['name'])
                 g.attr('node', shape='rectangle', fillcolor='', fixedsize='false', width='0.5')
 
@@ -73,7 +80,7 @@ def question2_color_graphviz(answer):
 
 
 def networkx_graph(filename):
-    with open(f'.\json_data\{filename}') as file:
+    with open(f'.\json_data\{filename}.json') as file:
         json_data = json.loads(file.read())
 
     G = nx.DiGraph()
@@ -122,14 +129,13 @@ def networkx_graph(filename):
     # nt.enable_physics(True)
     nt.show_buttons(filter_=['physics'])
     nt.from_nx(G)
-    #nt.show('nx.html')
+    # nt.show('nx.html')
 
     nx.write_graphml_lxml(G, f"{filename}.gml")
     # nx.write_gml(G, f"{filename}.graphml")
     # nx.write_gexf(G, f"{filename}.gexf")
 
     plt.show()
-
 
 # def question1_shape_networkx(answer):
 #     switch = {
