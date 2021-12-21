@@ -24,6 +24,7 @@ db_Nov = client.db('AmyloidsNov', username='root', password='Amyloids')
 s = socket.socket()
 s.settimeout(100)
 
+#sim.filter_simple(db_Sep, "Faster aggregation4", "Yes; implied by kinetics.", "No information", "result")
 #ext2.filter_extended_v2(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
 #sim.contains_simple(db_Sep, 'DAEFRHDSGY', "result")
 #ext.contains_extended(db_Sep, 'DAEFRHDSGY', "result")
@@ -108,23 +109,6 @@ def search_for_most_common(database, limit, type):  # type interactor lub intera
         print(x)
 
 
-def search_by_questions(database):
-    aql = database.aql
-
-    cursor = database.aql.execute(
-        "for vertex in union("
-        "(for v in interactionsE return v._id),"
-        "(for v in sequencesE return v._id),"
-        "(for v in intseqE return v._id),"
-        "(for v in amyloids return v._id),"
-        "(for v in amyseqE return v._id),"
-        "(for v in organismsE return v._id),"
-        "(for v in orgamyE return v._id))"
-        "for v, e, p in 1..2 any vertex graph 'Extended'"
-        "filter v.question_3 == 'No information'"
-        "filter v.question_2 == 'Yes; implied by kinetics.'return p"
-    )
-
     inter = [i for i in cursor]
 
     for x in inter:
@@ -134,39 +118,13 @@ def search_by_questions(database):
         json.dump(inter, outfile)
 
 
-# f.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information")
-
-# search_for_fragment(db_Sep, 'DAEFRHDSGY')
-# search_for_key_word(db_Sep, 'pH')
-# search_for_all_connected(db_Sep, 'amyloids/IAPP')
-# search_for_most_common(db_Sep, 10, 'interactor')
-
-# search_by_questions(db_Sep)
-
-#sq.subgraph_from_interactions(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", "interactions4")
+sq.subgraph_from_interactions(db_Nov, "Slower aggregation3", "Yes; implied by kinetics.", "No information", filename="result")
 # simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
 # sq.subgraph_from_sequence(db_Nov, "MGIIAGIIKVIKSLIEQFTGK", "test")
 # sq.subgraph_from_amyloid(db_Nov, "δ-toxin", "test")
 # sq.subgraph_from_organism(db_Nov, "Frankia_sp._KB5", "organism")
 
-vf.graphviz_graph('interactions4')
-vf.networkx_graph('interactions4')
+vf.graphviz_graph('result')
+vf.networkx_graph('result')
 
 
-
-# with open("./json_data/test.json") as file:
-#     json_data = json.loads(file.read())
-#
-# for i in json_data:
-#
-# G = nx.Graph(json_data)
-#
-# nx.draw(
-#     G,
-#     with_labels=True
-# )
-#
-# plt.show()
-# nx.write_gml(G, "from_dict.gml")
-#
-# #print(item)
