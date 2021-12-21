@@ -26,8 +26,8 @@ def graphviz_graph(filename):
 
             elif re.search("^interactionsE", vertex['_id']) is not None:
 
-                shape = question1_shape(vertex['question_1'])
-                color = question2_color(vertex['question_2'])
+                shape = question1_shape_graphviz(vertex['question_1'])
+                color = question2_color_graphviz(vertex['question_2'])
 
                 g.attr('node', shape=shape, style='filled', fillcolor=color)
                 g.node(vertex['_id'], label="int:" + vertex['_key'])
@@ -50,7 +50,7 @@ def graphviz_graph(filename):
     g.view()
 
 
-def question1_shape(answer):
+def question1_shape_graphviz(answer):
     switch = {
         "Faster aggregation": "triangle",
         "Slower aggregation": "invtriangle",
@@ -61,7 +61,7 @@ def question1_shape(answer):
     return switch.get(answer, "box")
 
 
-def question2_color(answer):
+def question2_color_graphviz(answer):
     switch = {
         "Yes, direct evidence.": "darkgreen",
         "Yes; implied by kinetics.": "forestgreen",
@@ -92,7 +92,7 @@ def networkx_graph(filename):
     for i in range(len(json_data)):
         for j in json_data[i]['vertices']:
             if re.search("^questions", j['_id']) is not None:
-                G.add_node(j['_id'], label=j['_key'], group=1)
+                G.add_node(j['_id'], label=j['_key'], group=1, node_shape="d")
             elif re.search("^interactions", j['_id']) is not None:
                 G.add_node(j['_id'], label='int' + j['_key'], group=2)
             elif re.search("^sequences", j['_id']) is not None:
@@ -112,20 +112,31 @@ def networkx_graph(filename):
         for k in json_data[i]['edges']:
             G.add_edge(k['_from'], k['_to'])
 
-    # nx.draw(
-    #     G,
-    #     with_labels=True
-    # )
+    nx.draw(
+        G,
+        with_labels=True
+    )
 
     # Pyvis
     nt = Network('1000px', '1000px')
     # nt.enable_physics(True)
     nt.show_buttons(filter_=['physics'])
     nt.from_nx(G)
-    nt.show('nx.html')
+    #nt.show('nx.html')
 
     nx.write_graphml_lxml(G, f"{filename}.gml")
     # nx.write_gml(G, f"{filename}.graphml")
     # nx.write_gexf(G, f"{filename}.gexf")
 
     plt.show()
+
+
+# def question1_shape_networkx(answer):
+#     switch = {
+#         "Faster aggregation": "^",
+#         "Slower aggregation": "v",
+#         "No aggregation": "octagon",
+#         "No effect": "diamond",
+#         "No information": "box"
+#     }
+#     return switch.get(answer, "box")
