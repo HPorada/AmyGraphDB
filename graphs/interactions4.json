@@ -1,109 +1,206 @@
 digraph "interactions4.json" {
 	fontsize=18 label="Searching with starting node" scale=2
-	node [fixedsize=false shape=circle width=0.5]
-	"interactionsE/366" [label=366]
-	"question1/Faster_aggregation" [label=Faster_aggregation]
-	"interactionsE/366" -> "question1/Faster_aggregation"
-	"interactionsE/366" [label=366]
-	"question2/No_information" [label=No_information]
-	"interactionsE/366" -> "question2/No_information"
-	"interactionsE/366" [label=366]
+	node [fixedsize=false shape=rectangle width=0.5]
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/341" [label="int:341"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/341" -> "question1/Slower_aggregation"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/341" [label="int:341"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/341" -> "question2/Yes_implied_by_kinetics"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/341" [label="int:341"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
 	"question3/No_information" [label=No_information]
-	"interactionsE/366" -> "question3/No_information"
-	"interactionsE/399" [label=399]
-	"question1/Faster_aggregation" [label=Faster_aggregation]
-	"interactionsE/399" -> "question1/Faster_aggregation"
-	"interactionsE/399" [label=399]
-	"question2/No_information" [label=No_information]
-	"interactionsE/399" -> "question2/No_information"
-	"interactionsE/399" [label=399]
+	"interactionsE/341" -> "question3/No_information"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/356" [label="int:356"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/356" -> "question1/Slower_aggregation"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/356" [label="int:356"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/356" -> "question2/Yes_implied_by_kinetics"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/356" [label="int:356"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
 	"question3/No_information" [label=No_information]
-	"interactionsE/399" -> "question3/No_information"
-	"interactionsE/622" [label=622]
-	"question1/Faster_aggregation" [label=Faster_aggregation]
-	"interactionsE/622" -> "question1/Faster_aggregation"
-	"interactionsE/622" [label=622]
-	"question2/No_information" [label=No_information]
-	"interactionsE/622" -> "question2/No_information"
-	"interactionsE/622" [label=622]
+	"interactionsE/356" -> "question3/No_information"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/388" [label="int:388"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/388" -> "question1/Slower_aggregation"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/388" [label="int:388"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/388" -> "question2/Yes_implied_by_kinetics"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/388" [label="int:388"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
 	"question3/No_information" [label=No_information]
-	"interactionsE/622" -> "question3/No_information"
-	"interactionsE/623" [label=623]
-	"question1/Faster_aggregation" [label=Faster_aggregation]
-	"interactionsE/623" -> "question1/Faster_aggregation"
-	"interactionsE/623" [label=623]
-	"question2/No_information" [label=No_information]
-	"interactionsE/623" -> "question2/No_information"
-	"interactionsE/623" [label=623]
+	"interactionsE/388" -> "question3/No_information"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/524" [label="int:524"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/524" -> "question1/Slower_aggregation"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/524" [label="int:524"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/524" -> "question2/Yes_implied_by_kinetics"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/524" [label="int:524"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
 	"question3/No_information" [label=No_information]
-	"interactionsE/623" -> "question3/No_information"
-	"interactionsE/624" [label=624]
-	"question1/Faster_aggregation" [label=Faster_aggregation]
-	"interactionsE/624" -> "question1/Faster_aggregation"
-	"interactionsE/624" [label=624]
-	"question2/No_information" [label=No_information]
-	"interactionsE/624" -> "question2/No_information"
-	"interactionsE/624" [label=624]
+	"interactionsE/524" -> "question3/No_information"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/732" [label="int:732"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/732" -> "question1/Slower_aggregation"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/732" [label="int:732"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/732" -> "question2/Yes_implied_by_kinetics"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/732" [label="int:732"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
 	"question3/No_information" [label=No_information]
-	"interactionsE/624" -> "question3/No_information"
-	"interactionsE/625" [label=625]
-	"question1/Faster_aggregation" [label=Faster_aggregation]
-	"interactionsE/625" -> "question1/Faster_aggregation"
-	"interactionsE/625" [label=625]
-	"question2/No_information" [label=No_information]
-	"interactionsE/625" -> "question2/No_information"
-	"interactionsE/625" [label=625]
+	"interactionsE/732" -> "question3/No_information"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/840" [label="int:840"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/840" -> "question1/Slower_aggregation"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/840" [label="int:840"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/840" -> "question2/Yes_implied_by_kinetics"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/840" [label="int:840"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
 	"question3/No_information" [label=No_information]
-	"interactionsE/625" -> "question3/No_information"
-	"interactionsE/366" [label=366]
-	"sequencesE/138" [label=138]
-	"sequencesE/138" -> "interactionsE/366"
-	"interactionsE/366" [label=366]
-	"sequencesE/138" [label=138]
-	"sequencesE/138" -> "interactionsE/366"
-	"interactionsE/399" [label=399]
-	"sequencesE/154" [label=154]
-	"sequencesE/154" -> "interactionsE/399"
-	"interactionsE/399" [label=399]
-	"sequencesE/151" [label=151]
-	"sequencesE/151" -> "interactionsE/399"
-	"interactionsE/622" [label=622]
-	"sequencesE/2" [label=2]
-	"sequencesE/2" -> "interactionsE/622"
-	"interactionsE/622" [label=622]
-	"sequencesE/2" [label=2]
-	"sequencesE/2" -> "interactionsE/622"
-	"interactionsE/623" [label=623]
-	"sequencesE/3" [label=3]
-	"sequencesE/3" -> "interactionsE/623"
-	"interactionsE/623" [label=623]
-	"sequencesE/3" [label=3]
-	"sequencesE/3" -> "interactionsE/623"
-	"interactionsE/624" [label=624]
-	"sequencesE/2" [label=2]
-	"sequencesE/2" -> "interactionsE/624"
-	"interactionsE/624" [label=624]
-	"sequencesE/3" [label=3]
-	"sequencesE/3" -> "interactionsE/624"
-	"interactionsE/625" [label=625]
-	"sequencesE/2" [label=2]
-	"sequencesE/2" -> "interactionsE/625"
-	"interactionsE/625" [label=625]
-	"sequencesE/3" [label=3]
-	"sequencesE/3" -> "interactionsE/625"
-	"sequencesE/138" [label=138]
-	"amyloidsE/Medin" [label=Medin]
-	"amyloidsE/Medin" -> "sequencesE/138"
-	"sequencesE/154" [label=154]
-	"amyloidsE/beta2-microglobulin" [label="beta2-microglobulin"]
-	"amyloidsE/beta2-microglobulin" -> "sequencesE/154"
-	"sequencesE/151" [label=151]
-	"amyloidsE/beta2-microglobulin" [label="beta2-microglobulin"]
-	"amyloidsE/beta2-microglobulin" -> "sequencesE/151"
-	"sequencesE/2" [label=2]
-	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
-	"amyloidsE/Amyloid_beta" -> "sequencesE/2"
-	"sequencesE/3" [label=3]
-	"amyloidsE/Amyloid_beta" [label=Amyloid_beta]
+	"interactionsE/840" -> "question3/No_information"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/842" [label="int:842"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question1/Slower_aggregation" [label=Slower_aggregation]
+	"interactionsE/842" -> "question1/Slower_aggregation"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/842" [label="int:842"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question2/Yes_implied_by_kinetics" [label=Yes_implied_by_kinetics]
+	"interactionsE/842" -> "question2/Yes_implied_by_kinetics"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/842" [label="int:842"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"question3/No_information" [label=No_information]
+	"interactionsE/842" -> "question3/No_information"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/341" [label="int:341"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/98" [label="seq:98"]
+	"sequencesE/98" -> "interactionsE/341"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/341" [label="int:341"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/101" [label="seq:101"]
+	"sequencesE/101" -> "interactionsE/341"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/356" [label="int:356"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/133" [label="seq:133"]
+	"sequencesE/133" -> "interactionsE/356"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/356" [label="int:356"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/98" [label="seq:98"]
+	"sequencesE/98" -> "interactionsE/356"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/388" [label="int:388"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/37" [label="seq:37"]
+	"sequencesE/37" -> "interactionsE/388"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/388" [label="int:388"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/98" [label="seq:98"]
+	"sequencesE/98" -> "interactionsE/388"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/524" [label="int:524"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/124" [label="seq:124"]
+	"sequencesE/124" -> "interactionsE/524"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/524" [label="int:524"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/3" [label="seq:3"]
+	"sequencesE/3" -> "interactionsE/524"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/732" [label="int:732"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/291" [label="seq:291"]
+	"sequencesE/291" -> "interactionsE/732"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/732" [label="int:732"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/10" [label="seq:10"]
+	"sequencesE/10" -> "interactionsE/732"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/840" [label="int:840"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/3" [label="seq:3"]
+	"sequencesE/3" -> "interactionsE/840"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/840" [label="int:840"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/2" [label="seq:2"]
+	"sequencesE/2" -> "interactionsE/840"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/842" [label="int:842"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/2" [label="seq:2"]
+	"sequencesE/2" -> "interactionsE/842"
+	node [fillcolor=forestgreen shape=invtriangle style=filled]
+	"interactionsE/842" [label="int:842"]
+	node [fillcolor="" fixedsize=false shape=rectangle width=0.5]
+	"sequencesE/3" [label="seq:3"]
+	"sequencesE/3" -> "interactionsE/842"
+	"sequencesE/98" [label="seq:98"]
+	"amyloidsE/Amyloid_beta" [label="Amyloid β"]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/98"
+	"sequencesE/101" [label="seq:101"]
+	"amyloidsE/Amyloid_beta" [label="Amyloid β"]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/101"
+	"sequencesE/133" [label="seq:133"]
+	"amyloidsE/Tau" [label=Tau]
+	"amyloidsE/Tau" -> "sequencesE/133"
+	"sequencesE/37" [label="seq:37"]
+	"amyloidsE/Lysozyme" [label=Lysozyme]
+	"amyloidsE/Lysozyme" -> "sequencesE/37"
+	"sequencesE/124" [label="seq:124"]
+	"amyloidsE/Amyloid_beta" [label="Amyloid β"]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/124"
+	"sequencesE/3" [label="seq:3"]
+	"amyloidsE/Amyloid_beta" [label="Amyloid β"]
 	"amyloidsE/Amyloid_beta" -> "sequencesE/3"
+	"sequencesE/291" [label="seq:291"]
+	"amyloidsE/alpha-synuclein" [label="α-synuclein"]
+	"amyloidsE/alpha-synuclein" -> "sequencesE/291"
+	"sequencesE/10" [label="seq:10"]
+	"amyloidsE/alpha-synuclein" [label="α-synuclein"]
+	"amyloidsE/alpha-synuclein" -> "sequencesE/10"
+	"sequencesE/2" [label="seq:2"]
+	"amyloidsE/Amyloid_beta" [label="Amyloid β"]
+	"amyloidsE/Amyloid_beta" -> "sequencesE/2"
 }
