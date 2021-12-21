@@ -3,6 +3,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from graphviz import Digraph
 import re
+from pyvis.network import Network
+import plotly.graph_objects as go
 
 
 def graphviz_graph(filename):
@@ -11,7 +13,7 @@ def graphviz_graph(filename):
 
     graph_name = filename
 
-    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine='neato')
+    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine='dot')
     g.attr(scale='2', label='Searching with starting node', fontsize='18')
     g.attr('node', shape='rectangle', style='filled', fillcolor='', fixedsize='false', width='0.5')
 
@@ -76,44 +78,51 @@ def networkx_graph(filename):
 
     G = nx.DiGraph()
 
-    for i in range(len(json_data)):
-        G.add_nodes_from(
-            (elem['_key'])
-            for elem in json_data[i]['vertices']
-        )
+    # for i in range(len(json_data)):
+    #     G.add_nodes_from(
+    #         (elem['_key'])
+    #         for elem in json_data[i]['vertices']
+    #     )
+    #
+    #     G.add_edges_from(
+    #         (elem['_from'], elem['_to'])
+    #         for elem in json_data[i]['edges']
+    #     )
 
-        G.add_edges_from(
-            (elem['_from'], elem['_to'])
-            for elem in json_data[i]['edges']
-        )
+    for i in range(len(json_data)):
+        for j in json_data[i]['vertices']:
+            if re.search("^questions", j['_id']) is not None:
+                G.add_node(j['_id'], label=j['_key'], group=1)
+            elif re.search("^interactions", j['_id']) is not None:
+                G.add_node(j['_id'], label='int' + j['_key'], group=2)
+            elif re.search("^sequences", j['_id']) is not None:
+                G.add_node(j['_id'], sequence=j['sequence'], label='seq' + j['_key'], group=3)
+            elif re.search("^amyloids", j['_id']) is not None:
+                G.add_node(j['_id'], label=j['name'], group=4)
+            elif re.search("^organisms", j['_id']) is not None:
+                G.add_node(j['_id'], lifestyle=j['lifestyle'], temperature=j['temperature'], pH=j['pH'], label=j['_key'], group=5)
+            elif re.search("^temperatures", j['_id']) is not None:
+                G.add_node(j['_id'], range=j['range'], label=j['_key'], group=6)
+            elif re.search("^phs", j['_id']) is not None:
+                G.add_node(j['_id'], range=j['range'], label=j['_key'], group=7)
+            else:
+                G.add_node(j['_id'], label=j['_key'], group=8)
+        for k in json_data[i]['edges']:
+            G.add_edge(k['_from'], k['_to'])
+
 
     nx.draw(
         G,
         with_labels=True
     )
 
-    # forceatlas2 = ForceAtlas2(
-    #     # Behavior alternatives
-    #     outboundAttractionDistribution=True,  # Dissuade hubs
-    #     linLogMode=False,  # NOT IMPLEMENTED
-    #     adjustSizes=False,  # Prevent overlap (NOT IMPLEMENTED)
-    #     edgeWeightInfluence=1.0,
-    #
-    #     # Performance
-    #     jitterTolerance=1.0,  # Tolerance
-    #     barnesHutOptimize=True,
-    #     barnesHutTheta=1.2,
-    #     multiThreaded=False,  # NOT IMPLEMENTED
-    #
-    #     # Tuning
-    #     scalingRatio=2.0,
-    #     strongGravityMode=False,
-    #     gravity=1.0,
-    #
-    #     # Log
-    #     verbose=True)
-    #
-    # positions = forceatlas2.forceatlas2_networkx_layout(G, pos=None, iterations=2000)
+    # Pyvis
+    nt = Network('1000px', '1000px')
+    #nt.enable_physics(True)
+    nt.show_buttons(filter_=['physics'])
+    nt.from_nx(G)
+    nt.show('nx.html')
+
 
     # nx.write_graphml_lxml(G, f"{filename}.gml")
     # nx.write_gml(G, f"{filename}.graphml")
