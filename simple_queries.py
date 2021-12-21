@@ -16,9 +16,6 @@ def filter_simple(database, q1, q2, q3, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    # for x in inter:
-    #     print(x)
-
     with open(f"./json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
@@ -35,9 +32,6 @@ def contains_simple(database, fragment, filename="result"):
     )
 
     inter = [doc for doc in cursor]
-
-    # for x in inter:
-    #     print(x)
 
     with open(f"./json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
