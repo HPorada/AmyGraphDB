@@ -96,11 +96,13 @@ def networkx_graph(filename):
             elif re.search("^interactions", j['_id']) is not None:
                 G.add_node(j['_id'], label='int' + j['_key'], group=2)
             elif re.search("^sequences", j['_id']) is not None:
-                G.add_node(j['_id'], sequence=j['sequence'], label='seq' + j['_key'], group=3)
+                G.add_node(j['_id'], sequence=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
+                           group=3)
             elif re.search("^amyloids", j['_id']) is not None:
                 G.add_node(j['_id'], label=j['name'], group=4)
             elif re.search("^organisms", j['_id']) is not None:
-                G.add_node(j['_id'], lifestyle=j['lifestyle'], temperature=j['temperature'], pH=j['pH'], label=j['_key'], group=5)
+                G.add_node(j['_id'], lifestyle=j['lifestyle'], temperature=j['temperature'], pH=j['pH'],
+                           label=j['_key'], group=5)
             elif re.search("^temperatures", j['_id']) is not None:
                 G.add_node(j['_id'], range=j['range'], label=j['_key'], group=6)
             elif re.search("^phs", j['_id']) is not None:
@@ -110,21 +112,19 @@ def networkx_graph(filename):
         for k in json_data[i]['edges']:
             G.add_edge(k['_from'], k['_to'])
 
-
-    nx.draw(
-        G,
-        with_labels=True
-    )
+    # nx.draw(
+    #     G,
+    #     with_labels=True
+    # )
 
     # Pyvis
     nt = Network('1000px', '1000px')
-    #nt.enable_physics(True)
+    # nt.enable_physics(True)
     nt.show_buttons(filter_=['physics'])
     nt.from_nx(G)
     nt.show('nx.html')
 
-
-    # nx.write_graphml_lxml(G, f"{filename}.gml")
+    nx.write_graphml_lxml(G, f"{filename}.gml")
     # nx.write_gml(G, f"{filename}.graphml")
     # nx.write_gexf(G, f"{filename}.gexf")
 
