@@ -118,10 +118,10 @@ def search_for_most_common(database, limit, type):  # type interactor lub intera
         json.dump(inter, outfile)
 
 
-sq.subgraph_from_interactions(db_Nov, "Slower aggregation", "Yes; implied by kinetics.", "No information", filename="result")
+# sq.subgraph_from_interactions(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", filename="result")
 # simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
-# sq.subgraph_from_sequence(db_Nov, "MGIIAGIIKVIKSLIEQFTGK", "test")
-# sq.subgraph_from_amyloid(db_Nov, "δ-toxin", "test")
+sq.subgraph_from_sequence(db_Nov, "VFHGKGIQHTGSGNFSVGNDLSIS", "result")
+#sq.subgraph_from_amyloid(db_Nov, "PPT_21", "result")
 # sq.subgraph_from_organism(db_Nov, "Frankia_sp._KB5", "organism")
 
 vf.graphviz_graph('result')

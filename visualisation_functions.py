@@ -18,9 +18,9 @@ def graphviz_graph(filename):
     else:
         engine = 'neato'
 
-    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine=engine)
-    g.attr(scale='2', label='Searching with starting node', fontsize='18')
-    g.attr('node', shape='rectangle', style='filled', fillcolor='', fixedsize='false', width='0.5')
+    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine='dot', graph_attr={'rankdir':'LR'})
+    #g.attr(scale='2', label='Searching with starting node', fontsize='18')
+    g.attr('node', shape='rectangle', style='filled', fillcolor='lightgrey', fixedsize='false', width='0.5')
 
     for item in arango_graph:
         for vertex in item['vertices']:
@@ -41,19 +41,30 @@ def graphviz_graph(filename):
                 else:
                     color = ''
 
-                g.attr('node', shape=shape, style='filled', fillcolor=color)
+                if 'question_3' in vertex:
+                    font = question3_graphviz(vertex['question_3'])
+                else:
+                    font=''
+
+                g.attr('node', shape=shape, style='filled', fillcolor=color, fontcolor=font)
                 g.node(vertex['_id'], label="int:" + vertex['_key'])
-                g.attr('node', shape='rectangle', fillcolor='', fixedsize='false', width='0.5')
+                g.attr('node', shape='rectangle', fillcolor='lightgrey', fixedsize='false', width='0.5', fontcolor='black')
 
             elif re.search("^amyloidsE", vertex['_id']) is not None:
                 g.attr('node', shape='ellipse', fillcolor='aqua')
                 g.node(vertex['_id'], label=vertex['name'])
-                g.attr('node', shape='rectangle', fillcolor='', fixedsize='false', width='0.5')
+                g.attr('node', shape='rectangle', fillcolor='lightgrey', fixedsize='false', width='0.5')
+
+            elif re.search("^question", vertex['_id']) is not None:
+                pass
 
             else:
                 g.node(vertex['_id'], label=vertex['name'] if 'name' in vertex else vertex['_key'])
         for edge in item['edges']:
-            g.edge(edge['_from'], edge['_to'])
+            if re.search("^question", edge["_to"]) is not None:
+                pass
+            else:
+                g.edge(edge['_from'], edge['_to'])
 
     # Render to file into some directory
     # g.render(directory='/tmp/', filename=graph_name)
@@ -79,9 +90,17 @@ def question2_color_graphviz(answer):
         "Yes; implied by kinetics.": "forestgreen",
         "Formation of fibrils by the interactee is inhibited": "red1",
         "No": "yellow2",
-        "No information": ""
+        "No information": "lightgrey"
     }
-    return switch.get(answer, "")
+    return switch.get(answer, "lightgrey")
+
+def question3_graphviz(answer):
+    switch = {
+        "Yes": "cyan",
+        "No": "magenta",
+        "No information": "black"
+    }
+    return switch.get(answer, "black")
 
 
 def networkx_graph(filename):
@@ -100,7 +119,7 @@ def networkx_graph(filename):
                 G.add_node(j['_id'], label='int' + j['_key'], group=2)
 
             elif re.search("^sequences", j['_id']) is not None:
-                G.add_node(j['_id'], sequence=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
+                G.add_node(j['_id'], title=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
                            group=3)
 
             elif re.search("^amyloids", j['_id']) is not None:
