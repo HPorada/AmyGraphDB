@@ -18,9 +18,10 @@ def graphviz_graph(filename):
     else:
         engine = 'neato'
 
-    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine='dot', graph_attr={'rankdir':'LR'})
-    #g.attr(scale='2', label='Searching with starting node', fontsize='18')
-    g.attr('node', shape='rectangle', style='filled', fillcolor='lightgrey', fixedsize='false', width='0.5')
+    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine='dot',
+                graph_attr={'rankdir': 'LR'})
+    # g.attr(scale='2', label='Searching with starting node', fontsize='18')
+    g.attr('node', shape='rectangle', style='filled', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
 
     for item in arango_graph:
         for vertex in item['vertices']:
@@ -37,23 +38,24 @@ def graphviz_graph(filename):
                     shape = 'box'
 
                 if 'question_2' in vertex:
-                    color = question2_color_graphviz(vertex['question_2'])
+                    color = question2_color(vertex['question_2'])
                 else:
-                    color = ''
+                    color = '#bfbfbf'
 
                 if 'question_3' in vertex:
                     font = question3_graphviz(vertex['question_3'])
                 else:
-                    font=''
+                    font = 'black'
 
                 g.attr('node', shape=shape, style='filled', fillcolor=color, fontcolor=font)
                 g.node(vertex['_id'], label="int:" + vertex['_key'])
-                g.attr('node', shape='rectangle', fillcolor='lightgrey', fixedsize='false', width='0.5', fontcolor='black')
+                g.attr('node', shape='rectangle', fillcolor='#bfbfbf', fixedsize='false', width='0.5',
+                       fontcolor='black')
 
             elif re.search("^amyloidsE", vertex['_id']) is not None:
-                g.attr('node', shape='ellipse', fillcolor='aqua')
+                g.attr('node', shape='ellipse', fillcolor='#04470a')
                 g.node(vertex['_id'], label=vertex['name'])
-                g.attr('node', shape='rectangle', fillcolor='lightgrey', fixedsize='false', width='0.5')
+                g.attr('node', shape='rectangle', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
 
             elif re.search("^question", vertex['_id']) is not None:
                 pass
@@ -84,15 +86,27 @@ def question1_shape_graphviz(answer):
     return switch.get(answer, "box")
 
 
-def question2_color_graphviz(answer):
+def question1_shape_networkx(answer):
     switch = {
-        "Yes, direct evidence.": "darkgreen",
-        "Yes; implied by kinetics.": "forestgreen",
-        "Formation of fibrils by the interactee is inhibited": "red1",
-        "No": "yellow2",
-        "No information": "lightgrey"
+        "Faster aggregation": "triangle",
+        "Slower aggregation": "triangleDown",
+        "No aggregation": "square",
+        "No effect": "diamond",
+        "No information": "box"
     }
-    return switch.get(answer, "lightgrey")
+    return switch.get(answer, "box")
+
+
+def question2_color(answer):
+    switch = {
+        "Yes, direct evidence.": "#167308",
+        "Yes; implied by kinetics.": "#0bd11f",
+        "Formation of fibrils by the interactee is inhibited": "#ff2a00",
+        "No": "#ffe124",
+        "No information": "#bfbfbf"
+    }
+    return switch.get(answer, "#bfbfbf")
+
 
 def question3_graphviz(answer):
     switch = {
@@ -112,11 +126,27 @@ def networkx_graph(filename):
     for i in range(len(json_data)):
         for j in json_data[i]['vertices']:
 
-            if re.search("^questions", j['_id']) is not None:
-                G.add_node(j['_id'], label=j['_key'], group=1)
+            if re.search("^question", j['_id']) is not None:
+                G.add_node(j['_id'], label=j['_key'], group=1),
 
             elif re.search("^interactions", j['_id']) is not None:
-                G.add_node(j['_id'], label='int' + j['_key'], group=2)
+
+                if 'question_1' in j:
+                    shape = question1_shape_networkx(j['question_1'])
+                else:
+                    shape = 'box'
+
+                if 'question_2' in j:
+                    color = question2_color(j['question_2'])
+                else:
+                    color = '#bfbfbf'
+
+                if 'question_3' in j:
+                    font = question3_graphviz(j['question_3'])
+                else:
+                    font = 'black'
+
+                G.add_node(j['_id'], label='int:' + j['_key'], group=2, shape=shape, color=color),
 
             elif re.search("^sequences", j['_id']) is not None:
                 G.add_node(j['_id'], title=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
