@@ -7,7 +7,7 @@ from pyvis.network import Network
 import plotly.graph_objects as go
 
 
-def graphviz_graph(filename):
+def graphviz_graph(filename, int_questions=False, sequences=False):
     with open(f".\json_data\{filename}.json", "r") as file:
         arango_graph = json.load(file)
 
@@ -27,8 +27,10 @@ def graphviz_graph(filename):
         for vertex in item['vertices']:
 
             if re.search("^sequencesE", vertex['_id']) is not None:
-                # g.attr('node', shape='triangle')
-                g.node(vertex['_id'], label=vertex['name'] if 'name' in vertex else "seq:" + vertex['_key'])
+                if sequences:
+                    g.node(vertex['_id'], label=vertex['sequence'] if 'sequence' in vertex else "seq:" + vertex['_key'])
+                else:
+                    g.node(vertex['_id'], label=vertex['name'] if 'name' in vertex else "seq:" + vertex['_key'])
 
             elif re.search("^interactionsE", vertex['_id']) is not None:
 
@@ -58,12 +60,16 @@ def graphviz_graph(filename):
                 g.attr('node', shape='rectangle', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
 
             elif re.search("^question", vertex['_id']) is not None:
-                pass
+                if int_questions:
+                    g.node(vertex['_id'], label=vertex['_key'])
 
             else:
                 g.node(vertex['_id'], label=vertex['name'] if 'name' in vertex else vertex['_key'])
         for edge in item['edges']:
-            if not re.search("^question", edge["_to"]) is not None:
+            if not int_questions:
+                if not re.search("^question", edge["_to"]) is not None:
+                    g.edge(edge['_from'], edge['_to'])
+            else:
                 g.edge(edge['_from'], edge['_to'])
 
     # Render to file into some directory
@@ -71,6 +77,92 @@ def graphviz_graph(filename):
 
     # Or just show rendered file using system default program
     g.view()
+
+
+def networkx_graph(filename, int_questions=False, sequences=True, general_remarks=True):
+    with open(f'.\json_data\{filename}.json') as file:
+        json_data = json.loads(file.read())
+
+    G = nx.DiGraph()
+
+    for i in range(len(json_data)):
+        for j in json_data[i]['vertices']:
+
+            if re.search("^question", j['_id']) is not None:
+                if int_questions:
+                    G.add_node(j['_id'], label=j['_key'], group=1),
+
+            elif re.search("^interactions", j['_id']) is not None:
+
+                if 'question_1' in j:
+                    shape = question1_shape_networkx(j['question_1'])
+                else:
+                    shape = 'box'
+
+                if 'question_2' in j:
+                    color = question2_color(j['question_2'])
+                else:
+                    color = '#bfbfbf'
+
+                if 'question_3' in j:
+                    answer = question3_answer_networkx(j['question_3'])
+                else:
+                    answer = "(NI)"
+
+                if general_remarks:
+                    G.add_node(j['_id'], title=j['general_remarks'], label='int:' + j['_key'] + answer, group=2,
+                               shape=shape, color=color),
+                else:
+                    G.add_node(j['_id'], label='int:' + j['_key'] + answer, group=2,
+                               shape=shape, color=color),
+
+            elif re.search("^sequences", j['_id']) is not None:
+                if sequences:
+                    G.add_node(j['_id'], title=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
+                               group=3)
+                else:
+                    G.add_node(j['_id'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
+                               group=3)
+
+            elif re.search("^amyloids", j['_id']) is not None:
+                G.add_node(j['_id'], label=j['name'], group=4)
+
+            elif re.search("^organisms", j['_id']) is not None:
+                G.add_node(j['_id'], lifestyle=j['lifestyle'], temperature=j['temperature'], pH=j['pH'],
+                           label=j['_key'], group=5)
+
+            elif re.search("^temperatures", j['_id']) is not None:
+                G.add_node(j['_id'], range=j['range'], label=j['_key'], group=6)
+
+            elif re.search("^phs", j['_id']) is not None:
+                G.add_node(j['_id'], range=j['range'], label=j['_key'], group=7)
+
+            else:
+                G.add_node(j['_id'], label=j['_key'], group=8)
+
+        for k in json_data[i]['edges']:
+            if not int_questions:
+                if not re.search("^question", k["_to"]) is not None:
+                    G.add_edge(k['_from'], k['_to'])
+            else:
+                G.add_edge(k['_from'], k['_to'])
+
+    # nx.draw(
+    #     G,
+    #     with_labels=True
+    # )
+
+    # Pyvis
+    nt = Network('1000px', '1000px')
+    nt.show_buttons(filter_=['physics'])
+    nt.from_nx(G)
+    nt.show('nx.html')
+
+    nx.write_graphml_lxml(G, f"./export/{filename}.gml")
+    # nx.write_gml(G, f"{filename}.graphml")
+    # nx.write_gexf(G, f"{filename}.gexf")
+
+    plt.show()
 
 
 def question1_shape_graphviz(answer):
@@ -123,88 +215,13 @@ def question3_answer_networkx(answer):
     }
     return switch.get(answer, "(NI)")
 
-
-def popup(text):
-    string = f"""
-    <div class="tooltip-wrap">
-        <div class="tooltip-content">
-            <p>{text}</p>
-        </div> 
-    </div>"""
-
-    return string
-
-
-def networkx_graph(filename):
-    with open(f'.\json_data\{filename}.json') as file:
-        json_data = json.loads(file.read())
-
-    G = nx.DiGraph()
-
-    for i in range(len(json_data)):
-        for j in json_data[i]['vertices']:
-
-            if re.search("^question", j['_id']) is not None:
-                # G.add_node(j['_id'], label=j['_key'], group=1),
-                pass
-
-            elif re.search("^interactions", j['_id']) is not None:
-
-                if 'question_1' in j:
-                    shape = question1_shape_networkx(j['question_1'])
-                else:
-                    shape = 'box'
-
-                if 'question_2' in j:
-                    color = question2_color(j['question_2'])
-                else:
-                    color = '#bfbfbf'
-
-                if 'question_3' in j:
-                    answer = question3_answer_networkx(j['question_3'])
-                else:
-                    answer = "(NI)"
-
-                G.add_node(j['_id'], title=popup(j['general_remarks']), label='int:' + j['_key'] + answer, group=2,
-                           shape=shape, color=color),
-
-            elif re.search("^sequences", j['_id']) is not None:
-                G.add_node(j['_id'], title=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
-                           group=3)
-
-            elif re.search("^amyloids", j['_id']) is not None:
-                G.add_node(j['_id'], label=j['name'], group=4)
-
-            elif re.search("^organisms", j['_id']) is not None:
-                G.add_node(j['_id'], lifestyle=j['lifestyle'], temperature=j['temperature'], pH=j['pH'],
-                           label=j['_key'], group=5)
-
-            elif re.search("^temperatures", j['_id']) is not None:
-                G.add_node(j['_id'], range=j['range'], label=j['_key'], group=6)
-
-            elif re.search("^phs", j['_id']) is not None:
-                G.add_node(j['_id'], range=j['range'], label=j['_key'], group=7)
-
-            else:
-                G.add_node(j['_id'], label=j['_key'], group=8)
-
-        for k in json_data[i]['edges']:
-            if not re.search("^question", k["_to"]) is not None:
-                G.add_edge(k['_from'], k['_to'])
-
-    # nx.draw(
-    #     G,
-    #     with_labels=True
-    # )
-
-    # Pyvis
-    nt = Network('1000px', '1000px')
-    nt.show_buttons(filter_=['physics'])
-    nt.from_nx(G)
-    nt.show('nx.html')
-
-    nx.write_graphml_lxml(G, f"./export/{filename}.gml")
-    # nx.write_gml(G, f"{filename}.graphml")
-    # nx.write_gexf(G, f"{filename}.gexf")
-
-    plt.show()
+#
+# def popup(text):
+#     string = f"""
+#     <div class="tooltip-wrap">
+#         <div class="tooltip-content">
+#             <p>{text}</p>
+#         </div>
+#     </div>"""
+#
+#     return string
