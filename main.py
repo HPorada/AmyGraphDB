@@ -124,7 +124,7 @@ def search_for_most_common(database, limit, type):  # type interactor lub intera
 sq.subgraph_from_amyloid(db_Nov, "IAPP", "result")
 # sq.subgraph_from_organism(db_Nov, "Frankia_sp._KB5", "organism")
 
-vf.graphviz_graph('result', sequences=True)
-vf.networkx_graph('result')
+vf.graphviz_graph('result', int_questions=True, sequences=True)
+vf.networkx_graph('result', int_questions=True)
 
 
