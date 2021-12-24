@@ -124,6 +124,17 @@ def question3_answer_networkx(answer):
     return switch.get(answer, "(NI)")
 
 
+def popup(text):
+    string = f"""
+    <div class="tooltip-wrap">
+        <div class="tooltip-content">
+            <p>{text}</p>
+        </div> 
+    </div>"""
+
+    return string
+
+
 def networkx_graph(filename):
     with open(f'.\json_data\{filename}.json') as file:
         json_data = json.loads(file.read())
@@ -134,7 +145,7 @@ def networkx_graph(filename):
         for j in json_data[i]['vertices']:
 
             if re.search("^question", j['_id']) is not None:
-                #G.add_node(j['_id'], label=j['_key'], group=1),
+                # G.add_node(j['_id'], label=j['_key'], group=1),
                 pass
 
             elif re.search("^interactions", j['_id']) is not None:
@@ -154,7 +165,8 @@ def networkx_graph(filename):
                 else:
                     answer = "(NI)"
 
-                G.add_node(j['_id'], title=j['general_remarks'], label='int:' + j['_key'] + answer, group=2, shape=shape, color=color),
+                G.add_node(j['_id'], title=popup(j['general_remarks']), label='int:' + j['_key'] + answer, group=2,
+                           shape=shape, color=color),
 
             elif re.search("^sequences", j['_id']) is not None:
                 G.add_node(j['_id'], title=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
