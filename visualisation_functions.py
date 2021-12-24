@@ -43,17 +43,17 @@ def graphviz_graph(filename):
                     color = '#bfbfbf'
 
                 if 'question_3' in vertex:
-                    font = question3_graphviz(vertex['question_3'])
+                    frame = question3_border_graphviz(vertex['question_3'])
                 else:
-                    font = 'black'
+                    frame = '#000000'
 
-                g.attr('node', shape=shape, style='filled', fillcolor=color, fontcolor=font)
+                g.attr('node', shape=shape, style='filled', fillcolor=color, color=frame, penwidth='5')
                 g.node(vertex['_id'], label="int:" + vertex['_key'])
                 g.attr('node', shape='rectangle', fillcolor='#bfbfbf', fixedsize='false', width='0.5',
-                       fontcolor='black')
+                       fontcolor='black', color='#000000', penwidth='1')
 
             elif re.search("^amyloidsE", vertex['_id']) is not None:
-                g.attr('node', shape='ellipse', fillcolor='#04470a')
+                g.attr('node', shape='ellipse', fillcolor='aqua')
                 g.node(vertex['_id'], label=vertex['name'])
                 g.attr('node', shape='rectangle', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
 
@@ -63,9 +63,7 @@ def graphviz_graph(filename):
             else:
                 g.node(vertex['_id'], label=vertex['name'] if 'name' in vertex else vertex['_key'])
         for edge in item['edges']:
-            if re.search("^question", edge["_to"]) is not None:
-                pass
-            else:
+            if not re.search("^question", edge["_to"]) is not None:
                 g.edge(edge['_from'], edge['_to'])
 
     # Render to file into some directory
@@ -99,22 +97,31 @@ def question1_shape_networkx(answer):
 
 def question2_color(answer):
     switch = {
-        "Yes, direct evidence.": "#167308",
+        "Yes, direct evidence.": "#1A870A",
         "Yes; implied by kinetics.": "#0bd11f",
-        "Formation of fibrils by the interactee is inhibited": "#ff2a00",
+        "Formation of fibrils by the interactee is inhibited": "#e30000",
         "No": "#ffe124",
         "No information": "#bfbfbf"
     }
     return switch.get(answer, "#bfbfbf")
 
 
-def question3_graphviz(answer):
+def question3_border_graphviz(answer):
     switch = {
-        "Yes": "cyan",
-        "No": "magenta",
-        "No information": "black"
+        "Yes": "#55ff3c",
+        "No": "#ff6c28",
+        "No information": "#000000"
     }
-    return switch.get(answer, "black")
+    return switch.get(answer, "#000000")
+
+
+def question3_answer_networkx(answer):
+    switch = {
+        "Yes": "(Y)",
+        "No": "(N)",
+        "No information": "(NI)"
+    }
+    return switch.get(answer, "(NI)")
 
 
 def networkx_graph(filename):
@@ -127,7 +134,8 @@ def networkx_graph(filename):
         for j in json_data[i]['vertices']:
 
             if re.search("^question", j['_id']) is not None:
-                G.add_node(j['_id'], label=j['_key'], group=1),
+                #G.add_node(j['_id'], label=j['_key'], group=1),
+                pass
 
             elif re.search("^interactions", j['_id']) is not None:
 
@@ -142,11 +150,11 @@ def networkx_graph(filename):
                     color = '#bfbfbf'
 
                 if 'question_3' in j:
-                    font = question3_graphviz(j['question_3'])
+                    answer = question3_answer_networkx(j['question_3'])
                 else:
-                    font = 'black'
+                    answer = "(NI)"
 
-                G.add_node(j['_id'], label='int:' + j['_key'], group=2, shape=shape, color=color),
+                G.add_node(j['_id'], title=j['general_remarks'], label='int:' + j['_key'] + answer, group=2, shape=shape, color=color),
 
             elif re.search("^sequences", j['_id']) is not None:
                 G.add_node(j['_id'], title=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
@@ -169,7 +177,8 @@ def networkx_graph(filename):
                 G.add_node(j['_id'], label=j['_key'], group=8)
 
         for k in json_data[i]['edges']:
-            G.add_edge(k['_from'], k['_to'])
+            if not re.search("^question", k["_to"]) is not None:
+                G.add_edge(k['_from'], k['_to'])
 
     # nx.draw(
     #     G,
