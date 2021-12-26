@@ -24,11 +24,12 @@ db_Nov = client.db('AmyloidsNov', username='root', password='Amyloids')
 s = socket.socket()
 s.settimeout(100)
 
-#sim.filter_simple(db_Sep, "Faster aggregation4", "Yes; implied by kinetics.", "No information", "result")
-#ext2.filter_extended_v2(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
-#sim.contains_simple(db_Sep, 'DAEFRHDSGY', "result")
-#ext.contains_extended(db_Sep, 'DAEFRHDSGY', "result")
-#ext2.contains_extended_v2(db_Nov, 'DAEFRHDSGY', "result")
+
+# sim.filter_simple(db_Sep, "Faster aggregation4", "Yes; implied by kinetics.", "No information", "result")
+# ext2.filter_extended_v2(db_Nov, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+# sim.contains_simple(db_Sep, 'DAEFRHDSGY', "result")
+# ext.contains_extended(db_Sep, 'DAEFRHDSGY', "result")
+# ext2.contains_extended_v2(db_Nov, 'DAEFRHDSGY', "result")
 
 def check_questions_simple(database, q1, q2, q3):
     aql = database.aql
@@ -108,7 +109,6 @@ def search_for_most_common(database, limit, type):  # type interactor lub intera
     for x in inter:
         print(x)
 
-
     inter = [i for i in cursor]
 
     for x in inter:
@@ -126,5 +126,3 @@ sq.subgraph_from_amyloid(db_Nov, "IAPP", "result")
 
 vf.graphviz_graph('result', int_questions=True, sequences=True)
 vf.networkx_graph('result', int_questions=True)
-
-

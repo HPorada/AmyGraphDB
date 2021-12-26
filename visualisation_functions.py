@@ -214,14 +214,3 @@ def question3_answer_networkx(answer):
         "No information": "(NI)"
     }
     return switch.get(answer, "(NI)")
-
-#
-# def popup(text):
-#     string = f"""
-#     <div class="tooltip-wrap">
-#         <div class="tooltip-content">
-#             <p>{text}</p>
-#         </div>
-#     </div>"""
-#
-#     return string
