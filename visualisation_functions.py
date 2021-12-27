@@ -110,7 +110,11 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
                     answer = "(NI)"
 
                 if general_remarks:
-                    G.add_node(j['_id'], title=j['general_remarks'], label='int:' + j['_key'] + answer, group=2,
+                    G.add_node(j['_id'],
+                               title='<a href="javascript:alert(' + j['general_remarks'] + ')">' + j[
+                                   'general_remarks'] + '</a>'
+                               if 'general_remarks' in j else 'No information',
+                               label='int:' + j['_key'] + answer, group=2,
                                shape=shape, color=color),
                 else:
                     G.add_node(j['_id'], label='int:' + j['_key'] + answer, group=2,
