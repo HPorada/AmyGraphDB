@@ -26,17 +26,17 @@ from management import visualisation_functions as vf
 # vf.graphviz_graph('result', sequences=True)
 # vf.networkx_graph('result', True)
 
-extendedV2_json.questionnaire_extendedV2()
-extendedV2_json.experiments_extendedV2()
-
-new_db = database.create_database('new_extendedV2', 'root', 'Amyloids')
-database.import_collections(new_db, './initialisation/extendedV2')
-graph = database.create_extendedV2_graph(new_db)
-
-extendedV2_queries.filter_extendedV2(new_db, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
-
-vf.graphviz_graph('result', sequences=True)
-vf.networkx_graph('result', True)
+# extendedV2_json.questionnaire_extendedV2()
+# extendedV2_json.experiments_extendedV2()
+#
+# new_db = database.create_database('new_extendedV2', 'root', 'Amyloids')
+# database.import_collections(new_db, './initialisation/extendedV2')
+# graph = database.create_graph(new_db)
+#
+# extendedV2_queries.filter_extendedV2(new_db, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+#
+# vf.graphviz_graph('result', sequences=True)
+# vf.networkx_graph('result', True)
 
 # import json
 # import socket

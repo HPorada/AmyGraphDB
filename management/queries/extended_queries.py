@@ -1,7 +1,7 @@
 import json
 
 
-def filter_extended(database, q1, q2, q3, filename="result"):
+def filter_questions_extended(database, q1, q2, q3, filename="result"):
     aql = database.aql
 
     cursor = database.aql.execute(
@@ -16,14 +16,11 @@ def filter_extended(database, q1, q2, q3, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    # for x in inter:
-    #     print(x)
-
     with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
-def contains_extended(database, fragment, filename="result"):
+def contains_fragment_extended(database, fragment, filename="result"):
     aql = database.aql
 
     cursor = database.aql.execute(
@@ -35,9 +32,6 @@ def contains_extended(database, fragment, filename="result"):
     )
 
     inter = [doc for doc in cursor]
-
-    # for x in inter:
-    #     print(x)
 
     with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)

@@ -60,8 +60,6 @@ def import_collections(database, directory):
 
     cols = database.collections()
 
-    print(cols)
-
     if len(cols) != 0:
         for col in cols:
             if not col['system']:
