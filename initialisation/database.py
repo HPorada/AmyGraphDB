@@ -3,6 +3,43 @@ import os
 
 from arango import ArangoClient
 from pathlib import Path
+from initialisation import simple_json, extended_json, extendedV2_json
+
+
+def database_start(database, username, password, structure):
+    create_json_files(structure)
+    create_database(database, username, password)
+
+    if structure.lower() == "simple":
+        directory = "./initialisation/simple"
+    elif structure.lower() == "extended":
+        directory = "./initialisation/extended"
+    elif structure.lower() == "extendedv2":
+        directory = "./initialisation/extendedV2"
+    else:
+        directory = None
+        print("Available database structures: simple, extended, extendedV2.")
+
+    if directory is not None:
+        import_collections(database, directory)
+        create_graph(database, structure)
+
+
+def create_json_files(structure):
+    if structure.lower() == "simple":
+        simple_json.questionnaire_simple()
+        simple_json.experiments_simple()
+
+    elif structure.lower() == "extended":
+        extended_json.questionnaire_extended()
+        extended_json.experiments_extended()
+
+    elif structure.lower() == "extendedv2":
+        extendedV2_json.questionnaire_extendedV2()
+        extendedV2_json.experiments_extendedV2()
+
+    else:
+        print("Available database structures: simple, extended, extendedV2.")
 
 
 def create_database(database, username, password):
@@ -21,8 +58,14 @@ def create_database(database, username, password):
 def import_collections(database, directory):
     files = os.listdir(directory)
 
-    # for col in database.collections():
-    #     database.delete_collection(col)
+    cols = database.collections()
+
+    print(cols)
+
+    if len(cols) != 0:
+        for col in cols:
+            if not col['system']:
+                database.delete_collection(col['name'])
 
     for file in files:
 
@@ -41,154 +84,151 @@ def import_collections(database, directory):
             a.import_bulk(data)
 
 
-def create_simple_graph(database):
-    if database.has_graph("Simple"):
-        graph = database.graph("Simple")
+def create_graph(database, structure):
+    if structure.lower() == "simple":
+        if database.has_graph("Simple"):
+            graph = database.graph("Simple")
+        else:
+            graph = database.create_graph("Simple")
+
+            if graph.has_edge_definition('amyseq'):
+                amyseq = graph.edge_collection('amyseq')
+            else:
+                amyseq = graph.create_edge_definition(
+                    edge_collection='amyseq',
+                    from_vertex_collections=['amyloids'],
+                    to_vertex_collections=['sequences']
+                )
+
+            if graph.has_edge_definition('interactions'):
+                interactions = graph.edge_collection('interactions')
+            else:
+                interactions = graph.create_edge_definition(
+                    edge_collection='interactions',
+                    from_vertex_collections=['sequences'],
+                    to_vertex_collections=['sequences']
+                )
+
+            if graph.has_edge_definition('orgamy'):
+                orgamy = graph.edge_collection('orgamy')
+            else:
+                orgamy = graph.create_edge_definition(
+                    edge_collection='orgamy',
+                    from_vertex_collections=['organisms'],
+                    to_vertex_collections=['amyloids']
+                )
+
+    elif structure.lower() == "extended":
+        if database.has_graph("Extended"):
+            graph = database.graph("Extended")
+        else:
+            graph = database.create_graph("Extended")
+
+            if graph.has_edge_definition('amyseqE'):
+                amyseqE = graph.edge_collection('amyseqE')
+            else:
+                amyseqE = graph.create_edge_definition(
+                    edge_collection='amyseqE',
+                    from_vertex_collections=['amyloidsE'],
+                    to_vertex_collections=['sequencesE']
+                )
+
+            if graph.has_edge_definition('seqintE'):
+                seqintE = graph.edge_collection('seqintEs')
+            else:
+                seqintE = graph.create_edge_definition(
+                    edge_collection='seqintE',
+                    from_vertex_collections=['sequencesE'],
+                    to_vertex_collections=['interactionsE']
+                )
+
+            if graph.has_edge_definition('orgamyE'):
+                orgamyE = graph.edge_collection('orgamyE')
+            else:
+                orgamyE = graph.create_edge_definition(
+                    edge_collection='orgamyE',
+                    from_vertex_collections=['organismsE'],
+                    to_vertex_collections=['amyloidsE']
+                )
+
+    elif structure.lower() == "extendedv2":
+        if database.has_graph("ExtendedV2"):
+            graph = database.graph("ExtendedV2")
+        else:
+            graph = database.create_graph("ExtendedV2")
+
+            if graph.has_edge_definition('amyseqE'):
+                amyseqE = graph.edge_collection('amyseqE')
+            else:
+                amyseqE = graph.create_edge_definition(
+                    edge_collection='amyseqE',
+                    from_vertex_collections=['amyloidsE'],
+                    to_vertex_collections=['sequencesE']
+                )
+
+            if graph.has_edge_definition('intque1'):
+                intque1 = graph.edge_collection('intque1')
+            else:
+                intque1 = graph.create_edge_definition(
+                    edge_collection='intque1',
+                    from_vertex_collections=['interactionsE'],
+                    to_vertex_collections=['question1']
+                )
+
+            if graph.has_edge_definition('intque2'):
+                intque2 = graph.edge_collection('intque2')
+            else:
+                intque2 = graph.create_edge_definition(
+                    edge_collection='intque2',
+                    from_vertex_collections=['interactionsE'],
+                    to_vertex_collections=['question2']
+                )
+
+            if graph.has_edge_definition('intque3'):
+                intque3 = graph.edge_collection('intque3')
+            else:
+                intque3 = graph.create_edge_definition(
+                    edge_collection='intque3',
+                    from_vertex_collections=['interactionsE'],
+                    to_vertex_collections=['question3']
+                )
+
+            if graph.has_edge_definition('seqintE'):
+                seqintE = graph.edge_collection('seqintEs')
+            else:
+                seqintE = graph.create_edge_definition(
+                    edge_collection='seqintE',
+                    from_vertex_collections=['sequencesE'],
+                    to_vertex_collections=['interactionsE']
+                )
+
+            if graph.has_edge_definition('orgamyE'):
+                orgamyE = graph.edge_collection('orgamyE')
+            else:
+                orgamyE = graph.create_edge_definition(
+                    edge_collection='orgamyE',
+                    from_vertex_collections=['organismsE'],
+                    to_vertex_collections=['amyloidsE']
+                )
+
+            if graph.has_edge_definition('phorgE'):
+                phorgE = graph.edge_collection('phorgE')
+            else:
+                phorgE = graph.create_edge_definition(
+                    edge_collection='phorgE',
+                    from_vertex_collections=['phsE'],
+                    to_vertex_collections=['organismsE']
+                )
+
+            if graph.has_edge_definition('temorgE'):
+                temorgE = graph.edge_collection('temorgE')
+            else:
+                temorgE = graph.create_edge_definition(
+                    edge_collection='temorgE',
+                    from_vertex_collections=['temperaturesE'],
+                    to_vertex_collections=['organismsE']
+                )
     else:
-        graph = database.create_graph("Simple")
-
-        if graph.has_edge_definition('amyseq'):
-            amyseq = graph.edge_collection('amyseq')
-        else:
-            amyseq = graph.create_edge_definition(
-                edge_collection='amyseq',
-                from_vertex_collections=['amyloids'],
-                to_vertex_collections=['sequences']
-            )
-
-        if graph.has_edge_definition('interactions'):
-            interactions = graph.edge_collection('interactions')
-        else:
-            interactions = graph.create_edge_definition(
-                edge_collection='interactions',
-                from_vertex_collections=['sequences'],
-                to_vertex_collections=['sequences']
-            )
-
-        if graph.has_edge_definition('orgamy'):
-            orgamy = graph.edge_collection('orgamy')
-        else:
-            orgamy = graph.create_edge_definition(
-                edge_collection='orgamy',
-                from_vertex_collections=['organisms'],
-                to_vertex_collections=['amyloids']
-            )
-
-    return graph
-
-
-def create_extended_graph(database):
-    if database.has_graph("Extended"):
-        graph = database.graph("Extended")
-    else:
-        graph = database.create_graph("Extended")
-
-        if graph.has_edge_definition('amyseqE'):
-            amyseqE = graph.edge_collection('amyseqE')
-        else:
-            amyseqE = graph.create_edge_definition(
-                edge_collection='amyseqE',
-                from_vertex_collections=['amyloidsE'],
-                to_vertex_collections=['sequencesE']
-            )
-
-        if graph.has_edge_definition('seqintE'):
-            seqintE = graph.edge_collection('seqintEs')
-        else:
-            seqintE = graph.create_edge_definition(
-                edge_collection='seqintE',
-                from_vertex_collections=['sequencesE'],
-                to_vertex_collections=['interactionsE']
-            )
-
-        if graph.has_edge_definition('orgamyE'):
-            orgamyE = graph.edge_collection('orgamyE')
-        else:
-            orgamyE = graph.create_edge_definition(
-                edge_collection='orgamyE',
-                from_vertex_collections=['organismsE'],
-                to_vertex_collections=['amyloidsE']
-            )
-
-    return graph
-
-
-def create_extendedV2_graph(database):
-    if database.has_graph("ExtendedV2"):
-        graph = database.graph("ExtendedV2")
-    else:
-        graph = database.create_graph("ExtendedV2")
-
-        if graph.has_edge_definition('amyseqE'):
-            amyseqE = graph.edge_collection('amyseqE')
-        else:
-            amyseqE = graph.create_edge_definition(
-                edge_collection='amyseqE',
-                from_vertex_collections=['amyloidsE'],
-                to_vertex_collections=['sequencesE']
-            )
-
-        if graph.has_edge_definition('intque1'):
-            intque1 = graph.edge_collection('intque1')
-        else:
-            intque1 = graph.create_edge_definition(
-                edge_collection='intque1',
-                from_vertex_collections=['interactionsE'],
-                to_vertex_collections=['question1']
-            )
-
-        if graph.has_edge_definition('intque2'):
-            intque2 = graph.edge_collection('intque2')
-        else:
-            intque2 = graph.create_edge_definition(
-                edge_collection='intque2',
-                from_vertex_collections=['interactionsE'],
-                to_vertex_collections=['question2']
-            )
-
-        if graph.has_edge_definition('intque3'):
-            intque3 = graph.edge_collection('intque3')
-        else:
-            intque3 = graph.create_edge_definition(
-                edge_collection='intque3',
-                from_vertex_collections=['interactionsE'],
-                to_vertex_collections=['question3']
-            )
-
-        if graph.has_edge_definition('seqintE'):
-            seqintE = graph.edge_collection('seqintEs')
-        else:
-            seqintE = graph.create_edge_definition(
-                edge_collection='seqintE',
-                from_vertex_collections=['sequencesE'],
-                to_vertex_collections=['interactionsE']
-            )
-
-        if graph.has_edge_definition('orgamyE'):
-            orgamyE = graph.edge_collection('orgamyE')
-        else:
-            orgamyE = graph.create_edge_definition(
-                edge_collection='orgamyE',
-                from_vertex_collections=['organismsE'],
-                to_vertex_collections=['amyloidsE']
-            )
-
-        if graph.has_edge_definition('phorgE'):
-            phorgE = graph.edge_collection('phorgE')
-        else:
-            phorgE = graph.create_edge_definition(
-                edge_collection='phorgE',
-                from_vertex_collections=['phsE'],
-                to_vertex_collections=['organismsE']
-            )
-
-        if graph.has_edge_definition('temorgE'):
-            temorgE = graph.edge_collection('temorgE')
-        else:
-            temorgE = graph.create_edge_definition(
-                edge_collection='temorgE',
-                from_vertex_collections=['temperaturesE'],
-                to_vertex_collections=['organismsE']
-            )
+        graph = None
 
     return graph

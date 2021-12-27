@@ -1,4 +1,4 @@
-from initialisation import database, simple_JSON, extended_JSON, extendedV2_JSON
+from initialisation import database, simple_json, extended_json, extendedV2_json
 from management.queries import simple_queries, extended_queries, extendedV2_queries
 from management import visualisation_functions as vf
 
@@ -26,8 +26,8 @@ from management import visualisation_functions as vf
 # vf.graphviz_graph('result', sequences=True)
 # vf.networkx_graph('result', True)
 
-extendedV2_JSON.questionnaire_extended()
-extendedV2_JSON.experiments_extended()
+extendedV2_json.questionnaire_extendedV2()
+extendedV2_json.experiments_extendedV2()
 
 new_db = database.create_database('new_extendedV2', 'root', 'Amyloids')
 database.import_collections(new_db, './initialisation/extendedV2')
