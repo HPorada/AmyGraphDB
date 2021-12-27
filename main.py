@@ -11,7 +11,7 @@ new_db = database.create_database('new_extended', 'root', 'Amyloids')
 #database.create_view(new_db, "extendedV2")
 
 #simple_queries.search_phrase_simple(new_db, 'pH', "result")
-extended_queries.search_phrase_extended(new_db, 'pH', "result")
+#extended_queries.search_phrase_extended(new_db, 'pH', "result")
 
 vf.networkx_graph('result')
 
