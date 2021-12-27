@@ -4,14 +4,18 @@ import json
 def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="result"):
     aql = database.aql
 
-    if q1 == (
-            "Faster aggregation" or "Slower aggregation" or "No aggregation" or "No effect" or "No information") and q2 == (
-            "Yes, direct evidence." or "Yes; implied by kinetics." or "Formation of fibrils by the interactee is inhibited" or "No" or "No information") and q3 == (
-            "Yes" or "No" or "No information"):
+    q1 = q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+    q2 = q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+    q3 = q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
 
-        q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
-        q2 = "question2/" + q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
-        q3 = "question3/" + q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+    if q1.lower() == (
+            "faster_aggregation" or "slower_aggregation" or "np_aggregation" or "no_effect" or "no_information") and q2.lower() == (
+            "yes_direct_evidence" or "yes_implied_by_kinetics" or "formation_of_fibrils_by_the_interactee_is_inhibited" or "no" or "no_information") and q3.lower() == (
+            "yes" or "no" or "no_information"):
+
+        q1 = "question1/" + q1
+        q2 = "question2/" + q2
+        q3 = "question3/" + q3
 
         cursor = database.aql.execute(
             """let ints = (
@@ -31,43 +35,43 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
                                 filter v._id == @q3 
                                 return {"interactions": i}
                         )
-
+    
                         let final = intersection(que1, que2, que3)
-
+    
                         for item in final 
                             return {"interactions": item.interactions}
                         )
-
+    
                 let ints_paths = (
                     for i in ints
                         for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p}
                     )
-
+    
                 let seqs = (
                     for i in ints
                         for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p, "sequences": v}
                 )
-
+    
                 let amys = (
                     for item in seqs
                         for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "amyloids": v}
                 )  
-
+    
                 let orgs = (
                     for item in amys
                         for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "organisms": v}
                 )
-
+    
                 let props = (
                     for item in orgs
                         for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "properties": v}
                 )
-
+    
                 for item in union(
                     for item in ints_paths return item.paths,
                     for item in seqs return item.paths,
@@ -79,12 +83,12 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
         )
 
-    elif q1 == (
-            "Faster aggregation" or "Slower aggregation" or "No aggregation" or "No effect" or "No information") and q2 == (
-            "Yes, direct evidence." or "Yes; implied by kinetics." or "Formation of fibrils by the interactee is inhibited" or "No" or "No information"):
+    elif q1.lower() == (
+            "faster_aggregation" or "slower_aggregation" or "np_aggregation" or "no_effect" or "no_information") and q2.lower() == (
+            "yes_direct_evidence" or "yes_implied_by_kinetics" or "formation_of_fibrils_by_the_interactee_is_inhibited" or "no" or "no_information"):
 
-        q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
-        q2 = "question2/" + q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+        q1 = "question1/" + q1
+        q2 = "question2/" + q2
 
         cursor = database.aql.execute(
             """let ints = (
@@ -99,43 +103,43 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
                                 filter v._id == @q2 
                                 return {"interactions": i}
                         )        
-
+        
                         let final = intersection(que1, que2)
-
+        
                         for item in final 
                             return {"interactions": item.interactions}
                         )
-
+        
                 let ints_paths = (
                     for i in ints
                         for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p}
                     )
-
+        
                 let seqs = (
                     for i in ints
                         for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p, "sequences": v}
                 )
-
+        
                 let amys = (
                     for item in seqs
                         for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "amyloids": v}
                 )  
-
+        
                 let orgs = (
                     for item in amys
                         for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "organisms": v}
                 )
-
+        
                 let props = (
                     for item in orgs
                         for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "properties": v}
                 )
-
+        
                 for item in union(
                     for item in ints_paths return item.paths,
                     for item in seqs return item.paths,
@@ -147,12 +151,12 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             bind_vars={'q1': q1, 'q2': q2}
         )
 
-    elif q2 == (
-            "Yes, direct evidence." or "Yes; implied by kinetics." or "Formation of fibrils by the interactee is inhibited" or "No" or "No information") and q3 == (
-            "Yes" or "No" or "No information"):
+    elif q2.lower() == (
+            "yes_direct_evidence" or "yes_implied_by_kinetics" or "formation_of_fibrils_by_the_interactee_is_inhibited" or "no" or "no_information") and q3.lower() == (
+            "yes" or "no" or "no_information"):
 
-        q2 = "question2/" + q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
-        q3 = "question3/" + q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+        q2 = "question2/" + q2
+        q3 = "question3/" + q3
 
         cursor = database.aql.execute(
             """let ints = (
@@ -167,43 +171,43 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
                                 filter v._id == @q3 
                                 return {"interactions": i}
                         )
-
+        
                         let final = intersection(que2, que3)
-
+        
                         for item in final 
                             return {"interactions": item.interactions}
                         )
-
+        
                 let ints_paths = (
                     for i in ints
                         for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p}
                     )
-
+        
                 let seqs = (
                     for i in ints
                         for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p, "sequences": v}
                 )
-
+        
                 let amys = (
                     for item in seqs
                         for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "amyloids": v}
                 )  
-
+        
                 let orgs = (
                     for item in amys
                         for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "organisms": v}
                 )
-
+        
                 let props = (
                     for item in orgs
                         for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "properties": v}
                 )
-
+        
                 for item in union(
                     for item in ints_paths return item.paths,
                     for item in seqs return item.paths,
@@ -215,12 +219,12 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             bind_vars={'q2': q2, 'q3': q3}
         )
 
-    elif q1 == (
-            "Faster aggregation" or "Slower aggregation" or "No aggregation" or "No effect" or "No information") and q3 == (
-            "Yes" or "No" or "No information"):
+    elif q1.lower() == (
+            "faster_aggregation" or "slower_aggregation" or "np_aggregation" or "no_effect" or "no_information") and q3.lower() == (
+            "yes" or "no" or "no_information"):
 
-        q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
-        q3 = "question3/" + q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+        q1 = "question1/" + q1
+        q3 = "question3/" + q3
 
         cursor = database.aql.execute(
             """let ints = (
@@ -235,43 +239,43 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
                                 filter v._id == @q3 
                                 return {"interactions": i}
                         )
-
+        
                         let final = intersection(que1, que3)
-
+        
                         for item in final 
                             return {"interactions": item.interactions}
                         )
-
+        
                 let ints_paths = (
                     for i in ints
                         for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p}
                     )
-
+        
                 let seqs = (
                     for i in ints
                         for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p, "sequences": v}
                 )
-
+        
                 let amys = (
                     for item in seqs
                         for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "amyloids": v}
                 )  
-
+        
                 let orgs = (
                     for item in amys
                         for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "organisms": v}
                 )
-
+        
                 let props = (
                     for item in orgs
                         for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "properties": v}
                 )
-
+        
                 for item in union(
                     for item in ints_paths return item.paths,
                     for item in seqs return item.paths,
@@ -283,15 +287,15 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             bind_vars={'q1': q1, 'q3': q3}
         )
 
-    elif q1 == (
-            "Faster aggregation" or "Slower aggregation" or "No aggregation" or "No effect" or "No information"):
+    elif q1.lower() == (
+            "faster_aggregation" or "slower_aggregation" or "np_aggregation" or "no_effect" or "no_information"):
 
-        q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+        q1 = "question1/" + q1
 
         cursor = database.aql.execute(
             """
             let ints = (
-
+        
                 for i in interactionsE
                     
                     let q1 = (
@@ -346,57 +350,57 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             bind_vars={'q1': q1}
         )
 
-    elif q2 == (
-            "Yes, direct evidence." or "Yes; implied by kinetics." or "Formation of fibrils by the interactee is inhibited" or "No" or "No information"):
+    elif q2.lower() == (
+            "yes_direct_evidence" or "yes_implied_by_kinetics" or "formation_of_fibrils_by_the_interactee_is_inhibited" or "no" or "no_information"):
 
-        q2 = "question2/" + q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+        q2 = "question2/" + q2
 
         cursor = database.aql.execute(
             """
             let ints = (
-
+        
                 for i in interactionsE
-
+        
                     let q2 = (
                         for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
                             filter v._id == @q2
                             return {"interactions": i}
                     )
-
+        
                 for item in q2 
                     return {"interactions": item.interactions}
             )
-
+        
             let ints_paths = (
                     for i in ints
                         for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p}
             )
-
+        
             let seqs = (
                 for i in ints
                     for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
                         return {"paths": p, "sequences": v}
             )
-
+        
             let amys = (
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
                         return distinct {"paths": p, "amyloids": v}
             )  
-
+        
             let orgs = (
                 for item in amys
                     for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
                         return distinct {"paths": p, "organisms": v}
             )
-
+        
             let props = (
                 for item in orgs
                     for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
                         return distinct {"paths": p, "properties": v}
             )
-
+        
             for item in union(
                 for item in ints_paths return item.paths,
                 for item in seqs return item.paths,
@@ -409,57 +413,57 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             bind_vars={'q2': q2}
         )
 
-    elif q3 == (
-            "Yes" or "No" or "No information"):
+    elif q3.lower() == (
+            "yes" or "no" or "no_information"):
 
-        q3 = "question3/" + q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+        q3 = "question3/" + q3
 
         cursor = database.aql.execute(
             """
             let ints = (
-
+        
                 for i in interactionsE
-
+        
                     let q3 = (
                         for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
                             filter v._id == @q3
                             return {"interactions": i}
                     )
-
+        
                 for item in q3
                     return {"interactions": item.interactions}
             )
-
+        
             let ints_paths = (
                     for i in ints
                         for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p}
             )
-
+        
             let seqs = (
                 for i in ints
                     for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
                         return {"paths": p, "sequences": v}
             )
-
+        
             let amys = (
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
                         return distinct {"paths": p, "amyloids": v}
             )  
-
+        
             let orgs = (
                 for item in amys
                     for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
                         return distinct {"paths": p, "organisms": v}
             )
-
+        
             let props = (
                 for item in orgs
                     for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
                         return distinct {"paths": p, "properties": v}
             )
-
+        
             for item in union(
                 for item in ints_paths return item.paths,
                 for item in seqs return item.paths,
@@ -479,37 +483,37 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
                         for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
                             return {"interactions": i}
                         )        
-
+        
                 let ints_paths = (
                     for i in ints
                         for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p}
                     )
-
+        
                 let seqs = (
                     for i in ints
                         for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
                             return {"paths": p, "sequences": v}
                 )
-
+        
                 let amys = (
                     for item in seqs
                         for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "amyloids": v}
                 )  
-
+        
                 let orgs = (
                     for item in amys
                         for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "organisms": v}
                 )
-
+        
                 let props = (
                     for item in orgs
                         for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
                             return distinct {"paths": p, "properties": v}
                 )
-
+        
                 for item in union(
                     for item in ints_paths return item.paths,
                     for item in seqs return item.paths,
