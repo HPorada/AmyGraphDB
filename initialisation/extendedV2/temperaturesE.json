@@ -1,0 +1,1 @@
+[{"_key": "psychrophilic", "_id": "temperaturesE/psychrophilic", "range": "<= 10\u00b0C"}, {"_key": "mesophilic", "_id": "temperaturesE/mesophilic", "range": "11\u00b0C-45\u00b0C"}, {"_key": "thermophilic", "_id": "temperaturesE/thermophilic", "range": "46\u00b0C-75\u00b0C"}, {"_key": "hyperthermophilic", "_id": "temperaturesE/hyperthermophilic", "range": ">75\u00b0C"}]

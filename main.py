@@ -1,15 +1,39 @@
-from initialisation import database
-from management.queries import simple_queries
+from initialisation import database, simple_JSON, extended_JSON, extendedV2_JSON
+from management.queries import simple_queries, extended_queries, extendedV2_queries
 from management import visualisation_functions as vf
 
 #simple_JSON.questionnaire_simple()
 #simple_JSON.experiments_simple()
 
-new_db = database.create_database('new_simple', 'root', 'Amyloids')
-database.import_collections(new_db, './initialisation/simple')
-graph = database.create_simple_graph(new_db)
+# new_db = database.create_database('new_simple', 'root', 'Amyloids')
+# database.import_collections(new_db, './initialisation/simple')
+# graph = database.create_simple_graph(new_db)
+#
+# simple_queries.filter_simple(new_db, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+#
+# vf.graphviz_graph('result', sequences=True)
+# vf.networkx_graph('result', True)
 
-simple_queries.filter_simple(new_db, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+# extended_JSON.questionnaire_extended()
+# extended_JSON.experiments_extended()
+
+# new_db = database.create_database('new_extended', 'root', 'Amyloids')
+# database.import_collections(new_db, './initialisation/extended')
+# graph = database.create_extended_graph(new_db)
+#
+# extended_queries.filter_extended(new_db, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+#
+# vf.graphviz_graph('result', sequences=True)
+# vf.networkx_graph('result', True)
+
+extendedV2_JSON.questionnaire_extended()
+extendedV2_JSON.experiments_extended()
+
+new_db = database.create_database('new_extendedV2', 'root', 'Amyloids')
+database.import_collections(new_db, './initialisation/extendedV2')
+graph = database.create_extendedV2_graph(new_db)
+
+extendedV2_queries.filter_extendedV2(new_db, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
 
 vf.graphviz_graph('result', sequences=True)
 vf.networkx_graph('result', True)
