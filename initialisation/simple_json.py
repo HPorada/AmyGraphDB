@@ -1,7 +1,14 @@
+import os
+
 import initialisation.additional_functions as add
 
 
 def questionnaire_simple():
+    files = os.listdir('./initialisation/simple')
+
+    for file in files:
+        os.remove('./initialisation/simple/' + file)
+
     sheet = add.open_questionnaire()
 
     # Dictionaries in lists

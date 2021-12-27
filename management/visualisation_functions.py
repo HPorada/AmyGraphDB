@@ -7,19 +7,17 @@ from pyvis.network import Network
 import plotly.graph_objects as go
 
 
-def graphviz_graph(filename, int_questions=False, sequences=False):
+def graphviz_graph(filename, int_questions=False, sequences=False, engine='dot', direction='LR'):
     with open(f"./management/json_data/{filename}.json", "r") as file:
         arango_graph = json.load(file)
 
     graph_name = filename
 
-    if len(arango_graph) <= 300:
-        engine = 'dot'
-    else:
-        engine = 'neato'
+    #engine alternative: neato
+    #direction alternative: TB
 
-    g = Digraph(graph_name, filename=f"./management/graphs/{graph_name}", format='jpeg', engine='dot',
-                graph_attr={'rankdir': 'LR'})
+    g = Digraph(graph_name, filename=f"./management/graphs/{graph_name}", format='jpeg', engine=engine,
+                graph_attr={'rankdir': direction})
     # g.attr(scale='2', label='Searching with starting node', fontsize='18')
     g.attr('node', shape='rectangle', style='filled', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
 

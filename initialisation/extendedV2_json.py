@@ -4,7 +4,12 @@ import os.path
 import initialisation.additional_functions as add
 
 
-def questionnaire_extended():
+def questionnaire_extendedV2():
+    files = os.listdir('./initialisation/extendedV2')
+
+    for file in files:
+        os.remove('./initialisation/extendedV2/' + file)
+
     sheet = add.open_questionnaire()
 
     # Dictionaries in lists
@@ -222,7 +227,7 @@ def questionnaire_extended():
     add.create_json("./initialisation/extendedV2/intque3.json", intque3)
 
 
-def experiments_extended():
+def experiments_extendedV2():
     sheet_amyloids, sheet_interactions = add.open_experiments()
 
     # Dictionaries in lists
@@ -346,8 +351,12 @@ def experiments_extended():
             org_list.append(organism)
             organisms.append(
                 {
-                    "_key": organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")", "").replace("/", "_"),
-                    "_id": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")", "").replace("/", "_"),
+                    "_key": organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")",
+                                                                                                                   "").replace(
+                        "/", "_"),
+                    "_id": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(",
+                                                                                                                 "").replace(
+                        ")", "").replace("/", "_"),
                     "lifestyle": lifestyle,
                     "temperature": temperature,
                     "pH": pH,
@@ -356,7 +365,9 @@ def experiments_extended():
 
             orgamy.append(
                 {
-                    "_from": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")", "").replace("/", "_"),
+                    "_from": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(",
+                                                                                                                   "").replace(
+                        ")", "").replace("/", "_"),
                     "_to": "amyloidsE/" + amyloid_name,
                 }
             )
@@ -367,7 +378,9 @@ def experiments_extended():
             temorg.append(
                 {
                     "_from": "temperaturesE/" + t,
-                    "_to": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")", "").replace("/", "_"),
+                    "_to": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(",
+                                                                                                                 "").replace(
+                        ")", "").replace("/", "_"),
                     "values": temperature,
                 }
             )
@@ -378,7 +391,9 @@ def experiments_extended():
             phorg.append(
                 {
                     "_from": "phsE/" + p,
-                    "_to": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")", "").replace("/", "_"),
+                    "_to": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(",
+                                                                                                                 "").replace(
+                        ")", "").replace("/", "_"),
                     "values": pH,
                 }
             )

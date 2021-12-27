@@ -5,6 +5,11 @@ import initialisation.additional_functions as add
 
 
 def questionnaire_extended():
+    files = os.listdir('./initialisation/extended')
+
+    for file in files:
+        os.remove('./initialisation/extended/' + file)
+
     sheet = add.open_questionnaire()
 
     # Dictionaries in lists
