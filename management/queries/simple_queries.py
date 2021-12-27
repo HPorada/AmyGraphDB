@@ -1,7 +1,7 @@
 import json
 
 
-def filter_simple(database, q1, q2, q3, filename="result"):
+def filter_questions_simple(database, q1, q2, q3, filename="result"):
     aql = database.aql
 
     cursor = database.aql.execute(
@@ -20,7 +20,7 @@ def filter_simple(database, q1, q2, q3, filename="result"):
         json.dump(inter, outfile)
 
 
-def contains_simple(database, fragment, filename="result"):
+def contains_fragment_simple(database, fragment, filename="result"):
     aql = database.aql
 
     cursor = database.aql.execute(

@@ -1,7 +1,7 @@
 import json
 
 
-def filter_extendedV2(database, q1, q2, q3, filename="result"):
+def filter_questions_extendedV2(database, q1, q2, q3, filename="result"):
     aql = database.aql
 
     q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
@@ -45,15 +45,11 @@ def filter_extendedV2(database, q1, q2, q3, filename="result"):
     )
 
     inter = [doc for doc in cursor]
-
-    # for x in inter:
-    #     print(x)
-
     with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
-def contains_extendedV2(database, fragment, filename="result"):
+def contains_fragment_extendedV2(database, fragment, filename="result"):
     aql = database.aql
 
     cursor = database.aql.execute(
@@ -65,9 +61,5 @@ def contains_extendedV2(database, fragment, filename="result"):
     )
 
     inter = [doc for doc in cursor]
-
-    # for x in inter:
-    #     print(x)
-
     with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
