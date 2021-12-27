@@ -60,3 +60,8 @@ def search_phrase_simple(database, key, filename="result"):
 
     with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
+
+
+def search_connected_simple(database, collection, start, filename="result"):
+    aql = database.aql()
+    # TODO
