@@ -5,14 +5,15 @@ from management import visualisation_functions as vf
 #simple_JSON.questionnaire_simple()
 #simple_JSON.experiments_simple()
 
-# new_db = database.create_database('new_simple', 'root', 'Amyloids')
-# database.import_collections(new_db, './initialisation/simple')
-# graph = database.create_simple_graph(new_db)
-#
-# simple_queries.filter_simple(new_db, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
-#
-# vf.graphviz_graph('result', sequences=True)
-# vf.networkx_graph('result', True)
+new_db = database.create_database('new_simple', 'root', 'Amyloids')
+#database.import_collections(new_db, './initialisation/simple')
+#graph = database.create_graph(new_db)
+database.create_view(new_db, "simple")
+
+#simple_queries.filter_questions_simple(new_db, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
+
+vf.graphviz_graph('result', sequences=True)
+vf.networkx_graph('result', True)
 
 # extended_JSON.questionnaire_extended()
 # extended_JSON.experiments_extended()

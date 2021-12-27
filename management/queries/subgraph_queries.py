@@ -530,68 +530,186 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         json.dump(inter, outfile)
 
 
-def subgraph_from_sequence(database, sequence, filename="result"):
+def subgraph_from_sequence(database, sequence=None, name=None, filename="result"):
     aql = database.aql
 
-    cursor = database.aql.execute(
-        """let seqs = (
-            for s in sequencesE
-                filter s.sequence == @seq
-                return {"sequences": s}
-        )
-        
-        let ints = (
-            for item in seqs
-                for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
-                    return {"paths": p, "interactions": v}
-        )
-        
-        let ques = (
-            for item in ints
-                for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
-                    return {"paths": p, "questions": v}
-        )
-        
-        let seqs2 = (
-            for item in ints
-                for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
-                    return {"paths": p, "sequences": v}
-        )
-        
-        let amys = (
-            for item in seqs2
-                for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
-                    return distinct{"paths": p, "amyloids": v}
-        )
-        
-        let orgs = (
-            for item in amys
-                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
-                    return distinct {"paths": p, "organisms": v}
-        )
-        
-        let props = (
-            for item in orgs
-                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
-                    return distinct {"paths": p, "properties": v}
-        )
-        
-        for item in union(
-            for item in ints return item.paths,
-            for item in ques return item.paths,
-            for item in amys return item.paths,
-            for item in orgs return item.paths,
-            for item in props return item.paths,
-            for item in seqs2 return item.paths
-        )
-            return item""",
-        bind_vars={'seq': sequence}
-    )
+    if sequence is not None and name is not None:
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequencesE
+                    filter s.sequence == @seq
+                    filter s._key = @name
+                    return {"sequences": s}
+            )
 
-    inter = [i for i in cursor]
+            let ints = (
+                for item in seqs
+                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                        return {"paths": p, "interactions": v}
+            )
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+            let ques = (
+                for item in ints
+                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                        return {"paths": p, "questions": v}
+            )
+
+            let seqs2 = (
+                for item in ints
+                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                        return {"paths": p, "sequences": v}
+            )
+
+            let amys = (
+                for item in seqs2
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                        return distinct{"paths": p, "amyloids": v}
+            )
+
+            let orgs = (
+                for item in amys
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                        return distinct {"paths": p, "organisms": v}
+            )
+
+            let props = (
+                for item in orgs
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                        return distinct {"paths": p, "properties": v}
+            )
+
+            for item in union(
+                for item in ints return item.paths,
+                for item in ques return item.paths,
+                for item in amys return item.paths,
+                for item in orgs return item.paths,
+                for item in props return item.paths,
+                for item in seqs2 return item.paths
+            )
+                return item""",
+            bind_vars={'seq': sequence, 'name': name}
+        )
+
+    elif sequence is not None:
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequencesE
+                    filter s.sequence == @seq
+                    return {"sequences": s}
+            )
+            
+            let ints = (
+                for item in seqs
+                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                        return {"paths": p, "interactions": v}
+            )
+            
+            let ques = (
+                for item in ints
+                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                        return {"paths": p, "questions": v}
+            )
+            
+            let seqs2 = (
+                for item in ints
+                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                        return {"paths": p, "sequences": v}
+            )
+            
+            let amys = (
+                for item in seqs2
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                        return distinct{"paths": p, "amyloids": v}
+            )
+            
+            let orgs = (
+                for item in amys
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                        return distinct {"paths": p, "organisms": v}
+            )
+            
+            let props = (
+                for item in orgs
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                        return distinct {"paths": p, "properties": v}
+            )
+            
+            for item in union(
+                for item in ints return item.paths,
+                for item in ques return item.paths,
+                for item in amys return item.paths,
+                for item in orgs return item.paths,
+                for item in props return item.paths,
+                for item in seqs2 return item.paths
+            )
+                return item""",
+            bind_vars={'seq': sequence}
+        )
+
+    elif name is not None:
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequencesE
+                    filter s._key == @name
+                    return {"sequences": s}
+            )
+
+            let ints = (
+                for item in seqs
+                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                        return {"paths": p, "interactions": v}
+            )
+
+            let ques = (
+                for item in ints
+                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                        return {"paths": p, "questions": v}
+            )
+
+            let seqs2 = (
+                for item in ints
+                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                        return {"paths": p, "sequences": v}
+            )
+
+            let amys = (
+                for item in seqs2
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                        return distinct{"paths": p, "amyloids": v}
+            )
+
+            let orgs = (
+                for item in amys
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                        return distinct {"paths": p, "organisms": v}
+            )
+
+            let props = (
+                for item in orgs
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                        return distinct {"paths": p, "properties": v}
+            )
+
+            for item in union(
+                for item in ints return item.paths,
+                for item in ques return item.paths,
+                for item in amys return item.paths,
+                for item in orgs return item.paths,
+                for item in props return item.paths,
+                for item in seqs2 return item.paths
+            )
+                return item""",
+            bind_vars={'name': name}
+        )
+
+    else:
+        cursor = None
+
+    if cursor is not None:
+        inter = [i for i in cursor]
+
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
 def subgraph_from_amyloid(database, amyloid, filename="result"):
