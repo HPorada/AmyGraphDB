@@ -23,6 +23,7 @@ def database_start(database, username, password, structure):
     if directory is not None:
         import_collections(database, directory)
         create_graph(database, structure)
+        create_view(database, structure)
 
 
 def create_json_files(structure):
