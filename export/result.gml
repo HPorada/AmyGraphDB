@@ -1,1176 +1,781 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
   <key id="d6" for="edge" attr.name="weight" attr.type="long" />
-  <key id="d5" for="node" attr.name="color" attr.type="string" />
-  <key id="d4" for="node" attr.name="shape" attr.type="string" />
-  <key id="d3" for="node" attr.name="size" attr.type="long" />
+  <key id="d5" for="node" attr.name="size" attr.type="long" />
+  <key id="d4" for="node" attr.name="color" attr.type="string" />
+  <key id="d3" for="node" attr.name="shape" attr.type="string" />
   <key id="d2" for="node" attr.name="group" attr.type="long" />
   <key id="d1" for="node" attr.name="label" attr.type="string" />
   <key id="d0" for="node" attr.name="title" attr.type="string" />
   <graph edgedefault="directed">
+    <node id="interactionsE/2">
+      <data key="d0">&lt;a href="javascript:alert(Abeta 40 used in THT and abeta 42 in TEM experiments)"&gt;Abeta 40 used in THT and abeta 42 in TEM experiments&lt;/a&gt;</data>
+      <data key="d1">int:2(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question1/No_information">
+      <data key="d1">No_information</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question2/Yes_direct_evidence">
+      <data key="d1">Yes_direct_evidence</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question3/Yes">
+      <data key="d1">Yes</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/5">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:5(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question1/Faster_aggregation">
+      <data key="d1">Faster_aggregation</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/6">
+      <data key="d0">&lt;a href="javascript:alert(hαSyn monomers (7 μM, 35 μM, 70 μM) / hIAPP monomers (2 μM, 4 μM))"&gt;hαSyn monomers (7 μM, 35 μM, 70 μM) / hIAPP monomers (2 μM, 4 μM)&lt;/a&gt;</data>
+      <data key="d1">int:6(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/13">
+      <data key="d0">&lt;a href="javascript:alert(The artilce described a lot of interaction, but only two interaction are in vitro)"&gt;The artilce described a lot of interaction, but only two interaction are in vitro&lt;/a&gt;</data>
+      <data key="d1">int:13(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question3/No">
+      <data key="d1">No</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/14">
+      <data key="d0">&lt;a href="javascript:alert(There was not sequence of amyloid beta and IAPP in article. There is no information about, which IAPP took part in the interaction. I assumed that it was human IAPP)"&gt;There was not sequence of amyloid beta and IAPP in article. There is no information about, which IAPP took part in the interaction. I assumed that it was human IAPP&lt;/a&gt;</data>
+      <data key="d1">int:14(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/82">
+      <data key="d0">&lt;a href="javascript:alert(I assume this is human beta amyloid)"&gt;I assume this is human beta amyloid&lt;/a&gt;</data>
+      <data key="d1">int:82(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/104">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:104(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/110">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:110(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/118">
+      <data key="d0">&lt;a href="javascript:alert(Interactor: RNQ-PD (395–1215 bp)
+Interactee: SUP35-NM)"&gt;Interactor: RNQ-PD (395–1215 bp)
+Interactee: SUP35-NM&lt;/a&gt;</data>
+      <data key="d1">int:118(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/119">
+      <data key="d0">&lt;a href="javascript:alert(Interactor: SUP35-NM
+Interactee: RNQ-PD)"&gt;Interactor: SUP35-NM
+Interactee: RNQ-PD&lt;/a&gt;</data>
+      <data key="d1">int:119(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/124">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:124(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question3/No_information">
+      <data key="d1">No_information</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/125">
+      <data key="d0">&lt;a href="javascript:alert(Interactee: amyloid beta 40)"&gt;Interactee: amyloid beta 40&lt;/a&gt;</data>
+      <data key="d1">int:125(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/126">
+      <data key="d0">&lt;a href="javascript:alert(Interactee: amyloid beta 42)"&gt;Interactee: amyloid beta 42&lt;/a&gt;</data>
+      <data key="d1">int:126(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/162">
+      <data key="d0">&lt;a href="javascript:alert(1–115 αsyn as interactor, 21–140 αsyn as interactee)"&gt;1–115 αsyn as interactor, 21–140 αsyn as interactee&lt;/a&gt;</data>
+      <data key="d1">int:162(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/163">
+      <data key="d0">&lt;a href="javascript:alert(1–129 αsyn as interactor, 21–140 αsyn as interactee)"&gt;1–129 αsyn as interactor, 21–140 αsyn as interactee&lt;/a&gt;</data>
+      <data key="d1">int:163(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/186">
+      <data key="d0">&lt;a href="javascript:alert(Immunolabeling confirmed , that fibrils consist of two different amyloids, however there is no information about the structure of resulting fibrils. Therefore, the answer for 3rd question was "no information".)"&gt;Immunolabeling confirmed , that fibrils consist of two different amyloids, however there is no information about the structure of resulting fibrils. Therefore, the answer for 3rd question was "no information".&lt;/a&gt;</data>
+      <data key="d1">int:186(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/187">
+      <data key="d0">&lt;a href="javascript:alert(Immunolabeling confirmed, that fibrils consist of two different amyloids, however there is no information about the structure of resulting fibrils. Therefore, the answer for 3rd question was "no information".)"&gt;Immunolabeling confirmed, that fibrils consist of two different amyloids, however there is no information about the structure of resulting fibrils. Therefore, the answer for 3rd question was "no information".&lt;/a&gt;</data>
+      <data key="d1">int:187(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/188">
+      <data key="d0">&lt;a href="javascript:alert(Δ71-82 α-syn, an artificial α-syn mutant (residues 71–82 in human α-syn were deleted) as interactor)"&gt;Δ71-82 α-syn, an artificial α-syn mutant (residues 71–82 in human α-syn were deleted) as interactor&lt;/a&gt;</data>
+      <data key="d1">int:188(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">square</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question1/No_aggregation">
+      <data key="d1">No_aggregation</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/189">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:189(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question1/Slower_aggregation">
+      <data key="d1">Slower_aggregation</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/196">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:196(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/213">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:213(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/219">
+      <data key="d0">&lt;a href="javascript:alert(Raman spectroscopy with SERS)"&gt;Raman spectroscopy with SERS&lt;/a&gt;</data>
+      <data key="d1">int:219(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/240">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:240(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="question1/No_effect">
+      <data key="d1">No_effect</data>
+      <data key="d2">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/300">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:300(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/309">
+      <data key="d0">&lt;a href="javascript:alert(hαSyn seeds (0.3, 0.5, 0.8, 1% (v/v)) / hαSyn
+seed = sonicated preformed fibrils)"&gt;hαSyn seeds (0.3, 0.5, 0.8, 1% (v/v)) / hαSyn
+seed = sonicated preformed fibrils&lt;/a&gt;</data>
+      <data key="d1">int:309(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/310">
+      <data key="d0">&lt;a href="javascript:alert(GroES E.coli seeds (1, 5, 10% v/v) / hαSyn
+seed = sonicated preformed fibrils)"&gt;GroES E.coli seeds (1, 5, 10% v/v) / hαSyn
+seed = sonicated preformed fibrils&lt;/a&gt;</data>
+      <data key="d1">int:310(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/323">
+      <data key="d0">&lt;a href="javascript:alert(Aβ1–42 monomers as interactor and Aβ1–40 fibrils as interactee)"&gt;Aβ1–42 monomers as interactor and Aβ1–40 fibrils as interactee&lt;/a&gt;</data>
+      <data key="d1">int:323(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/367">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:367(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/450">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:450(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/451">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:451(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/463">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:463(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/464">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:464(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/482">
+      <data key="d0">&lt;a href="javascript:alert(Hen egg lysozyme seeds (1, 5, 10% v/v) / hαSyn
+Seed = sonicated preformed fibrils)"&gt;Hen egg lysozyme seeds (1, 5, 10% v/v) / hαSyn
+Seed = sonicated preformed fibrils&lt;/a&gt;</data>
+      <data key="d1">int:482(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/489">
+      <data key="d0">&lt;a href="javascript:alert(The findings suggest that
+peptide- a-crystallin acts as a nucleus for binding of αB-crystallin.)"&gt;The findings suggest that
+peptide- a-crystallin acts as a nucleus for binding of αB-crystallin.&lt;/a&gt;</data>
+      <data key="d1">int:489(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/509">
+      <data key="d0">&lt;a href="javascript:alert(A53T hαSyn seeds / WT hαSyn monomers)"&gt;A53T hαSyn seeds / WT hαSyn monomers&lt;/a&gt;</data>
+      <data key="d1">int:509(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/510">
+      <data key="d0">&lt;a href="javascript:alert(A30P hαSyn seeds / WT hαSyn monomers)"&gt;A30P hαSyn seeds / WT hαSyn monomers&lt;/a&gt;</data>
+      <data key="d1">int:510(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/511">
+      <data key="d0">&lt;a href="javascript:alert(WT hαSyn seeds / WT hαSyn monomers)"&gt;WT hαSyn seeds / WT hαSyn monomers&lt;/a&gt;</data>
+      <data key="d1">int:511(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/512">
+      <data key="d0">&lt;a href="javascript:alert(A30P hαSyn seeds / A30P hαSyn monomers)"&gt;A30P hαSyn seeds / A30P hαSyn monomers&lt;/a&gt;</data>
+      <data key="d1">int:512(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/513">
+      <data key="d0">&lt;a href="javascript:alert(WT hαSyn seeds / A30P hαSyn monomers)"&gt;WT hαSyn seeds / A30P hαSyn monomers&lt;/a&gt;</data>
+      <data key="d1">int:513(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/515">
+      <data key="d0">&lt;a href="javascript:alert(A53T hαSyn seeds / A53T hαSyn monomers)"&gt;A53T hαSyn seeds / A53T hαSyn monomers&lt;/a&gt;</data>
+      <data key="d1">int:515(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/516">
+      <data key="d0">&lt;a href="javascript:alert(WT hαSyn seeds / A53T hαSyn monomers)"&gt;WT hαSyn seeds / A53T hαSyn monomers&lt;/a&gt;</data>
+      <data key="d1">int:516(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/522">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:522(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/523">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:523(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/568">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:568(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">square</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/608">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:608(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/610">
+      <data key="d0">&lt;a href="javascript:alert(interactor: CRES3 fibrils)"&gt;interactor: CRES3 fibrils&lt;/a&gt;</data>
+      <data key="d1">int:610(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/613">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:613(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/614">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:614(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/615">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:615(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/627">
+      <data key="d0">&lt;a href="javascript:alert(ab40+IAPP (16.5 um+16.5 uM))"&gt;ab40+IAPP (16.5 um+16.5 uM)&lt;/a&gt;</data>
+      <data key="d1">int:627(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/698">
+      <data key="d0">&lt;a href="javascript:alert(wt proSP-C BRICHOS as interactor. The authors used also proSP-C BRICHOS modifications such as trypsinization  or addition of bis-ANS, what also resulted in slower aggregation.)"&gt;wt proSP-C BRICHOS as interactor. The authors used also proSP-C BRICHOS modifications such as trypsinization  or addition of bis-ANS, what also resulted in slower aggregation.&lt;/a&gt;</data>
+      <data key="d1">int:698(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/707">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:707(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/708">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:708(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/709">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:709(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/710">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:710(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/711">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:711(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/712">
+      <data key="d0">&lt;a href="javascript:alert(NMR)"&gt;NMR&lt;/a&gt;</data>
+      <data key="d1">int:712(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/713">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:713(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/744">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:744(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/813">
+      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
+      <data key="d1">int:813(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/827">
+      <data key="d0">&lt;a href="javascript:alert(Aβ (1–40) / Aβ (1–42))"&gt;Aβ (1–40) / Aβ (1–42)&lt;/a&gt;</data>
+      <data key="d1">int:827(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">box</data>
+      <data key="d4">#1A870A</data>
+      <data key="d5">10</data>
+    </node>
     <node id="sequencesE/1">
       <data key="d0">KCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTY</data>
       <data key="d1">seq:1</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/1">
-      <data key="d0">Abeta 40 used in THT and abeta 42 in TEM experiments</data>
-      <data key="d1">int:1(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/3">
+      <data key="d0">DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA</data>
+      <data key="d1">seq:3</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/2">
-      <data key="d0">Abeta 40 used in THT and abeta 42 in TEM experiments</data>
-      <data key="d1">int:2(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">box</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/6">
-      <data key="d0">hαSyn monomers (7 μM, 35 μM, 70 μM) / hIAPP monomers (2 μM, 4 μM)</data>
-      <data key="d1">int:6(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/14">
-      <data key="d0">There was not sequence of amyloid beta and IAPP in article. There is no information about, which IAPP took part in the interaction. I assumed that it was human IAPP</data>
-      <data key="d1">int:14(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/17">
-      <data key="d0">hαSyn seeds, i.e. sonicated pre-formed hαSyn fibrils (7 μM) / hIAPP monomers (2 μM)
-
-Together, these data provide evidence that hαSyn and hIAPP monomers dose-dependently and bi-directionally cross-seed and co-aggregate into hybrid amyloid fibrils at concentrations of αSyn monomer of 7 μM or higher, whereas seeds and fibrils are less potent at crossseeding IAPP monomer fibril formation and growth at equimolar concentrations.</data>
-      <data key="d1">int:17(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/18">
-      <data key="d0">hαSyn pre-formed fibrils (7 μM) / hIAPP monomers (2 μM)
-
-Together, these data provide evidence that hαSyn and hIAPP monomers dose-dependently and bi-directionally cross-seed and co-aggregate into hybrid amyloid fibrils at concentrations of αSyn monomer of 7 μM or higher, whereas seeds and fibrils are less potent at crossseeding IAPP monomer fibril formation and growth at equimolar concentrations.</data>
-      <data key="d1">int:18(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/19">
-      <data key="d0">hαSyn seeds (i.e. sonicated pre-formed) and fibrils (35 and 70 µM) / hIAPP monomers (2 μM) 
-
-Together, these data provide evidence that hαSyn and hIAPP monomers dose-dependently and bi-directionally cross-seed and co-aggregate into hybrid amyloid fibrils at concentrations of αSyn monomer of 7 μM or higher, whereas seeds and fibrils are less potent at crossseeding IAPP monomer fibril formation and growth at equimolar concentrations.</data>
-      <data key="d1">int:19(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/20">
-      <data key="d0">hαSyn 0,2 μM monomers/seeds/fibrils / hIAPP monomers (2 μM) 
-
-Together, these data provide evidence that hαSyn and hIAPP monomers dose-dependently and bi-directionally cross-seed and co-aggregate into hybrid amyloid fibrils at concentrations of αSyn monomer of 7 μM or higher, whereas seeds and fibrils are less potent at crossseeding IAPP monomer fibril formation and growth at equimolar concentrations.</data>
-      <data key="d1">int:20(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/61">
-      <data key="d0">nan</data>
-      <data key="d1">int:61(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/63">
-      <data key="d0">Q4A mutant of GNNQQNY - a short fragment from yeast prion protein Sup35 as interactor</data>
-      <data key="d1">int:63(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/71">
-      <data key="d0">Adding GNNQQNY (15 μM) to preformed hIAPP (15 μM)  seeds formed at different aggregation stage. Here, addition of GNNQQNY to 5 h (lag phase) hIAPP seeds</data>
-      <data key="d1">int:71(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/72">
-      <data key="d0">Adding GNNQQNY (15 μM) to preformed hIAPP (15 μM)  seeds formed at different aggregation stage. Here, addition of GNNQQNY to 12 h (growth phase) hIAPP seeds.</data>
-      <data key="d1">int:72(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/73">
-      <data key="d0">Adding GNNQQNY (15 μM) to preformed hIAPP (15 μM)  seeds formed at different aggregation stage. Here, addition of GNNQQNY to 18 h (early equilibrium phase) hIAPP seeds.</data>
-      <data key="d1">int:73(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/96">
-      <data key="d0">IAPP 1-37 as interactee</data>
-      <data key="d1">int:96(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/99">
-      <data key="d0">nan</data>
-      <data key="d1">int:99(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/101">
-      <data key="d0">nan</data>
-      <data key="d1">int:101(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/102">
-      <data key="d0">nan</data>
-      <data key="d1">int:102(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/103">
-      <data key="d0">nan</data>
-      <data key="d1">int:103(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/112">
-      <data key="d0">Insulin / IAPP (0,5 μM, 1 μM, 2 μM insulin / 25 μM IAPP – kinetyka; 2 μM, 5 μM insulin / 25 μM IAPP – TEM; 2 μM insulin / 25 μM IAPP – MS)</data>
-      <data key="d1">int:112(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/113">
-      <data key="d0">2 μM insulin / 10 μM IAPP</data>
-      <data key="d1">int:113(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/114">
-      <data key="d0">2 μM insulin / seeded IAPP = 25 μM IAPP and 2 μM fiber seed; insulin is slowing down the seeded interaction, but it is still faster than IAPP alone; but the effect "faster" is not due to insulin, but to seed in fact; so interactee is not elongating by attaching to interactor
+    <node id="sequencesE/5">
+      <data key="d0">MKPTMALKPLVFALAALMAVAAQAGPAEKWKPTPAPTGTVAAAVTDTQVSKDNKFDDTKT
+LNNAGANGSLSNSKGNLGANIAAGSGNQQDNAAAITSSAGDAATVFAVADIYQESKDNKF
+TNKGTQNNALLNNSANNSSGNVGVNVAAGQGNQQKNNLAIVTADGKNVAAASNTEQVSLD
+NHFLNEASSKHSYKPQYVVNNAGLLNSANNASGNIGVNVAAGAGNQQSNTLTLGSGCTVC
+AAGTGSKLAF
 </data>
-      <data key="d1">int:114(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
+      <data key="d1">seq:5</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/115">
-      <data key="d0">2 μM IAPP fiber seed / 25 μM IAPP</data>
-      <data key="d1">int:115(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/6">
+      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA</data>
+      <data key="d1">seq:6</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/151">
-      <data key="d0">Effects of insulin on the formation of amyloid by IAPP in the presence of Heperan Sulfate - Insulin Is a Significantly Less Effective Inhibitor in the Presence of Heparan Sulfate</data>
-      <data key="d1">int:151(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/2">
+      <data key="d0">DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV</data>
+      <data key="d1">seq:2</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/154">
-      <data key="d0">Inhibition by insulin of the formation of amyloid by IAPP in the  absence of Heperan Sulfate in buffer without HFIP</data>
-      <data key="d1">int:154(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/35">
+      <data key="d0">DAEFRHDSGYEVHHQKLVFFAGDVGSNKGAIIGLMVGGVV</data>
+      <data key="d1">seq:35</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/155">
-      <data key="d0">Inhibition by insulin of the formation of amyloid by IAPP in the presence of Heperan Sulfate in buffer without HFIP</data>
-      <data key="d1">int:155(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/28">
+      <data key="d0">QTAPVPMPDLKNVKSKIGSTENLKHQPGGGKVQIINKKLDLSNVQSKCGSKDNIKHVPGGGSVQIVYKPVDLSKVTSKCGSLGNIHHKPGGGQVEVKSEKLDFKDRVQSKIGSLDNITHVPGGGNKKIE</data>
+      <data key="d1">seq:28</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/176">
-      <data key="d0">CsgB preformed fibers (CsgB 1%, 2,5%, 5%, 10% - mol%) / 2,5 μM IAPP
-CsgA 1%, 2,5%, 5% - mol%, I assumed that it is from E.coli</data>
-      <data key="d1">int:176(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/51">
+      <data key="d0">MDTDKLISEA ESHFSQGNHA EAVAKLTSAA QSNPNDEQMS TIESLIQKIA 
+        60         70         80         90        100
+GYVMDNRSGG SDASQDRAAG GGSSFMNTLM ADSKGSSQTQ LGKLALLATV 
+       110        120        130        140        150
+MTHSSNKGSS NRGFDVGTVM SMLSGSGGGS QSMGASGLAA LASQFFKSGN 
+       160        170        180        190        200
+NSQGQGQGQG QGQGQGQGQG QGSFTALASL ASSFMNSNNN NQQGQNQSSG 
+       210        220        230        240        250
+GSSFGALASM ASSFMHSNNN QNSNNSQQGY NQSYQNGNQN SQGYNNQQYQ 
+       260        270        280        290        300
+GGNGGYQQQQ GQSGGAFSSL ASMAQSYLGG GQTQSNQQQY NQQGQNNQQQ 
+       310        320        330        340        350
+YQQQGQNYQH QQQGQQQQQG HSSSFSALAS MASSYLGNNS NSNSSYGGQQ 
+       360        370        380        390        400
+QANEYGRPQQ NGQQQSNEYG RPQYGGNQNS NGQHESFNFS GNFSQQNNNG 
+
+NQNRY   </data>
+      <data key="d1">seq:51</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/177">
-      <data key="d0">Preformed Aβ (1–40) (1% - mol%) / 5 μM Aβ (1–40)</data>
-      <data key="d1">int:177(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/52">
+      <data key="d0">MSDSNQGNNQ QNYQQYSQNG NQQQGNNRYQ GYQAYNAQAQ PAGGYYQNYQ 
+        60         70         80         90        100
+GYSGYQQGGY QQYNPDAGYQ QQYNPQGGYQ QYNPQGGYQQ QFNPQGGRGN 
+       110        120        130        140        150
+YKNFNYNNNL QGYQAGFQPQ SQGMSLNDFQ KQQKQAAPKP KKTLKLVSSS 
+       160        170        180        190        200
+GIKLANATKK VDTKPAESDK KEEEKSAETK EPTKEPTKVE EPVKKEEKPV 
+       210        220        230        240        250
+QTEEKTEEKS ELPKVEDLKI SESTHNTNNA NVTSADALIK EQEEEVDDEV 
+       260        270        280        290        300
+VNDMFGGKDH VSLIFMGHVD AGKSTMGGNL LYLTGSVDKR TIEKYEREAK 
+       310        320        330        340        350
+DAGRQGWYLS WVMDTNKEER NDGKTIEVGK AYFETEKRRY TILDAPGHKM 
+       360        370        380        390        400
+YVSEMIGGAS QADVGVLVIS ARKGEYETGF ERGGQTREHA LLAKTQGVNK 
+       410        420        430        440        450
+MVVVVNKMDD PTVNWSKERY DQCVSNVSNF LRAIGYNIKT DVVFMPVSGY 
+       460        470        480        490        500
+SGANLKDHVD PKECPWYTGP TLLEYLDTMN HVDRHINAPF MLPIAAKMKD 
+       510        520        530        540        550
+LGTIVEGKIE SGHIKKGQST LLMPNKTAVE IQNIYNETEN EVDMAMCGEQ 
+       560        570        580        590        600
+VKLRIKGVEE EDISPGFVLT SPKNPIKSVT KFVAQIAIVE LKSIIAAGFS 
+       610        620        630        640        650
+CVMHVHTAIE EVHIVKLLHK LEKGTNRKSK KPPAFAKKGM KVIAVLETEA 
+       660        670        680 
+PVCVETYQDY PQLGRFTLRD QGTTIAIGKI VKIAE</data>
+      <data key="d1">seq:52</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/200">
-      <data key="d0">CsgA preformed fibers (CsgA 1%, 2,5% - mol%) / 2,5 μM IAPP
-CsgA - I assumed that it is from E.coli</data>
-      <data key="d1">int:200(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/53">
+      <data key="d0">MDTDKLISEAESHFSQGNHAEAVAKLTSAAQSNPNDEQMSTIESLIQKIAGYVMDNRSGG
+SDASQDRAAGGGSSFMNTLMADSKGSSQTQLGKLALLATVMTHSSNKGSSNRGFDVGTVM
+SMLSGSGGGSQSMGASGLAALASQFFKSGNNSQGQGQGQGQGQGQGQGQGQGSFTALASL
+ASSFMNSNNNNQQGQNQSSGGSSFGALASMASSFMHSNNNQNSNNSQQGYNQSYQNGNQN
+SQGYNNQQYQGGNGGYQQQQGQSGGAFSSLASMAQSYLGGGQTQSNQQQYNQQGQNNQQQ
+YQQQGQNYQHQQQGQQQQQGHSSSFSALASMASSYLGNNSNSNSSYGGQQQANEYGRPQQ
+NGQQQSNEYGRPQYGGNQNSNGQHESFNFSGNFSQQNNNGNQNRY</data>
+      <data key="d1">seq:53</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/201">
-      <data key="d0">CsgA preformed fibers (CsgA 10% - mol%) / 2,5 μM IAPP
-CsgA - I assumed that it is from E.coli</data>
-      <data key="d1">int:201(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/54">
+      <data key="d0">MSDSNQGNNQQNYQQYSQNGNQQQGNNRYQGYQAYNAQAQPAGGYYQNYQGYSGYQQGGY
+QQYNPDAGYQQQYNPQGGYQQYNPQGGYQQQFNPQGGRGNYKNFNYNNNLQGYQAGFQPQ
+SQGMSLNDFQKQQKQAAPKPKKTLKLVSSSGIKLANATKKVGTKPAESDKKEEEKSAETK
+EPTKEPTKVEEPVKKEEKPVQTEEKTEEKSELPKVEDLKISESTHNTNNANVTSADALIK
+EQEEEVDDEVVNDMFGGKDHVSLIFMGHVDAGKSTMGGNLLYLTGSVDKRTIEKYEREAK
+DAGRQGWYLSWVMDTNKEERNDGKTIEVGKAYFETEKRRYTILDAPGHKMYVSEMIGGAS
+QADVGVLVISARKGEYETGFERGGQTREHALLAKTQGVNKMVVVVNKMDDPTVNWSKERY
+DQCVSNVSNFLRAIGYNIKTDVVFMPVSGYSGANLKDHVDPKECPWYTGPTLLEYLDTMN
+HVDRHINAPFMLPIAAKMKDLGTIVEGKIESGHIKKGQSTLLMPNKTAVEIQNIYNETEN
+EVDMAMCGEQVKLRIKGVEEEDISPGFVLTSPKNPIKSVTKFVAQIAIVELKSIIAAGFS
+CVMHVHTAIEEVHIVKLLHKLEKGTNRKSKKPPAFAKKGMKVIAVLETEAPVCVETYQDY
+PQLGRFTLRDQGTTIAIGKIVKIAE</data>
+      <data key="d1">seq:54</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/202">
-      <data key="d0">CsgA preformed fibers (CsgA 5% - mol%) / 2,5 μM IAPP
-CsgA - I assumed that it is from E.coli</data>
-      <data key="d1">int:202(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/213">
-      <data key="d0">nan</data>
-      <data key="d1">int:213(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/219">
-      <data key="d0">Raman spectroscopy with SERS</data>
-      <data key="d1">int:219(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">box</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/221">
-      <data key="d0">nan</data>
-      <data key="d1">int:221(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/240">
-      <data key="d0">nan</data>
-      <data key="d1">int:240(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/241">
-      <data key="d0">the fibrils affect the monomers</data>
-      <data key="d1">int:241(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/242">
-      <data key="d0">nan</data>
-      <data key="d1">int:242(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/243">
-      <data key="d0">here, seeds affect the monomers. They have not described what they call seeds</data>
-      <data key="d1">int:243(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/285">
-      <data key="d0">Monomeric or oligomeric form of interactor was considered and gave similar results - slowing down of aggregation, but no information about making fibrils.</data>
-      <data key="d1">int:285(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/286">
-      <data key="d0">Slower aggregation was observed, but no information about making fibrils.</data>
-      <data key="d1">int:286(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/287">
-      <data key="d0">Slower aggregation was observed, but no information about making fibrils.</data>
-      <data key="d1">int:287(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/312">
-      <data key="d0">nan</data>
-      <data key="d1">int:312(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/313">
-      <data key="d0">nan</data>
-      <data key="d1">int:313(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/314">
-      <data key="d0">nan</data>
-      <data key="d1">int:314(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/331">
-      <data key="d0">Due to the authors, insulin is composed of two chains, A and B, crosslinked by two disulfide bridges. Therefore the sequence: Insulin = Chain B + Chain A were taken. Here, bovine insulin.</data>
-      <data key="d1">int:331(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/332">
-      <data key="d0">Due to the authors, insulin is composed of two chains, A and B, crosslinked by two disulfide bridges. Therefore the sequence: Insulin = Chain B + Chain A were taken. Here, human insulin.</data>
-      <data key="d1">int:332(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/333">
-      <data key="d0">Human insulin B chain as interactor</data>
-      <data key="d1">int:333(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/334">
-      <data key="d0">Human insulin A chain as interactor</data>
-      <data key="d1">int:334(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/335">
-      <data key="d0">Human insulin B chain (9-18) as interactor</data>
-      <data key="d1">int:335(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/336">
-      <data key="d0">Human insulin B chain (10-19) as interactor</data>
-      <data key="d1">int:336(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/337">
-      <data key="d0">Human insulin B chain (11-20) as interactor</data>
-      <data key="d1">int:337(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/375">
-      <data key="d0">INTERACTEE- IAPP
-INTERACTOR- IAPP- AL, analogue with methylation at A25 and L27: IAPP-FA,  analogue with methylation at F23 and A25
-                           </data>
-      <data key="d1">int:375(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/376">
-      <data key="d0">INTERACTEE- aB40
-INTERACTOR- IAPP- AL, analogue with methylation at A25 and L27: IAPP-FA,  analogue with methylation at F23 and A25
+    <node id="sequencesE/58">
+      <data key="d0">&gt;Amyloid beta 40
+DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV
+&gt;Amyloid beta 42
+DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA
 </data>
-      <data key="d1">int:376(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/467">
-      <data key="d0">nan</data>
-      <data key="d1">int:467(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/474">
-      <data key="d0">nan</data>
-      <data key="d1">int:474(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/487">
-      <data key="d0">The sequence of TTR L12P</data>
-      <data key="d1">int:487(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/488">
-      <data key="d0">The interactor in this case was Apo E protein</data>
-      <data key="d1">int:488(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/556">
-      <data key="d0">Interactor (L3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + LLL + IAPP(22-28) )</data>
-      <data key="d1">int:556(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/557">
-      <data key="d0">Interactor (V3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + VVV + IAPP(22-28) )</data>
-      <data key="d1">int:557(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/558">
-      <data key="d0">Interactor (G3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + GGG + IAPP(22-28) )</data>
-      <data key="d1">int:558(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/559">
-      <data key="d0">Interactor (A3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + AAA + IAPP(22-28) )</data>
-      <data key="d1">int:559(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/560">
-      <data key="d0">Interactor (IAPP-GI) = [(N-Me)G24,(N-Me)I26]- IAPP(8-28)</data>
-      <data key="d1">int:560(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/567">
-      <data key="d0">Double N-methylated full length (37 residues) IAPP analog [(N-Me)G24, (N-Me)I26]-IAPP (IAPP-GI) as interactor. The authors added  IAPP-GI to IAPP at various time points (0 min, 30 min, 4h, 8h). IAPP-GI completely interrupted IAPP fibrillization (at 1∕1) regardless of the stage of the process, i.e., when added both before and after nucleation.</data>
-      <data key="d1">int:567(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/571">
-      <data key="d0">Interactee: WT IAPP
-Interactor: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:571(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/572">
-      <data key="d0">Interactee: WT IAPP
-Interactor: IAPP H18L </data>
-      <data key="d1">int:572(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/573">
-      <data key="d0">Interactee: WT IAPP
-Interactor: IAPP I26P</data>
-      <data key="d1">int:573(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/574">
-      <data key="d0">"Interactee: WT IAPP
-Interactor: rat IAPP</data>
-      <data key="d1">int:574(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/575">
-      <data key="d0">Interactee: WT IAPP
-Interactor: IAPP S20G</data>
-      <data key="d1">int:575(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/576">
-      <data key="d0">Interactee: rat IAPP
-Interactor: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:576(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/580">
-      <data key="d0">Interactee: rat IAPP
-Interactor: wt IAPP</data>
-      <data key="d1">int:580(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/581">
-      <data key="d0">Interactor: WT IAPP
-Interactee: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:581(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/582">
-      <data key="d0">Interactor: RAT IAPP
-Interactee: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:582(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/583">
-      <data key="d0">Interactor: H18L IAPP
-Interactee: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:583(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/584">
-      <data key="d0">Interactor: I26P IAPP
-Interactee: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:584(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/586">
-      <data key="d0">Interactor: S20G IAPP
-Interactee: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:586(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/587">
-      <data key="d0">Interactor: WT IAPP
-Interactee: H18L IAPP</data>
-      <data key="d1">int:587(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/588">
-      <data key="d0">Interactee: H18L IAPP
-Interactor: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:588(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/592">
-      <data key="d0">Interactor: WT IAPP
-Interactee: I26P IAPP</data>
-      <data key="d1">int:592(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/594">
-      <data key="d0">Interactee: I26P IAPP
-Interactor: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:594(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/596">
-      <data key="d0">Interactee: S20G IAPP
-Interactor: WT I26P</data>
-      <data key="d1">int:596(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/598">
-      <data key="d0">Interactee: S20G IAPP
-Interactor: Free-CT (free carboxyl at the C-terminus) IAPP</data>
-      <data key="d1">int:598(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/626">
-      <data key="d0">In hIAPP (N-Me)IG26 and (N-Me)I26 are N-methylation of two amide bonds on the same “side” of the b-strand in the amyloid core sequence IAPP(22–27), so this  sequence is mutated</data>
-      <data key="d1">int:626(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/627">
-      <data key="d0">ab40+IAPP (16.5 um+16.5 uM)</data>
-      <data key="d1">int:627(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/702">
-      <data key="d0">The Interactor is mutated sequence of hIAPP, called in publication IAPP-GI, [(N-Me)G24, (N-Me)I26]-IAPP]</data>
-      <data key="d1">int:702(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/707">
-      <data key="d0">nan</data>
-      <data key="d1">int:707(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/735">
-      <data key="d0">nan</data>
-      <data key="d1">int:735(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/736">
-      <data key="d0">nan</data>
-      <data key="d1">int:736(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/744">
-      <data key="d0">nan</data>
-      <data key="d1">int:744(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">box</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/746">
-      <data key="d0">nan</data>
-      <data key="d1">int:746(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/755">
-      <data key="d0">nan</data>
-      <data key="d1">int:755(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/756">
-      <data key="d0">nan</data>
-      <data key="d1">int:756(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/771">
-      <data key="d0">Bri2 was added to IAPP in different ratios and at different time points. No aggregation was obtained for: 5 µM Bri2 and 50µM IAPP from the start; ratio 1:1 from the start, during lag phase and elongation phase, 10:1 ratio from the start. </data>
-      <data key="d1">int:771(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/772">
-      <data key="d0">Bri2 was added to IAPP in different ratios and at different time points. Slower aggregation was obtained for: 10:1 ratio (Bri2 BRICHOS (5 µM) to IAPP (50 µM))  during the lag phase.</data>
-      <data key="d1">int:772(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/773">
-      <data key="d0">Bri2 was added to IAPP in different ratios and at different time points. No effect was obtained for: 10:1 ratio (Bri2 BRICHOS (5 µM) to IAPP (50 µM))  during the elongation phase.</data>
-      <data key="d1">int:773(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/803">
-      <data key="d0">nan</data>
-      <data key="d1">int:803(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/804">
-      <data key="d0">nan</data>
-      <data key="d1">int:804(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/817">
-      <data key="d0">rat IAPP / human IAPP</data>
-      <data key="d1">int:817(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/854">
-      <data key="d0">monomeric rat IAPP / hIAPP</data>
-      <data key="d1">int:854(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/855">
-      <data key="d0">hIAPP fibrils (10% seeds) / hIAPP</data>
-      <data key="d1">int:855(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/856">
-      <data key="d0">hIAPP fibrils (10% seeds) / rat IAP</data>
-      <data key="d1">int:856(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/857">
-      <data key="d0">monomeric A13P rat IAPP / hIAPP</data>
-      <data key="d1">int:857(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/858">
-      <data key="d0">monomeric F15D rat IAPP / hIAPP</data>
-      <data key="d1">int:858(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/8">
-      <data key="d0">&gt;sp|P10997|IAPP_HUMAN Islet amyloid polypeptide OS=Homo sapiens OX=9606 GN=IAPP PE=1 SV=1
-MGILKLQVFLIVLSVALNHLKATPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAIL
-SSTNVGSNTYGKRNAVEVLKREPLNYLPL</data>
-      <data key="d1">seq:8</data>
+      <data key="d1">seq:58</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/7">
-      <data key="d0">Interactor: aS amyloid fibrils</data>
-      <data key="d1">int:7(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/9">
-      <data key="d0">MGILKLQVFLIVLSVALNHLKATPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAIL
-SSTNVGSNTYGKRNAVEVLKREPLNYLPL</data>
-      <data key="d1">seq:9</data>
+    <node id="sequencesE/59">
+      <data key="d0">MAEPRQEFEV MEDHAGTYGL GDRKDQGGYT MHQDQEGDTD AGLKESPLQT PTEDGSEEPG SETSDAKSTP TAEDVTAPLV DEGAPGKQAA AQPHTEIPEG TTAEEAGIGD TPSLEDEAAG HVTQARMVSK SKDGTGSDDK KAKGADGKTK IATPRGAAPP GQKGQANATR IPAKTPPAPK TPPSSGEPPK SGDRSGYSSP GSPGTPGSRS RTPSLPTPPT REPKKVAVVR TPPKSPSSAK SRLQTAPVPM PDLKNVKSKI GSTENLKHQP GGGKVQIINK KLDLSNVQSK CGSKDNIKHV PGGGSVQIVY KPVDLSKVTS KCGSLGNIHH KPGGGQVEVK SEKLDFKDRV QSKIGSLDNI THVPGGGNKK IETHKLTFRE NAKAKTDHGA EIVYKSPVVS GDTSPRHLSN VSSTGSIDMV DSPQLATLAD EVSASLAKQG L</data>
+      <data key="d1">seq:59</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/8">
-      <data key="d0">Interactor: IAPP amyloid fibrils</data>
-      <data key="d1">int:8(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/15">
-      <data key="d0">Interactor: aS amyloid monomers</data>
-      <data key="d1">int:15(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/16">
-      <data key="d0">Interactor: IAPP amyloid monomers</data>
-      <data key="d1">int:16(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/111">
-      <data key="d0">nan</data>
-      <data key="d1">int:111(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/179">
-      <data key="d0">Interactor: rIAPP
-Interactee: hIAPP (nucleation stage)</data>
-      <data key="d1">int:179(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/180">
-      <data key="d0">Interactor: rIAPP
-Interactee: hIAPP (growth phase)</data>
-      <data key="d1">int:180(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/181">
-      <data key="d0">Interactor: rIAPP
-Interactee: hIAPP (plateau stage)</data>
-      <data key="d1">int:181(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/406">
-      <data key="d0">nan</data>
-      <data key="d1">int:406(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/409">
-      <data key="d0">nan</data>
-      <data key="d1">int:409(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/452">
-      <data key="d0">IAPP rat and human, molekularne symulacje</data>
-      <data key="d1">int:452(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/460">
-      <data key="d0">nan</data>
-      <data key="d1">int:460(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/461">
-      <data key="d0">nan</data>
-      <data key="d1">int:461(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/500">
-      <data key="d0">nan</data>
-      <data key="d1">int:500(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/608">
-      <data key="d0">nan</data>
-      <data key="d1">int:608(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/11">
-      <data key="d0">TPIESHQVELRLCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTYGLRNAVEVLKREPLNYLPL</data>
-      <data key="d1">seq:11</data>
+    <node id="sequencesE/57">
+      <data key="d0">&gt;Amyloid beta 40
+DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV
+</data>
+      <data key="d1">seq:57</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/9">
-      <data key="d0">Interactor: aS amyloid fibrils</data>
-      <data key="d1">int:9(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/10">
-      <data key="d0">Interactor: pro-IAPP amyloid fibrils</data>
-      <data key="d1">int:10(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/11">
-      <data key="d0">Interactor: pro-IAPP amyloid monomers</data>
-      <data key="d1">int:11(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/12">
-      <data key="d0">Interactor: aS amyloid monomers</data>
-      <data key="d1">int:12(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/44">
-      <data key="d0">TPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTY</data>
-      <data key="d1">seq:44</data>
+    <node id="sequencesE/56">
+      <data key="d0">&gt;Amyloid beta 42
+DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA</data>
+      <data key="d1">seq:56</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/97">
-      <data key="d0">proIAPP 1-48 as interactee</data>
-      <data key="d1">int:97(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/152">
-      <data key="d0">Effects of insulin on the formation of amyloid by proIAPP1–48 in the presence of Heperan Sulfate.; Concentrations (interactee to interactor): 20:1, 5:1</data>
-      <data key="d1">int:152(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/153">
-      <data key="d0">Effects of insulin on the formation of amyloid by proIAPP1–48 in the presence of Heperan Sulfate.; Concentrations (interactee to interactor): 1:1, 1:5</data>
-      <data key="d1">int:153(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/156">
-      <data key="d0">Inhibition by insulin of the formation of amyloid by proIAPP1–48 in the absence of Heperan Sulfate in buffer without HFIP.</data>
-      <data key="d1">int:156(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/157">
-      <data key="d0">Inhibition by insulin of the formation of amyloid by proIAPP1–48 in the presence of Heperan Sulfate in buffer without HFIP.</data>
-      <data key="d1">int:157(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/47">
-      <data key="d0">SGNNFGAILSS</data>
-      <data key="d1">seq:47</data>
+    <node id="sequencesE/76">
+      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILED</data>
+      <data key="d1">seq:76</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/100">
-      <data key="d0">nan</data>
-      <data key="d1">int:100(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/82">
-      <data key="d0">MRCISRLPAVLLILSVALGHLRATPVGSGTNPQVDKRKCNTATCATQRLANFLVRSSNNL
-GPVLPPTNVGSNTYGKRNVAEDPNRESLDFLLL</data>
-      <data key="d1">seq:82</data>
+    <node id="sequencesE/33">
+      <data key="d0">KTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA</data>
+      <data key="d1">seq:33</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="sequencesE/97">
-      <data key="d0">KCNTATCATQRLANFLVRSSNNLGPVLPPTNVGSNTY</data>
-      <data key="d1">seq:97</data>
+    <node id="sequencesE/74">
+      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDPDNEAYEMPS</data>
+      <data key="d1">seq:74</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/222">
-      <data key="d0">rat IAPP monomers (2 μM) / hαSyn monomers (7 μM) – co-incubation
-non-aggregating homologues of known amyloid protein</data>
-      <data key="d1">int:222(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/223">
-      <data key="d0">hαSyn monomers (7 μM) / rat IAPP monomers (2 μM) – co-incubation
-non-aggregating homologues of known amyloid protein</data>
-      <data key="d1">int:223(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/706">
-      <data key="d0">nan</data>
-      <data key="d1">int:706(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/107">
-      <data key="d0">NFGAILSS</data>
-      <data key="d1">seq:107</data>
+    <node id="sequencesE/49">
+      <data key="d0">MAEPRQEFEVMEDHAGTYGLGDRKDQGGYTMHQDQEGDTDAGLKESPLQTPTEDGSEEPGSETSDAKSTPTAEDVTAPLVDEGAPGKQAAAQPHTEIPEGTTAEEAGIGDTPSLEDEAAGHVTQARMVSKSKDGTGSDDKKAKGADGKTKIATPRGAAPPGQKGQANATRIPAKTPPAPKTPPSSGEPPKSGDRSGYSSPGSPGTPGSRSRTPSLPTPPTREPKKVAVVRTPPKSPSSAKSRLQTAPVPMPDLKNVKSKIGSTENLKHQPGGGKVQIINKKLDLSNVQSKCGSKDNIKHVPGGGSVQIVYKPVDLSKVTSKCGSLGNIHHKPGGGQVEVKSEKLDFKDRVQSKIGSLDNITHVPGGGNKKIETHKLTFRENAKAKTDHGAEIVYKSPVVSGDTSPRHLSNVSSTGSIDMVDSPQLATLADEVSASLAKQGL</data>
+      <data key="d1">seq:49</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="sequencesE/108">
-      <data key="d0">NFGAIL</data>
-      <data key="d1">seq:108</data>
+    <node id="sequencesE/85">
+      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTKEQVTNVGGAVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA</data>
+      <data key="d1">seq:85</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="sequencesE/109">
-      <data key="d0">NFGAILS</data>
-      <data key="d1">seq:109</data>
+    <node id="sequencesE/91">
+      <data key="d0">VQIVYKPVDLSKVTSKCGSLGNIHHKPGGGQ</data>
+      <data key="d1">seq:91</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="sequencesE/136">
-      <data key="d0">MGILKLQVFLIVLSVALNHLKATPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTYGKRNAVEVLKREPLNYLPL</data>
-      <data key="d1">seq:136</data>
+    <node id="sequencesE/104">
+      <data key="d0">GSNKGAIIGLM</data>
+      <data key="d1">seq:104</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/361">
-      <data key="d0">nan</data>
-      <data key="d1">int:361(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/120">
+      <data key="d0">MNIRPLHDRVIVKRKEVETKSAGGIVLTGSAAAKSTRGEVLAVGNGRILENGEVKPLDVKVGDIVIFNDGYGVKSEKIDNEEVLIMSESDILAIVEA</data>
+      <data key="d1">seq:120</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
-    <node id="interactionsE/362">
-      <data key="d0">nan</data>
-      <data key="d1">int:362(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
+    <node id="sequencesE/139">
+      <data key="d0">PTAEAPNTTAGQVPTTEVVGTTPGQAPTAEPSGTTSVQVPTTEVISTAPVQMPTAESTGMTPEKVPVSEVMGTTLAEMSTPEATGMTPAEVSIVVLSGTTAAQVTTTEWVETTARELPIPEPEGPDASSI</data>
+      <data key="d1">seq:139</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/174">
+      <data key="d0">MDVFMKGLSK AKEGVVAAAE KTKQGVAEAA GKTKEGVLYV GSKTKEGVVH 
+GVATVAEKTK EQVTNVGGAV VTGVTAVAQK TVEGAGSIAA ATGFVKKDQL 
+GKNEEGAPQE GILEDMPVDP DNEAYEMPSE EGYQDYEPEA
+</data>
+      <data key="d1">seq:174</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
     <node id="sequencesE/175">
       <data key="d0">MGILKLQVFL IVLSVALNHL KATPIESHQV EKRKCNTATC ATQRLANFLV 
@@ -1178,735 +783,7 @@ HSSNNFGAIL SSTNVGSNTY GKRNAVEVLK REPLNYLPL
 </data>
       <data key="d1">seq:175</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/451">
-      <data key="d0">nan</data>
-      <data key="d1">int:451(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/213">
-      <data key="d0">ATQRLANFLVHLLLNFGAILS</data>
-      <data key="d1">seq:213</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/551">
-      <data key="d0">Interactor (L3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + LLL + IAPP(22-28) )</data>
-      <data key="d1">int:551(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/214">
-      <data key="d0">ATQRLANFLVHVVVNFGAILS</data>
-      <data key="d1">seq:214</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/552">
-      <data key="d0">Interactor (V3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + VVV + IAPP(22-28) )</data>
-      <data key="d1">int:552(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/215">
-      <data key="d0">ATQRLANFLVHGGGNFGAILS</data>
-      <data key="d1">seq:215</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/553">
-      <data key="d0">Interactor (G3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + GGG + IAPP(22-28) ); 
-In ThT curves, little slowing down can be observed. However, the authors claimed, that "did not inhibit ". Therefore I marked "no effect"</data>
-      <data key="d1">int:553(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/216">
-      <data key="d0">ATQRLANFLVHAAANFGAILS</data>
-      <data key="d1">seq:216</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/554">
-      <data key="d0">Interactor (A3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + AAA + IAPP(22-28) ); 
-In ThT curves, little slowing down can be observed. However, the authors claimed, that "did not inhibit ". Therefore I marked "no effect"</data>
-      <data key="d1">int:554(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/217">
-      <data key="d0">ATQRLANFLVHSSNNFGAILS</data>
-      <data key="d1">seq:217</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/555">
-      <data key="d0">Interactor (IAPP-GI) = [(N-Me)G24,(N-Me)I26]- IAPP(8-28)</data>
-      <data key="d1">int:555(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#bfbfbf</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/218">
-      <data key="d0">ATQRLANFLVHIIINFGAILS</data>
-      <data key="d1">seq:218</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/561">
-      <data key="d0">Interactor (I3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + III + IAPP(22-28) )</data>
-      <data key="d1">int:561(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/219">
-      <data key="d0">ATQRLANFLVHFFFNFGAILS</data>
-      <data key="d1">seq:219</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/562">
-      <data key="d0">Interactor (F3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + FFF + IAPP(22-28) )</data>
-      <data key="d1">int:562(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/220">
-      <data key="d0">ATQRLANFLVHRRRNFGAILS</data>
-      <data key="d1">seq:220</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/563">
-      <data key="d0">Interactor (R3-GI) = [(N-Me)G24,(N-Me)I26]-( IAPP(8-18) + RRR + IAPP(22-28) )</data>
-      <data key="d1">int:563(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">square</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/221">
-      <data key="d0">CMLCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTY</data>
-      <data key="d1">seq:221</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/564">
-      <data key="d0">Interactor: AGE-IAPP
-Interactee: IAPP</data>
-      <data key="d1">int:564(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/566">
-      <data key="d0">Interactor: AGE-IAPP fibrils
-Interactee: AGE-IAPP monomers</data>
-      <data key="d1">int:566(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/611">
-      <data key="d0">Interactee: AGE-IAPP fibrils
-Interactor: IAPP</data>
-      <data key="d1">int:611(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/612">
-      <data key="d0">Interactee: AGE-IAPP monomers
-Interactor: IAPP fibrils</data>
-      <data key="d1">int:612(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/222">
-      <data key="d0">KMLCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTY</data>
-      <data key="d1">seq:222</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/565">
-      <data key="d0">nan</data>
-      <data key="d1">int:565(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/225">
-      <data key="d0">KCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTYKCNTATCATQRLANFLVLSSNNFGAILSSTNVGSNTY</data>
-      <data key="d1">seq:225</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/226">
-      <data key="d0">KCNTATCATQRLANFLVHSSNNFGAPLSSTNVGSNTY</data>
-      <data key="d1">seq:226</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/585">
-      <data key="d0">Interactor: S20G IAPP
-Interactee: I26P IAPP</data>
-      <data key="d1">int:585(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/590">
-      <data key="d0">Interactee: H18L IAPP
-Interactor: I26P I26P</data>
-      <data key="d1">int:590(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/593">
-      <data key="d0">Interactor: RAT IAPP
-Interactee: I26P IAPP</data>
-      <data key="d1">int:593(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/595">
-      <data key="d0">Interactor: H18L IAPP
-Interactee: I26P IAPP</data>
-      <data key="d1">int:595(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/599">
-      <data key="d0">Interactee: S20G IAPP
-Interactor: I26P IAPP</data>
-      <data key="d1">int:599(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/805">
-      <data key="d0">nan</data>
-      <data key="d1">int:805(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/227">
-      <data key="d0">KCNTATCATQRLANFLRHSSNNLGVPLPPTNVGSNTY</data>
-      <data key="d1">seq:227</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/577">
-      <data key="d0">Interactee: rat IAPP
-Interactor: H18L IAPP</data>
-      <data key="d1">int:577(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/578">
-      <data key="d0">Interactee: rat IAPP
-Interactor: I26P IAPP</data>
-      <data key="d1">int:578(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/579">
-      <data key="d0">Interactee: rat IAPP
-Interactor: S20G IAPP</data>
-      <data key="d1">int:579(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/589">
-      <data key="d0">Interactee: H18L IAPP
-Interactor: RAT I26P</data>
-      <data key="d1">int:589(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/597">
-      <data key="d0">Interactee: S20G IAPP
-Interactor: RAT IAPP</data>
-      <data key="d1">int:597(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/228">
-      <data key="d0">KCNTATCATQRLANFLVHSGNNFGAILSSTNVGSNTY</data>
-      <data key="d1">seq:228</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/591">
-      <data key="d0">Interactee: H18L IAPP
-Interactor: S20G I26P</data>
-      <data key="d1">int:591(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/600">
-      <data key="d0">Interactor: H18L IAPP
-Interactee: S20G IAPP</data>
-      <data key="d1">int:600(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/229">
-      <data key="d0">KCNTATCATQRLANFLVLSSNNFGAILSSTNVGSNTY</data>
-      <data key="d1">seq:229</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/237">
-      <data key="d0">KMLCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTY
-</data>
-      <data key="d1">seq:237</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/241">
-      <data key="d0">QRLANFLVHSSNNFGAILSS</data>
-      <data key="d1">seq:241</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/629">
-      <data key="d0">Interactor &amp; interactee: WT</data>
-      <data key="d1">int:629(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/630">
-      <data key="d0">Interactor: retro version of IAPP (RETRO)
-Interactee: WT</data>
-      <data key="d1">int:630(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/631">
-      <data key="d0">Interactor: DESIGN (based on TANGO peptide) that is devoid of any aggregation-prone regions despite sharing the same amino acid composition as WT and RETRO
-Interactee: WT</data>
-      <data key="d1">int:631(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/633">
-      <data key="d0">Interactee: retro version of IAPP (RETRO)
-Interactor: WT</data>
-      <data key="d1">int:633(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/637">
-      <data key="d0">Interactee: DESIGN (based on TANGO peptide) that is devoid of any aggregation-prone regions despite sharing the same amino acid composition as WT and RETRO
-Interactor: WT</data>
-      <data key="d1">int:637(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/242">
-      <data key="d0">SSLIAGFNNSSHVLFNALRQ</data>
-      <data key="d1">seq:242</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/632">
-      <data key="d0">Interactor &amp; interactee: retro version of IAPP </data>
-      <data key="d1">int:632(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/634">
-      <data key="d0">Interactor: DESIGN (based on TANGO peptide) that is devoid of any aggregation-prone regions despite sharing the same amino acid composition as WT and RETRO
-Interactee: retro version of IAPP</data>
-      <data key="d1">int:634(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/635">
-      <data key="d0">Interactee: DESIGN (based on TANGO peptide) that is devoid of any aggregation-prone regions despite sharing the same amino acid composition as WT and RETRO
-Interactor: retro version of IAPP</data>
-      <data key="d1">int:635(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">diamond</data>
-      <data key="d5">#ffe124</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/243">
-      <data key="d0">LIQSAFGNNVHLSRFNSSAL</data>
-      <data key="d1">seq:243</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/636">
-      <data key="d0">Interactee &amp; interactor: DESIGN (based on TANGO peptide) that is devoid of any aggregation-prone regions despite sharing the same amino acid composition as WT and RETRO</data>
-      <data key="d1">int:636(N)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangle</data>
-      <data key="d5">#0bd11f</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/272">
-      <data key="d0">KCNTATCA</data>
-      <data key="d1">seq:272</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/708">
-      <data key="d0">nan</data>
-      <data key="d1">int:708(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">box</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/273">
-      <data key="d0">ATQRLANFLVHSS</data>
-      <data key="d1">seq:273</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/709">
-      <data key="d0">nan</data>
-      <data key="d1">int:709(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">box</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/274">
-      <data key="d0">SNNFGAILSS</data>
-      <data key="d1">seq:274</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/710">
-      <data key="d0">nan</data>
-      <data key="d1">int:710(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">box</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/275">
-      <data key="d0">STNVGSNTY</data>
-      <data key="d1">seq:275</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/711">
-      <data key="d0">nan</data>
-      <data key="d1">int:711(Y)</data>
-      <data key="d2">2</data>
-      <data key="d4">box</data>
-      <data key="d5">#1A870A</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/321">
-      <data key="d0">KCNTATCATQRLANFLVHSSNNFPAILSSTNVGSNTY</data>
-      <data key="d1">seq:321</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="interactionsE/806">
-      <data key="d0">nan</data>
-      <data key="d1">int:806(NI)</data>
-      <data key="d2">2</data>
-      <data key="d4">triangleDown</data>
-      <data key="d5">#e30000</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/332">
-      <data key="d0">KCNTATCATQRLANFLRHSSNNLGPVLPPTNVGSNTY</data>
-      <data key="d1">seq:332</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/333">
-      <data key="d0">KCNTATCATQRLPNFLRHSSNNLGPVLPPTNVGSNTY</data>
-      <data key="d1">seq:333</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/334">
-      <data key="d0">KCNTATCATQRLANDLRHSSNNLGPVLPPTNVGSNTY</data>
-      <data key="d1">seq:334</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/2">
-      <data key="d0">DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV</data>
-      <data key="d1">seq:2</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/3">
-      <data key="d0">DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA</data>
-      <data key="d1">seq:3</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/6">
-      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA</data>
-      <data key="d1">seq:6</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/26">
-      <data key="d0">GNNQQNY</data>
-      <data key="d1">seq:26</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/27">
-      <data key="d0">GNNAQNY</data>
-      <data key="d1">seq:27</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/43">
-      <data key="d0">MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</data>
-      <data key="d1">seq:43</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/45">
-      <data key="d0">VGSNKGAIIGL</data>
-      <data key="d1">seq:45</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/4">
-      <data key="d0">MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</data>
-      <data key="d1">seq:4</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/80">
-      <data key="d0">AGYDLANSEYNFAVNELSKSSFNQAAIIGQAGTNNSAQLRQGGSKLLAVVAQEGSSNRAKIDQTGDYNLAYIDQAGSANDASISQGAYGNTAMIIQKGSGNKANITQYGTQKTAIVVQRQSQMAIRVTQR</data>
-      <data key="d1">seq:80</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/67">
-      <data key="d0">GVVPQYGGGGNHGGGGNNSGPNSELNIYQYGGGNSALALQTDARNSDLTITQHGGGNGADVGQGSDDSSIDLTQRGFGNSATLDQWNGKNSEMTVKQFGGGNGAAVDQTASNSSVNVTQVGFGNNATAHQY</data>
-      <data key="d1">seq:67</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/91">
-      <data key="d0">VQIVYKPVDLSKVTSKCGSLGNIHHKPGGGQ</data>
-      <data key="d1">seq:91</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/96">
-      <data key="d0">MKLLKVAAIAAIVFSGSALAGVVPQYGGGGNHGGGGNNSGPNSELNIYQYGGGNSALALQ
-TDARNSDLTITQHGGGNGADVGQGSDDSSIDLTQRGFGNSATLDQWNGKNSEMTVKQFGG
-GNGAAVDQTASNSSVNVTQVGFGNNATAHQY</data>
-      <data key="d1">seq:96</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/104">
-      <data key="d0">GSNKGAIIGLM</data>
-      <data key="d1">seq:104</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/121">
-      <data key="d0">MASHRLLLLCLAGLVFVSEAGPTGTGESKCPLMVKVLDAVRGSPAINVAVHVFRKAADDTWEPFASGKTSESGELHGLTTEEEFVEGIYKVEIDTKSYWKALGISPFHEHAEVVFTANDSGPRRYTIAALLSPYSYSTTAVVTNPKE</data>
-      <data key="d1">seq:121</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/126">
-      <data key="d0">FVNQHLCGSHLVEALYLVCGERGFFYTPKAGIVEQCCASVCSLYQLENYCN</data>
-      <data key="d1">seq:126</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/84">
-      <data key="d0">FVNQHLCGSHLVEALYLVCGERGFFYTPKTGIVEQCCTSICSLYQLENYCN</data>
-      <data key="d1">seq:84</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/127">
-      <data key="d0">FVNQHLCGSHLVEALYLVCGERGFFYTPKT</data>
-      <data key="d1">seq:127</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/128">
-      <data key="d0">GIVEQCCTSICSLYQLENYCN</data>
-      <data key="d1">seq:128</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/129">
-      <data key="d0">SHLVEALYLV</data>
-      <data key="d1">seq:129</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/130">
-      <data key="d0">HLVEALYLVC</data>
-      <data key="d1">seq:130</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/131">
-      <data key="d0">LVEALYLVCG</data>
-      <data key="d1">seq:131</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/188">
-      <data key="d0">GPTGTGESKCPPMVKVLDAVRGSPAINVAVHVFRKAADDTWEPFASGKTSESGELHGLTTEEEFVEGIYKVEIDTKSYWKALGISPFHEHAEVVFTANDSGPRRYTIATLLSPYSYSTTAVVTNPKE</data>
-      <data key="d1">seq:188</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/189">
-      <data key="d0">HMKVEQVVET EPEPELRQQA EWQSGQRWEL ALGRFWDYLR WVQTLSEQVQ EELLSSQVTQ ELTALMDETM KELKAYKSEL EEQLTPVAEE TRARLSKELQ AAQARLGADM EDVRGRLVQY RGEVQAMLGQ STEELRARLA SHLRKLRKRL LRDADDLQKR LAVYQAGARE GAERGVSAIR ERLGPLVEQG RVRAATVGSV AGKPLQERAQ AWGERLRARM EEMGSRTRDR LDEVKEQVAE VRAKLEEQAQ QIRLQAEAFQ ARLKSWFEPL VEDMQRQWAG LVEKVQAAVG TSAAPVPSDN H</data>
-      <data key="d1">seq:189</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/271">
-      <data key="d0">KTNMKHMAGAAAAGAVVGGLG</data>
-      <data key="d1">seq:271</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/10">
-      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK
-EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
-DNEAYEMPSEEGYQDYEPEA</data>
-      <data key="d1">seq:10</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/291">
-      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVCSKTKEGCVHGVATVAEKTK
-EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
-DNEAYEMPSEEGYQDYEPEA</data>
-      <data key="d1">seq:291</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/89">
-      <data key="d0">MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED
-LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</data>
-      <data key="d1">seq:89</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/300">
-      <data key="d0">FVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED
-LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</data>
-      <data key="d1">seq:300</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/305">
-      <data key="d0">KVFGRCELAAAMKRHGLDNYRGYSLGNWVCAAKFESNFNTQATNRNTDGSTDYGILQINS
-RWWCNDGRTPGSRNLCNIPCSALLSSDITASVNCAKKIVSDGNGMNAWVAWRNRCKGTDV
-QAWIRGCRL</data>
-      <data key="d1">seq:305</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/306">
-      <data key="d0">EQLTKCEVFRELKDLKGYGGVSLPEWVCTTFHTSGYDTQAIVQNNDSTEYGLFQINNKIW
-CKDDQNPHSSNICNISCDKFLDDDLTDDIMCVKKILDKVGINYWLAHKALCSEKLDQWLC
-EKL</data>
-      <data key="d1">seq:306</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/309">
-      <data key="d0">QTIEENIKIFEEEEVEFISVPVPEFADSDPANIVHDFNKKLTAYLDLNLDKCYVIPLNTSIVMPPRNLLELLINIKAGTYLPQSYLIHEHMVITDRIENIDHLGFFIYRLCHDKETYKL</data>
-      <data key="d1">seq:309</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/7">
-      <data key="d0">&gt;sp|P37840|SYUA_HUMAN Alpha-synuclein OS=Homo sapiens OX=9606 GN=SNCA PE=1 SV=1
-MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK
-EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
-DNEAYEMPSEEGYQDYEPEA</data>
-      <data key="d1">seq:7</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="sequencesE/98">
-      <data key="d0">DAEFRHDSGYEVHHQKLVFFADVGSNKGAIIGLMVGGVVIA</data>
-      <data key="d1">seq:98</data>
-      <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
     <node id="sequencesE/176">
       <data key="d0">       MALWMRLLPL LALLALWGPD PAAAFVNQHL CGSHLVEALY LVCGERGFFY 
@@ -1915,79 +792,812 @@ SLYQLENYCN
 </data>
       <data key="d1">seq:176</data>
       <data key="d2">3</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/180">
+      <data key="d0">MLPGLALLLLAAWTARALEVPTDGNAGLLAEPQIAMFCGRLNMHMNVQNGKWDSDPSGTK
+TCIDTKEGILQYCQEVYPELQITNVVEANQPVTIQNWCKRGRKQCKTHPHFVIPYRCLVG
+EFVSDALLVPDKCKFLHQERMDVCETHLHWHTVAKETCSEKSTNLHDYGMLLPCGIDKFR
+GVEFVCCPLAEESDNVDSADAEEDDSDVWWGGADTDYADGSEDKVVEVAEEEEVAEVEEE
+EADDDEDDEDGDEVEEEAEEPYEEATERTTSIATTTTTTTESVEEVVREVCSEQAETGPC
+RAMISRWYFDVTEGKCAPFFYGGCGGNRNNFDTEEYCMAVCGSAMSQSLLKTTQEPLARD
+PVKLPTTAASTPDAVDKYLETPGDENEHAHFQKAKERLEAKHRERMSQVMREWEEAERQA
+KNLPKADKKAVIQHFQEKVESLEQEAANERQQLVETHMARVEAMLNDRRRLALENYITAL
+QAVPPRPRHVFNMLKKYVRAEQKDRQHTLKHFEHVRMVDPKKAAQIRSQVMTHLRVIYER
+MNQSLSLLYNVPAVAEEIQDEVDELLQKEQNYSDDVLANMISEPRISYGNDALMPSLTET
+KTTVELLPVNGEFSLDDLQPWHSFGADSVPANTENEVEPVDARPAADRGLTTRPGSGLTN
+IKTEEISEVKMDAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIATVIVITL
+VMLKKKQYTSIHHGVVEVDAAVTPEERHLSKMQQNGYENPTYKFFEQMQN</data>
+      <data key="d1">seq:180</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/177">
+      <data key="d0">MAEPRQEFEVMEDHAGTYGLGDRKDQGGYTMHQDQEGDTDAGLKESPLQTPTEDGSEEPG
+SETSDAKSTPTAEDVTAPLVDEGAPGKQAAAQPHTEIPEGTTAEEAGIGDTPSLEDEAAG
+HVTQEPESGKVVQEGFLREPGPPGLSHQLMSGMPGAPLLPEGPREATRQPSGTGPEDTEG
+GRHAPELLKHQLLGDLHQEGPPLKGAGGKERPGSKEEVDEDRDVDESSPQDSPPSKASPA
+QDGRPPQTAAREATSIPGFPAEGAIPLPVDFLSKVSTEIPASEPDGPSVGRAKGQDAPLE
+FTFHVEITPNVQKEQAHSEEHLGRAAFPGAPGEGPEARGPSLGEDTKEADLPEPSEKQPA
+AAPRGKPVSRVPQLKARMVSKSKDGTGSDDKKAKTSTRSSAKTLKNRPCLSPKHPTPGSS
+DPLIQPSSPAVCPEPPSSPKYVSSVTSRTGSSGAKEMKLKGADGKTKIATPRGAAPPGQK
+GQANATRIPAKTPPAPKTPPSSGEPPKSGDRSGYSSPGSPGTPGSRSRTPSLPTPPTREP
+KKVAVVRTPPKSPSSAKSRLQTAPVPMPDLKNVKSKIGSTENLKHQPGGGKVQIINKKLD
+LSNVQSKCGSKDNIKHVPGGGSVQIVYKPVDLSKVTSKCGSLGNIHHKPGGGQVEVKSEK
+LDFKDRVQSKIGSLDNITHVPGGGNKKIETHKLTFRENAKAKTDHGAEIVYKSPVVSGDT
+SPRHLSNVSSTGSIDMVDSPQLATLADEVSASLAKQGL</data>
+      <data key="d1">seq:177</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/10">
+      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK
+EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
+DNEAYEMPSEEGYQDYEPEA</data>
+      <data key="d1">seq:10</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/37">
+      <data key="d0">KVFGRCELAAAMKRHGLDNYRGYSLGNWVCAAKFESNFNTQATNRNTDGSTDYGILQINSRWWCNDGRTPGSRNLCNIPCSALLSSDITASVNCAKKIVSDGNGMNAWVAWRNRCKGTDVQAWIRGCRL</data>
+      <data key="d1">seq:37</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/190">
+      <data key="d0">SDRDKFVIFLDVKHF</data>
+      <data key="d1">seq:190</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/191">
+      <data key="d0">MDIAIHHPWIRRPFFPFHSPSRLFDQFFGEHLLESDLFPTSTSLSPFYLRPPSFLRAPSW
+FDTGLSEMRLEKDRFSVNLDVKHFSPEELKVKVLGDVIEVHGKHEERQDEHGFISREFHR
+KYRIPADVDPLTITSSLSSDGVLTVNGPRKQVSGPERTIPITREEKPAVTAAPKK</data>
+      <data key="d1">seq:191</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/123">
+      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVTTVAEKTKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA</data>
+      <data key="d1">seq:123</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/48">
+      <data key="d0">MDVFMKGLSKAKEGVVAAAEKTKQGVAEAPGKTKEGVLYVGSKTKEGVVHGVATVAEKTKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA</data>
+      <data key="d1">seq:48</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/204">
+      <data key="d0">NRQLERSGRFGGNPGGFGNQGGFGNSRGGGAGLGNNQGSNMGGGMNFGAFSINPAMMAAAQAALQSSWGMMGMLASQQNQSGPSGNNQNQGNMQREPNQAFGSGNNSYSGSNSGAAIGWGSASNAGSGSGFNGGFGSSMDSKSSGWGM</data>
+      <data key="d1">seq:204</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/223">
+      <data key="d0">MLLILLSVALLAFSSAQDLDEDVSQEDVPLVISDGGDSEQFIDEERQGPPLGGQQSQPSA
+GDGNQDDGPQQGPPQQGGQQQQGPPPPQGKPQGPPQQGGHPPPPQGRPQGPPQQGGHPRP
+PRGRPQGPPQQGGHQQGPPPPPPGKPQGPPPQGGRPQGPPQGQSPQ</data>
+      <data key="d1">seq:223</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/9">
+      <data key="d0">MGILKLQVFLIVLSVALNHLKATPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAIL
+SSTNVGSNTYGKRNAVEVLKREPLNYLPL</data>
+      <data key="d1">seq:9</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/236">
+      <data key="d0">MAKPLWLSLILFIIPVALAVGVDQSKNEVKAQNYFGSINISNANVKQCVWFAMKEYNKES
+EDKYVFLVDKILHAKLQITDRMEYQIDVQISRSNCKKPLNNTENCIPQKKPELEKKMSCS
+FLVGALPWNGEFNLLSKECKDV</data>
+      <data key="d1">seq:236</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/178">
+      <data key="d0">MASHRLLLLCLAGLVFVSEAGPTGTGESKCPLMVKVLDAVRGSPAINVAVHVFRKAADDT
+WEPFASGKTSESGELHGLTTEEEFVEGIYKVEIDTKSYWKALGISPFHEHAEVVFTANDS
+GPRRYTIAALLSPYSYSTTAVVTNPKE</data>
+      <data key="d1">seq:178</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/238">
+      <data key="d0">MASHRLLLLCLAGLVFVSEAGPTGTGESKCPLMVKVLDAVRGSPAINVAVHVFRKAADDT
+WEPFASGKTSESGELHGLTTEEEFVEGIYKVEIDTKSYWKALGISPFHEHAEVVFMANDS
+GPRRYTIAALLSPYSYSTTAVVTNPKE</data>
+      <data key="d1">seq:238</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/239">
+      <data key="d0">MASHRLLLLCLAGLVFVSEAGPTGTGESKCPLMVKVLDAVRGSPAINVAVHVFRKAADDT
+WEPFASGKTSESGELHGLTTEEEMVEGIYKVEIDTKSYWKALGISPMHEHAEVVFTANDS
+GPRRYTIAALLSPYSYSTTAVVTNPKE</data>
+      <data key="d1">seq:239</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/267">
+      <data key="d0">HMSQKHTEMVLEMSIGAPEAQQRLALSEHLVTTATFSIGSTGLVVYDYQQLLIAYKPAPGTCCYIMKIAPESIPSLEALNRKVHNFQMECSLQAKPAVPTSKLGQAEGRDAGSAPSGGDPAFLGMAVNTLCGEVPLYYI</data>
+      <data key="d1">seq:267</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/271">
+      <data key="d0">KTNMKHMAGAAAAGAVVGGLG</data>
+      <data key="d1">seq:271</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/272">
+      <data key="d0">KCNTATCA</data>
+      <data key="d1">seq:272</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/273">
+      <data key="d0">ATQRLANFLVHSS</data>
+      <data key="d1">seq:273</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/274">
+      <data key="d0">SNNFGAILSS</data>
+      <data key="d1">seq:274</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/275">
+      <data key="d0">STNVGSNTY</data>
+      <data key="d1">seq:275</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="sequencesE/89">
+      <data key="d0">MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED
+LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</data>
+      <data key="d1">seq:89</data>
+      <data key="d2">3</data>
+      <data key="d5">10</data>
     </node>
     <node id="amyloidsE/IAPP">
       <data key="d1">IAPP</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
     <node id="amyloidsE/Amyloid_beta">
       <data key="d1">Amyloid β</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="amyloidsE/FapC">
+      <data key="d1">FapC</data>
+      <data key="d2">4</data>
+      <data key="d5">10</data>
     </node>
     <node id="amyloidsE/alpha-synuclein">
       <data key="d1">α-synuclein</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="amyloidsE/Sup35">
-      <data key="d1">Sup35</data>
-      <data key="d2">4</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="amyloidsE/Insulin">
-      <data key="d1">Insulin</data>
-      <data key="d2">4</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="amyloidsE/CsgB">
-      <data key="d1">CsgB</data>
-      <data key="d2">4</data>
-      <data key="d3">10</data>
-    </node>
-    <node id="amyloidsE/CsgA">
-      <data key="d1">CsgA</data>
-      <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
     <node id="amyloidsE/Tau">
       <data key="d1">Tau</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="amyloidsE/Transthyretin">
-      <data key="d1">Transthyretin</data>
+    <node id="amyloidsE/Rnq1">
+      <data key="d1">Rnq1</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="amyloidsE/Apolipoprotein_A-I">
-      <data key="d1">Apolipoprotein A-I</data>
+    <node id="amyloidsE/Sup35">
+      <data key="d1">Sup35</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="amyloidsE/PrP">
-      <data key="d1">PrP</data>
+    <node id="amyloidsE/GroES">
+      <data key="d1">GroES</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="amyloidsE/Pmel17">
+      <data key="d1">Pmel17</data>
+      <data key="d2">4</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="amyloidsE/Insulin">
+      <data key="d1">Insulin</data>
+      <data key="d2">4</data>
+      <data key="d5">10</data>
     </node>
     <node id="amyloidsE/Lysozyme">
       <data key="d1">Lysozyme</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="amyloidsE/alpha-lactalbumin">
-      <data key="d1">α-lactalbumin</data>
+    <node id="amyloidsE/alpha-crystallin">
+      <data key="d1">α-crystallin</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <node id="amyloidsE/Bri2">
-      <data key="d1">Bri2</data>
+    <node id="amyloidsE/TDP-43">
+      <data key="d1">TDP-43</data>
       <data key="d2">4</data>
-      <data key="d3">10</data>
+      <data key="d5">10</data>
     </node>
-    <edge source="sequencesE/1" target="interactionsE/1">
+    <node id="amyloidsE/PrP">
+      <data key="d1">PrP</data>
+      <data key="d2">4</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="amyloidsE/CRES">
+      <data key="d1">CRES</data>
+      <data key="d2">4</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="amyloidsE/Transthyretin">
+      <data key="d1">Transthyretin</data>
+      <data key="d2">4</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="amyloidsE/proSP-C">
+      <data key="d1">proSP-C</data>
+      <data key="d2">4</data>
+      <data key="d5">10</data>
+    </node>
+    <edge source="interactionsE/2" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/2" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/2" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/5" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/5" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/5" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/6" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/6" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/6" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/13" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/13" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/13" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/14" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/14" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/14" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/82" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/82" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/82" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/104" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/104" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/104" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/110" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/110" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/110" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/118" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/118" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/118" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/119" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/119" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/119" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/124" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/124" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/124" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/125" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/125" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/125" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/126" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/126" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/126" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/162" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/162" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/162" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/163" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/163" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/163" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/186" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/186" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/186" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/187" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/187" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/187" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/188" target="question1/No_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/188" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/188" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/189" target="question1/Slower_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/189" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/189" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/196" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/196" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/196" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/213" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/213" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/213" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/219" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/219" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/219" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/240" target="question1/No_effect">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/240" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/240" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/300" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/300" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/300" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/309" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/309" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/309" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/310" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/310" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/310" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/323" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/323" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/323" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/367" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/367" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/367" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/450" target="question1/Slower_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/450" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/450" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/451" target="question1/Slower_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/451" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/451" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/463" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/463" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/463" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/464" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/464" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/464" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/482" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/482" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/482" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/489" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/489" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/489" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/509" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/509" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/509" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/510" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/510" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/510" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/511" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/511" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/511" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/512" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/512" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/512" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/513" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/513" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/513" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/515" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/515" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/515" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/516" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/516" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/516" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/522" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/522" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/522" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/523" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/523" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/523" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/568" target="question1/No_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/568" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/568" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/608" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/608" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/608" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/610" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/610" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/610" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/613" target="question1/No_effect">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/613" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/613" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/614" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/614" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/614" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/615" target="question1/Slower_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/615" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/615" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/627" target="question1/Slower_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/627" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/627" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/698" target="question1/Slower_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/698" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/698" target="question3/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/707" target="question1/No_effect">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/707" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/707" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/708" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/708" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/708" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/709" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/709" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/709" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/710" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/710" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/710" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/711" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/711" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/711" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/712" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/712" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/712" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/713" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/713" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/713" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/744" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/744" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/744" target="question3/Yes">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/813" target="question1/Faster_aggregation">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/813" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/813" target="question3/No">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/827" target="question1/No_information">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/827" target="question2/Yes_direct_evidence">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="interactionsE/827" target="question3/No">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/1" target="interactionsE/2">
@@ -1999,901 +1609,313 @@ SLYQLENYCN
     <edge source="sequencesE/1" target="interactionsE/14">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/1" target="interactionsE/17">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/18">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/19">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/20">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/61">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/63">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/71">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/72">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/73">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/96">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/99">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/101">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/102">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/103">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/112">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/113">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/114">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/115">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/151">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/154">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/155">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/176">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/177">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/200">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/201">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/202">
-      <data key="d6">1</data>
-    </edge>
     <edge source="sequencesE/1" target="interactionsE/213">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/1" target="interactionsE/219">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/1" target="interactionsE/221">
-      <data key="d6">1</data>
-    </edge>
     <edge source="sequencesE/1" target="interactionsE/240">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/241">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/242">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/243">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/285">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/286">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/287">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/312">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/313">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/314">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/331">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/332">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/333">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/334">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/335">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/336">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/337">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/375">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/376">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/467">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/474">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/487">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/488">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/556">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/557">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/558">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/559">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/560">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/567">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/571">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/572">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/573">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/574">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/575">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/576">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/580">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/581">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/582">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/583">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/584">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/586">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/587">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/588">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/592">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/594">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/596">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/598">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/626">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/1" target="interactionsE/627">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/1" target="interactionsE/702">
-      <data key="d6">1</data>
-    </edge>
     <edge source="sequencesE/1" target="interactionsE/707">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/735">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/736">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/1" target="interactionsE/744">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/1" target="interactionsE/746">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/755">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/756">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/771">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/772">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/773">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/803">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/804">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/817">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/854">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/855">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/856">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/857">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/858">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/8" target="interactionsE/7">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/8">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/15">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/16">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/111">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/179">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/180">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/181">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/406">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/409">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/452">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/460">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/461">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/500">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/608">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/11" target="interactionsE/9">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/11" target="interactionsE/10">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/11" target="interactionsE/11">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/11" target="interactionsE/12">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/44" target="interactionsE/97">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/44" target="interactionsE/152">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/44" target="interactionsE/153">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/44" target="interactionsE/156">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/44" target="interactionsE/157">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/47" target="interactionsE/100">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/47" target="interactionsE/102">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/82" target="interactionsE/179">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/82" target="interactionsE/180">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/82" target="interactionsE/181">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/82" target="interactionsE/452">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/97" target="interactionsE/222">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/97" target="interactionsE/223">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/97" target="interactionsE/706">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/97" target="interactionsE/817">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/107" target="interactionsE/285">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/108" target="interactionsE/286">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/109" target="interactionsE/287">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/136" target="interactionsE/361">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/136" target="interactionsE/362">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/175" target="interactionsE/451">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/213" target="interactionsE/551">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/213" target="interactionsE/556">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/214" target="interactionsE/552">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/214" target="interactionsE/557">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/215" target="interactionsE/553">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/215" target="interactionsE/558">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/216" target="interactionsE/554">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/216" target="interactionsE/559">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/217" target="interactionsE/555">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/217" target="interactionsE/560">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/218" target="interactionsE/561">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/219" target="interactionsE/562">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/220" target="interactionsE/563">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/221" target="interactionsE/564">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/221" target="interactionsE/566">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/221" target="interactionsE/611">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/221" target="interactionsE/612">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/222" target="interactionsE/564">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/222" target="interactionsE/565">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/222" target="interactionsE/612">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/225" target="interactionsE/572">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/573">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/584">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/585">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/590">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/592">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/593">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/595">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/599">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/803">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/805">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/574">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/576">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/577">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/578">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/579">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/580">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/582">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/589">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/593">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/227" target="interactionsE/597">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/575">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/579">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/585">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/586">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/591">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/596">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/597">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/598">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/599">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/228" target="interactionsE/600">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/577">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/578">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/583">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/587">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/588">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/589">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/590">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/591">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/595">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/229" target="interactionsE/600">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/237" target="interactionsE/611">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/241" target="interactionsE/629">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/241" target="interactionsE/630">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/241" target="interactionsE/631">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/241" target="interactionsE/633">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/241" target="interactionsE/637">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/242" target="interactionsE/630">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/242" target="interactionsE/632">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/242" target="interactionsE/633">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/242" target="interactionsE/634">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/242" target="interactionsE/635">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/243" target="interactionsE/631">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/243" target="interactionsE/634">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/243" target="interactionsE/635">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/243" target="interactionsE/636">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/243" target="interactionsE/637">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/272" target="interactionsE/708">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/273" target="interactionsE/709">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/274" target="interactionsE/710">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/275" target="interactionsE/711">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/321" target="interactionsE/804">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/321" target="interactionsE/806">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/332" target="interactionsE/854">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/332" target="interactionsE/856">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/333" target="interactionsE/857">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/334" target="interactionsE/858">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/1">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/14">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/219">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/467">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/626">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/627">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/702">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/406">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/551">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/552">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/553">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/554">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/555">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/561">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/562">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/563">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/805">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/806">
-      <data key="d6">1</data>
-    </edge>
     <edge source="sequencesE/3" target="interactionsE/2">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/3" target="interactionsE/99">
+    <edge source="sequencesE/3" target="interactionsE/5">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/3" target="interactionsE/101">
+    <edge source="sequencesE/3" target="interactionsE/82">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/3" target="interactionsE/474">
+    <edge source="sequencesE/3" target="interactionsE/104">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/3" target="interactionsE/409">
+    <edge source="sequencesE/3" target="interactionsE/300">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/3" target="interactionsE/460">
+    <edge source="sequencesE/3" target="interactionsE/323">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/3" target="interactionsE/461">
+    <edge source="sequencesE/3" target="interactionsE/698">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/3" target="interactionsE/100">
+    <edge source="sequencesE/3" target="interactionsE/712">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/3" target="interactionsE/713">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/3" target="interactionsE/827">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/5" target="interactionsE/5">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/6" target="interactionsE/6">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/6" target="interactionsE/17">
+    <edge source="sequencesE/6" target="interactionsE/186">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/6" target="interactionsE/18">
+    <edge source="sequencesE/6" target="interactionsE/187">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/6" target="interactionsE/19">
+    <edge source="sequencesE/6" target="interactionsE/300">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/6" target="interactionsE/20">
+    <edge source="sequencesE/6" target="interactionsE/309">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/6" target="interactionsE/500">
+    <edge source="sequencesE/6" target="interactionsE/310">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/6" target="interactionsE/367">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/6" target="interactionsE/482">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/6" target="interactionsE/509">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/6" target="interactionsE/510">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/6" target="interactionsE/511">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/6" target="interactionsE/513">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/6" target="interactionsE/516">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/6" target="interactionsE/608">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/6" target="interactionsE/222">
+    <edge source="sequencesE/2" target="interactionsE/13">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/6" target="interactionsE/223">
+    <edge source="sequencesE/2" target="interactionsE/14">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/26" target="interactionsE/61">
+    <edge source="sequencesE/2" target="interactionsE/189">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/26" target="interactionsE/71">
+    <edge source="sequencesE/2" target="interactionsE/219">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/26" target="interactionsE/72">
+    <edge source="sequencesE/2" target="interactionsE/323">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/26" target="interactionsE/73">
+    <edge source="sequencesE/2" target="interactionsE/610">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/27" target="interactionsE/63">
+    <edge source="sequencesE/2" target="interactionsE/613">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/96">
+    <edge source="sequencesE/2" target="interactionsE/614">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/151">
+    <edge source="sequencesE/2" target="interactionsE/615">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/154">
+    <edge source="sequencesE/2" target="interactionsE/627">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/155">
+    <edge source="sequencesE/2" target="interactionsE/712">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/97">
+    <edge source="sequencesE/2" target="interactionsE/713">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/152">
+    <edge source="sequencesE/2" target="interactionsE/813">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/153">
+    <edge source="sequencesE/2" target="interactionsE/827">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/156">
+    <edge source="sequencesE/35" target="interactionsE/82">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/43" target="interactionsE/157">
+    <edge source="sequencesE/28" target="interactionsE/104">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/45" target="interactionsE/103">
+    <edge source="sequencesE/51" target="interactionsE/110">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/4" target="interactionsE/112">
+    <edge source="sequencesE/52" target="interactionsE/110">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/4" target="interactionsE/113">
+    <edge source="sequencesE/53" target="interactionsE/118">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/4" target="interactionsE/114">
+    <edge source="sequencesE/53" target="interactionsE/119">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/4" target="interactionsE/115">
+    <edge source="sequencesE/53" target="interactionsE/196">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/80" target="interactionsE/176">
+    <edge source="sequencesE/54" target="interactionsE/118">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/67" target="interactionsE/200">
+    <edge source="sequencesE/54" target="interactionsE/119">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/67" target="interactionsE/201">
+    <edge source="sequencesE/54" target="interactionsE/196">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/67" target="interactionsE/202">
+    <edge source="sequencesE/58" target="interactionsE/124">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/59" target="interactionsE/124">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/59" target="interactionsE/125">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/59" target="interactionsE/126">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/57" target="interactionsE/125">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/56" target="interactionsE/126">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/76" target="interactionsE/162">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/33" target="interactionsE/162">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/33" target="interactionsE/163">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/74" target="interactionsE/163">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/49" target="interactionsE/186">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/49" target="interactionsE/187">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/49" target="interactionsE/188">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/49" target="interactionsE/189">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/85" target="interactionsE/188">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/91" target="interactionsE/213">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/96" target="interactionsE/221">
-      <data key="d6">1</data>
-    </edge>
     <edge source="sequencesE/104" target="interactionsE/240">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/104" target="interactionsE/242">
+    <edge source="sequencesE/120" target="interactionsE/310">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/121" target="interactionsE/312">
+    <edge source="sequencesE/139" target="interactionsE/367">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/121" target="interactionsE/313">
+    <edge source="sequencesE/174" target="interactionsE/450">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/126" target="interactionsE/331">
+    <edge source="sequencesE/175" target="interactionsE/451">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/84" target="interactionsE/332">
+    <edge source="sequencesE/176" target="interactionsE/451">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/127" target="interactionsE/333">
+    <edge source="sequencesE/180" target="interactionsE/463">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/128" target="interactionsE/334">
+    <edge source="sequencesE/180" target="interactionsE/464">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/129" target="interactionsE/335">
+    <edge source="sequencesE/180" target="interactionsE/568">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/130" target="interactionsE/336">
+    <edge source="sequencesE/177" target="interactionsE/463">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/131" target="interactionsE/337">
+    <edge source="sequencesE/10" target="interactionsE/464">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/188" target="interactionsE/487">
+    <edge source="sequencesE/10" target="interactionsE/522">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/189" target="interactionsE/488">
+    <edge source="sequencesE/10" target="interactionsE/523">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/37" target="interactionsE/482">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/190" target="interactionsE/489">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/191" target="interactionsE/489">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/123" target="interactionsE/509">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/123" target="interactionsE/515">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/123" target="interactionsE/516">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/48" target="interactionsE/510">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/48" target="interactionsE/512">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/48" target="interactionsE/513">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/204" target="interactionsE/522">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/204" target="interactionsE/523">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/223" target="interactionsE/568">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/9" target="interactionsE/608">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/236" target="interactionsE/610">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/178" target="interactionsE/613">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/238" target="interactionsE/614">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/239" target="interactionsE/615">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="sequencesE/267" target="interactionsE/698">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/271" target="interactionsE/707">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/271" target="interactionsE/706">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/271" target="interactionsE/708">
@@ -2908,172 +1930,28 @@ SLYQLENYCN
     <edge source="sequencesE/271" target="interactionsE/711">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/10" target="interactionsE/735">
+    <edge source="sequencesE/272" target="interactionsE/708">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/10" target="interactionsE/8">
+    <edge source="sequencesE/273" target="interactionsE/709">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/10" target="interactionsE/15">
+    <edge source="sequencesE/274" target="interactionsE/710">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/10" target="interactionsE/16">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/10" target="interactionsE/9">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/10" target="interactionsE/10">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/10" target="interactionsE/11">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/10" target="interactionsE/12">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/291" target="interactionsE/736">
+    <edge source="sequencesE/275" target="interactionsE/711">
       <data key="d6">1</data>
     </edge>
     <edge source="sequencesE/89" target="interactionsE/744">
       <data key="d6">1</data>
     </edge>
-    <edge source="sequencesE/300" target="interactionsE/746">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/305" target="interactionsE/755">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/306" target="interactionsE/756">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/309" target="interactionsE/771">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/309" target="interactionsE/772">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/309" target="interactionsE/773">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/7" target="interactionsE/7">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/98" target="interactionsE/361">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/98" target="interactionsE/362">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/176" target="interactionsE/451">
-      <data key="d6">1</data>
-    </edge>
     <edge source="amyloidsE/IAPP" target="sequencesE/1">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/47">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/107">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/108">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/109">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/213">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/214">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/215">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/216">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/217">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/225">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/226">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/227">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/228">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/229">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/321">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/97">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/332">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/333">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/334">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/8">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/9">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/82">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/11">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/44">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/136">
       <data key="d6">1</data>
     </edge>
     <edge source="amyloidsE/IAPP" target="sequencesE/175">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/218">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/219">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/220">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/221">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/222">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/237">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/241">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/242">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/IAPP" target="sequencesE/243">
+    <edge source="amyloidsE/IAPP" target="sequencesE/9">
       <data key="d6">1</data>
     </edge>
     <edge source="amyloidsE/IAPP" target="sequencesE/272">
@@ -3088,106 +1966,130 @@ SLYQLENYCN
     <edge source="amyloidsE/IAPP" target="sequencesE/275">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/2">
-      <data key="d6">1</data>
-    </edge>
     <edge source="amyloidsE/Amyloid_beta" target="sequencesE/3">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/45">
+    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/2">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/35">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/58">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/57">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/56">
       <data key="d6">1</data>
     </edge>
     <edge source="amyloidsE/Amyloid_beta" target="sequencesE/104">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/98">
+    <edge source="amyloidsE/Amyloid_beta" target="sequencesE/180">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/FapC" target="sequencesE/5">
       <data key="d6">1</data>
     </edge>
     <edge source="amyloidsE/alpha-synuclein" target="sequencesE/6">
       <data key="d6">1</data>
     </edge>
+    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/76">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/33">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/74">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/85">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/174">
+      <data key="d6">1</data>
+    </edge>
     <edge source="amyloidsE/alpha-synuclein" target="sequencesE/10">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/291">
+    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/123">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/7">
+    <edge source="amyloidsE/alpha-synuclein" target="sequencesE/48">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Sup35" target="sequencesE/26">
+    <edge source="amyloidsE/Tau" target="sequencesE/28">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Sup35" target="sequencesE/27">
+    <edge source="amyloidsE/Tau" target="sequencesE/59">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/43">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/4">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/126">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/84">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/127">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/128">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/129">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/130">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/131">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/89">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/300">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/Insulin" target="sequencesE/176">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/CsgB" target="sequencesE/80">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/CsgA" target="sequencesE/67">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="amyloidsE/CsgA" target="sequencesE/96">
+    <edge source="amyloidsE/Tau" target="sequencesE/49">
       <data key="d6">1</data>
     </edge>
     <edge source="amyloidsE/Tau" target="sequencesE/91">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Transthyretin" target="sequencesE/121">
+    <edge source="amyloidsE/Tau" target="sequencesE/177">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Transthyretin" target="sequencesE/188">
+    <edge source="amyloidsE/Rnq1" target="sequencesE/51">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Apolipoprotein_A-I" target="sequencesE/189">
+    <edge source="amyloidsE/Rnq1" target="sequencesE/53">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Sup35" target="sequencesE/52">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Sup35" target="sequencesE/54">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/GroES" target="sequencesE/120">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Pmel17" target="sequencesE/139">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Insulin" target="sequencesE/176">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Insulin" target="sequencesE/89">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Lysozyme" target="sequencesE/37">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/alpha-crystallin" target="sequencesE/190">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/alpha-crystallin" target="sequencesE/191">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/TDP-43" target="sequencesE/204">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/PrP" target="sequencesE/223">
       <data key="d6">1</data>
     </edge>
     <edge source="amyloidsE/PrP" target="sequencesE/271">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Lysozyme" target="sequencesE/305">
+    <edge source="amyloidsE/CRES" target="sequencesE/236">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/alpha-lactalbumin" target="sequencesE/306">
+    <edge source="amyloidsE/Transthyretin" target="sequencesE/178">
       <data key="d6">1</data>
     </edge>
-    <edge source="amyloidsE/Bri2" target="sequencesE/309">
+    <edge source="amyloidsE/Transthyretin" target="sequencesE/238">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/Transthyretin" target="sequencesE/239">
+      <data key="d6">1</data>
+    </edge>
+    <edge source="amyloidsE/proSP-C" target="sequencesE/267">
       <data key="d6">1</data>
     </edge>
   </graph>
