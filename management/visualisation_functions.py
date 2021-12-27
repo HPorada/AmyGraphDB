@@ -13,8 +13,8 @@ def graphviz_graph(filename, int_questions=False, sequences=False, engine='dot',
 
     graph_name = filename
 
-    #engine alternative: neato
-    #direction alternative: TB
+    # engine alternative: neato
+    # direction alternative: TB
 
     g = Digraph(graph_name, filename=f"./management/graphs/{graph_name}", format='jpeg', engine=engine,
                 graph_attr={'rankdir': direction})
@@ -109,7 +109,8 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
 
                 if general_remarks:
                     G.add_node(j['_id'],
-                               title='<a href="javascript:alert(' + j['general_remarks'] + ')">' + j['general_remarks'] + '</a>'
+                               title='<a href="javascript:alert(' + j['general_remarks'] + ')">' + j[
+                                   'general_remarks'] + '</a>'
                                if 'general_remarks' in j else 'No information',
                                label='int:' + j['_key'] + answer, group=2,
                                shape=shape, color=color),
@@ -149,7 +150,16 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
                 if not re.search("^question", k["_to"]) is not None:
                     G.add_edge(k['_from'], k['_to'])
             else:
-                G.add_edge(k['_from'], k['_to'])
+                if 'general_remarks' in k:
+                    G.add_edge(k['_from'], k['_to'],
+                               title='<a href="javascript:alert(' + k['general_remarks'] + ')">' + k[
+                                   'general_remarks'] + '</a>')
+                elif 'type' in k:
+                    G.add_edge(k['_from'], k['_to'], title=k['type'])
+                elif 'values' in k:
+                    G.add_edge(k['_from'], k['_to'], title=k['values'])
+                else:
+                    G.add_edge(k['_from'], k['_to'])
 
     # nx.draw(
     #     G,
