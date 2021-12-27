@@ -69,8 +69,8 @@ def import_collections(database, directory):
 
         if (Path(file).stem == 'amyseq' or Path(file).stem == 'orgamy' or Path(file).stem == 'interactions' or Path(
                 file).stem == 'amyseqE' or Path(file).stem == 'orgamyE' or Path(file).stem == 'seqintE' or Path(
-                file).stem == 'intque1' or Path(file).stem == 'intque2' or Path(file).stem == 'intque3' or Path(
-                file).stem == 'phorgE' or Path(file).stem == 'temorgE'):
+            file).stem == 'intque1' or Path(file).stem == 'intque2' or Path(file).stem == 'intque3' or Path(
+            file).stem == 'phorgE' or Path(file).stem == 'temorgE'):
 
             a = database.create_collection(Path(file).stem, edge=True)
 
@@ -230,3 +230,339 @@ def create_graph(database, structure):
         graph = None
 
     return graph
+
+
+def create_view(database, structure):
+    if structure.lower() == "simple":
+        database.create_view(
+            name='simpleView',
+            view_type='arangosearch',
+            properties={
+                "links": {
+                    "sequences": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "amyseq": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "interactions": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "amyloids": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "organisms": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "orgamy": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    }
+                }
+            }
+        )
+
+    elif structure.lower() == "extended":
+        database.create_view(
+            name='extendedView',
+            view_type='arangosearch',
+            properties={
+                "links": {
+                    "sequencesE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "amyseqE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "interactionsE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "amyloidsE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "organismsE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "orgamyE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "seqintE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+
+                    }
+                }
+            }
+        )
+
+    elif structure.lower() == "extendedv2":
+        database.create_view(
+            name='extendedV2View',
+            view_type='arangosearch',
+            properties={
+                "links": {
+                    "sequencesE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "amyseqE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "interactionsE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "amyloidsE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "organismsE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "orgamyE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "seqintE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "intque1": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "intque2": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "intque3": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+
+                    },
+                    "question1": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "question2": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "question3": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "phsE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "phorgE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "temperaturesE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    },
+                    "temorgE": {
+                        "analyzers": [
+                            "identity",
+                            "text_en"
+                        ],
+                        "fields": {},
+                        "includeAllFields": True,
+                        "storeValues": "none",
+                        "trackListPositions": False
+                    }
+                }
+            }
+        )
+    else:
+        pass
