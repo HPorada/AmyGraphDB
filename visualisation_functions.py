@@ -18,7 +18,7 @@ def graphviz_graph(filename, int_questions=False, sequences=False):
     else:
         engine = 'neato'
 
-    g = Digraph(graph_name, filename=f".\graphs\{graph_name}", format='jpeg', engine='dot',
+    g = Digraph(graph_name, filename=f"./management/graphs/{graph_name}", format='jpeg', engine='dot',
                 graph_attr={'rankdir': 'LR'})
     # g.attr(scale='2', label='Searching with starting node', fontsize='18')
     g.attr('node', shape='rectangle', style='filled', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
@@ -164,7 +164,7 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
     nt.from_nx(G)
     nt.show('nx.html')
 
-    nx.write_graphml_lxml(G, f"management/export/{filename}.gml")
+    nx.write_graphml_lxml(G, f"./management/export/{filename}.gml")
     # nx.write_gml(G, f"{filename}.graphml")
     # nx.write_gexf(G, f"{filename}.gexf")
 
