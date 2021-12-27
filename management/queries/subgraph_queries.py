@@ -526,7 +526,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
 
     inter = [i for i in cursor]
 
-    with open(f"json_data/{filename}.json", "w") as outfile:
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
@@ -590,7 +590,7 @@ def subgraph_from_sequence(database, sequence, filename="result"):
 
     inter = [i for i in cursor]
 
-    with open(f"json_data/{filename}.json", "w") as outfile:
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
@@ -672,7 +672,7 @@ def subgraph_from_amyloid(database, amyloid, filename="result"):
 
     inter = [i for i in cursor]
 
-    with open(f"json_data/{filename}.json", "w") as outfile:
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
@@ -757,5 +757,5 @@ def subgraph_from_organism(database, organism, filename="result"):
 
     inter = [i for i in cursor]
 
-    with open(f"json_data/{filename}.json", "w") as outfile:
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)

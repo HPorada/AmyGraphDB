@@ -12,7 +12,7 @@ def filter_extended_v2(database, q1, q2, q3, filename="result"):
         """let ints = (
                 for i in interactionsE
                     let q1 = (
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
                             filter v._id == @q1
                             return {"interactions": i}
                     )
@@ -49,7 +49,7 @@ def filter_extended_v2(database, q1, q2, q3, filename="result"):
     # for x in inter:
     #     print(x)
 
-    with open(f"./json_data/{filename}.json", "w") as outfile:
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
@@ -58,7 +58,7 @@ def contains_extended_v2(database, fragment, filename="result"):
 
     cursor = database.aql.execute(
         """for item in sequencesE
-            for v, e, p in 1..1 any item._id graph "ExtendedAndEdges"
+            for v, e, p in 1..1 any item._id graph "ExtendedV2"
                 filter contains(item.sequence, @fragment)
                 return p""",
         bind_vars={'fragment': fragment}
@@ -69,5 +69,5 @@ def contains_extended_v2(database, fragment, filename="result"):
     # for x in inter:
     #     print(x)
 
-    with open(f"./json_data/{filename}.json", "w") as outfile:
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)

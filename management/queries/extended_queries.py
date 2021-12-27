@@ -19,7 +19,7 @@ def filter_extended(database, q1, q2, q3, filename="result"):
     # for x in inter:
     #     print(x)
 
-    with open(f"./json_data/{filename}.json", "w") as outfile:
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
 
@@ -39,5 +39,5 @@ def contains_extended(database, fragment, filename="result"):
     # for x in inter:
     #     print(x)
 
-    with open(f"./json_data/{filename}.json", "w") as outfile:
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
