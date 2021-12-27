@@ -15,23 +15,7 @@ new_db = database.create_database('new_extended', 'root', 'Amyloids')
 
 vf.networkx_graph('result')
 
-#
-# def search_for_key_word(database, key_word):
-#     aql = database.aql
-#
-#     cursor = database.aql.execute(
-#         'for i in simpleView search phrase(i.general_remarks, @key, \'text_en\') return i',
-#         bind_vars={'key': key_word}
-#     )
-#
-#     # extendedView
-#
-#     inter = [doc for doc in cursor]
-#
-#     for x in inter:
-#         print(x)
-#
-#
+
 # def search_for_all_connected(database, starting_amyloid):
 #     aql = database.aql
 #
@@ -49,33 +33,3 @@ vf.networkx_graph('result')
 #         json.dump(inter, outfile)
 #
 #
-# def search_for_most_common(database, limit, type):  # type interactor lub interactee
-#     aql = database.aql
-#
-#     cursor = database.aql.execute(
-#         "for int in intseqE filter int.type == @type collect sequence = int._from with count into total sort total desc limit @limit return{ \'sequence\': sequence, \'uses\': total}",
-#         bind_vars={'type': type, 'limit': limit}
-#     )
-#
-#     inter = [doc for doc in cursor]
-#
-#     for x in inter:
-#         print(x)
-#
-#     inter = [i for i in cursor]
-#
-#     for x in inter:
-#         print(x)
-#
-#     with open("management/json_data/test.json", "w") as outfile:
-#         json.dump(inter, outfile)
-#
-#
-# # sq.subgraph_from_interactions(db_Nov, q1="Slower aggregation", q2="Yes, direct evidence.", q3="No information", filename="result")
-# # simple.check_questions_simple(db_Sep, "Faster aggregation", "Yes; implied by kinetics.", "No information", "result")
-# # sq.subgraph_from_sequence(db_Nov, "VFHGKGIQHTGSGNFSVGNDLSIS", "result")
-# # sq.subgraph_from_amyloid(db_Nov, "IAPP", "result")
-# # sq.subgraph_from_organism(db_Nov, "Frankia_sp._KB5", "organism")
-#
-# #vf.graphviz_graph('result', int_questions=True, sequences=True)
-# vf.networkx_graph('result', int_questions=True)
