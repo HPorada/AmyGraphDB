@@ -111,8 +111,7 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
 
                 if general_remarks:
                     G.add_node(j['_id'],
-                               title='<a href="javascript:alert(' + j['general_remarks'] + ')">' + j[
-                                   'general_remarks'] + '</a>'
+                               title='<a href="javascript:alert(' + j['general_remarks'] + ')">' + j['general_remarks'] + '</a>'
                                if 'general_remarks' in j else 'No information',
                                label='int:' + j['_key'] + answer, group=2,
                                shape=shape, color=color),
@@ -122,7 +121,10 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
 
             elif re.search("^sequences", j['_id']) is not None:
                 if sequences:
-                    G.add_node(j['_id'], title=j['sequence'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
+                    G.add_node(j['_id'],
+                               title='<a href="javascript:alert(' + j['sequence'] + ')">' + j['sequence'] + '</a>'
+                               if 'sequence' in j else 'No information',
+                               label=j['name'] if 'name' in j else "seq:" + j['_key'],
                                group=3)
                 else:
                     G.add_node(j['_id'], label=j['name'] if 'name' in j else "seq:" + j['_key'],
