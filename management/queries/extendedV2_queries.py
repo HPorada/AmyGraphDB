@@ -1,7 +1,7 @@
 import json
 
 
-def filter_extended_v2(database, q1, q2, q3, filename="result"):
+def filter_extendedV2(database, q1, q2, q3, filename="result"):
     aql = database.aql
 
     q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
@@ -17,12 +17,12 @@ def filter_extended_v2(database, q1, q2, q3, filename="result"):
                             return {"interactions": i}
                     )
                     let q2 = (
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
                             filter v._id == @q2
                             return {"interactions": i}
                     )
                     let q3 = (  
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
                             filter v._id == @q3
                             return {"interactions": i}
                     )
@@ -35,7 +35,7 @@ def filter_extended_v2(database, q1, q2, q3, filename="result"):
                     
             let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 any i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 any i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
             )
             
@@ -53,7 +53,7 @@ def filter_extended_v2(database, q1, q2, q3, filename="result"):
         json.dump(inter, outfile)
 
 
-def contains_extended_v2(database, fragment, filename="result"):
+def contains_extendedV2(database, fragment, filename="result"):
     aql = database.aql
 
     cursor = database.aql.execute(
