@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 
 
 def graphviz_graph(filename, int_questions=False, sequences=False):
-    with open(f".\json_data\{filename}.json", "r") as file:
+    with open(f"./management/json_data/{filename}.json", "r") as file:
         arango_graph = json.load(file)
 
     graph_name = filename
@@ -80,7 +80,7 @@ def graphviz_graph(filename, int_questions=False, sequences=False):
 
 
 def networkx_graph(filename, int_questions=False, sequences=True, general_remarks=True):
-    with open(f'.\json_data\{filename}.json') as file:
+    with open(f'./management/json_data/{filename}.json') as file:
         json_data = json.loads(file.read())
 
     G = nx.DiGraph()
@@ -164,7 +164,7 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
     nt.from_nx(G)
     nt.show('nx.html')
 
-    nx.write_graphml_lxml(G, f"./export/{filename}.gml")
+    nx.write_graphml_lxml(G, f"management/export/{filename}.gml")
     # nx.write_gml(G, f"{filename}.graphml")
     # nx.write_gexf(G, f"{filename}.gexf")
 
