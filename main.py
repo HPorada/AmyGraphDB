@@ -1,7 +1,6 @@
-import initialisation.database
-from initialisation import database, simple_JSON
+from initialisation import database
 from management.queries import simple_queries
-import visualisation_functions as vf
+from management import visualisation_functions as vf
 
 #simple_JSON.questionnaire_simple()
 #simple_JSON.experiments_simple()
