@@ -35,3 +35,28 @@ def contains_fragment_simple(database, fragment, filename="result"):
 
     with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
+
+
+def search_phrase_simple(database, key, filename="result"):
+    aql = database.aql
+
+    cursor = database.aql.execute(
+        """
+        let items = (
+            for i in simpleView
+                search phrase(i.general_remarks, @key, 'text_en')
+                return i
+        )
+        
+        for i in sequences
+            for v, e, p in 1..1 any i._id graph "Simple"
+                for item in items
+                    filter i._id == item._from or i._id == item._to
+                    return p""",
+        bind_vars={'key': key}
+    )
+
+    inter = [doc for doc in cursor]
+
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        json.dump(inter, outfile)
