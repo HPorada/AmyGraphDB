@@ -303,7 +303,7 @@ def experiments_extended():
 
             seqint.append(
                 {
-                    "_from": "sequencesE/" + str(num_list[0]),
+                    "_from": "sequencesE/PPT_" + str(num_list[0]),
                     "_to": "interactionsE/" + str(int_num),
                     "type": "interactor",
                 }
@@ -311,7 +311,7 @@ def experiments_extended():
 
             seqint.append(
                 {
-                    "_from": "sequencesE/" + str(num_list[1]),
+                    "_from": "sequencesE/PPT_" + str(num_list[1]),
                     "_to": "interactionsE/" + str(int_num),
                     "type": "interactee",
                 }
@@ -337,7 +337,7 @@ def experiments_extended():
 
             seqint.append(
                 {
-                    "_from": "sequencesE/PPT_" + str(id),
+                    "_from": "sequencesE/" + str(id),
                     "_to": "interactionsE/" + str(int_num),
                     "type": "interactor",
                 }
@@ -345,7 +345,7 @@ def experiments_extended():
 
             seqint.append(
                 {
-                    "_from": "sequencesE/PPT_" + str(id),
+                    "_from": "sequencesE/" + str(id),
                     "_to": "interactionsE/" + str(int_num),
                     "type": "interactee",
                 }
