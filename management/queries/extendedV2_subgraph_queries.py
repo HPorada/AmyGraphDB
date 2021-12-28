@@ -800,7 +800,7 @@ def subgraph_from_organism(database, organism, filename="result"):
     cursor = database.aql.execute(
         """let orgs = (
             for o in organismsE
-                filter o._id == @org
+                filter o._key == @org
                 return {"organisms": o}
         )
         
