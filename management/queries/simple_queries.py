@@ -11,7 +11,7 @@ def custom_query(database, query, filename="result"):
 
 
 def filter_questions_simple(database, q1, q2, q3, filename="result"):
-    aql = database.aql
+    
 
     cursor = database.aql.execute(
         """for item in sequences
@@ -30,7 +30,7 @@ def filter_questions_simple(database, q1, q2, q3, filename="result"):
 
 
 def contains_fragment_simple(database, fragment, filename="result"):
-    aql = database.aql
+    
 
     cursor = database.aql.execute(
         """for item in sequences
@@ -47,7 +47,7 @@ def contains_fragment_simple(database, fragment, filename="result"):
 
 
 def search_phrase_simple(database, key, filename="result"):
-    aql = database.aql
+    
 
     cursor = database.aql.execute(
         """
@@ -71,4 +71,4 @@ def search_phrase_simple(database, key, filename="result"):
         json.dump(inter, outfile)
 
 # def search_connected_simple(database, collection, start, filename="result"):
-#     aql = database.aql()
+#     ()

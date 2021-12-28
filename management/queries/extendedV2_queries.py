@@ -2,7 +2,7 @@ import json
 
 
 def filter_questions_extendedV2(database, q1, q2, q3, filename="result"):
-    aql = database.aql
+    
 
     q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q2 = "question2/" + q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
@@ -46,7 +46,7 @@ def filter_questions_extendedV2(database, q1, q2, q3, filename="result"):
 
 
 def contains_fragment_extendedV2(database, fragment, filename="result"):
-    aql = database.aql
+    
 
     cursor = database.aql.execute(
         """for item in sequencesE
@@ -63,7 +63,7 @@ def contains_fragment_extendedV2(database, fragment, filename="result"):
 
 
 def search_phrase_extendedV2(database, key, filename="result"):
-    aql = database.aql
+    
 
     cursor = database.aql.execute(
         """
@@ -85,4 +85,4 @@ def search_phrase_extendedV2(database, key, filename="result"):
         json.dump(inter, outfile)
 
 # def search_connected_extendedV2(database, collection, start, filename="result"):
-#     aql = database.aql()
+#     ()
