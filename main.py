@@ -1,17 +1,20 @@
 from initialisation import database, simple_json, extended_json, extendedV2_json
 from management.queries import simple_queries, extended_queries, extendedV2_queries
 from management import visualisation_functions as vf
+import management.queries.simple_subgraph_queries as ssq
 
 #simple_JSON.questionnaire_simple()
 #simple_JSON.experiments_simple()
 
-new_db = database.create_database('new_extended', 'root', 'Amyloids')
+new_db = database.create_database('new_simple', 'root', 'Amyloids')
 #database.import_collections(new_db, './initialisation/simple')
 #graph = database.create_graph(new_db)
 #database.create_view(new_db, "extendedV2")
 
 #simple_queries.search_phrase_simple(new_db, 'pH', "result")
 #extended_queries.search_phrase_extended(new_db, 'pH', "result")
+
+ssq.subgraph_from_amyloid(new_db, "IAPP", filename='result')
 
 vf.networkx_graph('result')
 
