@@ -14,7 +14,7 @@ new_db = database.create_database('new_simple', 'root', 'Amyloids')
 #simple_queries.search_phrase_simple(new_db, 'pH', "result")
 #extended_queries.search_phrase_extended(new_db, 'pH', "result")
 
-ssq.subgraph_from_amyloid(new_db, "IAPP", filename='result')
+ssq.subgraph_from_organism(new_db, "Frankia_sp_KB5", filename='result')
 
 vf.networkx_graph('result')
 
