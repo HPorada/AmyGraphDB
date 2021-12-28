@@ -21,7 +21,7 @@ query = """for i in amyloids
     filter i._key == "IAPP"
     return i"""
 
-ssq.test_function(new_db, query, filename='result_test')
+simple_queries.custom_query(new_db, query, filename='result_test')
 #
 #vf.networkx_graph('result')
 

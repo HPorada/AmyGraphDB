@@ -2,8 +2,6 @@ import json
 
 
 def custom_query(database, query, filename="result"):
-    aql = database.aql
-
     cursor = database.aql.execute(query)
 
     inter = [doc for doc in cursor]
