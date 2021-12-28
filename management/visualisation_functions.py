@@ -161,10 +161,10 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
                 else:
                     G.add_edge(k['_from'], k['_to'])
 
-    # nx.draw(
-    #     G,
-    #     with_labels=True
-    # )
+    nx.draw(
+        G,
+        with_labels=True
+    )
 
     # Pyvis
     nt = Network('1000px', '1000px')

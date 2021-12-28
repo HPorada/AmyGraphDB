@@ -10,7 +10,7 @@ def questionnaire_extendedV2():
     for file in files:
         os.remove('./initialisation/extendedV2/' + file)
 
-    sheet = add.open_questionnaire()
+    sheet = add.open_questionnaire("./initialisation/data/questionnaire.xlsx")
 
     # Dictionaries in lists
     seq_list = []
@@ -228,7 +228,7 @@ def questionnaire_extendedV2():
 
 
 def experiments_extendedV2():
-    sheet_amyloids, sheet_interactions = add.open_experiments()
+    sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
 
     # Dictionaries in lists
     seq_list = []

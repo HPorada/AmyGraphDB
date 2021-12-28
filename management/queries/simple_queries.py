@@ -1,6 +1,17 @@
 import json
 
 
+def custom_query(database, query, filename="result"):
+    aql = database.aql
+
+    cursor = database.aql.execute(query)
+
+    inter = [doc for doc in cursor]
+
+    with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        json.dump(inter, outfile)
+
+
 def filter_questions_simple(database, q1, q2, q3, filename="result"):
     aql = database.aql
 
