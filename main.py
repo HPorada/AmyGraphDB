@@ -1,4 +1,5 @@
-from initialisation import database, simple_json, extended_json, extendedV2_json
+from inspect import getmembers, isfunction
+from initialisation import additional_functions,database,extended_json,extendedV2_json,simple_json
 from management.queries import simple_queries, extended_queries, extendedV2_queries
 from management import visualisation_functions as vf
 import management.queries.simple_subgraph_queries as ssq
@@ -6,7 +7,9 @@ import management.queries.simple_subgraph_queries as ssq
 #simple_JSON.questionnaire_simple()
 #simple_JSON.experiments_simple()
 
-# new_db = database.create_database('new_simple', 'root', 'Amyloids')
+# Potem następuje iteracja po
+
+new_db = database.create_database('new_simple', 'root', 'Amyloids')
 # #database.import_collections(new_db, './initialisation/simple')
 # #graph = database.create_graph(new_db)
 # #database.create_view(new_db, "extendedV2")
@@ -14,11 +17,15 @@ import management.queries.simple_subgraph_queries as ssq
 # #simple_queries.search_phrase_simple(new_db, 'pH', "result")
 # #extended_queries.search_phrase_extended(new_db, 'pH', "result")
 #
-# ssq.subgraph_from_organism(new_db, "Frankia_sp_KB5", filename='result')
-#
-# vf.networkx_graph('result')
+query = """for i in amyloids
+    filter i._key == "IAPP"
+    return i"""
 
-db = database.database_start("new_extended", "root", "Amyloids", "extended")
+ssq.test_function(new_db, query, filename='result_test')
+#
+#vf.networkx_graph('result')
+
+#db = database.database_start("new_test", "root", "Amyloids", "simple")
 
 # def search_for_all_connected(database, starting_amyloid):
 #     aql = database.aql

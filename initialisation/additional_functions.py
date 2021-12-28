@@ -5,14 +5,14 @@ import re
 import openpyxl
 
 
-def open_questionnaire():
-    file = pd.ExcelFile("./initialisation/data/questionnaire.xlsx")
+def open_questionnaire(path):
+    file = pd.ExcelFile(path)
     sheet = file.parse("Form Responses 1")
     return sheet
 
 
-def open_experiments():
-    file = pd.ExcelFile("./initialisation/data/experiments.xlsx")
+def open_experiments(path):
+    file = pd.ExcelFile(path)
     sheet_amyloids = file.parse("Lifestyle")
     sheet_interactions = file.parse("ATR_FTIR")
     return sheet_amyloids, sheet_interactions
