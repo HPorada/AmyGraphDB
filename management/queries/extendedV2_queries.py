@@ -33,14 +33,9 @@ def filter_questions_extendedV2(database, q1, q2, q3, filename="result"):
                     return {"interactions": item.interactions}
             )
                     
-            let ints_paths = (
-                    for i in ints
-                        for v, e, p in 1..1 any i.interactions._id graph "ExtendedV2"
-                            return {"paths": p}
-            )
-            
-            for item in ints_paths
-                return item.paths""",
+            for i in ints
+                for v, e, p in 1..1 any i.interactions._id graph "ExtendedV2"
+                    return p""",
         bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
     )
 
