@@ -2,7 +2,7 @@ import json
 
 
 def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="result"):
-    aql = database.aql
+    
 
     if (
             q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
@@ -229,7 +229,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
 
 
 def subgraph_from_sequence(database, sequence=None, name=None, filename="result"):
-    aql = database.aql
+    
 
     cursor = database.aql.execute(
         """let seqs = (
@@ -261,7 +261,7 @@ def subgraph_from_sequence(database, sequence=None, name=None, filename="result"
 
 
 def subgraph_from_amyloid(database, amyloid, filename="result"):
-    aql = database.aql
+    
 
     cursor = database.aql.execute(
         """let amys = (
@@ -306,7 +306,7 @@ def subgraph_from_amyloid(database, amyloid, filename="result"):
 
 
 def subgraph_from_organism(database, organism, filename="result"):
-    aql = database.aql
+    
 
     cursor = database.aql.execute(
         """let orgs = (

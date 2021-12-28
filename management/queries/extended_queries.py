@@ -2,8 +2,6 @@ import json
 
 
 def filter_questions_extended(database, q1, q2, q3, filename="result"):
-    aql = database.aql
-
     cursor = database.aql.execute(
         """for item in interactionsE
             for v, e, p in 1..1 any item._id graph "Extended"
@@ -21,8 +19,6 @@ def filter_questions_extended(database, q1, q2, q3, filename="result"):
 
 
 def contains_fragment_extended(database, fragment, filename="result"):
-    aql = database.aql
-
     cursor = database.aql.execute(
         """for item in sequencesE
             for v, e, p in 1..1 any item._id graph "Extended"
@@ -38,8 +34,6 @@ def contains_fragment_extended(database, fragment, filename="result"):
 
 
 def search_phrase_extended(database, key, filename="result"):
-    aql = database.aql
-
     cursor = database.aql.execute(
         """
         let items = (
@@ -60,5 +54,5 @@ def search_phrase_extended(database, key, filename="result"):
         json.dump(inter, outfile)
 
 # def search_connected_extended(database, collection, start, filename="result"):
-#     aql = database.aql()
+#     ()
 #
