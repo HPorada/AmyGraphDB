@@ -4,31 +4,223 @@ import json
 def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="result"):
     aql = database.aql
 
-    cursor = database.aql.execute(
-        """
-        let seqs = (
-            for s in sequences
-                for v, e, p in 1..1 any s._id graph "Simple"
-                    filter e.question_1 == @q1
-                    filter e.question_2 == @q2
-                    filter e.question_3 == @q3
-                    return {'paths': p, 'sequences': v}
+    if (
+            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
+            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+
+        cursor = database.aql.execute(
+            """
+            let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        filter e.question_1 == @q1
+                        filter e.question_2 == @q2
+                        filter e.question_3 == @q3
+                        return {'paths': p, 'sequences': v}
+            )
+            
+            let amys = (
+                for item in seqs
+                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                        filter v._id like "amyloids%"
+                        return {'paths': p, 'amyloids': v}
+            )
+            
+            for item in union(
+                for item in seqs return item.paths,
+                for item in amys return item.paths
+            )
+                return item""",
+            bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
         )
-        
-        let amys = (
-            for item in seqs
-                for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
-                    filter v._id like "amyloids%"
-                    return {'paths': p, 'amyloids': v}
+
+    elif (
+            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
+
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        filter e.question_1 == @q1
+                        filter e.question_2 == @q2
+                        return {'paths': p, 'sequences': v}
+            )
+            
+            let amys = (
+                for item in seqs
+                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                        filter v._id like "amyloids%"
+                        return {'paths': p, 'amyloids': v}
+            )
+            
+            for item in union(
+                for item in seqs return item.paths,
+                for item in amys return item.paths
+            )
+                return item""",
+            bind_vars={'q1': q1, 'q2': q2}
         )
-        
-        for item in union(
-            for item in seqs return item.paths,
-            for item in amys return item.paths
+
+    elif (
+            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
+            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        filter e.question_2 == @q2
+                        filter e.question_3 == @q3
+                        return {'paths': p, 'sequences': v}
+            )
+            
+            let amys = (
+                for item in seqs
+                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                        filter v._id like "amyloids%"
+                        return {'paths': p, 'amyloids': v}
+            )
+            
+            for item in union(
+                for item in seqs return item.paths,
+                for item in amys return item.paths
+            )
+                return item""",
+            bind_vars={'q2': q2, 'q3': q3}
         )
-            return item""",
-        bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
-    )
+
+    elif (
+            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        filter e.question_1 == @q1
+                        filter e.question_3 == @q3
+                        return {'paths': p, 'sequences': v}
+            )
+            
+            let amys = (
+                for item in seqs
+                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                        filter v._id like "amyloids%"
+                        return {'paths': p, 'amyloids': v}
+            )
+            
+            for item in union(
+                for item in seqs return item.paths,
+                for item in amys return item.paths
+            )
+                return item""",
+            bind_vars={'q1': q1, 'q3': q3}
+        )
+
+    elif (
+            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information"):
+
+        cursor = database.aql.execute(
+            """
+            let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        filter e.question_1 == @q1
+                        return {'paths': p, 'sequences': v}
+            )
+            
+            let amys = (
+                for item in seqs
+                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                        filter v._id like "amyloids%"
+                        return {'paths': p, 'amyloids': v}
+            )
+            
+            for item in union(
+                for item in seqs return item.paths,
+                for item in amys return item.paths
+            )
+                return item""",
+            bind_vars={'q1': q1}
+        )
+
+    elif (
+            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
+
+        cursor = database.aql.execute(
+            """
+            let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        filter e.question_2 == @q2
+                        return {'paths': p, 'sequences': v}
+            )
+            
+            let amys = (
+                for item in seqs
+                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                        filter v._id like "amyloids%"
+                        return {'paths': p, 'amyloids': v}
+            )
+            
+            for item in union(
+                for item in seqs return item.paths,
+                for item in amys return item.paths
+            )
+                return item""",
+            bind_vars={'q2': q2}
+        )
+
+    elif (
+            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+
+        cursor = database.aql.execute(
+            """
+            let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        filter e.question_3 == @q3
+                        return {'paths': p, 'sequences': v}
+            )
+            
+            let amys = (
+                for item in seqs
+                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                        filter v._id like "amyloids%"
+                        return {'paths': p, 'amyloids': v}
+            )
+            
+            for item in union(
+                for item in seqs return item.paths,
+                for item in amys return item.paths
+            )
+                return item""",
+            bind_vars={'q3': q3}
+        )
+
+    else:
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        return {'paths': p, 'sequences': v}
+            )
+            
+            let amys = (
+                for item in seqs
+                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                        filter v._id like "amyloids%"
+                        return {'paths': p, 'amyloids': v}
+            )
+            
+            for item in union(
+                for item in seqs return item.paths,
+                for item in amys return item.paths
+            )
+                return item"""
+        )
 
     inter = [doc for doc in cursor]
 
