@@ -9,7 +9,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
     q3 = q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
 
     if (
-            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "np_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
+            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
             q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
             q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
 
@@ -21,17 +21,17 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             """let ints = (
                     for i in interactionsE
                         let que1 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q1 
                                 return {"interactions": i}
                         )        
                         let que2 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q2 
                                 return {"interactions": i}
                         )        
                         let que3 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q3 
                                 return {"interactions": i}
                         )
@@ -44,31 +44,31 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
     
                 let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
                     )
     
                 let seqs = (
                     for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p, "sequences": v}
                 )
     
                 let amys = (
                     for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                             return distinct {"paths": p, "amyloids": v}
                 )  
     
                 let orgs = (
                     for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                             return distinct {"paths": p, "organisms": v}
                 )
     
                 let props = (
                     for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                             return distinct {"paths": p, "properties": v}
                 )
     
@@ -84,7 +84,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         )
 
     elif (
-            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "np_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
+            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
             q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information"):
 
         q1 = "question1/" + q1
@@ -94,12 +94,12 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             """let ints = (
                     for i in interactionsE
                         let que1 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q1 
                                 return {"interactions": i}
                         )        
                         let que2 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q2 
                                 return {"interactions": i}
                         )        
@@ -112,31 +112,31 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         
                 let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
                     )
         
                 let seqs = (
                     for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p, "sequences": v}
                 )
         
                 let amys = (
                     for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                             return distinct {"paths": p, "amyloids": v}
                 )  
         
                 let orgs = (
                     for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                             return distinct {"paths": p, "organisms": v}
                 )
         
                 let props = (
                     for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                             return distinct {"paths": p, "properties": v}
                 )
         
@@ -162,12 +162,12 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             """let ints = (
                     for i in interactionsE       
                         let que2 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q2 
                                 return {"interactions": i}
                         )        
                         let que3 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q3 
                                 return {"interactions": i}
                         )
@@ -180,31 +180,31 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         
                 let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
                     )
         
                 let seqs = (
                     for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p, "sequences": v}
                 )
         
                 let amys = (
                     for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                             return distinct {"paths": p, "amyloids": v}
                 )  
         
                 let orgs = (
                     for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                             return distinct {"paths": p, "organisms": v}
                 )
         
                 let props = (
                     for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                             return distinct {"paths": p, "properties": v}
                 )
         
@@ -220,7 +220,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         )
 
     elif (
-            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "np_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
+            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
             q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
 
         q1 = "question1/" + q1
@@ -230,12 +230,12 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
             """let ints = (
                     for i in interactionsE
                         let que1 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q1 
                                 return {"interactions": i}
                         )        
                         let que3 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges" 
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
                                 filter v._id == @q3 
                                 return {"interactions": i}
                         )
@@ -248,31 +248,31 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         
                 let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
                     )
         
                 let seqs = (
                     for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p, "sequences": v}
                 )
         
                 let amys = (
                     for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                             return distinct {"paths": p, "amyloids": v}
                 )  
         
                 let orgs = (
                     for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                             return distinct {"paths": p, "organisms": v}
                 )
         
                 let props = (
                     for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                             return distinct {"paths": p, "properties": v}
                 )
         
@@ -288,7 +288,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         )
 
     elif (
-            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "np_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information"):
+            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information"):
 
         q1 = "question1/" + q1
 
@@ -299,7 +299,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
                 for i in interactionsE
                     
                     let q1 = (
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
                             filter v._id == @q1
                             return {"interactions": i}
                     )
@@ -310,31 +310,31 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
              
             let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
             )
             
             let seqs = (
                 for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
                         return {"paths": p, "sequences": v}
             )
                     
             let amys = (
                 for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                         return distinct {"paths": p, "amyloids": v}
             )  
             
             let orgs = (
                 for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                         return distinct {"paths": p, "organisms": v}
             )
             
             let props = (
                 for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                         return distinct {"paths": p, "properties": v}
             )
                 
@@ -362,7 +362,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
                 for i in interactionsE
         
                     let q2 = (
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
                             filter v._id == @q2
                             return {"interactions": i}
                     )
@@ -373,31 +373,31 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         
             let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
             )
         
             let seqs = (
                 for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
                         return {"paths": p, "sequences": v}
             )
         
             let amys = (
                 for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                         return distinct {"paths": p, "amyloids": v}
             )  
         
             let orgs = (
                 for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                         return distinct {"paths": p, "organisms": v}
             )
         
             let props = (
                 for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                         return distinct {"paths": p, "properties": v}
             )
         
@@ -425,7 +425,7 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
                 for i in interactionsE
         
                     let q3 = (
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
                             filter v._id == @q3
                             return {"interactions": i}
                     )
@@ -436,31 +436,31 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         
             let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
             )
         
             let seqs = (
                 for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
                         return {"paths": p, "sequences": v}
             )
         
             let amys = (
                 for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                         return distinct {"paths": p, "amyloids": v}
             )  
         
             let orgs = (
                 for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                         return distinct {"paths": p, "organisms": v}
             )
         
             let props = (
                 for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                         return distinct {"paths": p, "properties": v}
             )
         
@@ -480,37 +480,36 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
         cursor = database.aql.execute(
             """let ints = (
                     for i in interactionsE
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedAndEdges"
                             return {"interactions": i}
                         )        
         
                 let ints_paths = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p}
                     )
         
                 let seqs = (
                     for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
                             return {"paths": p, "sequences": v}
                 )
         
                 let amys = (
                     for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                             return distinct {"paths": p, "amyloids": v}
                 )  
         
                 let orgs = (
                     for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                             return distinct {"paths": p, "organisms": v}
                 )
         
                 let props = (
                     for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                             return distinct {"paths": p, "properties": v}
                 )
         
@@ -544,37 +543,37 @@ def subgraph_from_sequence(database, sequence=None, name=None, filename="result"
 
             let ints = (
                 for item in seqs
-                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedV2"
                         return {"paths": p, "interactions": v}
             )
 
             let ques = (
                 for item in ints
-                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedV2"
                         return {"paths": p, "questions": v}
             )
 
             let seqs2 = (
                 for item in ints
-                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedV2"
                         return {"paths": p, "sequences": v}
             )
 
             let amys = (
                 for item in seqs2
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                         return distinct{"paths": p, "amyloids": v}
             )
 
             let orgs = (
                 for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                         return distinct {"paths": p, "organisms": v}
             )
 
             let props = (
                 for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                         return distinct {"paths": p, "properties": v}
             )
 
@@ -600,37 +599,37 @@ def subgraph_from_sequence(database, sequence=None, name=None, filename="result"
             
             let ints = (
                 for item in seqs
-                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedV2"
                         return {"paths": p, "interactions": v}
             )
             
             let ques = (
                 for item in ints
-                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedV2"
                         return {"paths": p, "questions": v}
             )
             
             let seqs2 = (
                 for item in ints
-                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedV2"
                         return {"paths": p, "sequences": v}
             )
             
             let amys = (
                 for item in seqs2
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                         return distinct{"paths": p, "amyloids": v}
             )
             
             let orgs = (
                 for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                         return distinct {"paths": p, "organisms": v}
             )
             
             let props = (
                 for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                         return distinct {"paths": p, "properties": v}
             )
             
@@ -656,37 +655,37 @@ def subgraph_from_sequence(database, sequence=None, name=None, filename="result"
 
             let ints = (
                 for item in seqs
-                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedV2"
                         return {"paths": p, "interactions": v}
             )
 
             let ques = (
                 for item in ints
-                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedV2"
                         return {"paths": p, "questions": v}
             )
 
             let seqs2 = (
                 for item in ints
-                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedV2"
                         return {"paths": p, "sequences": v}
             )
 
             let amys = (
                 for item in seqs2
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                         return distinct{"paths": p, "amyloids": v}
             )
 
             let orgs = (
                 for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                         return distinct {"paths": p, "organisms": v}
             )
 
             let props = (
                 for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                         return distinct {"paths": p, "properties": v}
             )
 
@@ -724,55 +723,55 @@ def subgraph_from_amyloid(database, amyloid, filename="result"):
         
         let seqs = (
             for item in amys
-                for v, e, p in 1..1 outbound item.amyloids._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 outbound item.amyloids._id graph "ExtendedV2"
                     return distinct{"paths": p, "sequences": v}
         )
         
         let ints = (
             for item in seqs
-                for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedV2"
                     return distinct{"paths": p, "interactions": v}
         )
         
         let ques = (
             for item in ints
-                for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedV2"
                     return distinct{"paths": p, "questions": v}
         )
         
         let seqs2 = (
             for item in ints
-                for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedV2"
                     return distinct{"paths": p, "sequences": v}
         )
         
         let amys2 = (
             for item in seqs2
-                for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                     return distinct{"paths": p, "amyloids": v}
         )
         
         let orgs = (
             for item in amys2
-                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                     return distinct {"paths": p, "organisms": v}
         )
         
         let props = (
             for item in orgs
-                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                     return distinct {"paths": p, "properties": v}
         )
         
         /*let orgs2 = (
             for item in amys2
-                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                     return distinct {"paths": p, "organisms": v}
         )
         
         let props2 = (
             for item in orgs2
-                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                     return distinct {"paths": p, "properties": v}
         )*/
         
@@ -806,55 +805,55 @@ def subgraph_from_organism(database, organism, filename="result"):
         
         let amys = (
             for item in orgs
-                for v, e, p in 1..1 outbound item.organisms._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 outbound item.organisms._id graph "ExtendedV2"
                     return distinct {"paths": p, "amyloids": v}
         )
         
         let seqs = (
             for item in amys
-                for v, e, p in 1..1 outbound item.amyloids._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 outbound item.amyloids._id graph "ExtendedV2"
                     return distinct{"paths": p, "sequences": v}
         )
         
         let ints = (
             for item in seqs
-                for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedV2"
                     return distinct{"paths": p, "interactions": v}
         )
         
         let ques = (
             for item in ints
-                for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedV2"
                     return distinct{"paths": p, "questions": v}
         )
         
         let seqs2 = (
             for item in ints
-                for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedV2"
                     return distinct{"paths": p, "sequences": v}
         )
         
         let amys2 = (
             for item in seqs2
-                for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
                     return distinct{"paths": p, "amyloids": v}
         )
         
         let orgs2 = (
             for item in amys2
-                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
                     return distinct {"paths": p, "organisms": v}
         )
         
         /*let props = (
             for item in orgs
-                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                     return distinct {"paths": p, "properties": v}
         )*/
         
         let props2 = (
             for item in orgs2
-                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedAndEdges"
+                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
                     return distinct {"paths": p, "properties": v}
         )
         
