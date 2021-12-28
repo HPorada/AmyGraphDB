@@ -89,7 +89,5 @@ def search_phrase_extendedV2(database, key, filename="result"):
     with open(f"./management/json_data/{filename}.json", "w") as outfile:
         json.dump(inter, outfile)
 
-
-def search_connected_extendedV2(database, collection, start, filename="result"):
-    aql = database.aql()
-    # TODO
+# def search_connected_extendedV2(database, collection, start, filename="result"):
+#     aql = database.aql()
