@@ -6,18 +6,19 @@ import management.queries.simple_subgraph_queries as ssq
 #simple_JSON.questionnaire_simple()
 #simple_JSON.experiments_simple()
 
-new_db = database.create_database('new_simple', 'root', 'Amyloids')
-#database.import_collections(new_db, './initialisation/simple')
-#graph = database.create_graph(new_db)
-#database.create_view(new_db, "extendedV2")
+# new_db = database.create_database('new_simple', 'root', 'Amyloids')
+# #database.import_collections(new_db, './initialisation/simple')
+# #graph = database.create_graph(new_db)
+# #database.create_view(new_db, "extendedV2")
+#
+# #simple_queries.search_phrase_simple(new_db, 'pH', "result")
+# #extended_queries.search_phrase_extended(new_db, 'pH', "result")
+#
+# ssq.subgraph_from_organism(new_db, "Frankia_sp_KB5", filename='result')
+#
+# vf.networkx_graph('result')
 
-#simple_queries.search_phrase_simple(new_db, 'pH', "result")
-#extended_queries.search_phrase_extended(new_db, 'pH', "result")
-
-ssq.subgraph_from_organism(new_db, "Frankia_sp_KB5", filename='result')
-
-vf.networkx_graph('result')
-
+db = database.database_start("new_extended", "root", "Amyloids", "extended")
 
 # def search_for_all_connected(database, starting_amyloid):
 #     aql = database.aql

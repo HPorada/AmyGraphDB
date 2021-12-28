@@ -8,7 +8,7 @@ from initialisation import simple_json, extended_json, extendedV2_json
 
 def database_start(database, username, password, structure):
     create_json_files(structure)
-    create_database(database, username, password)
+    db_new = create_database(database, username, password)
 
     if structure.lower() == "simple":
         directory = "./initialisation/simple"
@@ -21,9 +21,11 @@ def database_start(database, username, password, structure):
         print("Available database structures: simple, extended, extendedV2.")
 
     if directory is not None:
-        import_collections(database, directory)
-        create_graph(database, structure)
-        create_view(database, structure)
+        import_collections(db_new, directory)
+        create_graph(db_new, structure)
+        create_view(db_new, structure)
+
+    return db_new
 
 
 def create_json_files(structure):
