@@ -3,13 +3,14 @@ import os
 import initialisation.additional_functions as add
 
 
-def questionnaire_simple():
-    files = os.listdir('./initialisation/simple')
+def questionnaire_simple(input_file, output_dir, join="False"):
+    files = os.listdir(output_dir)
 
-    for file in files:
-        os.remove('./initialisation/simple/' + file)
+    if not join:
+        for file in files:
+            os.remove(output_dir + "/" + file)
 
-    sheet = add.open_questionnaire("./initialisation/data/questionnaire.xlsx")
+    sheet = add.open_excel_file(input_file, "Form Responses 1")
 
     # Dictionaries in lists
     seq_list = []
@@ -129,14 +130,29 @@ def questionnaire_simple():
             }
         )
 
-    add.create_json("./initialisation/simple/amyloids.json", amyloids)
-    add.create_json("./initialisation/simple/sequences.json", sequences)
-    add.create_json("./initialisation/simple/interactions.json", interactions)
-    add.create_json("./initialisation/simple/amyseq.json", amyseq)
+    if not join:
+        add.create_json("./initialisation/simple/amyloids.json", amyloids)
+        add.create_json("./initialisation/simple/sequences.json", sequences)
+        add.create_json("./initialisation/simple/interactions.json", interactions)
+        add.create_json("./initialisation/simple/amyseq.json", amyseq)
+    else:
+        add.join_json("./initialisation/simple/amyloids.json", amyloids)
+        add.join_json("./initialisation/simple/sequences.json", sequences)
+        add.join_json("./initialisation/simple/interactions.json", interactions)
+        add.join_json("./initialisation/simple/amyseq.json", amyseq)
 
 
-def experiments_simple():
-    sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
+def experiments_simple(input_file, output_dir, join="True"):
+    # sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
+
+    files = os.listdir(output_dir)
+
+    if not join:
+        for file in files:
+            os.remove(output_dir + "/" + file)
+
+    sheet_amyloids = add.open_excel_file(input_file, "Lifestyle")
+    sheet_interactions = add.open_excel_file(input_file, "ATR_FTIR")
 
     # Dictionaries in lists
     seq_list = []
@@ -214,8 +230,12 @@ def experiments_simple():
             org_list.append(organism)
             organisms.append(
                 {
-                    "_key": organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")", "").replace("/", "_"),
-                    "_id": "organisms/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")", "").replace("/", "_"),
+                    "_key": organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")",
+                                                                                                                   "").replace(
+                        "/", "_"),
+                    "_id": "organisms/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(",
+                                                                                                                "").replace(
+                        ")", "").replace("/", "_"),
                     "lifestyle": lifestyle,
                     "temperature": temperature,
                     "pH": pH,
@@ -224,7 +244,9 @@ def experiments_simple():
 
             orgamy.append(
                 {
-                    "_from": "organisms/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(", "").replace(")", "").replace("/", "_"),
+                    "_from": "organisms/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(",
+                                                                                                                  "").replace(
+                        ")", "").replace("/", "_"),
                     "_to": "amyloids/" + amyloid_name,
                 }
             )
@@ -283,9 +305,17 @@ def experiments_simple():
                 }
             )
 
-    add.join_json("./initialisation/simple/amyloids.json", amyloids)
-    add.join_json("./initialisation/simple/sequences.json", sequences)
-    add.join_json("./initialisation/simple/interactions.json", interactions)
-    add.join_json("./initialisation/simple/amyseq.json", amyseq)
-    add.join_json("./initialisation/simple/organisms.json", organisms)
-    add.join_json("./initialisation/simple/orgamy.json", orgamy)
+    if not join:
+        add.create_json("./initialisation/simple/amyloids.json", amyloids)
+        add.create_json("./initialisation/simple/sequences.json", sequences)
+        add.create_json("./initialisation/simple/interactions.json", interactions)
+        add.create_json("./initialisation/simple/amyseq.json", amyseq)
+        add.create_json("./initialisation/simple/organisms.json", organisms)
+        add.create_json("./initialisation/simple/orgamy.json", orgamy)
+    else:
+        add.join_json("./initialisation/simple/amyloids.json", amyloids)
+        add.join_json("./initialisation/simple/sequences.json", sequences)
+        add.join_json("./initialisation/simple/interactions.json", interactions)
+        add.join_json("./initialisation/simple/amyseq.json", amyseq)
+        add.join_json("./initialisation/simple/organisms.json", organisms)
+        add.join_json("./initialisation/simple/orgamy.json", orgamy)

@@ -4,13 +4,14 @@ import os.path
 import initialisation.additional_functions as add
 
 
-def questionnaire_extendedV2():
-    files = os.listdir('./initialisation/extendedV2')
+def questionnaire_extendedV2(input_file, output_dir, join="False"):
+    files = os.listdir(output_dir)
 
-    for file in files:
-        os.remove('./initialisation/extendedV2/' + file)
+    if not join:
+        for file in files:
+            os.remove(output_dir + "/" + file)
 
-    sheet = add.open_questionnaire("./initialisation/data/questionnaire.xlsx")
+    sheet = add.open_excel_file(input_file, "Form Responses 1")
 
     # Dictionaries in lists
     seq_list = []
@@ -214,21 +215,43 @@ def questionnaire_extendedV2():
 
         int_num += 1
 
-    add.create_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
-    add.create_json("./initialisation/extendedV2/sequencesE.json", sequences)
-    add.create_json("./initialisation/extendedV2/interactionsE.json", interactions)
-    add.create_json("./initialisation/extendedV2/amyseqE.json", amyseq)
-    add.create_json("./initialisation/extendedV2/seqintE.json", seqint)
-    add.create_json("./initialisation/extendedV2/question1.json", question1)
-    add.create_json("./initialisation/extendedV2/intque1.json", intque1)
-    add.create_json("./initialisation/extendedV2/question2.json", question2)
-    add.create_json("./initialisation/extendedV2/intque2.json", intque2)
-    add.create_json("./initialisation/extendedV2/question3.json", question3)
-    add.create_json("./initialisation/extendedV2/intque3.json", intque3)
+    if not join:
+        add.create_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
+        add.create_json("./initialisation/extendedV2/sequencesE.json", sequences)
+        add.create_json("./initialisation/extendedV2/interactionsE.json", interactions)
+        add.create_json("./initialisation/extendedV2/amyseqE.json", amyseq)
+        add.create_json("./initialisation/extendedV2/seqintE.json", seqint)
+        add.create_json("./initialisation/extendedV2/question1.json", question1)
+        add.create_json("./initialisation/extendedV2/intque1.json", intque1)
+        add.create_json("./initialisation/extendedV2/question2.json", question2)
+        add.create_json("./initialisation/extendedV2/intque2.json", intque2)
+        add.create_json("./initialisation/extendedV2/question3.json", question3)
+        add.create_json("./initialisation/extendedV2/intque3.json", intque3)
+    else:
+        add.join_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
+        add.join_json("./initialisation/extendedV2/sequencesE.json", sequences)
+        add.join_json("./initialisation/extendedV2/interactionsE.json", interactions)
+        add.join_json("./initialisation/extendedV2/amyseqE.json", amyseq)
+        add.join_json("./initialisation/extendedV2/seqintE.json", seqint)
+        add.join_json("./initialisation/extendedV2/question1.json", question1)
+        add.join_json("./initialisation/extendedV2/intque1.json", intque1)
+        add.join_json("./initialisation/extendedV2/question2.json", question2)
+        add.join_json("./initialisation/extendedV2/intque2.json", intque2)
+        add.join_json("./initialisation/extendedV2/question3.json", question3)
+        add.join_json("./initialisation/extendedV2/intque3.json", intque3)
 
 
-def experiments_extendedV2():
-    sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
+def experiments_extendedV2(input_file, output_dir, join="True"):
+    # sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
+
+    files = os.listdir(output_dir)
+
+    if not join:
+        for file in files:
+            os.remove(output_dir + "/" + file)
+
+    sheet_amyloids = add.open_excel_file(input_file, "Lifestyle")
+    sheet_interactions = add.open_excel_file(input_file, "ATR_FTIR")
 
     # Dictionaries in lists
     seq_list = []
@@ -489,14 +512,27 @@ def experiments_extendedV2():
 
             int_num += 1
 
-    add.join_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
-    add.join_json("./initialisation/extendedV2/sequencesE.json", sequences)
-    add.join_json("./initialisation/extendedV2/interactionsE.json", interactions)
-    add.join_json("./initialisation/extendedV2/amyseqE.json", amyseq)
-    add.join_json("./initialisation/extendedV2/seqintE.json", seqint)
-    add.join_json("./initialisation/extendedV2/organismsE.json", organisms)
-    add.join_json("./initialisation/extendedV2/orgamyE.json", orgamy)
-    add.join_json("./initialisation/extendedV2/temperaturesE.json", temperatures)
-    add.join_json("./initialisation/extendedV2/temorgE.json", temorg)
-    add.join_json("./initialisation/extendedV2/phsE.json", phs)
-    add.join_json("./initialisation/extendedV2/phorgE.json", phorg)
+    if not join:
+        add.create_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
+        add.create_json("./initialisation/extendedV2/sequencesE.json", sequences)
+        add.create_json("./initialisation/extendedV2/interactionsE.json", interactions)
+        add.create_json("./initialisation/extendedV2/amyseqE.json", amyseq)
+        add.create_json("./initialisation/extendedV2/seqintE.json", seqint)
+        add.create_json("./initialisation/extendedV2/organismsE.json", organisms)
+        add.create_json("./initialisation/extendedV2/orgamyE.json", orgamy)
+        add.create_json("./initialisation/extendedV2/temperaturesE.json", temperatures)
+        add.create_json("./initialisation/extendedV2/temorgE.json", temorg)
+        add.create_json("./initialisation/extendedV2/phsE.json", phs)
+        add.create_json("./initialisation/extendedV2/phorgE.json", phorg)
+    else:
+        add.join_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
+        add.join_json("./initialisation/extendedV2/sequencesE.json", sequences)
+        add.join_json("./initialisation/extendedV2/interactionsE.json", interactions)
+        add.join_json("./initialisation/extendedV2/amyseqE.json", amyseq)
+        add.join_json("./initialisation/extendedV2/seqintE.json", seqint)
+        add.join_json("./initialisation/extendedV2/organismsE.json", organisms)
+        add.join_json("./initialisation/extendedV2/orgamyE.json", orgamy)
+        add.join_json("./initialisation/extendedV2/temperaturesE.json", temperatures)
+        add.join_json("./initialisation/extendedV2/temorgE.json", temorg)
+        add.join_json("./initialisation/extendedV2/phsE.json", phs)
+        add.join_json("./initialisation/extendedV2/phorgE.json", phorg)

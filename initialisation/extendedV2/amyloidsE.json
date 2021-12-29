@@ -1,1 +1,297 @@
-[{"_key": "IAPP", "_id": "amyloidsE/IAPP", "name": "IAPP"}, {"_key": "Amyloid_beta", "_id": "amyloidsE/Amyloid_beta", "name": "Amyloid \u03b2"}, {"_key": "Insulin", "_id": "amyloidsE/Insulin", "name": "Insulin"}, {"_key": "FapC", "_id": "amyloidsE/FapC", "name": "FapC"}, {"_key": "alpha-synuclein", "_id": "amyloidsE/alpha-synuclein", "name": "\u03b1-synuclein"}, {"_key": "CsgA", "_id": "amyloidsE/CsgA", "name": "CsgA"}, {"_key": "CsgB", "_id": "amyloidsE/CsgB", "name": "CsgB"}, {"_key": "Sup35", "_id": "amyloidsE/Sup35", "name": "Sup35"}, {"_key": "PSMalpha3", "_id": "amyloidsE/PSMalpha3", "name": "PSM\u03b13"}, {"_key": "PSMalpha1", "_id": "amyloidsE/PSMalpha1", "name": "PSM\u03b11"}, {"_key": "PSMbeta1", "_id": "amyloidsE/PSMbeta1", "name": "PSM\u03b21"}, {"_key": "PSMbeta2", "_id": "amyloidsE/PSMbeta2", "name": "PSM\u03b22"}, {"_key": "PSMalpha2", "_id": "amyloidsE/PSMalpha2", "name": "PSM\u03b12"}, {"_key": "PSMalpha4", "_id": "amyloidsE/PSMalpha4", "name": "PSM\u03b14"}, {"_key": "Tau", "_id": "amyloidsE/Tau", "name": "Tau"}, {"_key": "delta-toxin", "_id": "amyloidsE/delta-toxin", "name": "\u03b4-toxin"}, {"_key": "Lysozyme", "_id": "amyloidsE/Lysozyme", "name": "Lysozyme"}, {"_key": "alpha-lactalbumin", "_id": "amyloidsE/alpha-lactalbumin", "name": "\u03b1-lactalbumin"}, {"_key": "Rnq1", "_id": "amyloidsE/Rnq1", "name": "Rnq1"}, {"_key": "Albumin", "_id": "amyloidsE/Albumin", "name": "Albumin"}, {"_key": "beta-lactoglobulin", "_id": "amyloidsE/beta-lactoglobulin", "name": "\u03b2-lactoglobulin"}, {"_key": "PrP", "_id": "amyloidsE/PrP", "name": "PrP"}, {"_key": "SEVI", "_id": "amyloidsE/SEVI", "name": "SEVI"}, {"_key": "Cytochrome_C", "_id": "amyloidsE/Cytochrome_C", "name": "Cytochrome C"}, {"_key": "S100A9", "_id": "amyloidsE/S100A9", "name": "S100A9"}, {"_key": "New1", "_id": "amyloidsE/New1", "name": "New1"}, {"_key": "Cystatin_C", "_id": "amyloidsE/Cystatin_C", "name": "Cystatin C"}, {"_key": "alpha-crystallin", "_id": "amyloidsE/alpha-crystallin", "name": "\u03b1-crystallin"}, {"_key": "kappa-casein", "_id": "amyloidsE/kappa-casein", "name": "\u03ba-casein"}, {"_key": "GroES", "_id": "amyloidsE/GroES", "name": "GroES"}, {"_key": "Transthyretin", "_id": "amyloidsE/Transthyretin", "name": "Transthyretin"}, {"_key": "beta-parvalbumin", "_id": "amyloidsE/beta-parvalbumin", "name": "\u03b2-parvalbumin"}, {"_key": "nan", "_id": "amyloidsE/nan", "name": "nan"}, {"_key": "Serum_amyloid_A", "_id": "amyloidsE/Serum_amyloid_A", "name": "Serum amyloid A"}, {"_key": "Medin", "_id": "amyloidsE/Medin", "name": "Medin"}, {"_key": "Pmel17", "_id": "amyloidsE/Pmel17", "name": "Pmel17"}, {"_key": "beta2-microglobulin", "_id": "amyloidsE/beta2-microglobulin", "name": "\u03b22-microglobulin"}, {"_key": "Apolipoprotein_A-I", "_id": "amyloidsE/Apolipoprotein_A-I", "name": "Apolipoprotein A-I"}, {"_key": "Sericin", "_id": "amyloidsE/Sericin", "name": "Sericin"}, {"_key": "Tubulin", "_id": "amyloidsE/Tubulin", "name": "Tubulin"}, {"_key": "alpha-casein", "_id": "amyloidsE/alpha-casein", "name": "\u03b1-casein"}, {"_key": "Fibroin", "_id": "amyloidsE/Fibroin", "name": "Fibroin"}, {"_key": "beta-casein", "_id": "amyloidsE/beta-casein", "name": "\u03b2-casein"}, {"_key": "CRES", "_id": "amyloidsE/CRES", "name": "CRES"}, {"_key": "TDP-43", "_id": "amyloidsE/TDP-43", "name": "TDP-43"}, {"_key": "p53", "_id": "amyloidsE/p53", "name": "p53"}, {"_key": "beta-crystallin", "_id": "amyloidsE/beta-crystallin", "name": "\u03b2-crystallin"}, {"_key": "gamma-crystallin", "_id": "amyloidsE/gamma-crystallin", "name": "\u03b3-crystallin"}, {"_key": "proSP-C", "_id": "amyloidsE/proSP-C", "name": "proSP-C"}, {"_key": "Bri2", "_id": "amyloidsE/Bri2", "name": "Bri2"}, {"_key": "BASS3", "_id": "amyloidsE/BASS3", "name": "BASS3"}, {"_key": "sigma", "_id": "amyloidsE/sigma", "name": "sigma"}, {"_key": "BASS", "_id": "amyloidsE/BASS", "name": "BASS"}, {"_key": "-", "_id": "amyloidsE/-", "name": "-"}, {"_key": "sigma2", "_id": "amyloidsE/sigma2", "name": "sigma2"}, {"_key": "BASS1", "_id": "amyloidsE/BASS1", "name": "BASS1"}, {"_key": "BASS2", "_id": "amyloidsE/BASS2", "name": "BASS2"}, {"_key": "BASS4", "_id": "amyloidsE/BASS4", "name": "BASS4"}, {"_key": "nowy", "_id": "amyloidsE/nowy", "name": "nowy"}]
+[
+  {
+    "_key": "IAPP",
+    "_id": "amyloidsE/IAPP",
+    "name": "IAPP"
+  },
+  {
+    "_key": "Amyloid_beta",
+    "_id": "amyloidsE/Amyloid_beta",
+    "name": "Amyloid \u03b2"
+  },
+  {
+    "_key": "Insulin",
+    "_id": "amyloidsE/Insulin",
+    "name": "Insulin"
+  },
+  {
+    "_key": "FapC",
+    "_id": "amyloidsE/FapC",
+    "name": "FapC"
+  },
+  {
+    "_key": "alpha-synuclein",
+    "_id": "amyloidsE/alpha-synuclein",
+    "name": "\u03b1-synuclein"
+  },
+  {
+    "_key": "CsgA",
+    "_id": "amyloidsE/CsgA",
+    "name": "CsgA"
+  },
+  {
+    "_key": "CsgB",
+    "_id": "amyloidsE/CsgB",
+    "name": "CsgB"
+  },
+  {
+    "_key": "Sup35",
+    "_id": "amyloidsE/Sup35",
+    "name": "Sup35"
+  },
+  {
+    "_key": "PSMalpha3",
+    "_id": "amyloidsE/PSMalpha3",
+    "name": "PSM\u03b13"
+  },
+  {
+    "_key": "PSMalpha1",
+    "_id": "amyloidsE/PSMalpha1",
+    "name": "PSM\u03b11"
+  },
+  {
+    "_key": "PSMbeta1",
+    "_id": "amyloidsE/PSMbeta1",
+    "name": "PSM\u03b21"
+  },
+  {
+    "_key": "PSMbeta2",
+    "_id": "amyloidsE/PSMbeta2",
+    "name": "PSM\u03b22"
+  },
+  {
+    "_key": "PSMalpha2",
+    "_id": "amyloidsE/PSMalpha2",
+    "name": "PSM\u03b12"
+  },
+  {
+    "_key": "PSMalpha4",
+    "_id": "amyloidsE/PSMalpha4",
+    "name": "PSM\u03b14"
+  },
+  {
+    "_key": "Tau",
+    "_id": "amyloidsE/Tau",
+    "name": "Tau"
+  },
+  {
+    "_key": "delta-toxin",
+    "_id": "amyloidsE/delta-toxin",
+    "name": "\u03b4-toxin"
+  },
+  {
+    "_key": "Lysozyme",
+    "_id": "amyloidsE/Lysozyme",
+    "name": "Lysozyme"
+  },
+  {
+    "_key": "alpha-lactalbumin",
+    "_id": "amyloidsE/alpha-lactalbumin",
+    "name": "\u03b1-lactalbumin"
+  },
+  {
+    "_key": "Rnq1",
+    "_id": "amyloidsE/Rnq1",
+    "name": "Rnq1"
+  },
+  {
+    "_key": "Albumin",
+    "_id": "amyloidsE/Albumin",
+    "name": "Albumin"
+  },
+  {
+    "_key": "beta-lactoglobulin",
+    "_id": "amyloidsE/beta-lactoglobulin",
+    "name": "\u03b2-lactoglobulin"
+  },
+  {
+    "_key": "PrP",
+    "_id": "amyloidsE/PrP",
+    "name": "PrP"
+  },
+  {
+    "_key": "SEVI",
+    "_id": "amyloidsE/SEVI",
+    "name": "SEVI"
+  },
+  {
+    "_key": "Cytochrome_C",
+    "_id": "amyloidsE/Cytochrome_C",
+    "name": "Cytochrome C"
+  },
+  {
+    "_key": "S100A9",
+    "_id": "amyloidsE/S100A9",
+    "name": "S100A9"
+  },
+  {
+    "_key": "New1",
+    "_id": "amyloidsE/New1",
+    "name": "New1"
+  },
+  {
+    "_key": "Cystatin_C",
+    "_id": "amyloidsE/Cystatin_C",
+    "name": "Cystatin C"
+  },
+  {
+    "_key": "alpha-crystallin",
+    "_id": "amyloidsE/alpha-crystallin",
+    "name": "\u03b1-crystallin"
+  },
+  {
+    "_key": "kappa-casein",
+    "_id": "amyloidsE/kappa-casein",
+    "name": "\u03ba-casein"
+  },
+  {
+    "_key": "GroES",
+    "_id": "amyloidsE/GroES",
+    "name": "GroES"
+  },
+  {
+    "_key": "Transthyretin",
+    "_id": "amyloidsE/Transthyretin",
+    "name": "Transthyretin"
+  },
+  {
+    "_key": "beta-parvalbumin",
+    "_id": "amyloidsE/beta-parvalbumin",
+    "name": "\u03b2-parvalbumin"
+  },
+  {
+    "_key": "nan",
+    "_id": "amyloidsE/nan",
+    "name": "nan"
+  },
+  {
+    "_key": "Serum_amyloid_A",
+    "_id": "amyloidsE/Serum_amyloid_A",
+    "name": "Serum amyloid A"
+  },
+  {
+    "_key": "Medin",
+    "_id": "amyloidsE/Medin",
+    "name": "Medin"
+  },
+  {
+    "_key": "Pmel17",
+    "_id": "amyloidsE/Pmel17",
+    "name": "Pmel17"
+  },
+  {
+    "_key": "beta2-microglobulin",
+    "_id": "amyloidsE/beta2-microglobulin",
+    "name": "\u03b22-microglobulin"
+  },
+  {
+    "_key": "Apolipoprotein_A-I",
+    "_id": "amyloidsE/Apolipoprotein_A-I",
+    "name": "Apolipoprotein A-I"
+  },
+  {
+    "_key": "Sericin",
+    "_id": "amyloidsE/Sericin",
+    "name": "Sericin"
+  },
+  {
+    "_key": "Tubulin",
+    "_id": "amyloidsE/Tubulin",
+    "name": "Tubulin"
+  },
+  {
+    "_key": "alpha-casein",
+    "_id": "amyloidsE/alpha-casein",
+    "name": "\u03b1-casein"
+  },
+  {
+    "_key": "Fibroin",
+    "_id": "amyloidsE/Fibroin",
+    "name": "Fibroin"
+  },
+  {
+    "_key": "beta-casein",
+    "_id": "amyloidsE/beta-casein",
+    "name": "\u03b2-casein"
+  },
+  {
+    "_key": "CRES",
+    "_id": "amyloidsE/CRES",
+    "name": "CRES"
+  },
+  {
+    "_key": "TDP-43",
+    "_id": "amyloidsE/TDP-43",
+    "name": "TDP-43"
+  },
+  {
+    "_key": "p53",
+    "_id": "amyloidsE/p53",
+    "name": "p53"
+  },
+  {
+    "_key": "beta-crystallin",
+    "_id": "amyloidsE/beta-crystallin",
+    "name": "\u03b2-crystallin"
+  },
+  {
+    "_key": "gamma-crystallin",
+    "_id": "amyloidsE/gamma-crystallin",
+    "name": "\u03b3-crystallin"
+  },
+  {
+    "_key": "proSP-C",
+    "_id": "amyloidsE/proSP-C",
+    "name": "proSP-C"
+  },
+  {
+    "_key": "Bri2",
+    "_id": "amyloidsE/Bri2",
+    "name": "Bri2"
+  },
+  {
+    "_key": "BASS3",
+    "_id": "amyloidsE/BASS3",
+    "name": "BASS3"
+  },
+  {
+    "_key": "sigma",
+    "_id": "amyloidsE/sigma",
+    "name": "sigma"
+  },
+  {
+    "_key": "BASS",
+    "_id": "amyloidsE/BASS",
+    "name": "BASS"
+  },
+  {
+    "_key": "-",
+    "_id": "amyloidsE/-",
+    "name": "-"
+  },
+  {
+    "_key": "sigma2",
+    "_id": "amyloidsE/sigma2",
+    "name": "sigma2"
+  },
+  {
+    "_key": "BASS1",
+    "_id": "amyloidsE/BASS1",
+    "name": "BASS1"
+  },
+  {
+    "_key": "BASS2",
+    "_id": "amyloidsE/BASS2",
+    "name": "BASS2"
+  },
+  {
+    "_key": "BASS4",
+    "_id": "amyloidsE/BASS4",
+    "name": "BASS4"
+  },
+  {
+    "_key": "nowy",
+    "_id": "amyloidsE/nowy",
+    "name": "nowy"
+  }
+]
