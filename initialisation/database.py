@@ -7,14 +7,14 @@ from initialisation import simple_json, extended_json, extendedV2_json
 
 
 def database_start(database, username, password, structure):
-    create_json_files(structure)
-    db_new = create_database(database, username, password)
+    create_json_files(structure, "./initialisation/data/questionnaire.xlsx", "./initialisation/data/experiments.xlsx", f"./initialisation/{structure}")
+    db_new = connect_to_database(database, username, password)
 
     if structure.lower() == "simple":
         directory = "./initialisation/simple"
     elif structure.lower() == "extended":
         directory = "./initialisation/extended"
-    elif structure.lower() == "extendedv2":
+    elif structure.lower() == "extendedv2" or structure.lower() == "extended v2":
         directory = "./initialisation/extendedV2"
     else:
         directory = None
@@ -28,24 +28,24 @@ def database_start(database, username, password, structure):
     return db_new
 
 
-def create_json_files(structure):
+def create_json_files(structure, input_questionnaire, input_experiments, output_dir):
     if structure.lower() == "simple":
-        simple_json.questionnaire_simple("./initialisation/data/questionnaire.xlsx", "./initialisation/simple")
-        simple_json.experiments_simple("./initialisation/data/experiments.xlsx", "./initialisation/simple")
+        simple_json.questionnaire_simple(input_questionnaire, output_dir)
+        simple_json.experiments_simple(input_experiments, output_dir)
 
     elif structure.lower() == "extended":
-        extended_json.questionnaire_extended("./initialisation/data/questionnaire.xlsx", "./initialisation/extended")
-        extended_json.experiments_extended("./initialisation/data/experiments.xlsx", "./initialisation/extended")
+        extended_json.questionnaire_extended(input_questionnaire, output_dir)
+        extended_json.experiments_extended(input_experiments, output_dir)
 
     elif structure.lower() == "extendedv2":
-        extendedV2_json.questionnaire_extendedV2("./initialisation/data/questionnaire.xlsx", "./initialisation/extendedV2")
-        extendedV2_json.experiments_extendedV2("./initialisation/data/experiments.xlsx", "./initialisation/extendedV2")
+        extendedV2_json.questionnaire_extendedV2(input_questionnaire, output_dir)
+        extendedV2_json.experiments_extendedV2(input_experiments, output_dir)
 
     else:
         print("Available database structures: simple, extended, extendedV2.")
 
 
-def create_database(database, username, password):
+def connect_to_database(database, username, password):
     client = ArangoClient(hosts='http://localhost:8529')
 
     db_sys = client.db('_system', username=username, password=password)
@@ -58,15 +58,16 @@ def create_database(database, username, password):
     return db_new
 
 
-def import_collections(database, directory):
+def import_collections(database, directory, delete_previous=True):
     files = os.listdir(directory)
 
-    cols = database.collections()
+    if delete_previous:
+        cols = database.collections()
 
-    if len(cols) != 0:
-        for col in cols:
-            if not col['system']:
-                database.delete_collection(col['name'])
+        if len(cols) != 0:
+            for col in cols:
+                if not col['system']:
+                    database.delete_collection(col['name'])
 
     for file in files:
 

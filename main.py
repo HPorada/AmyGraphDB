@@ -11,10 +11,10 @@ import initialisation.additional_functions as add
 
 #sheet = add.open_questionnaire("./initialisation/data/questionnaire.xlsx")
 
-#new_db = database.create_database('new_simple', 'root', 'Amyloids')
+new_db = database.connect_to_database('new_simple', 'root', 'Amyloids')
 #database.create_json_files("simple")
 #database.import_collections(new_db, './initialisation/simple')
-# #graph = database.create_graph(new_db)
+graph = database.create_graph(new_db, "simple")
 # #database.create_view(new_db, "extendedV2")
 #
 # #simple_queries.search_phrase_simple(new_db, 'pH', "result")
