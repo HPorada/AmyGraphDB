@@ -4,13 +4,14 @@ import os.path
 import initialisation.additional_functions as add
 
 
-def questionnaire_extended():
-    files = os.listdir('./initialisation/extended')
+def questionnaire_extended(input_file, output_dir, join="False"):
+    files = os.listdir(output_dir)
 
-    for file in files:
-        os.remove('./initialisation/extended/' + file)
+    if not join:
+        for file in files:
+            os.remove(output_dir + "/" + file)
 
-    sheet = add.open_questionnaire("./initialisation/data/questionnaire.xlsx")
+    sheet = add.open_excel_file(input_file, "Form Responses 1")
 
     # Dictionaries in lists
     seq_list = []
@@ -158,8 +159,17 @@ def questionnaire_extended():
     add.create_json("./initialisation/extended/seqintE.json", seqint)
 
 
-def experiments_extended():
-    sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
+def experiments_extended(input_file, output_dir, join="True"):
+    #sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
+
+    files = os.listdir(output_dir)
+
+    if not join:
+        for file in files:
+            os.remove(output_dir + "/" + file)
+
+    sheet_amyloids = add.open_excel_file(input_file, "Lifestyle")
+    sheet_interactions = add.open_excel_file(input_file, "ATR_FTIR")
 
     # Dictionaries in lists
     seq_list = []
@@ -353,10 +363,19 @@ def experiments_extended():
 
             int_num += 1
 
-    add.join_json("./initialisation/extended/amyloidsE.json", amyloids)
-    add.join_json("./initialisation/extended/sequencesE.json", sequences)
-    add.join_json("./initialisation/extended/interactionsE.json", interactions)
-    add.join_json("./initialisation/extended/amyseqE.json", amyseq)
-    add.join_json("./initialisation/extended/seqintE.json", seqint)
-    add.join_json("./initialisation/extended/organismsE.json", organisms)
-    add.join_json("./initialisation/extended/orgamyE.json", orgamy)
+    if not join:
+        add.create_json("./initialisation/extended/amyloidsE.json", amyloids)
+        add.create_json("./initialisation/extended/sequencesE.json", sequences)
+        add.create_json("./initialisation/extended/interactionsE.json", interactions)
+        add.create_json("./initialisation/extended/amyseqE.json", amyseq)
+        add.create_json("./initialisation/extended/seqintE.json", seqint)
+        add.create_json("./initialisation/extended/organismsE.json", organisms)
+        add.create_json("./initialisation/extended/orgamyE.json", orgamy)
+    else:
+        add.join_json("./initialisation/extended/amyloidsE.json", amyloids)
+        add.join_json("./initialisation/extended/sequencesE.json", sequences)
+        add.join_json("./initialisation/extended/interactionsE.json", interactions)
+        add.join_json("./initialisation/extended/amyseqE.json", amyseq)
+        add.join_json("./initialisation/extended/seqintE.json", seqint)
+        add.join_json("./initialisation/extended/organismsE.json", organisms)
+        add.join_json("./initialisation/extended/orgamyE.json", orgamy)

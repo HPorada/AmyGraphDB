@@ -5,17 +5,17 @@ import re
 import openpyxl
 
 
-def open_questionnaire(path):
+def open_excel_file(path, sheet):
     file = pd.ExcelFile(path)
-    sheet = file.parse("Form Responses 1")
+    sheet = file.parse(sheet)
     return sheet
 
 
-def open_experiments(path):
-    file = pd.ExcelFile(path)
-    sheet_amyloids = file.parse("Lifestyle")
-    sheet_interactions = file.parse("ATR_FTIR")
-    return sheet_amyloids, sheet_interactions
+# def open_experiments(path):
+#     file = pd.ExcelFile(path)
+#     sheet_amyloids = file.parse("Lifestyle")
+#     sheet_interactions = file.parse("ATR_FTIR")
+#     return sheet_amyloids, sheet_interactions
 
 
 def check_for_greek(name):
@@ -33,17 +33,17 @@ def check_for_greek(name):
         return name
 
 
-def create_json(path, dictionary):
+def create_json(path, collection):
     with open(path, 'w') as outfile:
-        json.dump(dictionary, outfile)
+        json.dump(collection, outfile)
 
 
-def join_json(path, dictionary):
+def join_json(path, collection):
     if os.path.isfile(path):
         with open(path, "r") as file:
             data = json.load(file)
 
-        for i in dictionary:
+        for i in collection:
             data.append(i)
 
         with open(path, "w") as outfile:
@@ -51,7 +51,7 @@ def join_json(path, dictionary):
 
     else:
         with open(path, "w") as outfile:
-            json.dump(dictionary, outfile)
+            json.dump(collection, outfile)
 
 
 def get_temp(temp):

@@ -30,16 +30,16 @@ def database_start(database, username, password, structure):
 
 def create_json_files(structure):
     if structure.lower() == "simple":
-        simple_json.questionnaire_simple()
-        simple_json.experiments_simple()
+        simple_json.questionnaire_simple("./initialisation/data/questionnaire.xlsx", "./initialisation/simple")
+        simple_json.experiments_simple("./initialisation/data/experiments.xlsx", "./initialisation/simple")
 
     elif structure.lower() == "extended":
-        extended_json.questionnaire_extended()
-        extended_json.experiments_extended()
+        extended_json.questionnaire_extended("./initialisation/data/questionnaire.xlsx", "./initialisation/extended")
+        extended_json.experiments_extended("./initialisation/data/experiments.xlsx", "./initialisation/extended")
 
     elif structure.lower() == "extendedv2":
-        extendedV2_json.questionnaire_extendedV2()
-        extendedV2_json.experiments_extendedV2()
+        extendedV2_json.questionnaire_extendedV2("./initialisation/data/questionnaire.xlsx", "./initialisation/extendedV2")
+        extendedV2_json.experiments_extendedV2("./initialisation/data/experiments.xlsx", "./initialisation/extendedV2")
 
     else:
         print("Available database structures: simple, extended, extendedV2.")
