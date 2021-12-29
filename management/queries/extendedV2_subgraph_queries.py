@@ -2,8 +2,6 @@ import json
 
 
 def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="result"):
-    
-
     q1 = q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q2 = q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q3 = q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
@@ -530,8 +528,6 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
 
 
 def subgraph_from_sequence(database, sequence=None, name=None, filename="result"):
-    
-
     if sequence is not None and name is not None:
         cursor = database.aql.execute(
             """let seqs = (
@@ -712,8 +708,6 @@ def subgraph_from_sequence(database, sequence=None, name=None, filename="result"
 
 
 def subgraph_from_amyloid(database, amyloid, filename="result"):
-    
-
     cursor = database.aql.execute(
         """let amys = (
             for a in amyloidsE
@@ -794,8 +788,6 @@ def subgraph_from_amyloid(database, amyloid, filename="result"):
 
 
 def subgraph_from_organism(database, organism, filename="result"):
-    
-
     cursor = database.aql.execute(
         """let orgs = (
             for o in organismsE

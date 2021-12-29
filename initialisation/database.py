@@ -70,10 +70,10 @@ def import_collections(database, directory):
 
     for file in files:
 
-        if (Path(file).stem == 'amyseq' or Path(file).stem == 'orgamy' or Path(file).stem == 'interactions' or Path(
-                file).stem == 'amyseqE' or Path(file).stem == 'orgamyE' or Path(file).stem == 'seqintE' or Path(
-                file).stem == 'intque1' or Path(file).stem == 'intque2' or Path(file).stem == 'intque3' or Path(
-                file).stem == 'phorgE' or Path(file).stem == 'temorgE'):
+        with open(directory + "/" + file) as input:
+            json_data = json.loads(input.read())
+
+        if '_from' in json_data[0]:
 
             a = database.create_collection(Path(file).stem, edge=True)
 

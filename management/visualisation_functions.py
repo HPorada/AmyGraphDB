@@ -7,16 +7,13 @@ from pyvis.network import Network
 import plotly.graph_objects as go
 
 
-def graphviz_graph(filename, int_questions=False, sequences=False, engine='dot', direction='LR'):
-    with open(f"./management/json_data/{filename}.json", "r") as file:
+def graphviz_graph(filename, input_dir='./management/json_data', output_dir='./management/graphviz', int_questions=False, sequences=False, engine='dot', direction='LR'):
+    with open(f"{input_dir}/{filename}.json", "r") as file:
         arango_graph = json.load(file)
 
     graph_name = filename
 
-    # engine alternative: neato
-    # direction alternative: TB
-
-    g = Digraph(graph_name, filename=f"./management/graphs/{graph_name}", format='jpeg', engine=engine,
+    g = Digraph(graph_name, filename=f"{output_dir}/{graph_name}", format='jpeg', engine=engine,
                 graph_attr={'rankdir': direction})
     # g.attr(scale='2', label='Searching with starting node', fontsize='18')
     g.attr('node', shape='rectangle', style='filled', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
@@ -77,8 +74,8 @@ def graphviz_graph(filename, int_questions=False, sequences=False, engine='dot',
     g.view()
 
 
-def networkx_graph(filename, int_questions=False, sequences=True, general_remarks=True):
-    with open(f'./management/json_data/{filename}.json') as file:
+def networkx_graph(filename, input_dir='./management/json_data', output_dir='./management/networkx', int_questions=False, sequences=True, general_remarks=True):
+    with open(f'{input_dir}/{filename}.json') as file:
         json_data = json.loads(file.read())
 
     G = nx.DiGraph()
@@ -172,7 +169,7 @@ def networkx_graph(filename, int_questions=False, sequences=True, general_remark
     nt.from_nx(G)
     nt.show('nx.html')
 
-    nx.write_graphml_lxml(G, f"./management/export/{filename}.gml")
+    nx.write_graphml_lxml(G, f"{output_dir}/{filename}.gml")
     # nx.write_gml(G, f"{filename}.graphml")
     # nx.write_gexf(G, f"{filename}.gexf")
 

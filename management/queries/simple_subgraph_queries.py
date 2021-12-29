@@ -2,8 +2,6 @@ import json
 
 
 def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="result"):
-    
-
     if (
             q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
             q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
@@ -229,13 +227,11 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
 
 
 def subgraph_from_sequence(database, sequence=None, name=None, filename="result"):
-    
-
     cursor = database.aql.execute(
         """let seqs = (
                 for s in sequences
                     for v, e, p in 1..1 any s._id graph "Simple"
-                        filter s.sequence == @seq
+                        filter s.sequence == @seqZatem 
                         return {'paths': p, 'sequences': v}
             )
                         
@@ -261,8 +257,6 @@ def subgraph_from_sequence(database, sequence=None, name=None, filename="result"
 
 
 def subgraph_from_amyloid(database, amyloid, filename="result"):
-    
-
     cursor = database.aql.execute(
         """let amys = (
                 for a in amyloids
@@ -306,8 +300,6 @@ def subgraph_from_amyloid(database, amyloid, filename="result"):
 
 
 def subgraph_from_organism(database, organism, filename="result"):
-    
-
     cursor = database.aql.execute(
         """let orgs = (
                 for o in organisms
