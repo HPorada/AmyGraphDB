@@ -11,8 +11,6 @@ def custom_query(database, query, filename="result"):
 
 
 def filter_questions_simple(database, q1, q2, q3, filename="result"):
-    
-
     cursor = database.aql.execute(
         """for item in sequences
             for v, e, p in 1..1 any item._id graph "Simple"
@@ -30,8 +28,6 @@ def filter_questions_simple(database, q1, q2, q3, filename="result"):
 
 
 def contains_fragment_simple(database, fragment, filename="result"):
-    
-
     cursor = database.aql.execute(
         """for item in sequences
             for v, e, p in 1..1 any item._id graph "Simple"
@@ -47,8 +43,6 @@ def contains_fragment_simple(database, fragment, filename="result"):
 
 
 def search_phrase_simple(database, key, filename="result"):
-    
-
     cursor = database.aql.execute(
         """
         let items = (

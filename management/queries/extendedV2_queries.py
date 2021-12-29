@@ -2,8 +2,6 @@ import json
 
 
 def filter_questions_extendedV2(database, q1, q2, q3, filename="result"):
-    
-
     q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q2 = "question2/" + q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q3 = "question3/" + q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
@@ -46,8 +44,6 @@ def filter_questions_extendedV2(database, q1, q2, q3, filename="result"):
 
 
 def contains_fragment_extendedV2(database, fragment, filename="result"):
-    
-
     cursor = database.aql.execute(
         """for item in sequencesE
             for v, e, p in 1..1 any item._id graph "ExtendedV2"
@@ -63,8 +59,6 @@ def contains_fragment_extendedV2(database, fragment, filename="result"):
 
 
 def search_phrase_extendedV2(database, key, filename="result"):
-    
-
     cursor = database.aql.execute(
         """
         let items = (

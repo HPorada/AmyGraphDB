@@ -10,18 +10,19 @@ import management.queries.simple_subgraph_queries as ssq
 # Potem następuje iteracja po
 
 new_db = database.create_database('new_simple', 'root', 'Amyloids')
-# #database.import_collections(new_db, './initialisation/simple')
+#database.create_json_files("simple")
+database.import_collections(new_db, './initialisation/simple')
 # #graph = database.create_graph(new_db)
 # #database.create_view(new_db, "extendedV2")
 #
 # #simple_queries.search_phrase_simple(new_db, 'pH', "result")
 # #extended_queries.search_phrase_extended(new_db, 'pH', "result")
 #
-query = """for i in amyloids
-    filter i._key == "IAPP"
-    return i"""
+# query = """for i in amyloids
+#     filter i._key == "IAPP"
+#     return i"""
 
-simple_queries.custom_query(new_db, query, filename='result_test')
+#simple_queries.custom_query(new_db, query, filename='result_test')
 #
 #vf.networkx_graph('result')
 
