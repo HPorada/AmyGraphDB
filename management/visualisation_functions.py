@@ -13,7 +13,7 @@ def graphviz_graph(filename, input_dir='./management/json_data', output_dir='./m
 
     graph_name = filename
 
-    g = Digraph(graph_name, filename=f"{output_dir}/{graph_name}", format='jpeg', engine=engine,
+    g = Digraph(graph_name, filename=f"{output_dir}/{graph_name}.dot", format='jpeg', engine=engine,
                 graph_attr={'rankdir': direction})
     # g.attr(scale='2', label='Searching with starting node', fontsize='18')
     g.attr('node', shape='rectangle', style='filled', fillcolor='#bfbfbf', fixedsize='false', width='0.5')

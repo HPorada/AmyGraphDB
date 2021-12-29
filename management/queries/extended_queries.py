@@ -33,19 +33,19 @@ def contains_fragment_extended(database, fragment, filename="result"):
         json.dump(inter, outfile)
 
 
-def search_phrase_extended(database, key, filename="result"):
+def search_phrase_extended(database, keyword, filename="result"):
     cursor = database.aql.execute(
         """
         let items = (
             for i in extendedView 
-                search phrase(i.general_remarks, @key, 'text_en') 
+                search phrase(i.general_remarks, @keyword, 'text_en') 
                 return i
         )
 
         for item in items
             for v, e, p in 1..1 any item._id graph "Extended"
                 return p""",
-        bind_vars={'key': key}
+        bind_vars={'keyword': keyword}
     )
 
     inter = [doc for doc in cursor]
