@@ -11,13 +11,6 @@ def open_excel_file(path, sheet):
     return sheet
 
 
-# def open_experiments(path):
-#     file = pd.ExcelFile(path)
-#     sheet_amyloids = file.parse("Lifestyle")
-#     sheet_interactions = file.parse("ATR_FTIR")
-#     return sheet_amyloids, sheet_interactions
-
-
 def check_for_greek(name):
     if "\u03b1" in name:
         return name.replace("\u03b1", "alpha")

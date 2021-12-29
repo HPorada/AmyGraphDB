@@ -3,7 +3,7 @@ import os
 import initialisation.additional_functions as add
 
 
-def questionnaire_simple(input_file, output_dir, join="False"):
+def questionnaire_simple(input_file, output_dir, join=False):
     files = os.listdir(output_dir)
 
     if not join:
@@ -142,7 +142,7 @@ def questionnaire_simple(input_file, output_dir, join="False"):
         add.join_json("./initialisation/simple/amyseq.json", amyseq)
 
 
-def experiments_simple(input_file, output_dir, join="True"):
+def experiments_simple(input_file, output_dir, join=True):
     # sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
 
     files = os.listdir(output_dir)
