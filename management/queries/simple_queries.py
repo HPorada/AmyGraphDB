@@ -42,12 +42,12 @@ def contains_fragment_simple(database, fragment, filename="result"):
         json.dump(inter, outfile)
 
 
-def search_phrase_simple(database, key, filename="result"):
+def search_phrase_simple(database, keyword, filename="result"):
     cursor = database.aql.execute(
         """
         let items = (
             for i in simpleView
-                search phrase(i.general_remarks, @key, 'text_en')
+                search phrase(i.general_remarks, @keyword, 'text_en')
                 return i
         )
         
@@ -56,7 +56,7 @@ def search_phrase_simple(database, key, filename="result"):
                 for item in items
                     filter i._id == item._from or i._id == item._to
                     return p""",
-        bind_vars={'key': key}
+        bind_vars={'keyword': keyword}
     )
 
     inter = [doc for doc in cursor]

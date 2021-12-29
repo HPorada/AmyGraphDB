@@ -58,19 +58,19 @@ def contains_fragment_extendedV2(database, fragment, filename="result"):
         json.dump(inter, outfile)
 
 
-def search_phrase_extendedV2(database, key, filename="result"):
+def search_phrase_extendedV2(database, keyword, filename="result"):
     cursor = database.aql.execute(
         """
         let items = (
             for i in extendedV2View 
-                search phrase(i.general_remarks, @key, 'text_en') 
+                search phrase(i.general_remarks, @keyword, 'text_en') 
                 return i
         )
 
         for item in items
             for v, e, p in 1..1 any item._id graph "ExtendedV2"
                 return p""",
-        bind_vars={'key': key}
+        bind_vars={'keyword': keyword}
     )
 
     inter = [doc for doc in cursor]
