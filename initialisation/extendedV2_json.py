@@ -4,7 +4,7 @@ import os.path
 import initialisation.additional_functions as add
 
 
-def questionnaire_extendedV2(input_file, output_dir, join="False"):
+def questionnaire_extendedV2(input_file, output_dir, join=False):
     files = os.listdir(output_dir)
 
     if not join:
@@ -241,7 +241,7 @@ def questionnaire_extendedV2(input_file, output_dir, join="False"):
         add.join_json("./initialisation/extendedV2/intque3.json", intque3)
 
 
-def experiments_extendedV2(input_file, output_dir, join="True"):
+def experiments_extendedV2(input_file, output_dir, join=True):
     # sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
 
     files = os.listdir(output_dir)
