@@ -1,0 +1,204 @@
+digraph result {
+	graph [rankdir=LR]
+	node [fillcolor="#bfbfbf" fixedsize=false shape=rectangle style=filled width=0.5]
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/7" [label="int:7"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/7" [label="seq:7"]
+	"sequencesE/7" -> "interactionsE/7"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/7" [label="int:7"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/8" [label="seq:8"]
+	"sequencesE/8" -> "interactionsE/7"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/10" [label="int:10"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/11" [label="seq:11"]
+	"sequencesE/11" -> "interactionsE/10"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/10" [label="int:10"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/10" [label="seq:10"]
+	"sequencesE/10" -> "interactionsE/10"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/120" [label="int:120"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/55" [label="seq:55"]
+	"sequencesE/55" -> "interactionsE/120"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/120" [label="int:120"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/56" [label="seq:56"]
+	"sequencesE/56" -> "interactionsE/120"
+	node [color="#55ff3c" fillcolor="#0bd11f" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/179" [label="int:179"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/82" [label="seq:82"]
+	"sequencesE/82" -> "interactionsE/179"
+	node [color="#55ff3c" fillcolor="#0bd11f" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/179" [label="int:179"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/9" [label="seq:9"]
+	"sequencesE/9" -> "interactionsE/179"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/182" [label="int:182"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/83" [label="seq:83"]
+	"sequencesE/83" -> "interactionsE/182"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/182" [label="int:182"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/3" [label="seq:3"]
+	"sequencesE/3" -> "interactionsE/182"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/195" [label="int:195"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/3" [label="seq:3"]
+	"sequencesE/3" -> "interactionsE/195"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/195" [label="int:195"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/2" [label="seq:2"]
+	"sequencesE/2" -> "interactionsE/195"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/212" [label="int:212"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/90" [label="seq:90"]
+	"sequencesE/90" -> "interactionsE/212"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/212" [label="int:212"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/2" [label="seq:2"]
+	"sequencesE/2" -> "interactionsE/212"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/306" [label="int:306"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/118" [label="seq:118"]
+	"sequencesE/118" -> "interactionsE/306"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/306" [label="int:306"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/119" [label="seq:119"]
+	"sequencesE/119" -> "interactionsE/306"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/307" [label="int:307"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/119" [label="seq:119"]
+	"sequencesE/119" -> "interactionsE/307"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/307" [label="int:307"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/118" [label="seq:118"]
+	"sequencesE/118" -> "interactionsE/307"
+	node [color="#55ff3c" fillcolor="#bfbfbf" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/308" [label="int:308"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/59" [label="seq:59"]
+	"sequencesE/59" -> "interactionsE/308"
+	node [color="#55ff3c" fillcolor="#bfbfbf" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/308" [label="int:308"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/104" [label="seq:104"]
+	"sequencesE/104" -> "interactionsE/308"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/382" [label="int:382"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/144" [label="seq:144"]
+	"sequencesE/144" -> "interactionsE/382"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/382" [label="int:382"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/3" [label="seq:3"]
+	"sequencesE/3" -> "interactionsE/382"
+	node [color="#55ff3c" fillcolor="#1A870A" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/450" [label="int:450"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/174" [label="seq:174"]
+	"sequencesE/174" -> "interactionsE/450"
+	node [color="#55ff3c" fillcolor="#1A870A" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/450" [label="int:450"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/174" [label="seq:174"]
+	"sequencesE/174" -> "interactionsE/450"
+	node [color="#55ff3c" fillcolor="#1A870A" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/451" [label="int:451"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/175" [label="seq:175"]
+	"sequencesE/175" -> "interactionsE/451"
+	node [color="#55ff3c" fillcolor="#1A870A" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/451" [label="int:451"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/176" [label="seq:176"]
+	"sequencesE/176" -> "interactionsE/451"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/499" [label="int:499"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/195" [label="seq:195"]
+	"sequencesE/195" -> "interactionsE/499"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/499" [label="int:499"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/89" [label="seq:89"]
+	"sequencesE/89" -> "interactionsE/499"
+	node [color="#55ff3c" fillcolor="#0bd11f" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/527" [label="int:527"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/3" [label="seq:3"]
+	"sequencesE/3" -> "interactionsE/527"
+	node [color="#55ff3c" fillcolor="#0bd11f" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/527" [label="int:527"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/2" [label="seq:2"]
+	"sequencesE/2" -> "interactionsE/527"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/573" [label="int:573"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/226" [label="seq:226"]
+	"sequencesE/226" -> "interactionsE/573"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/573" [label="int:573"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/1" [label="seq:1"]
+	"sequencesE/1" -> "interactionsE/573"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/609" [label="int:609"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/235" [label="seq:235"]
+	"sequencesE/235" -> "interactionsE/609"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/609" [label="int:609"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/89" [label="seq:89"]
+	"sequencesE/89" -> "interactionsE/609"
+	node [color="#55ff3c" fillcolor="#1A870A" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/615" [label="int:615"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/239" [label="seq:239"]
+	"sequencesE/239" -> "interactionsE/615"
+	node [color="#55ff3c" fillcolor="#1A870A" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/615" [label="int:615"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/2" [label="seq:2"]
+	"sequencesE/2" -> "interactionsE/615"
+	node [color="#55ff3c" fillcolor="#1A870A" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/627" [label="int:627"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/1" [label="seq:1"]
+	"sequencesE/1" -> "interactionsE/627"
+	node [color="#55ff3c" fillcolor="#1A870A" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/627" [label="int:627"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/2" [label="seq:2"]
+	"sequencesE/2" -> "interactionsE/627"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/665" [label="int:665"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/178" [label="seq:178"]
+	"sequencesE/178" -> "interactionsE/665"
+	node [color="#55ff3c" fillcolor="#e30000" penwidth=5 shape=invtriangle style=filled]
+	"interactionsE/665" [label="int:665"]
+	node [color="#000000" fillcolor="#bfbfbf" fixedsize=false fontcolor=black penwidth=1 shape=rectangle width=0.5]
+	"sequencesE/3" [label="seq:3"]
+	"sequencesE/3" -> "interactionsE/665"
+}

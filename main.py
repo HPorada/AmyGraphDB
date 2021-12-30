@@ -5,28 +5,34 @@ from management import visualisation_functions as vf
 import management.queries.simple_subgraph_queries as ssq
 import initialisation.additional_functions as add
 
-#simple_JSON.questionnaire_simple()
-#simple_JSON.experiments_simple()
+new_db = database.connect_to_database('new_extended', 'root', 'Amyloids')
+#simple_queries.filter_questions_simple(new_db, q1="Slower aggregation", q3="Yes", filename="result")
+extended_queries.filter_questions_extended(new_db, q1="Slower aggregation", q3="Yes", filename="result")
 
-
-#sheet = add.open_questionnaire("./initialisation/data/questionnaire.xlsx")
-
-new_db = database.connect_to_database('new_simple', 'root', 'Amyloids')
-#database.create_json_files("simple")
-#database.import_collections(new_db, './initialisation/simple')
-graph = database.create_graph(new_db, "simple")
-# #database.create_view(new_db, "extendedV2")
+# #simple_JSON.questionnaire_simple()
+# #simple_JSON.experiments_simple()
 #
-# #simple_queries.search_phrase_simple(new_db, 'pH', "result")
-# #extended_queries.search_phrase_extended(new_db, 'pH', "result")
 #
-# query = """for i in amyloids
-#     filter i._key == "IAPP"
+# #sheet = add.open_questionnaire("./initialisation/data/questionnaire.xlsx")
+#
+# new_db = database.connect_to_database('new_extendedV2', 'root', 'Amyloids')
+# #database.create_json_files("simple")
+# #database.import_collections(new_db, './initialisation/simple')
+# #graph = database.create_graph(new_db, "simple")
+# # #database.create_view(new_db, "extendedV2")
+# #
+# # #simple_queries.search_phrase_simple(new_db, 'pH', "result")
+# # #extended_queries.search_phrase_extended(new_db, 'pH', "result")
+# #
+# query = """for i in interactionsE
+#     filter i.question_1 == "Slower aggregation"
+#     filter i.question_3 == "Yes"
 #     return i"""
-
-#simple_queries.custom_query(new_db, query, filename='result_test')
 #
-#vf.networkx_graph('result')
+# simple_queries.custom_query(new_db, query, filename='result_test')
+
+vf.graphviz_graph('result')
+vf.networkx_graph('result')
 
 #db = database.database_start("new_test", "root", "Amyloids", "simple")
 
