@@ -1,14 +1,15 @@
 import json
 
 
-def filter_questions_extended(database, q1,q3, filename="result"):
+def filter_questions_extended(database, q1, q2, q3, filename="result"):
     cursor = database.aql.execute(
         """for item in interactionsE
             for v, e, p in 1..1 any item._id graph "Extended"
                 filter item.question_1 == @q1
+                filter item.question_2 == @q2
                 filter item.question_3 == @q3
                 return p""",
-        bind_vars={'q1': q1, 'q3': q3}
+        bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
     )
 
     inter = [doc for doc in cursor]
