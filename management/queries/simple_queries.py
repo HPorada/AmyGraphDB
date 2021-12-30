@@ -1,16 +1,20 @@
 import json
 
 
-def custom_query(database, query, filename="result"):
+def custom_query(database, query, filename="result", directory=None):
     cursor = database.aql.execute(query)
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
-def filter_questions_simple(database, q1, q2, q3, filename="result"):
+def filter_questions_simple(database, q1, q2, q3, filename="result", directory=None):
     cursor = database.aql.execute(
         """for item in sequences
             for v, e, p in 1..1 any item._id graph "Simple"
@@ -23,8 +27,12 @@ def filter_questions_simple(database, q1, q2, q3, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
 def contains_fragment_simple(database, fragment, filename="result"):
