@@ -108,9 +108,9 @@ def filter_questions_extended(database, q1, q2, q3, filename="result", directory
 
 def contains_fragment_extended(database, fragment, filename="result", directory=None):
     cursor = database.aql.execute(
-        """for item in sequencesE
-            for v, e, p in 1..1 any item._id graph "Extended"
-                filter contains(item.sequence, @fragment)
+        """for item in amyloidsE
+            for v, e, p in 1..1 outbound item._id graph "Extended"
+                filter contains(v.sequence, @fragment)
                 return p""",
         bind_vars={'fragment': fragment}
     )
@@ -128,15 +128,9 @@ def contains_fragment_extended(database, fragment, filename="result", directory=
 def search_phrase_extended(database, keyword, filename="result", directory=None):
     cursor = database.aql.execute(
         """
-        let items = (
-            for i in extendedView 
-                search phrase(i.general_remarks, @keyword, 'text_en') 
-                return i
-        )
-
-        for item in items
-            for v, e, p in 1..1 any item._id graph "Extended"
-                return p""",
+        for i in extendedView 
+            search phrase(i.general_remarks, @keyword, 'text_en') 
+            return i""",
         bind_vars={'keyword': keyword}
     )
 

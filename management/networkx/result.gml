@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key id="d6" for="edge" attr.name="weight" attr.type="long" />
   <key id="d5" for="node" attr.name="size" attr.type="long" />
   <key id="d4" for="node" attr.name="color" attr.type="string" />
   <key id="d3" for="node" attr.name="shape" attr.type="string" />
@@ -8,536 +7,551 @@
   <key id="d1" for="node" attr.name="label" attr.type="string" />
   <key id="d0" for="node" attr.name="title" attr.type="string" />
   <graph edgedefault="directed">
-    <node id="interactionsE/7">
-      <data key="d0">&lt;a href="javascript:alert(Interactor: aS amyloid fibrils)"&gt;Interactor: aS amyloid fibrils&lt;/a&gt;</data>
-      <data key="d1">int:7(Y)</data>
+    <node id="interactionsE/244">
+      <data key="d0">&lt;a href="javascript:alert(HEWL2 seed / monomeric HEWL pH 2, 45°C
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght
+Number means pH, pH 2 with heating)"&gt;HEWL2 seed / monomeric HEWL pH 2, 45°C
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght
+Number means pH, pH 2 with heating&lt;/a&gt;</data>
+      <data key="d1">int:244(N)</data>
       <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#e30000</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/7">
-      <data key="d0">&lt;a href="javascript:alert(&gt;sp|P37840|SYUA_HUMAN Alpha-synuclein OS=Homo sapiens OX=9606 GN=SNCA PE=1 SV=1
-MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK
-EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
-DNEAYEMPSEEGYQDYEPEA)"&gt;&gt;sp|P37840|SYUA_HUMAN Alpha-synuclein OS=Homo sapiens OX=9606 GN=SNCA PE=1 SV=1
-MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK
-EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
-DNEAYEMPSEEGYQDYEPEA&lt;/a&gt;</data>
-      <data key="d1">seq:7</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/8">
-      <data key="d0">&lt;a href="javascript:alert(&gt;sp|P10997|IAPP_HUMAN Islet amyloid polypeptide OS=Homo sapiens OX=9606 GN=IAPP PE=1 SV=1
-MGILKLQVFLIVLSVALNHLKATPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAIL
-SSTNVGSNTYGKRNAVEVLKREPLNYLPL)"&gt;&gt;sp|P10997|IAPP_HUMAN Islet amyloid polypeptide OS=Homo sapiens OX=9606 GN=IAPP PE=1 SV=1
-MGILKLQVFLIVLSVALNHLKATPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAIL
-SSTNVGSNTYGKRNAVEVLKREPLNYLPL&lt;/a&gt;</data>
-      <data key="d1">seq:8</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/10">
-      <data key="d0">&lt;a href="javascript:alert(Interactor: pro-IAPP amyloid fibrils)"&gt;Interactor: pro-IAPP amyloid fibrils&lt;/a&gt;</data>
-      <data key="d1">int:10(Y)</data>
-      <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#e30000</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/11">
-      <data key="d0">&lt;a href="javascript:alert(TPIESHQVELRLCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTYGLRNAVEVLKREPLNYLPL)"&gt;TPIESHQVELRLCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTYGLRNAVEVLKREPLNYLPL&lt;/a&gt;</data>
-      <data key="d1">seq:11</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/10">
-      <data key="d0">&lt;a href="javascript:alert(MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK
-EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
-DNEAYEMPSEEGYQDYEPEA)"&gt;MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK
-EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
-DNEAYEMPSEEGYQDYEPEA&lt;/a&gt;</data>
-      <data key="d1">seq:10</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/120">
-      <data key="d0">&lt;a href="javascript:alert(The questionnaire describes the interaction between monomeric AB40 (interactor) and AB42 (interactee).)"&gt;The questionnaire describes the interaction between monomeric AB40 (interactor) and AB42 (interactee).&lt;/a&gt;</data>
-      <data key="d1">int:120(Y)</data>
-      <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#e30000</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/55">
-      <data key="d0">&lt;a href="javascript:alert(&gt;Amyloid beta 40
-DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV)"&gt;&gt;Amyloid beta 40
-DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV&lt;/a&gt;</data>
-      <data key="d1">seq:55</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/56">
-      <data key="d0">&lt;a href="javascript:alert(&gt;Amyloid beta 42
-DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA)"&gt;&gt;Amyloid beta 42
-DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA&lt;/a&gt;</data>
-      <data key="d1">seq:56</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/179">
-      <data key="d0">&lt;a href="javascript:alert(Interactor: rIAPP
-Interactee: hIAPP (nucleation stage))"&gt;Interactor: rIAPP
-Interactee: hIAPP (nucleation stage)&lt;/a&gt;</data>
-      <data key="d1">int:179(Y)</data>
-      <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
+      <data key="d3">triangle</data>
       <data key="d4">#0bd11f</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/82">
-      <data key="d0">&lt;a href="javascript:alert(MRCISRLPAVLLILSVALGHLRATPVGSGTNPQVDKRKCNTATCATQRLANFLVRSSNNL
-GPVLPPTNVGSNTYGKRNVAEDPNRESLDFLLL)"&gt;MRCISRLPAVLLILSVALGHLRATPVGSGTNPQVDKRKCNTATCATQRLANFLVRSSNNL
-GPVLPPTNVGSNTYGKRNVAEDPNRESLDFLLL&lt;/a&gt;</data>
-      <data key="d1">seq:82</data>
-      <data key="d2">3</data>
+    <node id="interactionsE/245">
+      <data key="d0">&lt;a href="javascript:alert(HEWL6.3 seed / monomeric HEWL pH 2, 45°C
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght)"&gt;HEWL6.3 seed / monomeric HEWL pH 2, 45°C
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:245(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/9">
-      <data key="d0">&lt;a href="javascript:alert(MGILKLQVFLIVLSVALNHLKATPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAIL
-SSTNVGSNTYGKRNAVEVLKREPLNYLPL)"&gt;MGILKLQVFLIVLSVALNHLKATPIESHQVEKRKCNTATCATQRLANFLVHSSNNFGAIL
-SSTNVGSNTYGKRNAVEVLKREPLNYLPL&lt;/a&gt;</data>
-      <data key="d1">seq:9</data>
-      <data key="d2">3</data>
+    <node id="interactionsE/246">
+      <data key="d0">&lt;a href="javascript:alert(HLZ2 seed / monomeric HEWL pH 2, 45°C
+Human lysozyme (HLZ), Number means pH - pH 2 with heating
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght)"&gt;HLZ2 seed / monomeric HEWL pH 2, 45°C
+Human lysozyme (HLZ), Number means pH - pH 2 with heating
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:246(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
       <data key="d5">10</data>
     </node>
-    <node id="interactionsE/182">
-      <data key="d0">&lt;a href="javascript:alert(Interactor: amyloid beta 40
-Interactee: amyloid beta 42)"&gt;Interactor: amyloid beta 40
-Interactee: amyloid beta 42&lt;/a&gt;</data>
-      <data key="d1">int:182(Y)</data>
+    <node id="interactionsE/247">
+      <data key="d0">&lt;a href="javascript:alert(HLZ6.3 seed / monomeric HEWL pH 2, 45°C
+Human lysozyme (HLZ), number means pH, pH 6,3 with 3 M GdnHCl
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght)"&gt;HLZ6.3 seed / monomeric HEWL pH 2, 45°C
+Human lysozyme (HLZ), number means pH, pH 6,3 with 3 M GdnHCl
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:247(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/248">
+      <data key="d0">&lt;a href="javascript:alert(HLZ2 seed / monomeric HLZ pH 2, 45°C
+Human lysozyme (HLZ), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght)"&gt;HLZ2 seed / monomeric HLZ pH 2, 45°C
+Human lysozyme (HLZ), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:248(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/249">
+      <data key="d0">&lt;a href="javascript:alert(HEWL2 seed / monomeric HLZ pH 2, 45°C
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght)"&gt;HEWL2 seed / monomeric HLZ pH 2, 45°C
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:249(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/250">
+      <data key="d0">&lt;a href="javascript:alert(HLZ6.3 seed / monomeric HLZ pH 2, 45°C
+Human lysozyme (HLZ), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght)"&gt;HLZ6.3 seed / monomeric HLZ pH 2, 45°C
+Human lysozyme (HLZ), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:250(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/251">
+      <data key="d0">&lt;a href="javascript:alert(HEWL6.3 seed / monomeric HLZ pH 2, 45°C
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght)"&gt;HEWL6.3 seed / monomeric HLZ pH 2, 45°C
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:251(Y)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/252">
+      <data key="d0">&lt;a href="javascript:alert(HEWL6.3 seed / monomeric HEWL pH 6.3, 45°C
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght)"&gt;HEWL6.3 seed / monomeric HEWL pH 6.3, 45°C
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:252(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/253">
+      <data key="d0">&lt;a href="javascript:alert(HLZ6.3 seed / monomeric HEWL pH 6.3, 45°C
+Human lysozyme (HLZ), number means pH, pH 6,3 with 3 M GdnHCl
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght)"&gt;HLZ6.3 seed / monomeric HEWL pH 6.3, 45°C
+Human lysozyme (HLZ), number means pH, pH 6,3 with 3 M GdnHCl
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:253(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/254">
+      <data key="d0">&lt;a href="javascript:alert(HEWL2 seed / monomeric HEWL pH 6.3, 45°C
+hen egg-white lysozyme (HEWL), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght)"&gt;HEWL2 seed / monomeric HEWL pH 6.3, 45°C
+hen egg-white lysozyme (HEWL), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:254(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/255">
+      <data key="d0">&lt;a href="javascript:alert(HLZ2 seed / monomeric HEWL pH 6.3, 45°C
+Human lysozyme (HLZ), Number means pH, pH 2 with heating
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght)"&gt;HLZ2 seed / monomeric HEWL pH 6.3, 45°C
+Human lysozyme (HLZ), Number means pH, pH 2 with heating
+hen egg-white lysozyme (HEWL)
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:255(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/256">
+      <data key="d0">&lt;a href="javascript:alert(HLZ6.3 seed / monomeric HLZ pH 6.3, 45°C
+Human lysozyme (HLZ), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght)"&gt;HLZ6.3 seed / monomeric HLZ pH 6.3, 45°C
+Human lysozyme (HLZ), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:256(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/257">
+      <data key="d0">&lt;a href="javascript:alert(HEWL6.3 seed / monomeric HLZ pH 6.3, 45°C
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200nm lenght)"&gt;HEWL6.3 seed / monomeric HLZ pH 6.3, 45°C
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl
+Seed = sonicated fibrils 200nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:257(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/258">
+      <data key="d0">&lt;a href="javascript:alert(HLZ2 seed / monomeric HLZ pH 6.3, 45°C
+Human lysozyme (HLZ), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght)"&gt;HLZ2 seed / monomeric HLZ pH 6.3, 45°C
+Human lysozyme (HLZ), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:258(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/259">
+      <data key="d0">&lt;a href="javascript:alert(HEWL2 seed / monomeric HLZ pH 6.3, 45°C
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght)"&gt;HEWL2 seed / monomeric HLZ pH 6.3, 45°C
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), Number means pH, pH 2 with heating
+Seed = sonicated fibrils 200 nm lenght&lt;/a&gt;</data>
+      <data key="d1">int:259(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/260">
+      <data key="d0">&lt;a href="javascript:alert(HEWL6.3 pre-treated fibrils with 0,5 mg/ml pepsin / HLZ monomers in simulated gastric fluid (pH 1,2, 37°C, pepsin, 34 mM NaCl, 4 days)
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl)"&gt;HEWL6.3 pre-treated fibrils with 0,5 mg/ml pepsin / HLZ monomers in simulated gastric fluid (pH 1,2, 37°C, pepsin, 34 mM NaCl, 4 days)
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl&lt;/a&gt;</data>
+      <data key="d1">int:260(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">square</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/261">
+      <data key="d0">&lt;a href="javascript:alert(HEWL6.3 fibrils / HLZ monomers in simulated gastric fluid (pH 1,2, 37°C, pepsin, 34 mM NaCl, 4 days)
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl)"&gt;HEWL6.3 fibrils / HLZ monomers in simulated gastric fluid (pH 1,2, 37°C, pepsin, 34 mM NaCl, 4 days)
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), number means pH, pH 6,3 with 3 M GdnHCl&lt;/a&gt;</data>
+      <data key="d1">int:261(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">square</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/262">
+      <data key="d0">&lt;a href="javascript:alert(HEWL2 sonicated fibrils / HLZ monomers in simulated gastric fluid (pH 1,2, 37°C, pepsin, 34 mM NaCl, 4 days)
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), Number means pH, pH 2 with heating)"&gt;HEWL2 sonicated fibrils / HLZ monomers in simulated gastric fluid (pH 1,2, 37°C, pepsin, 34 mM NaCl, 4 days)
+Human lysozyme (HLZ),
+hen egg-white lysozyme (HEWL), Number means pH, pH 2 with heating&lt;/a&gt;</data>
+      <data key="d1">int:262(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">square</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/293">
+      <data key="d0">&lt;a href="javascript:alert(GNNQQNY seeds* / GNNQQNY monomers; 3 days, 37°C, pH 7,4
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123))"&gt;GNNQQNY seeds* / GNNQQNY monomers; 3 days, 37°C, pH 7,4
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123)&lt;/a&gt;</data>
+      <data key="d1">int:293(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/294">
+      <data key="d0">&lt;a href="javascript:alert(GNNQQNY seeds / bovine insulin; 3 days, 37°C, pH 7,4
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123))"&gt;GNNQQNY seeds / bovine insulin; 3 days, 37°C, pH 7,4
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123)&lt;/a&gt;</data>
+      <data key="d1">int:294(NI)</data>
       <data key="d2">2</data>
       <data key="d3">triangleDown</data>
       <data key="d4">#e30000</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/83">
-      <data key="d0">&lt;a href="javascript:alert(DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV
-)"&gt;DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV
-&lt;/a&gt;</data>
-      <data key="d1">seq:83</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/3">
-      <data key="d0">&lt;a href="javascript:alert(DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA)"&gt;DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA&lt;/a&gt;</data>
-      <data key="d1">seq:3</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/195">
-      <data key="d0">&lt;a href="javascript:alert(Interactor: AB42 (preformed fibrils)
-Interactee: AB40 (monomers))"&gt;Interactor: AB42 (preformed fibrils)
-Interactee: AB40 (monomers)&lt;/a&gt;</data>
-      <data key="d1">int:195(Y)</data>
+    <node id="interactionsE/295">
+      <data key="d0">&lt;a href="javascript:alert(GNNQQNY seeds / human serum albumin; 3 days, 37°C, pH 7,4
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123))"&gt;GNNQQNY seeds / human serum albumin; 3 days, 37°C, pH 7,4
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123)&lt;/a&gt;</data>
+      <data key="d1">int:295(NI)</data>
       <data key="d2">2</data>
       <data key="d3">triangleDown</data>
       <data key="d4">#e30000</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/2">
-      <data key="d0">&lt;a href="javascript:alert(DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV)"&gt;DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV&lt;/a&gt;</data>
-      <data key="d1">seq:2</data>
-      <data key="d2">3</data>
+    <node id="interactionsE/296">
+      <data key="d0">&lt;a href="javascript:alert(GNNQQNY seeds / bovine insulin; 3 days, 37°C, pH 2,5
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123))"&gt;GNNQQNY seeds / bovine insulin; 3 days, 37°C, pH 2,5
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123)&lt;/a&gt;</data>
+      <data key="d1">int:296(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
       <data key="d5">10</data>
     </node>
-    <node id="interactionsE/212">
-      <data key="d0">&lt;a href="javascript:alert(Interactor: AB38
-Interactee: AB40)"&gt;Interactor: AB38
-Interactee: AB40&lt;/a&gt;</data>
-      <data key="d1">int:212(Y)</data>
+    <node id="interactionsE/297">
+      <data key="d0">&lt;a href="javascript:alert(GNNQQNY seeds / lysozyme chicken egg-white; 3 days, 37°C, pH 7,4
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123))"&gt;GNNQQNY seeds / lysozyme chicken egg-white; 3 days, 37°C, pH 7,4
+* particle size of GNNQQNY amyloid aggregates used as seeds: 1.900 ± 0.125 µm
+GNNQQNY – fragment of Sup35 prion-determining domain (1-123)&lt;/a&gt;</data>
+      <data key="d1">int:297(NI)</data>
       <data key="d2">2</data>
       <data key="d3">triangleDown</data>
       <data key="d4">#e30000</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/90">
-      <data key="d0">&lt;a href="javascript:alert(D A E F R H D S G Y E V H H Q K L V F F A E D V G S N K G A I I G L M V G G)"&gt;D A E F R H D S G Y E V H H Q K L V F F A E D V G S N K G A I I G L M V G G&lt;/a&gt;</data>
-      <data key="d1">seq:90</data>
-      <data key="d2">3</data>
+    <node id="interactionsE/441">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH ∼7.4; interactor concentration: 25 μM)"&gt;N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH ∼7.4; interactor concentration: 25 μM&lt;/a&gt;</data>
+      <data key="d1">int:441(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
       <data key="d5">10</data>
     </node>
-    <node id="interactionsE/306">
-      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
-      <data key="d1">int:306(Y)</data>
+    <node id="interactionsE/442">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH ∼7.4; interactor concentration: 1 μM)"&gt;N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH ∼7.4; interactor concentration: 1 μM&lt;/a&gt;</data>
+      <data key="d1">int:442(NI)</data>
       <data key="d2">2</data>
       <data key="d3">triangleDown</data>
       <data key="d4">#e30000</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/118">
-      <data key="d0">&lt;a href="javascript:alert(VLSRYPSYGLNYYQQKPVALINNQFLPYPYYAKPAAVRSPAQILQWQVLSNTVPAKSCQA
-QPTTMARHPHPHLSFMAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSP
-EVIESPPEINTVQVTSTAV)"&gt;VLSRYPSYGLNYYQQKPVALINNQFLPYPYYAKPAAVRSPAQILQWQVLSNTVPAKSCQA
-QPTTMARHPHPHLSFMAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSP
-EVIESPPEINTVQVTSTAV&lt;/a&gt;</data>
-      <data key="d1">seq:118</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/119">
-      <data key="d0">&lt;a href="javascript:alert(MKCLLLALALTCGAQALIVTQTMKGLDIQKVAGTWYSLAMAASDISLLDAQSAPLRVYVE
-ELKPTPEGDLEILLQKWENGECAQKKIIAEKTKIPAVFKIDALNENKVLVLDTDYKKYLL
-FCMENSAEPEQSLACQCLVRTPEVDDEALEKFDKALKALPMHIRLSFNPTQLEEQCHI)"&gt;MKCLLLALALTCGAQALIVTQTMKGLDIQKVAGTWYSLAMAASDISLLDAQSAPLRVYVE
-ELKPTPEGDLEILLQKWENGECAQKKIIAEKTKIPAVFKIDALNENKVLVLDTDYKKYLL
-FCMENSAEPEQSLACQCLVRTPEVDDEALEKFDKALKALPMHIRLSFNPTQLEEQCHI&lt;/a&gt;</data>
-      <data key="d1">seq:119</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/307">
-      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
-      <data key="d1">int:307(Y)</data>
+    <node id="interactionsE/443">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactot. Results depend on pH and concentration. Here: pH ∼7.4; interactor concentration: 5 μM)"&gt;N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactot. Results depend on pH and concentration. Here: pH ∼7.4; interactor concentration: 5 μM&lt;/a&gt;</data>
+      <data key="d1">int:443(NI)</data>
       <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#e30000</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/308">
-      <data key="d0">&lt;a href="javascript:alert(Interactee: Aβ(25-35))"&gt;Interactee: Aβ(25-35)&lt;/a&gt;</data>
-      <data key="d1">int:308(Y)</data>
-      <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
+      <data key="d3">diamond</data>
       <data key="d4">#bfbfbf</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/59">
-      <data key="d0">&lt;a href="javascript:alert(MAEPRQEFEV MEDHAGTYGL GDRKDQGGYT MHQDQEGDTD AGLKESPLQT PTEDGSEEPG SETSDAKSTP TAEDVTAPLV DEGAPGKQAA AQPHTEIPEG TTAEEAGIGD TPSLEDEAAG HVTQARMVSK SKDGTGSDDK KAKGADGKTK IATPRGAAPP GQKGQANATR IPAKTPPAPK TPPSSGEPPK SGDRSGYSSP GSPGTPGSRS RTPSLPTPPT REPKKVAVVR TPPKSPSSAK SRLQTAPVPM PDLKNVKSKI GSTENLKHQP GGGKVQIINK KLDLSNVQSK CGSKDNIKHV PGGGSVQIVY KPVDLSKVTS KCGSLGNIHH KPGGGQVEVK SEKLDFKDRV QSKIGSLDNI THVPGGGNKK IETHKLTFRE NAKAKTDHGA EIVYKSPVVS GDTSPRHLSN VSSTGSIDMV DSPQLATLAD EVSASLAKQG L)"&gt;MAEPRQEFEV MEDHAGTYGL GDRKDQGGYT MHQDQEGDTD AGLKESPLQT PTEDGSEEPG SETSDAKSTP TAEDVTAPLV DEGAPGKQAA AQPHTEIPEG TTAEEAGIGD TPSLEDEAAG HVTQARMVSK SKDGTGSDDK KAKGADGKTK IATPRGAAPP GQKGQANATR IPAKTPPAPK TPPSSGEPPK SGDRSGYSSP GSPGTPGSRS RTPSLPTPPT REPKKVAVVR TPPKSPSSAK SRLQTAPVPM PDLKNVKSKI GSTENLKHQP GGGKVQIINK KLDLSNVQSK CGSKDNIKHV PGGGSVQIVY KPVDLSKVTS KCGSLGNIHH KPGGGQVEVK SEKLDFKDRV QSKIGSLDNI THVPGGGNKK IETHKLTFRE NAKAKTDHGA EIVYKSPVVS GDTSPRHLSN VSSTGSIDMV DSPQLATLAD EVSASLAKQG L&lt;/a&gt;</data>
-      <data key="d1">seq:59</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/104">
-      <data key="d0">&lt;a href="javascript:alert(GSNKGAIIGLM)"&gt;GSNKGAIIGLM&lt;/a&gt;</data>
-      <data key="d1">seq:104</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/382">
-      <data key="d0">&lt;a href="javascript:alert(Interactee: Aβ(1–42) oligomers)"&gt;Interactee: Aβ(1–42) oligomers&lt;/a&gt;</data>
-      <data key="d1">int:382(Y)</data>
+    <node id="interactionsE/444">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH 5.6; interactor concentration: 1, 5, 25 μM. ThT shows changes in kinetics, however interactions are not resulted in fibrils formation.)"&gt;N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH 5.6; interactor concentration: 1, 5, 25 μM. ThT shows changes in kinetics, however interactions are not resulted in fibrils formation.&lt;/a&gt;</data>
+      <data key="d1">int:444(N)</data>
       <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
+      <data key="d3">square</data>
       <data key="d4">#e30000</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/144">
-      <data key="d0">&lt;a href="javascript:alert(MKWVTFISLLFLFSSAYSRGVFRRDAHKSEVAHRFKDLGEENFKALVLIAFAQYLQQCPF
-EDHVKLVNEVTEFAKTCVADESAENCDKSLHTLFGDKLCTVATLRETYGEMADCCAKQEP
-ERNECFLQHKDDNPNLPRLVRPEVDVMCTAFHDNEETFLKKYLYEIARRHPYFYAPELLF
-FAKRYKAAFTECCQAADKAACLLPKLDELRDEGKASSAKQGLKCASLQKFGERAFKAWAV
-ARLSQRFPKAEFAEVSKLVTDLTKVHTECCHGDLLECADDRADLAKYICENQDSISSKLK
-ECCEKPLLEKSHCIAEVENDEMPADLPSLAADFVGSKDVCKNYAEAKDVFLGMFLYEYAR
-RHPDYSVVLLLRLAKTYETTLEKCCAAADPHECYAKVFDEFKPLVEEPQNLIKQNCELFE
-QLGEYKFQNALLVRYTKKVPQVSTPTLVEVSRNLGKVGSKCCKHPEAKRMPCAEDCLSVF
-LNQLCVLHEKTPVSDRVTKCCTESLVNGRPCFSALEVDETYVPKEFNAETFTFHADICTL
-SEKERQIKKQTALVELVKHKPKATKEQLKAVMDDFAAFVEKCCKADDKETCFAEEGKKLV
-AASQAALGL)"&gt;MKWVTFISLLFLFSSAYSRGVFRRDAHKSEVAHRFKDLGEENFKALVLIAFAQYLQQCPF
-EDHVKLVNEVTEFAKTCVADESAENCDKSLHTLFGDKLCTVATLRETYGEMADCCAKQEP
-ERNECFLQHKDDNPNLPRLVRPEVDVMCTAFHDNEETFLKKYLYEIARRHPYFYAPELLF
-FAKRYKAAFTECCQAADKAACLLPKLDELRDEGKASSAKQGLKCASLQKFGERAFKAWAV
-ARLSQRFPKAEFAEVSKLVTDLTKVHTECCHGDLLECADDRADLAKYICENQDSISSKLK
-ECCEKPLLEKSHCIAEVENDEMPADLPSLAADFVGSKDVCKNYAEAKDVFLGMFLYEYAR
-RHPDYSVVLLLRLAKTYETTLEKCCAAADPHECYAKVFDEFKPLVEEPQNLIKQNCELFE
-QLGEYKFQNALLVRYTKKVPQVSTPTLVEVSRNLGKVGSKCCKHPEAKRMPCAEDCLSVF
-LNQLCVLHEKTPVSDRVTKCCTESLVNGRPCFSALEVDETYVPKEFNAETFTFHADICTL
-SEKERQIKKQTALVELVKHKPKATKEQLKAVMDDFAAFVEKCCKADDKETCFAEEGKKLV
-AASQAALGL&lt;/a&gt;</data>
-      <data key="d1">seq:144</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/450">
-      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
-      <data key="d1">int:450(Y)</data>
+    <node id="interactionsE/445">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH ∼7.4; interactor concentration: 1, 5, 25 μM)"&gt;N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH ∼7.4; interactor concentration: 1, 5, 25 μM&lt;/a&gt;</data>
+      <data key="d1">int:445(NI)</data>
       <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#1A870A</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/174">
-      <data key="d0">&lt;a href="javascript:alert(MDVFMKGLSK AKEGVVAAAE KTKQGVAEAA GKTKEGVLYV GSKTKEGVVH 
-GVATVAEKTK EQVTNVGGAV VTGVTAVAQK TVEGAGSIAA ATGFVKKDQL 
-GKNEEGAPQE GILEDMPVDP DNEAYEMPSE EGYQDYEPEA
-)"&gt;MDVFMKGLSK AKEGVVAAAE KTKQGVAEAA GKTKEGVLYV GSKTKEGVVH 
-GVATVAEKTK EQVTNVGGAV VTGVTAVAQK TVEGAGSIAA ATGFVKKDQL 
-GKNEEGAPQE GILEDMPVDP DNEAYEMPSE EGYQDYEPEA
-&lt;/a&gt;</data>
-      <data key="d1">seq:174</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/451">
-      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
-      <data key="d1">int:451(Y)</data>
-      <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#1A870A</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/175">
-      <data key="d0">&lt;a href="javascript:alert(MGILKLQVFL IVLSVALNHL KATPIESHQV EKRKCNTATC ATQRLANFLV 
-HSSNNFGAIL SSTNVGSNTY GKRNAVEVLK REPLNYLPL    
-)"&gt;MGILKLQVFL IVLSVALNHL KATPIESHQV EKRKCNTATC ATQRLANFLV 
-HSSNNFGAIL SSTNVGSNTY GKRNAVEVLK REPLNYLPL    
-&lt;/a&gt;</data>
-      <data key="d1">seq:175</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/176">
-      <data key="d0">&lt;a href="javascript:alert(       MALWMRLLPL LALLALWGPD PAAAFVNQHL CGSHLVEALY LVCGERGFFY 
- TPKTRREAED LQVGQVELGG GPGAGSLQPL ALEGSLQKRG IVEQCCTSIC 
-SLYQLENYCN   
-)"&gt;       MALWMRLLPL LALLALWGPD PAAAFVNQHL CGSHLVEALY LVCGERGFFY 
- TPKTRREAED LQVGQVELGG GPGAGSLQPL ALEGSLQKRG IVEQCCTSIC 
-SLYQLENYCN   
-&lt;/a&gt;</data>
-      <data key="d1">seq:176</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/499">
-      <data key="d0">&lt;a href="javascript:alert(Interactor: alpha-crystallin A chain)"&gt;Interactor: alpha-crystallin A chain&lt;/a&gt;</data>
-      <data key="d1">int:499(Y)</data>
-      <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#e30000</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/195">
-      <data key="d0">&lt;a href="javascript:alert(MDVTIQHPWFKRTLGPFYPSRLFDQFFGEGLFEYDLLPFLSSTISPYYRQSLFRTVLDSG
-ISEVRSDRDKFVIFLDVKHFSPEDLTVKVQDDFVEIHGKHNERQDDHGYISREFHRRYRL
-PSNVDQSALSCSLSADGMLTFCGPKIQTGLDATHAERAIPVSREEKPTSAPSS)"&gt;MDVTIQHPWFKRTLGPFYPSRLFDQFFGEGLFEYDLLPFLSSTISPYYRQSLFRTVLDSG
-ISEVRSDRDKFVIFLDVKHFSPEDLTVKVQDDFVEIHGKHNERQDDHGYISREFHRRYRL
-PSNVDQSALSCSLSADGMLTFCGPKIQTGLDATHAERAIPVSREEKPTSAPSS&lt;/a&gt;</data>
-      <data key="d1">seq:195</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="sequencesE/89">
-      <data key="d0">&lt;a href="javascript:alert(MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED
-LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN)"&gt;MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED
-LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN&lt;/a&gt;</data>
-      <data key="d1">seq:89</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/527">
-      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
-      <data key="d1">int:527(Y)</data>
-      <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
+      <data key="d3">triangle</data>
       <data key="d4">#0bd11f</data>
       <data key="d5">10</data>
     </node>
-    <node id="interactionsE/573">
-      <data key="d0">&lt;a href="javascript:alert(Interactee: WT IAPP
-Interactor: IAPP I26P)"&gt;Interactee: WT IAPP
-Interactor: IAPP I26P&lt;/a&gt;</data>
-      <data key="d1">int:573(Y)</data>
+    <node id="interactionsE/446">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH 5.6; interactor concentration: 1, 5, 25 μM. ThT shows changes in kinetics, however interactions are not resulted in fibrils formation.)"&gt;N-acetylated and C-amidated hexapeptide AcPHF6 derived from the native tau-hexapeptide sequence as interactor. Results depend on pH and concentration. Here: pH 5.6; interactor concentration: 1, 5, 25 μM. ThT shows changes in kinetics, however interactions are not resulted in fibrils formation.&lt;/a&gt;</data>
+      <data key="d1">int:446(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">square</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/447">
+      <data key="d0">&lt;a href="javascript:alert(Free native tau-hexapeptide (NH2-VQIVYK-COOH) PHF6 as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 5, 25 μM. )"&gt;Free native tau-hexapeptide (NH2-VQIVYK-COOH) PHF6 as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 5, 25 μM. &lt;/a&gt;</data>
+      <data key="d1">int:447(NI)</data>
       <data key="d2">2</data>
       <data key="d3">triangleDown</data>
       <data key="d4">#e30000</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/226">
-      <data key="d0">&lt;a href="javascript:alert(KCNTATCATQRLANFLVHSSNNFGAPLSSTNVGSNTY)"&gt;KCNTATCATQRLANFLVHSSNNFGAPLSSTNVGSNTY&lt;/a&gt;</data>
-      <data key="d1">seq:226</data>
-      <data key="d2">3</data>
+    <node id="interactionsE/448">
+      <data key="d0">&lt;a href="javascript:alert(Free native tau-hexapeptide (NH2-VQIVYK-COOH) PHF6 as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1 μM. )"&gt;Free native tau-hexapeptide (NH2-VQIVYK-COOH) PHF6 as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1 μM. &lt;/a&gt;</data>
+      <data key="d1">int:448(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/1">
-      <data key="d0">&lt;a href="javascript:alert(KCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTY)"&gt;KCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTY&lt;/a&gt;</data>
-      <data key="d1">seq:1</data>
-      <data key="d2">3</data>
+    <node id="interactionsE/449">
+      <data key="d0">&lt;a href="javascript:alert(Free native tau-hexapeptide (NH2-VQIVYK-COOH) PHF6 as interactor. Results depend on pH. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM. )"&gt;Free native tau-hexapeptide (NH2-VQIVYK-COOH) PHF6 as interactor. Results depend on pH. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM. &lt;/a&gt;</data>
+      <data key="d1">int:449(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#bfbfbf</data>
       <data key="d5">10</data>
     </node>
-    <node id="interactionsE/609">
-      <data key="d0">&lt;a href="javascript:alert(interactor: N-terminal domain of αB-Cry (αB-NTD))"&gt;interactor: N-terminal domain of αB-Cry (αB-NTD)&lt;/a&gt;</data>
-      <data key="d1">int:609(Y)</data>
+    <node id="interactionsE/532">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant AQIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5 μM )"&gt;N-acetylated and C-amidated alanine mutant AQIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5 μM &lt;/a&gt;</data>
+      <data key="d1">int:532(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#bfbfbf</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/533">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant AQIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 25 μM )"&gt;N-acetylated and C-amidated alanine mutant AQIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 25 μM &lt;/a&gt;</data>
+      <data key="d1">int:533(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/534">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant AQIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM )"&gt;N-acetylated and C-amidated alanine mutant AQIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM &lt;/a&gt;</data>
+      <data key="d1">int:534(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/535">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VAIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM )"&gt;N-acetylated and C-amidated alanine mutant VAIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM &lt;/a&gt;</data>
+      <data key="d1">int:535(NI)</data>
       <data key="d2">2</data>
       <data key="d3">triangleDown</data>
       <data key="d4">#e30000</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/235">
-      <data key="d0">&lt;a href="javascript:alert(MDIAIHHPWIRRPFFPFHSPSRLFDQFFGEHLLESDLFSTATSLSPFYLRPPSFLRAPSWIDTGLSEM)"&gt;MDIAIHHPWIRRPFFPFHSPSRLFDQFFGEHLLESDLFSTATSLSPFYLRPPSFLRAPSWIDTGLSEM&lt;/a&gt;</data>
-      <data key="d1">seq:235</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/615">
-      <data key="d0">&lt;a href="javascript:alert(nan)"&gt;nan&lt;/a&gt;</data>
-      <data key="d1">int:615(Y)</data>
+    <node id="interactionsE/536">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VAIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1 μM )"&gt;N-acetylated and C-amidated alanine mutant VAIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1 μM &lt;/a&gt;</data>
+      <data key="d1">int:536(NI)</data>
       <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#1A870A</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#bfbfbf</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/239">
-      <data key="d0">&lt;a href="javascript:alert(MASHRLLLLCLAGLVFVSEAGPTGTGESKCPLMVKVLDAVRGSPAINVAVHVFRKAADDT
-WEPFASGKTSESGELHGLTTEEEMVEGIYKVEIDTKSYWKALGISPMHEHAEVVFTANDS
-GPRRYTIAALLSPYSYSTTAVVTNPKE)"&gt;MASHRLLLLCLAGLVFVSEAGPTGTGESKCPLMVKVLDAVRGSPAINVAVHVFRKAADDT
-WEPFASGKTSESGELHGLTTEEEMVEGIYKVEIDTKSYWKALGISPMHEHAEVVFTANDS
-GPRRYTIAALLSPYSYSTTAVVTNPKE&lt;/a&gt;</data>
-      <data key="d1">seq:239</data>
-      <data key="d2">3</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/627">
-      <data key="d0">&lt;a href="javascript:alert(ab40+IAPP (16.5 um+16.5 uM))"&gt;ab40+IAPP (16.5 um+16.5 uM)&lt;/a&gt;</data>
-      <data key="d1">int:627(Y)</data>
-      <data key="d2">2</data>
-      <data key="d3">triangleDown</data>
-      <data key="d4">#1A870A</data>
-      <data key="d5">10</data>
-    </node>
-    <node id="interactionsE/665">
-      <data key="d0">&lt;a href="javascript:alert(Interactor: monomeric TTR)"&gt;Interactor: monomeric TTR&lt;/a&gt;</data>
-      <data key="d1">int:665(Y)</data>
+    <node id="interactionsE/537">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VAIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 5, 25 μM )"&gt;N-acetylated and C-amidated alanine mutant VAIVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 5, 25 μM &lt;/a&gt;</data>
+      <data key="d1">int:537(NI)</data>
       <data key="d2">2</data>
       <data key="d3">triangleDown</data>
       <data key="d4">#e30000</data>
       <data key="d5">10</data>
     </node>
-    <node id="sequencesE/178">
-      <data key="d0">&lt;a href="javascript:alert(MASHRLLLLCLAGLVFVSEAGPTGTGESKCPLMVKVLDAVRGSPAINVAVHVFRKAADDT
-WEPFASGKTSESGELHGLTTEEEFVEGIYKVEIDTKSYWKALGISPFHEHAEVVFTANDS
-GPRRYTIAALLSPYSYSTTAVVTNPKE)"&gt;MASHRLLLLCLAGLVFVSEAGPTGTGESKCPLMVKVLDAVRGSPAINVAVHVFRKAADDT
-WEPFASGKTSESGELHGLTTEEEFVEGIYKVEIDTKSYWKALGISPFHEHAEVVFTANDS
-GPRRYTIAALLSPYSYSTTAVVTNPKE&lt;/a&gt;</data>
-      <data key="d1">seq:178</data>
-      <data key="d2">3</data>
+    <node id="interactionsE/538">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQAVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 25 μM )"&gt;N-acetylated and C-amidated alanine mutant VQAVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 25 μM &lt;/a&gt;</data>
+      <data key="d1">int:538(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#bfbfbf</data>
       <data key="d5">10</data>
     </node>
-    <edge source="sequencesE/7" target="interactionsE/7">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/8" target="interactionsE/7">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/11" target="interactionsE/10">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/10" target="interactionsE/10">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/55" target="interactionsE/120">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/56" target="interactionsE/120">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/82" target="interactionsE/179">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/9" target="interactionsE/179">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/83" target="interactionsE/182">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/3" target="interactionsE/182">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/3" target="interactionsE/195">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/3" target="interactionsE/382">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/3" target="interactionsE/527">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/3" target="interactionsE/665">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/195">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/212">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/527">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/615">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/2" target="interactionsE/627">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/90" target="interactionsE/212">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/118" target="interactionsE/306">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/118" target="interactionsE/307">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/119" target="interactionsE/306">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/119" target="interactionsE/307">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/59" target="interactionsE/308">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/104" target="interactionsE/308">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/144" target="interactionsE/382">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/174" target="interactionsE/450">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/175" target="interactionsE/451">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/176" target="interactionsE/451">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/195" target="interactionsE/499">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/89" target="interactionsE/499">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/89" target="interactionsE/609">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/226" target="interactionsE/573">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/573">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/1" target="interactionsE/627">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/235" target="interactionsE/609">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/239" target="interactionsE/615">
-      <data key="d6">1</data>
-    </edge>
-    <edge source="sequencesE/178" target="interactionsE/665">
-      <data key="d6">1</data>
-    </edge>
+    <node id="interactionsE/539">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQAVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5 μM )"&gt;N-acetylated and C-amidated alanine mutant VQAVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5 μM &lt;/a&gt;</data>
+      <data key="d1">int:539(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/540">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQAVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1 μM )"&gt;N-acetylated and C-amidated alanine mutant VQAVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1 μM &lt;/a&gt;</data>
+      <data key="d1">int:540(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/541">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQAVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 5, 25 μM )"&gt;N-acetylated and C-amidated alanine mutant VQAVYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 5, 25 μM &lt;/a&gt;</data>
+      <data key="d1">int:541(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/542">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIAYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5 μM )"&gt;N-acetylated and C-amidated alanine mutant VQIAYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5 μM &lt;/a&gt;</data>
+      <data key="d1">int:542(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/543">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIAYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 25 μM )"&gt;N-acetylated and C-amidated alanine mutant VQIAYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 25 μM &lt;/a&gt;</data>
+      <data key="d1">int:543(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/544">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIAYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM )"&gt;N-acetylated and C-amidated alanine mutant VQIAYK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM &lt;/a&gt;</data>
+      <data key="d1">int:544(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#bfbfbf</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/545">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIVAK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM. There were also examined interactions between VQIAYK and Aβ40, however it is difficult to interpret ThT curves. )"&gt;N-acetylated and C-amidated alanine mutant VQIVAK as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5, 25 μM. There were also examined interactions between VQIAYK and Aβ40, however it is difficult to interpret ThT curves. &lt;/a&gt;</data>
+      <data key="d1">int:545(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#bfbfbf</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/546">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5 μM.)"&gt;N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration: 1, 5 μM.&lt;/a&gt;</data>
+      <data key="d1">int:546(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/547">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration:  25 μM.)"&gt;N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration:  25 μM.&lt;/a&gt;</data>
+      <data key="d1">int:547(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangle</data>
+      <data key="d4">#0bd11f</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/548">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration:  1 μM.)"&gt;N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration:  1 μM.&lt;/a&gt;</data>
+      <data key="d1">int:548(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">diamond</data>
+      <data key="d4">#bfbfbf</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/549">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration:  5 μM.)"&gt;N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration:  5 μM.&lt;/a&gt;</data>
+      <data key="d1">int:549(NI)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/550">
+      <data key="d0">&lt;a href="javascript:alert(N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration:  25 μM. For all alanine mutants, there were also ThT curves for interactions in acid (pH 5.6) pH. However, for AcPHF6, there were only oligomers of amyloid beta observed. Here, we dont have information about making fibrils/oligomers. Therefore, it's not enough information.)"&gt;N-acetylated and C-amidated alanine mutant VQIVYA as interactor. Results depend on pH and concentration. Here: pH ~7.4; interactor concentration:  25 μM. For all alanine mutants, there were also ThT curves for interactions in acid (pH 5.6) pH. However, for AcPHF6, there were only oligomers of amyloid beta observed. Here, we dont have information about making fibrils/oligomers. Therefore, it's not enough information.&lt;/a&gt;</data>
+      <data key="d1">int:550(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">square</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/820">
+      <data key="d0">&lt;a href="javascript:alert(Interacotr: S100A9 monomers 3 µM and fibrils 30 µM (though S100A9 fibrillar species are less efficient in inhibiting Aβ42 fibrillation than non-aggregated S100A9), 10 mM HCl, pH 3, 42° C, Interactee:  Aβ42 )"&gt;Interacotr: S100A9 monomers 3 µM and fibrils 30 µM (though S100A9 fibrillar species are less efficient in inhibiting Aβ42 fibrillation than non-aggregated S100A9), 10 mM HCl, pH 3, 42° C, Interactee:  Aβ42 &lt;/a&gt;</data>
+      <data key="d1">int:820(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">triangleDown</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="interactionsE/821">
+      <data key="d0">&lt;a href="javascript:alert(Interactor: S100A9 monomers 30 µM, 10 mM HCl, pH 3, 42° C, Interactee: Aβ42)"&gt;Interactor: S100A9 monomers 30 µM, 10 mM HCl, pH 3, 42° C, Interactee: Aβ42&lt;/a&gt;</data>
+      <data key="d1">int:821(N)</data>
+      <data key="d2">2</data>
+      <data key="d3">square</data>
+      <data key="d4">#e30000</data>
+      <data key="d5">10</data>
+    </node>
   </graph>
 </graphml>

@@ -108,9 +108,9 @@ def filter_questions_simple(database, q1, q2, q3, filename="result", directory=N
 
 def contains_fragment_simple(database, fragment, filename="result", directory=None):
     cursor = database.aql.execute(
-        """for item in sequences
-            for v, e, p in 1..1 any item._id graph "Simple"
-                filter contains(item.sequence, @fragment)
+        """for item in amyloids
+            for v, e, p in 1..1 outbound item._id graph "Simple"
+                filter contains(v.sequence, @fragment)
                 return p""",
         bind_vars={'fragment': fragment}
     )
@@ -128,17 +128,9 @@ def contains_fragment_simple(database, fragment, filename="result", directory=No
 def search_phrase_simple(database, keyword, filename="result", directory=None):
     cursor = database.aql.execute(
         """
-        let items = (
-            for i in simpleView
+        for i in simpleView
                 search phrase(i.general_remarks, @keyword, 'text_en')
-                return i
-        )
-        
-        for i in sequences
-            for v, e, p in 1..1 any i._id graph "Simple"
-                for item in items
-                    filter i._id == item._from or i._id == item._to
-                    return p""",
+                return i""",
         bind_vars={'keyword': keyword}
     )
 
