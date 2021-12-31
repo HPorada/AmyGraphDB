@@ -231,30 +231,102 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
 
 
 def subgraph_from_sequence(database, sequence=None, name=None, filename="result", directory=None):
-    cursor = database.aql.execute(
-        """let seqs = (
+    if sequence is not None and name is not None:
+        cursor = database.aql.execute(
+            """let seqs = (
+               for s in sequences
+                   for v, e, p in 1..1 any s._id graph "Simple"
+                       filter s.sequence == @seq
+                       filter s.name == @name 
+                       return {'paths': p, 'sequences': v}
+           )
+                       
+           let amys = (
+               for item in seqs
+                   for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                       filter v._id like "amyloids%"
+                       return {'paths': p, 'amyloids': v}
+           )
+           
+           for item in union(
+               for item in seqs return item.paths,
+               for item in amys return item.paths
+           )
+               return item""",
+            bind_vars={'seq': sequence, 'name': name}
+        )
+
+    elif sequence is not None:
+        cursor = database.aql.execute(
+            """let seqs = (
+               for s in sequences
+                   for v, e, p in 1..1 any s._id graph "Simple"
+                       filter s.sequence == @seq
+                       return {'paths': p, 'sequences': v}
+           )
+                       
+           let amys = (
+               for item in seqs
+                   for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                       filter v._id like "amyloids%"
+                       return {'paths': p, 'amyloids': v}
+           )
+           
+           for item in union(
+               for item in seqs return item.paths,
+               for item in amys return item.paths
+           )
+               return item""",
+            bind_vars={'seq': sequence}
+        )
+
+    elif name is not None:
+        cursor = database.aql.execute(
+            """let seqs = (
                 for s in sequences
                     for v, e, p in 1..1 any s._id graph "Simple"
-                        filter s.sequence == @seqZatem 
+                        filter s.name == @name 
                         return {'paths': p, 'sequences': v}
-            )
-                        
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
-                        filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
-            )
-            
-            for item in union(
-                for item in seqs return item.paths,
-                for item in amys return item.paths
-            )
-                return item""",
-        bind_vars={'seq': sequence}
-    )
+                       )
 
-    inter = [doc for doc in cursor]
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                            filter v._id like "amyloids%"
+                            return {'paths': p, 'amyloids': v}
+                       )
+
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths
+                )
+                    return item""",
+            bind_vars={'name': name}
+        )
+
+    else:
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequences
+                    for v, e, p in 1..1 any s._id graph "Simple"
+                        return {'paths': p, 'sequences': v}
+                       )
+
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                            filter v._id like "amyloids%"
+                            return {'paths': p, 'amyloids': v}
+                       )
+
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths
+                )
+                    return item"""
+        )
+
+    inter = [i for i in cursor]
 
     if directory is not None:
         with open(f"{directory}/{filename}.json", "w") as outfile:
