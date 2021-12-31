@@ -1,5 +1,6 @@
 import json
-from query_functions import simple_queries, extended_queries, extendedV2_queries, simple_subgraph_queries, extended_subgraph_queries, extendedV2_subgraph_queries
+from query_functions import simple_queries, extended_queries, extendedV2_queries, simple_subgraph_queries, \
+    extended_subgraph_queries, extendedV2_subgraph_queries
 
 
 def custom_query(database, query, filename="result", directory=None):
@@ -15,7 +16,7 @@ def custom_query(database, query, filename="result", directory=None):
             json.dump(inter, outfile)
 
 
-def filter_questions(database, structure, q1=None, q2=None, q3=None, filename="result", directory=None):
+def filter_questions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
     if structure.lower() == "simple":
         simple_queries.filter_questions_simple(database, q1, q2, q3, filename, directory)
     elif structure.lower() == "extended":
@@ -26,8 +27,7 @@ def filter_questions(database, structure, q1=None, q2=None, q3=None, filename="r
         print("Available database structures: simple, extended, extendedV2.")
 
 
-def contains_fragment(database, structure, fragment, filename="result", directory=None):
-
+def contains_fragment(structure, database, fragment, filename="result", directory=None):
     if structure.lower() == "simple":
         simple_queries.contains_fragment_simple(database, fragment, filename, directory)
     elif structure.lower() == "extended":
@@ -38,13 +38,56 @@ def contains_fragment(database, structure, fragment, filename="result", director
         print("Available database structures: simple, extended, extendedV2.")
 
 
-def search_phrase(database, structure, keyword, filename="result", directory=None):
-
+def search_phrase(structure, database, keyword, filename="result", directory=None):
     if structure.lower() == "simple":
         simple_queries.search_phrase_simple(database, keyword, filename, directory)
     elif structure.lower() == "extended":
         extended_queries.search_phrase_extended(database, keyword, filename, directory)
     elif structure.lower() == "extendedv2":
         extendedV2_queries.search_phrase_extendedV2(database, keyword, filename, directory)
+    else:
+        print("Available database structures: simple, extended, extendedV2.")
+
+
+def subgraph_from_interactions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
+    if structure.lower() == "simple":
+        simple_subgraph_queries.subgraph_from_interactions(database, q1, q2, q3, filename, directory)
+    elif structure.lower() == "extended":
+        extended_subgraph_queries.subgraph_from_interactions(database, q1, q2, q3, filename, directory)
+    elif structure.lower() == "extendedv2":
+        extendedV2_subgraph_queries.subgraph_from_interactions(database, q1, q2, q3, filename, directory)
+    else:
+        print("Available database structures: simple, extended, extendedV2.")
+
+
+def subgraph_from_sequence(structure, database, sequence=None, name=None, filename="result", directory=None):
+    if structure.lower() == "simple":
+        simple_subgraph_queries.subgraph_from_sequence(database, sequence, name, filename, directory)
+    elif structure.lower() == "extended":
+        extended_subgraph_queries.subgraph_from_sequence(database, sequence, name, filename, directory)
+    elif structure.lower() == "extendedv2":
+        extendedV2_subgraph_queries.subgraph_from_sequence(database, sequence, name, filename, directory)
+    else:
+        print("Available database structures: simple, extended, extendedV2.")
+
+
+def subgraph_from_amyloid(structure, database, amyloid, filename="result", directory=None):
+    if structure.lower() == "simple":
+        simple_subgraph_queries.subgraph_from_amyloid(database, amyloid, filename, directory)
+    elif structure.lower() == "extended":
+        extended_subgraph_queries.subgraph_from_amyloid(database, amyloid, filename, directory)
+    elif structure.lower() == "extendedv2":
+        extendedV2_subgraph_queries.subgraph_from_amyloid(database, amyloid, filename, directory)
+    else:
+        print("Available database structures: simple, extended, extendedV2.")
+        
+        
+def subgraph_from_organism(structure, database, organism, filename="result", directory=None):
+    if structure.lower() == "simple":
+        simple_subgraph_queries.subgraph_from_organism(database, organism, filename, directory)
+    elif structure.lower() == "extended":
+        extended_subgraph_queries.subgraph_from_amyloid(database, organism, filename, directory)
+    elif structure.lower() == "extendedv2":
+        extendedV2_subgraph_queries.subgraph_from_amyloid(database, organism, filename, directory)
     else:
         print("Available database structures: simple, extended, extendedV2.")
