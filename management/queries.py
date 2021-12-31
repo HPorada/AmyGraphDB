@@ -1,6 +1,6 @@
 import json
-from query_functions import simple_queries, extended_queries, extendedV2_queries, simple_subgraph_queries, \
-    extended_subgraph_queries, extendedV2_subgraph_queries
+from management import simple_subgraph_queries, extended_queries, extendedV2_subgraph_queries, \
+    extended_subgraph_queries, extendedV2_queries, simple_queries
 
 
 def custom_query(database, query, filename="result", directory=None):
