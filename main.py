@@ -1,9 +1,5 @@
-from inspect import getmembers, isfunction
-from initialisation import additional_functions,database,extended_json,extendedV2_json,simple_json
-from management.query_functions import simple_queries, extended_queries, extendedV2_queries
-from management import visualisation_functions as vf
-import management.query_functions.simple_subgraph_queries as ssq
-import initialisation.additional_functions as add
+from initialisation import database
+from management import visualisation_functions as vf, extended_queries
 
 new_db = database.connect_to_database('new_extended', 'root', 'Amyloids')
 #simple_queries.filter_questions_simple(new_db, q1="Slower aggregation", q3="Yes", filename="result")
