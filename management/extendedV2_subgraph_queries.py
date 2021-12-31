@@ -2,6 +2,15 @@ import json
 
 
 def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, filename="result", directory=None):
+    """
+
+    :param database:
+    :param q1:
+    :param q2:
+    :param q3:
+    :param filename:
+    :param directory:
+    """
     q1 = q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q2 = q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q3 = q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
@@ -532,6 +541,14 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
 
 
 def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filename="result", directory=None):
+    """
+
+    :param database:
+    :param sequence:
+    :param name:
+    :param filename:
+    :param directory:
+    """
     if sequence is not None and name is not None:
         cursor = database.aql.execute(
             """let seqs = (
@@ -766,6 +783,13 @@ def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filena
 
 
 def subgraph_from_amyloid_extendedV2(database, amyloid, filename="result", directory=None):
+    """
+
+    :param database:
+    :param amyloid:
+    :param filename:
+    :param directory:
+    """
     cursor = database.aql.execute(
         """let amys = (
             for a in amyloidsE
@@ -850,6 +874,13 @@ def subgraph_from_amyloid_extendedV2(database, amyloid, filename="result", direc
 
 
 def subgraph_from_organism_extendedV2(database, organism, filename="result", directory=None):
+    """
+
+    :param database:
+    :param organism:
+    :param filename:
+    :param directory:
+    """
     cursor = database.aql.execute(
         """let orgs = (
             for o in organismsE

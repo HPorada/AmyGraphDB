@@ -8,6 +8,16 @@ import plotly.graph_objects as go
 
 
 def graphviz_graph(filename, input_dir='./management/json_data', output_dir='./management/graphviz', int_questions=False, sequences=False, engine='dot', direction='LR'):
+    """
+
+    :param filename:
+    :param input_dir:
+    :param output_dir:
+    :param int_questions:
+    :param sequences:
+    :param engine:
+    :param direction:
+    """
     with open(f"{input_dir}/{filename}.json", "r") as file:
         arango_graph = json.load(file)
 
@@ -110,6 +120,15 @@ def graphviz_graph(filename, input_dir='./management/json_data', output_dir='./m
 
 
 def networkx_graph(filename, input_dir='./management/json_data', output_dir='./management/networkx', int_questions=False, sequences=True, general_remarks=True):
+    """
+
+    :param filename:
+    :param input_dir:
+    :param output_dir:
+    :param int_questions:
+    :param sequences:
+    :param general_remarks:
+    """
     with open(f'{input_dir}/{filename}.json') as file:
         json_data = json.loads(file.read())
 
@@ -258,6 +277,11 @@ def networkx_graph(filename, input_dir='./management/json_data', output_dir='./m
 
 
 def question1_shape_graphviz(answer):
+    """
+
+    :param answer:
+    :return:
+    """
     switch = {
         "Faster aggregation": "triangle",
         "Slower aggregation": "invtriangle",
@@ -269,6 +293,11 @@ def question1_shape_graphviz(answer):
 
 
 def question1_shape_networkx(answer):
+    """
+
+    :param answer:
+    :return:
+    """
     switch = {
         "Faster aggregation": "triangle",
         "Slower aggregation": "triangleDown",
@@ -280,6 +309,11 @@ def question1_shape_networkx(answer):
 
 
 def question2_color(answer):
+    """
+
+    :param answer:
+    :return:
+    """
     switch = {
         "Yes, direct evidence.": "#1A870A",
         "Yes; implied by kinetics.": "#0bd11f",
@@ -291,6 +325,11 @@ def question2_color(answer):
 
 
 def question3_border_graphviz(answer):
+    """
+
+    :param answer:
+    :return:
+    """
     switch = {
         "Yes": "#55ff3c",
         "No": "#ff6c28",
@@ -300,6 +339,11 @@ def question3_border_graphviz(answer):
 
 
 def question3_answer_networkx(answer):
+    """
+
+    :param answer:
+    :return:
+    """
     switch = {
         "Yes": "(Y)",
         "No": "(N)",

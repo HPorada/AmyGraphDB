@@ -2,6 +2,15 @@ import json
 
 
 def filter_questions_simple(database, q1, q2, q3, filename="result", directory=None):
+    """
+
+    :param database:
+    :param q1:
+    :param q2:
+    :param q3:
+    :param filename:
+    :param directory:
+    """
     if (
             q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
             q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
@@ -107,6 +116,13 @@ def filter_questions_simple(database, q1, q2, q3, filename="result", directory=N
 
 
 def contains_fragment_simple(database, fragment, filename="result", directory=None):
+    """
+
+    :param database:
+    :param fragment:
+    :param filename:
+    :param directory:
+    """
     cursor = database.aql.execute(
         """for item in amyloids
             for v, e, p in 1..1 outbound item._id graph "Simple"
@@ -126,6 +142,13 @@ def contains_fragment_simple(database, fragment, filename="result", directory=No
 
 
 def search_phrase_simple(database, keyword, filename="result", directory=None):
+    """
+
+    :param database:
+    :param keyword:
+    :param filename:
+    :param directory:
+    """
     cursor = database.aql.execute(
         """
         for i in simpleView

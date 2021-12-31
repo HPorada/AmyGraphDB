@@ -6,12 +6,23 @@ import openpyxl
 
 
 def open_excel_file(path, sheet):
+    """
+
+    :param path:
+    :param sheet:
+    :return:
+    """
     file = pd.ExcelFile(path)
     sheet = file.parse(sheet)
     return sheet
 
 
 def check_for_greek(name):
+    """
+
+    :param name:
+    :return:
+    """
     if "\u03b1" in name:
         return name.replace("\u03b1", "alpha")
     elif "\u03b2" in name:
@@ -27,11 +38,21 @@ def check_for_greek(name):
 
 
 def create_json(path, collection):
+    """
+
+    :param path:
+    :param collection:
+    """
     with open(path, 'w') as outfile:
         json.dump(collection, outfile)
 
 
 def join_json(path, collection):
+    """
+
+    :param path:
+    :param collection:
+    """
     if os.path.isfile(path):
         with open(path, "r") as file:
             data = json.load(file)
@@ -48,6 +69,11 @@ def join_json(path, collection):
 
 
 def get_temp(temp):
+    """
+
+    :param temp:
+    :return:
+    """
     temps = re.findall(r"\d*\.\d+|\d+", temp)
 
     results = []

@@ -2,6 +2,15 @@ import json
 
 
 def filter_questions_extendedV2(database, q1, q2, q3, filename="result", directory=None):
+    """
+
+    :param database:
+    :param q1:
+    :param q2:
+    :param q3:
+    :param filename:
+    :param directory:
+    """
     if (
             q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
             q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
@@ -242,6 +251,13 @@ def filter_questions_extendedV2(database, q1, q2, q3, filename="result", directo
 
 
 def contains_fragment_extendedV2(database, fragment, filename="result", directory=None):
+    """
+
+    :param database:
+    :param fragment:
+    :param filename:
+    :param directory:
+    """
     cursor = database.aql.execute(
         """for item in amyloidsE
             for v, e, p in 1..1 outbound item._id graph "ExtendedV2"
@@ -261,6 +277,13 @@ def contains_fragment_extendedV2(database, fragment, filename="result", director
 
 
 def search_phrase_extendedV2(database, keyword, filename="result", directory=None):
+    """
+
+    :param database:
+    :param keyword:
+    :param filename:
+    :param directory:
+    """
     cursor = database.aql.execute(
         """
         for i in extendedV2View 
@@ -277,6 +300,3 @@ def search_phrase_extendedV2(database, keyword, filename="result", directory=Non
     else:
         with open(f"./management/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
-
-# def search_connected_extendedV2(database, collection, start, filename="result"):
-#     ()
