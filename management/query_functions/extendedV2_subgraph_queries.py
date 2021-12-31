@@ -702,17 +702,67 @@ def subgraph_from_sequence(database, sequence=None, name=None, filename="result"
         )
 
     else:
-        cursor = None
+        cursor = database.aql.execute(
+            """let seqs = (
+                for s in sequencesE
+                    return {"sequences": s}
+            )
 
-    if cursor is not None:
-        inter = [i for i in cursor]
+            let ints = (
+                for item in seqs
+                    for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedV2"
+                        return {"paths": p, "interactions": v}
+            )
 
-        if directory is not None:
-            with open(f"{directory}/{filename}.json", "w") as outfile:
-                json.dump(inter, outfile)
-        else:
-            with open(f"./management/json_data/{filename}.json", "w") as outfile:
-                json.dump(inter, outfile)
+            let ques = (
+                for item in ints
+                    for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedV2"
+                        return {"paths": p, "questions": v}
+            )
+
+            let seqs2 = (
+                for item in ints
+                    for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedV2"
+                        return {"paths": p, "sequences": v}
+            )
+
+            let amys = (
+                for item in seqs2
+                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
+                        return distinct{"paths": p, "amyloids": v}
+            )
+
+            let orgs = (
+                for item in amys
+                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
+                        return distinct {"paths": p, "organisms": v}
+            )
+
+            let props = (
+                for item in orgs
+                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
+                        return distinct {"paths": p, "properties": v}
+            )
+
+            for item in union(
+                for item in ints return item.paths,
+                for item in ques return item.paths,
+                for item in amys return item.paths,
+                for item in orgs return item.paths,
+                for item in props return item.paths,
+                for item in seqs2 return item.paths
+            )
+                return item"""
+        )
+
+    inter = [i for i in cursor]
+
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
 def subgraph_from_amyloid(database, amyloid, filename="result", directory=None):
