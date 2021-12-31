@@ -1,7 +1,7 @@
 import json
 
 
-def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="result"):
+def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="result", directory=None):
     if (
             q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
             q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
@@ -222,11 +222,15 @@ def subgraph_from_interactions(database, q1=None, q2=None, q3=None, filename="re
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
-def subgraph_from_sequence(database, sequence=None, name=None, filename="result"):
+def subgraph_from_sequence(database, sequence=None, name=None, filename="result", directory=None):
     cursor = database.aql.execute(
         """let seqs = (
                 for s in sequences
@@ -252,11 +256,15 @@ def subgraph_from_sequence(database, sequence=None, name=None, filename="result"
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
-def subgraph_from_amyloid(database, amyloid, filename="result"):
+def subgraph_from_amyloid(database, amyloid, filename="result", directory=None):
     cursor = database.aql.execute(
         """let amys = (
                 for a in amyloids
@@ -295,11 +303,15 @@ def subgraph_from_amyloid(database, amyloid, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
-def subgraph_from_organism(database, organism, filename="result"):
+def subgraph_from_organism(database, organism, filename="result", directory=None):
     cursor = database.aql.execute(
         """let orgs = (
                 for o in organisms
@@ -353,5 +365,9 @@ def subgraph_from_organism(database, organism, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
