@@ -243,9 +243,9 @@ def filter_questions_extendedV2(database, q1, q2, q3, filename="result", directo
 
 def contains_fragment_extendedV2(database, fragment, filename="result", directory=None):
     cursor = database.aql.execute(
-        """for item in sequencesE
-            for v, e, p in 1..1 any item._id graph "ExtendedV2"
-                filter contains(item.sequence, @fragment)
+        """for item in amyloidsE
+            for v, e, p in 1..1 outbound item._id graph "ExtendedV2"
+                filter contains(v.sequence, @fragment)
                 return p""",
         bind_vars={'fragment': fragment}
     )
@@ -263,15 +263,9 @@ def contains_fragment_extendedV2(database, fragment, filename="result", director
 def search_phrase_extendedV2(database, keyword, filename="result", directory=None):
     cursor = database.aql.execute(
         """
-        let items = (
-            for i in extendedV2View 
-                search phrase(i.general_remarks, @keyword, 'text_en') 
-                return i
-        )
-
-        for item in items
-            for v, e, p in 1..1 any item._id graph "ExtendedV2"
-                return p""",
+        for i in extendedV2View 
+            search phrase(i.general_remarks, @keyword, 'text_en') 
+            return i""",
         bind_vars={'keyword': keyword}
     )
 

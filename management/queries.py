@@ -4,6 +4,13 @@ from management import simple_subgraph_queries, extended_queries, extendedV2_sub
 
 
 def custom_query(database, query, filename="result", directory=None):
+    """
+
+    :param database:
+    :param query:
+    :param filename:
+    :param directory:
+    """
     cursor = database.aql.execute(query)
 
     inter = [doc for doc in cursor]
@@ -17,6 +24,16 @@ def custom_query(database, query, filename="result", directory=None):
 
 
 def filter_questions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
+    """
+
+    :param structure:
+    :param database:
+    :param q1:
+    :param q2:
+    :param q3:
+    :param filename:
+    :param directory:
+    """
     if structure.lower() == "simple":
         simple_queries.filter_questions_simple(database, q1, q2, q3, filename, directory)
     elif structure.lower() == "extended":
@@ -28,6 +45,14 @@ def filter_questions(structure, database, q1=None, q2=None, q3=None, filename="r
 
 
 def contains_fragment(structure, database, fragment, filename="result", directory=None):
+    """
+
+    :param structure:
+    :param database:
+    :param fragment:
+    :param filename:
+    :param directory:
+    """
     if structure.lower() == "simple":
         simple_queries.contains_fragment_simple(database, fragment, filename, directory)
     elif structure.lower() == "extended":
@@ -39,6 +64,14 @@ def contains_fragment(structure, database, fragment, filename="result", director
 
 
 def search_phrase(structure, database, keyword, filename="result", directory=None):
+    """
+
+    :param structure:
+    :param database:
+    :param keyword:
+    :param filename:
+    :param directory:
+    """
     if structure.lower() == "simple":
         simple_queries.search_phrase_simple(database, keyword, filename, directory)
     elif structure.lower() == "extended":
@@ -50,6 +83,16 @@ def search_phrase(structure, database, keyword, filename="result", directory=Non
 
 
 def subgraph_from_interactions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
+    """
+
+    :param structure:
+    :param database:
+    :param q1:
+    :param q2:
+    :param q3:
+    :param filename:
+    :param directory:
+    """
     if structure.lower() == "simple":
         simple_subgraph_queries.subgraph_from_interactions_simple(database, q1, q2, q3, filename, directory)
     elif structure.lower() == "extended":
@@ -61,6 +104,15 @@ def subgraph_from_interactions(structure, database, q1=None, q2=None, q3=None, f
 
 
 def subgraph_from_sequence(structure, database, sequence=None, name=None, filename="result", directory=None):
+    """
+
+    :param structure:
+    :param database:
+    :param sequence:
+    :param name:
+    :param filename:
+    :param directory:
+    """
     if structure.lower() == "simple":
         simple_subgraph_queries.subgraph_from_sequence_simple(database, sequence, name, filename, directory)
     elif structure.lower() == "extended":
@@ -72,6 +124,14 @@ def subgraph_from_sequence(structure, database, sequence=None, name=None, filena
 
 
 def subgraph_from_amyloid(structure, database, amyloid, filename="result", directory=None):
+    """
+
+    :param structure:
+    :param database:
+    :param amyloid:
+    :param filename:
+    :param directory:
+    """
     if structure.lower() == "simple":
         simple_subgraph_queries.subgraph_from_amyloid_simple(database, amyloid, filename, directory)
     elif structure.lower() == "extended":
@@ -83,6 +143,14 @@ def subgraph_from_amyloid(structure, database, amyloid, filename="result", direc
         
         
 def subgraph_from_organism(structure, database, organism, filename="result", directory=None):
+    """
+
+    :param structure:
+    :param database:
+    :param organism:
+    :param filename:
+    :param directory:
+    """
     if structure.lower() == "simple":
         simple_subgraph_queries.subgraph_from_organism_simple(database, organism, filename, directory)
     elif structure.lower() == "extended":
