@@ -1,19 +1,6 @@
 import json
 
 
-def custom_query(database, query, filename="result", directory=None):
-    cursor = database.aql.execute(query)
-
-    inter = [doc for doc in cursor]
-
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-
-
 def filter_questions_simple(database, q1, q2, q3, filename="result", directory=None):
     cursor = database.aql.execute(
         """for item in sequences
