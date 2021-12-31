@@ -1,7 +1,7 @@
 import json
 
 
-def filter_questions_extendedV2(database, q1, q2, q3, filename="result"):
+def filter_questions_extendedV2(database, q1, q2, q3, filename="result", directory=None):
     q1 = "question1/" + q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q2 = "question2/" + q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q3 = "question3/" + q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
@@ -39,11 +39,15 @@ def filter_questions_extendedV2(database, q1, q2, q3, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
-def contains_fragment_extendedV2(database, fragment, filename="result"):
+def contains_fragment_extendedV2(database, fragment, filename="result", directory=None):
     cursor = database.aql.execute(
         """for item in sequencesE
             for v, e, p in 1..1 any item._id graph "ExtendedV2"
@@ -54,11 +58,15 @@ def contains_fragment_extendedV2(database, fragment, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 
-def search_phrase_extendedV2(database, keyword, filename="result"):
+def search_phrase_extendedV2(database, keyword, filename="result", directory=None):
     cursor = database.aql.execute(
         """
         let items = (
@@ -75,8 +83,12 @@ def search_phrase_extendedV2(database, keyword, filename="result"):
 
     inter = [doc for doc in cursor]
 
-    with open(f"./management/json_data/{filename}.json", "w") as outfile:
-        json.dump(inter, outfile)
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
 
 # def search_connected_extendedV2(database, collection, start, filename="result"):
 #     ()
