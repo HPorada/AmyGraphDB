@@ -7,6 +7,14 @@ from initialisation import simple_json, extended_json, extendedV2_json
 
 
 def database_start(database, username, password, structure):
+    """
+
+    :param database:
+    :param username:
+    :param password:
+    :param structure:
+    :return:
+    """
     create_json_files(structure, "./initialisation/data/questionnaire.xlsx", "./initialisation/data/experiments.xlsx", f"./initialisation/{structure}")
     db_new = connect_to_database(database, username, password)
 
@@ -29,6 +37,13 @@ def database_start(database, username, password, structure):
 
 
 def create_json_files(structure, input_questionnaire, input_experiments, output_dir):
+    """
+
+    :param structure:
+    :param input_questionnaire:
+    :param input_experiments:
+    :param output_dir:
+    """
     if structure.lower() == "simple":
         simple_json.questionnaire_simple(input_questionnaire, output_dir)
         simple_json.experiments_simple(input_experiments, output_dir)
@@ -46,6 +61,13 @@ def create_json_files(structure, input_questionnaire, input_experiments, output_
 
 
 def connect_to_database(database, username, password):
+    """
+
+    :param database:
+    :param username:
+    :param password:
+    :return:
+    """
     client = ArangoClient(hosts='http://localhost:8529')
 
     db_sys = client.db('_system', username=username, password=password)
@@ -59,6 +81,12 @@ def connect_to_database(database, username, password):
 
 
 def import_collections(database, directory, delete_previous=True):
+    """
+
+    :param database:
+    :param directory:
+    :param delete_previous:
+    """
     files = os.listdir(directory)
 
     if delete_previous:
@@ -87,6 +115,12 @@ def import_collections(database, directory, delete_previous=True):
 
 
 def create_graph(database, structure):
+    """
+
+    :param database:
+    :param structure:
+    :return:
+    """
     if structure.lower() == "simple":
         if database.has_graph("Simple"):
             graph = database.graph("Simple")
@@ -237,6 +271,11 @@ def create_graph(database, structure):
 
 
 def create_view(database, structure):
+    """
+
+    :param database:
+    :param structure:
+    """
     if structure.lower() == "simple":
         database.create_view(
             name='simpleView',
