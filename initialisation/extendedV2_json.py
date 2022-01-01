@@ -5,6 +5,12 @@ import initialisation.additional_functions as add
 
 
 def questionnaire_extendedV2(input_file, output_dir, join=False):
+    """This method generates JSON files from Excel files with questionnaire data for EXTENDED v2 database structure.
+
+    :param input_file: (str) Path to the Excel file with questionnaire data.
+    :param output_dir: (str) Path to the directory where JSON files are to be saved.
+    :param join: (boolean) Default: False - files existing in the directory before method's executions are deleted.
+    """
     files = os.listdir(output_dir)
 
     if not join:
@@ -242,6 +248,12 @@ def questionnaire_extendedV2(input_file, output_dir, join=False):
 
 
 def experiments_extendedV2(input_file, output_dir, join=True):
+    """This method generates JSON files from Excel files with data from electronic laboratory log for EXTENDED v2 database structure.
+
+    :param input_file: (str) Path to the Excel file with data from electronic laboratory log.
+    :param output_dir: (str) Path to the directory where JSON files are to be saved.
+    :param join: (boolean) Default: True - new data is joined with files existing in the directory before method's execution.
+    """
     # sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
 
     files = os.listdir(output_dir)
