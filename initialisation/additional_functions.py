@@ -8,9 +8,9 @@ import openpyxl
 def open_excel_file(path, sheet):
     """ This method allows to open an Excel file and retrieve data from chosen sheet.
 
-    :param path: (str) path of the file to open
-    :param sheet: (str) name of the sheet to open
-    :return: (DataFrame) data from chosen sheet
+    :param path: (str) Path of the file to open.
+    :param sheet: (str) Name of the sheet to open.
+    :return: (DataFrame) Data from chosen sheet.
     """
     file = pd.ExcelFile(path)
     sheet = file.parse(sheet)
@@ -21,8 +21,8 @@ def check_for_greek(name):
     """This method checks if given amyloid name contains Greek letters and if yes, replaces them with name of the
     letter in Latin script.
 
-    :param name: (str) name of the amyloid to check
-    :return: (str)
+    :param name: (str) Name of the amyloid to check.
+    :return: (str) Name of the amyloid without Greek letters.
     """
     if "\u03b1" in name or "\u0391" in name:
         return name.replace("\u03b1", "alpha").replace("\u0391", "alpha")
@@ -77,20 +77,20 @@ def check_for_greek(name):
 
 
 def create_json(path, collection):
-    """
+    """This method creates a JSON file from chosen collection and puts it in chosen folder.
 
-    :param path:
-    :param collection:
+    :param path: (str) Path to the folder where JSON file is to be created.
+    :param collection: (dict/list) Collection based on which JSON file is to be created.
     """
     with open(path, 'w') as outfile:
         json.dump(collection, outfile)
 
 
 def join_json(path, collection):
-    """
+    """This method joins an existing JSON with data from chosen collection.
 
-    :param path:
-    :param collection:
+    :param path: (str) Path to the existing JSON file.
+    :param collection: (dict/list) Collection from which the data is to be joined.
     """
     if os.path.isfile(path):
         with open(path, "r") as file:
@@ -108,10 +108,11 @@ def join_json(path, collection):
 
 
 def get_temp(temp):
-    """
+    """This method determines the type of organism (psychrophilic, mesophilic, thermophilic, hyperthermophilic) based
+    on chosen temperature or range of temperatures.
 
-    :param temp:
-    :return:
+    :param temp: (str) Temperature or range of temperatures.
+    :return: (str) Type of organism.
     """
     temps = re.findall(r"\d*\.\d+|\d+", temp)
 
@@ -133,6 +134,12 @@ def get_temp(temp):
 
 
 def get_ph(pH):
+    """This method determines the type of organism (acidophilic, neutrophilic, alkaliphilic) based on chosen
+        pH or range of pH.
+
+        :param pH: (str) pH or range of pH.
+        :return: (str) Type of organism.
+        """
     phs = re.findall(r"\d+\.\d+", pH)
 
     results = []
