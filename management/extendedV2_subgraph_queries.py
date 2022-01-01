@@ -2,14 +2,20 @@ import json
 
 
 def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, filename="result", directory=None):
-    """
+    """This method executes a subgraph query filtering the database of EXTENDED v2 structure based on answers to 3 questions:
+    1. Is the interactor affecting interactee's aggregating speed?
+    (Faster aggregation/Slower aggregation/No aggregation/No effect/No information)
+    2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+    (Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)
+    3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+    (Yes/No/No information)
 
-    :param database:
-    :param q1:
-    :param q2:
-    :param q3:
-    :param filename:
-    :param directory:
+    :param database: (StandardDatabase) Database in which query is to be executed.
+    :param q1: (str) Answer to the first question defining the interaction. Optional.
+    :param q2: (str) Answer to the second question defining the interaction. Optional.
+    :param q3: (str) Answer to the third question defining the interaction. Optional.
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
     q1 = q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     q2 = q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
@@ -543,11 +549,11 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
 def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filename="result", directory=None):
     """
 
-    :param database:
+    :param database: (StandardDatabase) Database in which query is to be executed.
     :param sequence:
     :param name:
-    :param filename:
-    :param directory:
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
     if sequence is not None and name is not None:
         cursor = database.aql.execute(
@@ -785,10 +791,10 @@ def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filena
 def subgraph_from_amyloid_extendedV2(database, amyloid, filename="result", directory=None):
     """
 
-    :param database:
+    :param database: (StandardDatabase) Database in which query is to be executed.
     :param amyloid:
-    :param filename:
-    :param directory:
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
     cursor = database.aql.execute(
         """let amys = (
@@ -876,10 +882,10 @@ def subgraph_from_amyloid_extendedV2(database, amyloid, filename="result", direc
 def subgraph_from_organism_extendedV2(database, organism, filename="result", directory=None):
     """
 
-    :param database:
+    :param database: (StandardDatabase) Database in which query is to be executed.
     :param organism:
-    :param filename:
-    :param directory:
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
     cursor = database.aql.execute(
         """let orgs = (
