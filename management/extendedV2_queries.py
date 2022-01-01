@@ -2,14 +2,20 @@ import json
 
 
 def filter_questions_extendedV2(database, q1, q2, q3, filename="result", directory=None):
-    """
+    """This method executes a simple query filtering the database of EXTENDED v2 structure based on answers to 3 questions:
+    1. Is the interactor affecting interactee's aggregating speed?
+    (Faster aggregation/Slower aggregation/No aggregation/No effect/No information)
+    2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+    (Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)
+    3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+    (Yes/No/No information)
 
-    :param database:
-    :param q1:
-    :param q2:
-    :param q3:
-    :param filename:
-    :param directory:
+    :param database: (StandardDatabase) Database in which query is to be executed.
+    :param q1: (str) Answer to the first question defining the interaction. Optional.
+    :param q2: (str) Answer to the second question defining the interaction. Optional.
+    :param q3: (str) Answer to the third question defining the interaction. Optional.
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
     if (
             q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
@@ -251,12 +257,12 @@ def filter_questions_extendedV2(database, q1, q2, q3, filename="result", directo
 
 
 def contains_fragment_extendedV2(database, fragment, filename="result", directory=None):
-    """
+    """This method executes a query filtering the database of EXTENDED v2 structure in search of sequences containing chosen fragment.
 
-    :param database:
-    :param fragment:
-    :param filename:
-    :param directory:
+    :param database: (StandardDatabase) Database in which query is to be executed.
+    :param fragment: (str) Sequence fragment which is to be looked for.
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
     cursor = database.aql.execute(
         """for item in amyloidsE
@@ -279,10 +285,10 @@ def contains_fragment_extendedV2(database, fragment, filename="result", director
 def search_phrase_extendedV2(database, keyword, filename="result", directory=None):
     """
 
-    :param database:
+    :param database: (StandardDatabase) Database in which query is to be executed.
     :param keyword:
-    :param filename:
-    :param directory:
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
     cursor = database.aql.execute(
         """
