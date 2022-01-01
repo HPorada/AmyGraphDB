@@ -24,7 +24,7 @@ def custom_query(database, query, filename="result", directory=None):
 
 
 def filter_questions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
-    """This method executes a query filtering the database of chosen structure based on answers to 3 questions:
+    """This method executes a simple query filtering the database of chosen structure based on answers to 3 questions:
     1. Is the interactor affecting interactee's aggregating speed?
     (Faster aggregation/Slower aggregation/No aggregation/No effect/No information)
     2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
@@ -89,13 +89,19 @@ def search_phrase(structure, database, keyword, filename="result", directory=Non
 
 
 def subgraph_from_interactions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
-    """
+    """This method executes a subgraph query filtering the database of chosen structure based on answers to 3 questions:
+    1. Is the interactor affecting interactee's aggregating speed?
+    (Faster aggregation/Slower aggregation/No aggregation/No effect/No information)
+    2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+    (Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)
+    3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+    (Yes/No/No information)
 
     :param structure: (str) Structure of the chosen database ("simple", "extended" or "extendedv2").
     :param database: (StandardDatabase) Database in which query is to be executed.
-    :param q1:
-    :param q2:
-    :param q3:
+    :param q1: (str) Answer to the first question defining the interaction. Optional.
+    :param q2: (str) Answer to the second question defining the interaction. Optional.
+    :param q3: (str) Answer to the third question defining the interaction. Optional.
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
@@ -110,12 +116,12 @@ def subgraph_from_interactions(structure, database, q1=None, q2=None, q3=None, f
 
 
 def subgraph_from_sequence(structure, database, sequence=None, name=None, filename="result", directory=None):
-    """
+    """This method executes a subgraph query filtering the database of chosen structure based on sequence or name of a sequence.
 
     :param structure: (str) Structure of the chosen database ("simple", "extended" or "extendedv2").
     :param database: (StandardDatabase) Database in which query is to be executed.
-    :param sequence:
-    :param name:
+    :param sequence: (str) Sequence which is to be searched for. Optional.
+    :param name: (str) Name of a sequence which is to be searched for. Optional.
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """

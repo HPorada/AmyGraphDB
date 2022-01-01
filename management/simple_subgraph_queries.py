@@ -246,11 +246,11 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
 
 
 def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="result", directory=None):
-    """
+    """This method executes a subgraph query filtering the database of SIMPLE structure based on sequence or name of a sequence.
 
     :param database: (StandardDatabase) Database in which query is to be executed.
-    :param sequence:
-    :param name:
+    :param sequence: (str) Sequence which is to be searched for. Optional.
+    :param name: (str) Name of a sequence which is to be searched for. Optional.
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
