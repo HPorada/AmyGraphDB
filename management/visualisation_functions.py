@@ -8,15 +8,15 @@ import plotly.graph_objects as go
 
 
 def graphviz_graph(filename, input_dir='./management/json_data', output_dir='./management/graphviz', int_questions=False, sequences=False, engine='dot', direction='LR'):
-    """
+    """This method visualises a chosen JSON file using Graphviz library and saves the result in chosen directory.
 
-    :param filename:
-    :param input_dir:
-    :param output_dir:
-    :param int_questions:
-    :param sequences:
-    :param engine:
-    :param direction:
+    :param filename: (str) Name of the JSON file which is to be visualised.
+    :param input_dir: (str) Path to the directory with the chosen file.
+    :param output_dir: (str) Path to the directory where graph is to be saved.
+    :param int_questions: (boolean) Default: False - connections with question nodes are not shown in the graph.
+    :param sequences: (boolean) Default: False - labels of sequence nodes are names or "seq:[number]", not full sequences.
+    :param engine: (str) Default: 'dot'. Graph layout engine. Other: 'neato', 'twopi', 'circo', 'fdp', 'osage', 'patchwork', 'sfdp'.
+    :param direction: (str) Default: 'LR'. Direction of the graph (left -> right). Other: 'RL', 'TB', 'BT'.
     """
     with open(f"{input_dir}/{filename}.json", "r") as file:
         arango_graph = json.load(file)
@@ -120,14 +120,14 @@ def graphviz_graph(filename, input_dir='./management/json_data', output_dir='./m
 
 
 def networkx_graph(filename, input_dir='./management/json_data', output_dir='./management/networkx', int_questions=False, sequences=True, general_remarks=True):
-    """
+    """This method visualises a chosen JSON file using NetworkX and Pyvis libraries and saves the result in chosen directory.
 
-    :param filename:
-    :param input_dir:
-    :param output_dir:
-    :param int_questions:
-    :param sequences:
-    :param general_remarks:
+    :param filename: (str) Name of the JSON file which is to be visualised.
+    :param input_dir: (str) Path to the directory with the chosen file.
+    :param output_dir: (str) Path to the directory where graph is to be saved.
+    :param int_questions: (boolean) Default: False - connections with question nodes are not shown in the graph.
+    :param sequences: (boolean) Default: True - full sequences are shown when sequence nodes are being hovered over.
+    :param general_remarks: (boolean) Default: True - attributes 'general remarks' are shown when interaction nodes are being hovered over.
     """
     with open(f'{input_dir}/{filename}.json') as file:
         json_data = json.loads(file.read())
@@ -277,10 +277,11 @@ def networkx_graph(filename, input_dir='./management/json_data', output_dir='./m
 
 
 def question1_shape_graphviz(answer):
-    """
+    """This method determines shape of the node in graph_graphviz function based on an answer to the first question.
+    (1. Is the interactor affecting interactee's aggregating speed?)
 
-    :param answer:
-    :return:
+    :param answer: (str) Answer to the first question.
+    :return: (str) Node shape.
     """
     switch = {
         "Faster aggregation": "triangle",
@@ -293,10 +294,11 @@ def question1_shape_graphviz(answer):
 
 
 def question1_shape_networkx(answer):
-    """
+    """This method determines shape of the node in graph_networkx function based on an answer to the first question.
+    (Is the interactor affecting interactee's aggregating speed?)
 
-    :param answer:
-    :return:
+    :param answer: (str) Answer to the first question.
+    :return: (str) Node shape.
     """
     switch = {
         "Faster aggregation": "triangle",
@@ -309,10 +311,11 @@ def question1_shape_networkx(answer):
 
 
 def question2_color(answer):
-    """
+    """This method determines colour of the node based on an answer to the second question.
+    (Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?)
 
-    :param answer:
-    :return:
+    :param answer: (str) Answer to the second question.
+    :return: (str) Node colour.
     """
     switch = {
         "Yes, direct evidence.": "#1A870A",
@@ -325,10 +328,11 @@ def question2_color(answer):
 
 
 def question3_border_graphviz(answer):
-    """
+    """This method determines colour of the node's border in graph_graphviz function based on an answer to the third question.
+    (Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?)
 
-    :param answer:
-    :return:
+    :param answer: (str) Answer to the third question.
+    :return: (str) Node's border colour.
     """
     switch = {
         "Yes": "#55ff3c",
@@ -339,10 +343,11 @@ def question3_border_graphviz(answer):
 
 
 def question3_answer_networkx(answer):
-    """
+    """This method determines an indication added to label in graph_networkx function based on an answer to the third question.
+    (Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?)
 
-    :param answer:
-    :return:
+    :param answer: (str) Answer to the third question.
+    :return: (str) Indication of the answer.
     """
     switch = {
         "Yes": "(Y)",
