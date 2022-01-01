@@ -7,15 +7,18 @@ from initialisation import simple_json, extended_json, extendedV2_json
 
 
 def database_start(database, username, password, structure):
-    """
+    """Function automatically creates JSON files from Excel files with data, connects to the chosen database
+    (if database with chosen name does not exist, it is created), imports data and creates a graph and a view,
+    based on chosen database structure.
 
-    :param database:
-    :param username:
-    :param password:
-    :param structure:
-    :return:
+    :param database: (str) Name of the database to be connected or created.
+    :param username: (str) Username of ArangoDB user.
+    :param password: (str) Password of ArangoDB user.
+    :param structure: (str) Chosen database structure ("simple", "extended" or "extendedv2").
+    :return: (StandardDatabase) Database on which all actions were performed.
     """
-    create_json_files(structure, "./initialisation/data/questionnaire.xlsx", "./initialisation/data/experiments.xlsx", f"./initialisation/{structure}")
+    create_json_files(structure, "./initialisation/data/questionnaire.xlsx", "./initialisation/data/experiments.xlsx",
+                      f"./initialisation/{structure}")
     db_new = connect_to_database(database, username, password)
 
     if structure.lower() == "simple":
@@ -37,12 +40,13 @@ def database_start(database, username, password, structure):
 
 
 def create_json_files(structure, input_questionnaire, input_experiments, output_dir):
-    """
+    """Function automatically creates JSON files from two input Excel files: first with data from questionnaire,
+    second with data from electronic laboratory log, based on chosen database structure and saves them in chosen directory.
 
-    :param structure:
-    :param input_questionnaire:
-    :param input_experiments:
-    :param output_dir:
+    :param structure: (str) Chosen database structure ("simple", "extended" or "extendedv2").
+    :param input_questionnaire: (str) Path to the Excel file with questionnaire data.
+    :param input_experiments: (str) Path to the Excel file with electronic laboratory log data.
+    :param output_dir: (str) Path to the directory where JSON files are to be saved.
     """
     if structure.lower() == "simple":
         simple_json.questionnaire_simple(input_questionnaire, output_dir)
@@ -61,12 +65,12 @@ def create_json_files(structure, input_questionnaire, input_experiments, output_
 
 
 def connect_to_database(database, username, password):
-    """
+    """Function connects to the chosen database (if database with chosen name does not exist, it is created).
 
-    :param database:
-    :param username:
-    :param password:
-    :return:
+    :param database: (str) Name of the database to be connected or created.
+    :param username: (str) Username of ArangoDB user.
+    :param password: (str) Password of ArangoDB user.
+    :return: (StandardDatabase) Database to which function connected.
     """
     client = ArangoClient(hosts='http://localhost:8529')
 
@@ -81,11 +85,11 @@ def connect_to_database(database, username, password):
 
 
 def import_collections(database, directory, delete_previous=True):
-    """
+    """Function automatically imports data from JSON files from chosen directory to the chosen database.
 
-    :param database:
-    :param directory:
-    :param delete_previous:
+    :param database: (StandardDatabase) Database to which JSON files are to be imported.
+    :param directory: (str) Path to the directory with JSON files.
+    :param delete_previous: (boolean) Default: True - all collections existing in the database before function's execution are deleted.
     """
     files = os.listdir(directory)
 
@@ -115,11 +119,11 @@ def import_collections(database, directory, delete_previous=True):
 
 
 def create_graph(database, structure):
-    """
+    """Function creates a graph in chosen database based on chosen database structure.
 
-    :param database:
-    :param structure:
-    :return:
+    :param database: (StandardDatabase) Database in which graph is to be created.
+    :param structure: (str) Chosen database structure ("simple", "extended" or "extendedv2").
+    :return: (Graph) Created graph.
     """
     if structure.lower() == "simple":
         if database.has_graph("Simple"):
@@ -271,10 +275,10 @@ def create_graph(database, structure):
 
 
 def create_view(database, structure):
-    """
+    """Function creates a view in chosen database based on chosen database structure.
 
-    :param database:
-    :param structure:
+    :param database: (StandardDatabase) Database in which graph is to be created.
+    :param structure: (str) Chosen database structure ("simple", "extended" or "extendedv2").
     """
     if structure.lower() == "simple":
         database.create_view(
