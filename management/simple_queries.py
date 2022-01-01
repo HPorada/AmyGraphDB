@@ -148,10 +148,10 @@ def contains_fragment_simple(database, fragment, filename="result", directory=No
 
 
 def search_phrase_simple(database, keyword, filename="result", directory=None):
-    """
+    """This method executes a query searching the database of SIMPLE structure for mentions of chosen keyword.
 
     :param database: (StandardDatabase) Database in which query is to be executed.
-    :param keyword:
+    :param keyword: (str) Keyword which is to be searched for.
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
