@@ -526,10 +526,10 @@ def subgraph_from_sequence_extended(database, sequence=None, name=None, filename
 
 
 def subgraph_from_amyloid_extended(database, amyloid, filename="result", directory=None):
-    """
+    """This method executes a subgraph query filtering the database of EXTENDED structure based on name of an amyloid.
 
     :param database: (StandardDatabase) Database in which query is to be executed.
-    :param amyloid:
+    :param amyloid: (str) Name of an amyloid which s to be searched for.
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
@@ -593,10 +593,10 @@ def subgraph_from_amyloid_extended(database, amyloid, filename="result", directo
 
 
 def subgraph_from_organism_extended(database, organism, filename="result", directory=None):
-    """
+    """This method executes a subgraph query filtering the database of EXTENDED structure based on name of an organism.
 
     :param database: (StandardDatabase) Database in which query is to be executed.
-    :param organism:
+    :param organism: (str) Name of an organism which is to be searched for.
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
