@@ -277,7 +277,7 @@ def create_graph(database, structure):
 def create_view(database, structure):
     """This method creates a view in chosen database based on chosen database structure.
 
-    :param database: (StandardDatabase) Database in which graph is to be created.
+    :param database: (StandardDatabase) Database in which view is to be created.
     :param structure: (str) Chosen database structure ("simple", "extended" or "extendedv2").
     """
     if structure.lower() == "simple":

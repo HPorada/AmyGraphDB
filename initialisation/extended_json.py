@@ -4,7 +4,7 @@ import os.path
 import initialisation.additional_functions as add
 
 
-def questionnaire_extended(input_file, output_dir, join=False):
+def questionnaire_extended(input_file, output_dir="./initialisation/extended", join=False):
     """This method generates JSON files from Excel files with questionnaire data for EXTENDED database structure.
 
     :param input_file: (str) Path to the Excel file with questionnaire data.
@@ -158,14 +158,21 @@ def questionnaire_extended(input_file, output_dir, join=False):
 
         int_num += 1
 
-    add.create_json("./initialisation/extended/amyloidsE.json", amyloids)
-    add.create_json("./initialisation/extended/sequencesE.json", sequences)
-    add.create_json("./initialisation/extended/interactionsE.json", interactions)
-    add.create_json("./initialisation/extended/amyseqE.json", amyseq)
-    add.create_json("./initialisation/extended/seqintE.json", seqint)
+    if not join:
+        add.create_json(f"{output_dir}/amyloidsE.json", amyloids)
+        add.create_json(f"{output_dir}/sequencesE.json", sequences)
+        add.create_json(f"{output_dir}/interactionsE.json", interactions)
+        add.create_json(f"{output_dir}/amyseqE.json", amyseq)
+        add.create_json(f"{output_dir}/seqintE.json", seqint)
+    else:
+        add.join_json(f"{output_dir}/amyloidsE.json", amyloids)
+        add.join_json(f"{output_dir}/sequencesE.json", sequences)
+        add.join_json(f"{output_dir}/interactionsE.json", interactions)
+        add.join_json(f"{output_dir}/amyseqE.json", amyseq)
+        add.join_json(f"{output_dir}/seqintE.json", seqint)
 
 
-def experiments_extended(input_file, output_dir, join=True):
+def experiments_extended(input_file, output_dir="./initialisation/extended", join=True):
     """This method generates JSON files from Excel files with data from electronic laboratory log for EXTENDED database structure.
 
     :param input_file: (str) Path to the Excel file with data from electronic laboratory log.
@@ -206,8 +213,8 @@ def experiments_extended(input_file, output_dir, join=True):
     int_num = 1
 
     # If file with interactions from questionnaire already exists: get the number of records there
-    if os.path.isfile("./initialisation/extended/interactionsE.json"):
-        with open("./initialisation/extended/interactionsE.json") as file:
+    if os.path.isfile(f"{output_dir}/interactionsE.json"):
+        with open(f"{output_dir}/interactionsE.json") as file:
             data = json.load(file)
             int_num = len(data)
             int_num += 1
@@ -376,18 +383,18 @@ def experiments_extended(input_file, output_dir, join=True):
             int_num += 1
 
     if not join:
-        add.create_json("./initialisation/extended/amyloidsE.json", amyloids)
-        add.create_json("./initialisation/extended/sequencesE.json", sequences)
-        add.create_json("./initialisation/extended/interactionsE.json", interactions)
-        add.create_json("./initialisation/extended/amyseqE.json", amyseq)
-        add.create_json("./initialisation/extended/seqintE.json", seqint)
-        add.create_json("./initialisation/extended/organismsE.json", organisms)
-        add.create_json("./initialisation/extended/orgamyE.json", orgamy)
+        add.create_json(f"{output_dir}/amyloidsE.json", amyloids)
+        add.create_json(f"{output_dir}/sequencesE.json", sequences)
+        add.create_json(f"{output_dir}/interactionsE.json", interactions)
+        add.create_json(f"{output_dir}/amyseqE.json", amyseq)
+        add.create_json(f"{output_dir}/seqintE.json", seqint)
+        add.create_json(f"{output_dir}/organismsE.json", organisms)
+        add.create_json(f"{output_dir}/orgamyE.json", orgamy)
     else:
-        add.join_json("./initialisation/extended/amyloidsE.json", amyloids)
-        add.join_json("./initialisation/extended/sequencesE.json", sequences)
-        add.join_json("./initialisation/extended/interactionsE.json", interactions)
-        add.join_json("./initialisation/extended/amyseqE.json", amyseq)
-        add.join_json("./initialisation/extended/seqintE.json", seqint)
-        add.join_json("./initialisation/extended/organismsE.json", organisms)
-        add.join_json("./initialisation/extended/orgamyE.json", orgamy)
+        add.join_json(f"{output_dir}/amyloidsE.json", amyloids)
+        add.join_json(f"{output_dir}/sequencesE.json", sequences)
+        add.join_json(f"{output_dir}/interactionsE.json", interactions)
+        add.join_json(f"{output_dir}/amyseqE.json", amyseq)
+        add.join_json(f"{output_dir}/seqintE.json", seqint)
+        add.join_json(f"{output_dir}/organismsE.json", organisms)
+        add.join_json(f"{output_dir}/orgamyE.json", orgamy)

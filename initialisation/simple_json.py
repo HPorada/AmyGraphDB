@@ -3,7 +3,7 @@ import os
 import initialisation.additional_functions as add
 
 
-def questionnaire_simple(input_file, output_dir, join=False):
+def questionnaire_simple(input_file, output_dir="./initialisation/simple", join=False):
     """This method generates JSON files from Excel files with questionnaire data for SIMPLE database structure.
 
     :param input_file: (str) Path to the Excel file with questionnaire data.
@@ -137,18 +137,18 @@ def questionnaire_simple(input_file, output_dir, join=False):
         )
 
     if not join:
-        add.create_json("./initialisation/simple/amyloids.json", amyloids)
-        add.create_json("./initialisation/simple/sequences.json", sequences)
-        add.create_json("./initialisation/simple/interactions.json", interactions)
-        add.create_json("./initialisation/simple/amyseq.json", amyseq)
+        add.create_json(f"{output_dir}/amyloids.json", amyloids)
+        add.create_json(f"{output_dir}/sequences.json", sequences)
+        add.create_json(f"{output_dir}/interactions.json", interactions)
+        add.create_json(f"{output_dir}/amyseq.json", amyseq)
     else:
-        add.join_json("./initialisation/simple/amyloids.json", amyloids)
-        add.join_json("./initialisation/simple/sequences.json", sequences)
-        add.join_json("./initialisation/simple/interactions.json", interactions)
-        add.join_json("./initialisation/simple/amyseq.json", amyseq)
+        add.join_json(f"{output_dir}/amyloids.json", amyloids)
+        add.join_json(f"{output_dir}/sequences.json", sequences)
+        add.join_json(f"{output_dir}/interactions.json", interactions)
+        add.join_json(f"{output_dir}/amyseq.json", amyseq)
 
 
-def experiments_simple(input_file, output_dir, join=True):
+def experiments_simple(input_file, output_dir="./initialisation/simple", join=True):
     """This method generates JSON files from Excel files with data from electronic laboratory log for SIMPLE database structure.
 
     :param input_file: (str) Path to the Excel file with data from electronic laboratory log.
@@ -318,16 +318,16 @@ def experiments_simple(input_file, output_dir, join=True):
             )
 
     if not join:
-        add.create_json("./initialisation/simple/amyloids.json", amyloids)
-        add.create_json("./initialisation/simple/sequences.json", sequences)
-        add.create_json("./initialisation/simple/interactions.json", interactions)
-        add.create_json("./initialisation/simple/amyseq.json", amyseq)
-        add.create_json("./initialisation/simple/organisms.json", organisms)
-        add.create_json("./initialisation/simple/orgamy.json", orgamy)
+        add.create_json(f"{output_dir}/amyloids.json", amyloids)
+        add.create_json(f"{output_dir}/sequences.json", sequences)
+        add.create_json(f"{output_dir}/interactions.json", interactions)
+        add.create_json(f"{output_dir}/amyseq.json", amyseq)
+        add.create_json(f"{output_dir}/organisms.json", organisms)
+        add.create_json(f"{output_dir}/orgamy.json", orgamy)
     else:
-        add.join_json("./initialisation/simple/amyloids.json", amyloids)
-        add.join_json("./initialisation/simple/sequences.json", sequences)
-        add.join_json("./initialisation/simple/interactions.json", interactions)
-        add.join_json("./initialisation/simple/amyseq.json", amyseq)
-        add.join_json("./initialisation/simple/organisms.json", organisms)
-        add.join_json("./initialisation/simple/orgamy.json", orgamy)
+        add.join_json(f"{output_dir}/amyloids.json", amyloids)
+        add.join_json(f"{output_dir}/sequences.json", sequences)
+        add.join_json(f"{output_dir}/interactions.json", interactions)
+        add.join_json(f"{output_dir}/amyseq.json", amyseq)
+        add.join_json(f"{output_dir}/organisms.json", organisms)
+        add.join_json(f"{output_dir}/orgamy.json", orgamy)
