@@ -14,6 +14,7 @@ database with information about amyloid interactions.
    :maxdepth: 2
    :caption: Contents:
 
+   introduction
    initialisation
    management
    visualisation
