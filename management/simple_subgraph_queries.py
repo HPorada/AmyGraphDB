@@ -1,6 +1,44 @@
 import json
 
 
+def full_graph_simple(database, filename="result", directory=None):
+    """This method executes a query showing whole graph of the database of SIMPLE structure.
+
+    :param database: (StandardDatabase) Database in which query is to be executed.
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
+    """
+    cursor = database.aql.execute(
+        """let seqs = (
+            for s in sequences
+                for v, e, p in 1..1 any s._id graph "Simple"
+                    return {'paths': p, 'sequences': v}
+        )
+
+        let amys = (
+            for item in seqs
+                for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
+                    filter v._id like "amyloids%"
+                    return {'paths': p, 'amyloids': v}
+        )
+
+        for item in union(
+            for item in seqs return item.paths,
+            for item in amys return item.paths
+        )
+            return item"""
+    )
+
+    inter = [doc for doc in cursor]
+
+    if directory is not None:
+        with open(f"{directory}/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+    else:
+        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+            json.dump(inter, outfile)
+
+
 def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filename="result", directory=None):
     """This method executes a subgraph query filtering the database of SIMPLE structure based on answers to 3 questions:
     1. Is the interactor affecting interactee's aggregating speed?
