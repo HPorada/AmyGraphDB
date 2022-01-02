@@ -2,7 +2,7 @@ from initialisation import database
 from management import visualisation_functions as vf, simple_queries as sq, extended_queries as eq, extendedV2_queries as e2q
 from initialisation.additional_functions import check_for_greek as g
 
-new_db = database.connect_to_database('new_extendedV2', 'root', 'Amyloids')
+#new_db = database.connect_to_database('new_extendedV2', 'root', 'Amyloids')
 #database.create_view(new_db, 'simple')
 #simple_queries.filter_questions_simple(new_db, q1="Slower aggregation", q3="Yes", filename="result")
 #extended_queries.filter_questions_extended(new_db, q1="Slower aggregation", q3="Yes", filename="result")
@@ -18,5 +18,12 @@ new_db = database.connect_to_database('new_extendedV2', 'root', 'Amyloids')
 # vf.graphviz_graph('result')
 # vf.networkx_graph('result')
 
-database.create_json_files("extendedV2", "./initialisation/data/questionnaire.xlsx", "./initialisation/data/experiments.xlsx", "./initialisation/extendedV2")
+#database.create_json_files("extendedV2", "./initialisation/data/questionnaire.xlsx", "./initialisation/data/experiments.xlsx", "./initialisation/extendedV2")
 
+def example_function(int):
+    """ Function takes int and returns int
+
+    :param int: Integer
+    :return: Integer
+    """
+    return int
