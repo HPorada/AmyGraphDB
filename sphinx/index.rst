@@ -3,18 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Amyloid Graph Database's documentation!
+Welcome to Amyloid Graph Database!
 ==================================================
+
+Amyloid Graph Database is a project providing Python functions which allow working with
+ArangoDB database system. It was created specifically to initialise and manage a graph
+database with information about amyloid interactions.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   code
+   initialisation
+   management
+   visualisation
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
