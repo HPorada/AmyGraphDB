@@ -1,4 +1,4 @@
-Database initialisation
+Initialisation
 ===============================
 
 Functions to create and communicate with ArangoDB database

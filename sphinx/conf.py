@@ -12,11 +12,11 @@
 #
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath('../'))
 sys.path.insert(0, os.path.abspath('../initialisation'))
 sys.path.insert(0, os.path.abspath('../management'))
 sys.path.insert(0, os.path.abspath('../visualisation'))
-
 
 # -- Project information -----------------------------------------------------
 
@@ -33,7 +33,8 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-              'sphinx.ext.githubpages'
+              'sphinx.ext.githubpages',
+              'sphinx.ext.autosectionlabel'
               ]
 
 # Add any paths that contain templates here, relative to this directory.
