@@ -4,7 +4,7 @@ import os.path
 import initialisation.additional_functions as add
 
 
-def questionnaire_extendedV2(input_file, output_dir, join=False):
+def questionnaire_extendedV2(input_file, output_dir="./initialisation/extendedV2", join=False):
     """This method generates JSON files from Excel files with questionnaire data for EXTENDED v2 database structure.
 
     :param input_file: (str) Path to the Excel file with questionnaire data.
@@ -222,32 +222,32 @@ def questionnaire_extendedV2(input_file, output_dir, join=False):
         int_num += 1
 
     if not join:
-        add.create_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
-        add.create_json("./initialisation/extendedV2/sequencesE.json", sequences)
-        add.create_json("./initialisation/extendedV2/interactionsE.json", interactions)
-        add.create_json("./initialisation/extendedV2/amyseqE.json", amyseq)
-        add.create_json("./initialisation/extendedV2/seqintE.json", seqint)
-        add.create_json("./initialisation/extendedV2/question1.json", question1)
-        add.create_json("./initialisation/extendedV2/intque1.json", intque1)
-        add.create_json("./initialisation/extendedV2/question2.json", question2)
-        add.create_json("./initialisation/extendedV2/intque2.json", intque2)
-        add.create_json("./initialisation/extendedV2/question3.json", question3)
-        add.create_json("./initialisation/extendedV2/intque3.json", intque3)
+        add.create_json(f"{output_dir}/amyloidsE.json", amyloids)
+        add.create_json(f"{output_dir}/sequencesE.json", sequences)
+        add.create_json(f"{output_dir}/interactionsE.json", interactions)
+        add.create_json(f"{output_dir}/amyseqE.json", amyseq)
+        add.create_json(f"{output_dir}/seqintE.json", seqint)
+        add.create_json(f"{output_dir}/question1.json", question1)
+        add.create_json(f"{output_dir}/intque1.json", intque1)
+        add.create_json(f"{output_dir}/question2.json", question2)
+        add.create_json(f"{output_dir}/intque2.json", intque2)
+        add.create_json(f"{output_dir}/question3.json", question3)
+        add.create_json(f"{output_dir}/intque3.json", intque3)
     else:
-        add.join_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
-        add.join_json("./initialisation/extendedV2/sequencesE.json", sequences)
-        add.join_json("./initialisation/extendedV2/interactionsE.json", interactions)
-        add.join_json("./initialisation/extendedV2/amyseqE.json", amyseq)
-        add.join_json("./initialisation/extendedV2/seqintE.json", seqint)
-        add.join_json("./initialisation/extendedV2/question1.json", question1)
-        add.join_json("./initialisation/extendedV2/intque1.json", intque1)
-        add.join_json("./initialisation/extendedV2/question2.json", question2)
-        add.join_json("./initialisation/extendedV2/intque2.json", intque2)
-        add.join_json("./initialisation/extendedV2/question3.json", question3)
-        add.join_json("./initialisation/extendedV2/intque3.json", intque3)
+        add.join_json(f"{output_dir}/amyloidsE.json", amyloids)
+        add.join_json(f"{output_dir}/sequencesE.json", sequences)
+        add.join_json(f"{output_dir}/interactionsE.json", interactions)
+        add.join_json(f"{output_dir}/amyseqE.json", amyseq)
+        add.join_json(f"{output_dir}/seqintE.json", seqint)
+        add.join_json(f"{output_dir}/question1.json", question1)
+        add.join_json(f"{output_dir}/intque1.json", intque1)
+        add.join_json(f"{output_dir}/question2.json", question2)
+        add.join_json(f"{output_dir}/intque2.json", intque2)
+        add.join_json(f"{output_dir}/question3.json", question3)
+        add.join_json(f"{output_dir}/intque3.json", intque3)
 
 
-def experiments_extendedV2(input_file, output_dir, join=True):
+def experiments_extendedV2(input_file, output_dir="./initialisation/extendedV2", join=True):
     """This method generates JSON files from Excel files with data from electronic laboratory log for EXTENDED v2 database structure.
 
     :param input_file: (str) Path to the Excel file with data from electronic laboratory log.
@@ -323,8 +323,8 @@ def experiments_extendedV2(input_file, output_dir, join=True):
     int_num = 1
 
     # If file with interactions from questionnaire already exists: get the number of records there
-    if os.path.isfile("./initialisation/extendedV2/interactionsE.json"):
-        with open("./initialisation/extendedV2/interactionsE.json") as file:
+    if os.path.isfile(f"{output_dir}/interactionsE.json"):
+        with open(f"{output_dir}/interactionsE.json") as file:
             data = json.load(file)
             int_num = len(data)
             int_num += 1
@@ -525,26 +525,26 @@ def experiments_extendedV2(input_file, output_dir, join=True):
             int_num += 1
 
     if not join:
-        add.create_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
-        add.create_json("./initialisation/extendedV2/sequencesE.json", sequences)
-        add.create_json("./initialisation/extendedV2/interactionsE.json", interactions)
-        add.create_json("./initialisation/extendedV2/amyseqE.json", amyseq)
-        add.create_json("./initialisation/extendedV2/seqintE.json", seqint)
-        add.create_json("./initialisation/extendedV2/organismsE.json", organisms)
-        add.create_json("./initialisation/extendedV2/orgamyE.json", orgamy)
-        add.create_json("./initialisation/extendedV2/temperaturesE.json", temperatures)
-        add.create_json("./initialisation/extendedV2/temorgE.json", temorg)
-        add.create_json("./initialisation/extendedV2/phsE.json", phs)
-        add.create_json("./initialisation/extendedV2/phorgE.json", phorg)
+        add.create_json(f"{output_dir}/amyloidsE.json", amyloids)
+        add.create_json(f"{output_dir}/sequencesE.json", sequences)
+        add.create_json(f"{output_dir}/interactionsE.json", interactions)
+        add.create_json(f"{output_dir}/amyseqE.json", amyseq)
+        add.create_json(f"{output_dir}/seqintE.json", seqint)
+        add.create_json(f"{output_dir}/organismsE.json", organisms)
+        add.create_json(f"{output_dir}/orgamyE.json", orgamy)
+        add.create_json(f"{output_dir}/temperaturesE.json", temperatures)
+        add.create_json(f"{output_dir}/temorgE.json", temorg)
+        add.create_json(f"{output_dir}/phsE.json", phs)
+        add.create_json(f"{output_dir}/phorgE.json", phorg)
     else:
-        add.join_json("./initialisation/extendedV2/amyloidsE.json", amyloids)
-        add.join_json("./initialisation/extendedV2/sequencesE.json", sequences)
-        add.join_json("./initialisation/extendedV2/interactionsE.json", interactions)
-        add.join_json("./initialisation/extendedV2/amyseqE.json", amyseq)
-        add.join_json("./initialisation/extendedV2/seqintE.json", seqint)
-        add.join_json("./initialisation/extendedV2/organismsE.json", organisms)
-        add.join_json("./initialisation/extendedV2/orgamyE.json", orgamy)
-        add.join_json("./initialisation/extendedV2/temperaturesE.json", temperatures)
-        add.join_json("./initialisation/extendedV2/temorgE.json", temorg)
-        add.join_json("./initialisation/extendedV2/phsE.json", phs)
-        add.join_json("./initialisation/extendedV2/phorgE.json", phorg)
+        add.join_json(f"{output_dir}/amyloidsE.json", amyloids)
+        add.join_json(f"{output_dir}/sequencesE.json", sequences)
+        add.join_json(f"{output_dir}/interactionsE.json", interactions)
+        add.join_json(f"{output_dir}/amyseqE.json", amyseq)
+        add.join_json(f"{output_dir}/seqintE.json", seqint)
+        add.join_json(f"{output_dir}/organismsE.json", organisms)
+        add.join_json(f"{output_dir}/orgamyE.json", orgamy)
+        add.join_json(f"{output_dir}/temperaturesE.json", temperatures)
+        add.join_json(f"{output_dir}/temorgE.json", temorg)
+        add.join_json(f"{output_dir}/phsE.json", phs)
+        add.join_json(f"{output_dir}/phorgE.json", phorg)

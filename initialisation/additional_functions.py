@@ -8,8 +8,8 @@ import openpyxl
 def open_excel_file(path, sheet):
     """ This method allows to open an Excel file and retrieve data from chosen sheet.
 
-    :param path: (str) Path of the file to open.
-    :param sheet: (str) Name of the sheet to open.
+    :param path: (str) Path of the file which is to be opened.
+    :param sheet: (str) Name of the sheet which is to be opened.
     :return: (DataFrame) Data from chosen sheet.
     """
     file = pd.ExcelFile(path)
@@ -21,7 +21,7 @@ def check_for_greek(name):
     """This method checks if given amyloid name contains Greek letters and if yes, replaces them with name of the
     letter in Latin script.
 
-    :param name: (str) Name of the amyloid to check.
+    :param name: (str) Name of the amyloid to be checked.
     :return: (str) Name of the amyloid without Greek letters.
     """
     if "\u03b1" in name or "\u0391" in name:
