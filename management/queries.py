@@ -23,6 +23,25 @@ def custom_query(database, query, filename="result", directory=None):
             json.dump(inter, outfile)
 
 
+def full_graph(structure, database, filename="result", directory=None):
+    """This method executes a query showing whole graph of the database of chosen structure.
+
+    :param structure: (str) Structure of the chosen database ("simple", "extended" or "extendedv2").
+    :param database: (StandardDatabase) Database in which query is to be executed.
+    :param filename: (str) Name of the file where query result is to be saved. Optional.
+    :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
+    """
+
+    if structure.lower() == "simple":
+        simple_subgraph_queries.full_graph_simple(database, filename, directory)
+    elif structure.lower() == "extended":
+        extended_subgraph_queries.full_graph_extended(database, filename, directory)
+    elif structure.lower() == "extendedv2":
+        extendedV2_subgraph_queries.full_graph_extendedV2(database, filename, directory)
+    else:
+        print("Available database structures: simple, extended, extendedV2.")
+
+
 def filter_questions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
     """This method executes a simple query filtering the database of chosen structure based on answers to 3 questions:
     1. Is the interactor affecting interactee's aggregating speed?
@@ -152,8 +171,8 @@ def subgraph_from_amyloid(structure, database, amyloid, filename="result", direc
         extendedV2_subgraph_queries.subgraph_from_amyloid_extendedV2(database, amyloid, filename, directory)
     else:
         print("Available database structures: simple, extended, extendedV2.")
-        
-        
+
+
 def subgraph_from_organism(structure, database, organism, filename="result", directory=None):
     """This method executes a subgraph query filtering the database of chosen structure based on name of an organism.
 
