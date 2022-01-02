@@ -59,10 +59,13 @@ def full_graph_extended(database, filename="result", directory=None):
 
 def subgraph_from_interactions_extended(database, q1=None, q2=None, q3=None, filename="result", directory=None):
     """This method executes a subgraph query filtering the database of EXTENDED structure based on answers to 3 questions:
+    \n
     1. Is the interactor affecting interactee's aggregating speed?
     (Faster aggregation/Slower aggregation/No aggregation/No effect/No information)
+    \n
     2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
     (Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)
+    \n
     3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
     (Yes/No/No information)
 
