@@ -1,0 +1,852 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Database management &mdash; Amyloid Graph Database 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Visualisation" href="visualisation.html" />
+    <link rel="prev" title="Database initialisation" href="initialisation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Amyloid Graph Database
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="initialisation.html">Database initialisation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Database management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#combined-query-functions">Combined query functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remaining-query-functions">Remaining query functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-simple_queries">SIMPLE queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-simple_subgraph_queries">SIMPLE subgraph queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-extended_queries">EXTENDED queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-extended_subgraph_queries">EXTENDED subgraph queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-extendedV2_queries">EXTENDED v2 queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-extendedV2_subgraph_queries">EXTENDED v2 subgraph queries</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualisation.html">Visualisation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Amyloid Graph Database</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Database management</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="database-management">
+<h1>Database management<a class="headerlink" href="#database-management" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="combined-query-functions">
+<h2>Combined query functions<a class="headerlink" href="#combined-query-functions" title="Permalink to this headline">¶</a></h2>
+<p>Combined query functions execute proper query function based on database structure passed as an argument.</p>
+<span class="target" id="module-queries"></span><dl class="py function">
+<dt class="sig sig-object py" id="queries.contains_fragment">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">contains_fragment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fragment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.contains_fragment" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query filtering the database of chosen structure in search of sequences containing chosen fragment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> – (str) Structure of the chosen database (“simple”, “extended” or “extendedv2”).</p></li>
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>fragment</strong> – (str) Sequence fragment which is to be looked for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="queries.custom_query">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">custom_query</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.custom_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method allows to execute a custom query in chosen database and save it with chosen name in chosen directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>query</strong> – (str) AQL query that is to be executed.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="queries.filter_questions">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">filter_questions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.filter_questions" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a simple query filtering the database of chosen structure based on answers to 3 questions:</p>
+<p>1. Is the interactor affecting interactee’s aggregating speed?
+(Faster aggregation/Slower aggregation/No aggregation/No effect/No information)</p>
+<p>2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+(Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)</p>
+<p>3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+(Yes/No/No information)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> – (str) Structure of the chosen database (“simple”, “extended” or “extendedv2”).</p></li>
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>q1</strong> – (str) Answer to the first question defining the interaction. Optional.</p></li>
+<li><p><strong>q2</strong> – (str) Answer to the second question defining the interaction. Optional.</p></li>
+<li><p><strong>q3</strong> – (str) Answer to the third question defining the interaction. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="queries.full_graph">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">full_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.full_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query showing whole graph of the database of chosen structure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> – (str) Structure of the chosen database (“simple”, “extended” or “extendedv2”).</p></li>
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="queries.search_phrase">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">search_phrase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keyword</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.search_phrase" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query searching the database of chosen structure for mentions of chosen keyword.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> – (str) Structure of the chosen database (“simple”, “extended” or “extendedv2”).</p></li>
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>keyword</strong> – (str) Keyword which is to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="queries.subgraph_from_amyloid">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_amyloid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amyloid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.subgraph_from_amyloid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of chosen structure based on name of an amyloid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> – (str) Structure of the chosen database (“simple”, “extended” or “extendedv2”).</p></li>
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>amyloid</strong> – (str) Name of an amyloid which s to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="queries.subgraph_from_interactions">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_interactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.subgraph_from_interactions" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of chosen structure based on answers to 3 questions:</p>
+<p>1. Is the interactor affecting interactee’s aggregating speed?
+(Faster aggregation/Slower aggregation/No aggregation/No effect/No information)</p>
+<p>2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+(Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)</p>
+<p>3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+(Yes/No/No information)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> – (str) Structure of the chosen database (“simple”, “extended” or “extendedv2”).</p></li>
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>q1</strong> – (str) Answer to the first question defining the interaction. Optional.</p></li>
+<li><p><strong>q2</strong> – (str) Answer to the second question defining the interaction. Optional.</p></li>
+<li><p><strong>q3</strong> – (str) Answer to the third question defining the interaction. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="queries.subgraph_from_organism">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_organism</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">organism</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.subgraph_from_organism" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of chosen structure based on name of an organism.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> – (str) Structure of the chosen database (“simple”, “extended” or “extendedv2”).</p></li>
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>organism</strong> – (str) Name of an organism which is to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="queries.subgraph_from_sequence">
+<span class="sig-prename descclassname"><span class="pre">queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#queries.subgraph_from_sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of chosen structure based on sequence or name of a sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> – (str) Structure of the chosen database (“simple”, “extended” or “extendedv2”).</p></li>
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>sequence</strong> – (str) Sequence which is to be searched for. Optional.</p></li>
+<li><p><strong>name</strong> – (str) Name of a sequence which is to be searched for. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="remaining-query-functions">
+<h2>Remaining query functions<a class="headerlink" href="#remaining-query-functions" title="Permalink to this headline">¶</a></h2>
+<p>In this section all remaining query functions are presented. All of them are used in combined query functions.</p>
+<div class="section" id="module-simple_queries">
+<span id="simple-queries"></span><h3>SIMPLE queries<a class="headerlink" href="#module-simple_queries" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="simple_queries.contains_fragment_simple">
+<span class="sig-prename descclassname"><span class="pre">simple_queries.</span></span><span class="sig-name descname"><span class="pre">contains_fragment_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fragment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_queries.contains_fragment_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query filtering the database of SIMPLE structure in search of sequences containing chosen fragment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>fragment</strong> – (str) Sequence fragment which is to be looked for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="simple_queries.filter_questions_simple">
+<span class="sig-prename descclassname"><span class="pre">simple_queries.</span></span><span class="sig-name descname"><span class="pre">filter_questions_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_queries.filter_questions_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a simple query filtering the database of SIMPLE structure based on answers to 3 questions:</p>
+<p>1. Is the interactor affecting interactee’s aggregating speed?
+(Faster aggregation/Slower aggregation/No aggregation/No effect/No information)</p>
+<p>2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+(Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)</p>
+<p>3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+(Yes/No/No information)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>q1</strong> – (str) Answer to the first question defining the interaction. Optional.</p></li>
+<li><p><strong>q2</strong> – (str) Answer to the second question defining the interaction. Optional.</p></li>
+<li><p><strong>q3</strong> – (str) Answer to the third question defining the interaction. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="simple_queries.search_phrase_simple">
+<span class="sig-prename descclassname"><span class="pre">simple_queries.</span></span><span class="sig-name descname"><span class="pre">search_phrase_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keyword</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_queries.search_phrase_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query searching the database of SIMPLE structure for mentions of chosen keyword.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>keyword</strong> – (str) Keyword which is to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-simple_subgraph_queries">
+<span id="simple-subgraph-queries"></span><h3>SIMPLE subgraph queries<a class="headerlink" href="#module-simple_subgraph_queries" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="simple_subgraph_queries.full_graph_simple">
+<span class="sig-prename descclassname"><span class="pre">simple_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">full_graph_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_subgraph_queries.full_graph_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query showing whole graph of the database of SIMPLE structure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="simple_subgraph_queries.subgraph_from_amyloid_simple">
+<span class="sig-prename descclassname"><span class="pre">simple_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_amyloid_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amyloid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_subgraph_queries.subgraph_from_amyloid_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of SIMPLE structure based on name of an amyloid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>amyloid</strong> – (str) Name of an amyloid which s to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="simple_subgraph_queries.subgraph_from_interactions_simple">
+<span class="sig-prename descclassname"><span class="pre">simple_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_interactions_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_subgraph_queries.subgraph_from_interactions_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of SIMPLE structure based on answers to 3 questions:</p>
+<p>1. Is the interactor affecting interactee’s aggregating speed?
+(Faster aggregation/Slower aggregation/No aggregation/No effect/No information)</p>
+<p>2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+(Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)</p>
+<p>3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+(Yes/No/No information)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>q1</strong> – (str) Answer to the first question defining the interaction. Optional.</p></li>
+<li><p><strong>q2</strong> – (str) Answer to the second question defining the interaction. Optional.</p></li>
+<li><p><strong>q3</strong> – (str) Answer to the third question defining the interaction. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="simple_subgraph_queries.subgraph_from_organism_simple">
+<span class="sig-prename descclassname"><span class="pre">simple_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_organism_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">organism</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_subgraph_queries.subgraph_from_organism_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of SIMPLE structure based on name of an organism.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>organism</strong> – (str) Name of an organism which is to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="simple_subgraph_queries.subgraph_from_sequence_simple">
+<span class="sig-prename descclassname"><span class="pre">simple_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_sequence_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_subgraph_queries.subgraph_from_sequence_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of SIMPLE structure based on sequence or name of a sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>sequence</strong> – (str) Sequence which is to be searched for. Optional.</p></li>
+<li><p><strong>name</strong> – (str) Name of a sequence which is to be searched for. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-extended_queries">
+<span id="extended-queries"></span><h3>EXTENDED queries<a class="headerlink" href="#module-extended_queries" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="extended_queries.contains_fragment_extended">
+<span class="sig-prename descclassname"><span class="pre">extended_queries.</span></span><span class="sig-name descname"><span class="pre">contains_fragment_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fragment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_queries.contains_fragment_extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query filtering the database of EXTENDED structure in search of sequences containing chosen fragment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>fragment</strong> – (str) Sequence fragment which is to be looked for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extended_queries.filter_questions_extended">
+<span class="sig-prename descclassname"><span class="pre">extended_queries.</span></span><span class="sig-name descname"><span class="pre">filter_questions_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_queries.filter_questions_extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a simple query filtering the database of EXTENDED structure based on answers to 3 questions:</p>
+<p>1. Is the interactor affecting interactee’s aggregating speed?
+(Faster aggregation/Slower aggregation/No aggregation/No effect/No information)</p>
+<p>2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+(Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)</p>
+<p>3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+(Yes/No/No information)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>q1</strong> – (str) Answer to the first question defining the interaction. Optional.</p></li>
+<li><p><strong>q2</strong> – (str) Answer to the second question defining the interaction. Optional.</p></li>
+<li><p><strong>q3</strong> – (str) Answer to the third question defining the interaction. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extended_queries.search_phrase_extended">
+<span class="sig-prename descclassname"><span class="pre">extended_queries.</span></span><span class="sig-name descname"><span class="pre">search_phrase_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keyword</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_queries.search_phrase_extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query searching the database of EXTENDED structure for mentions of chosen keyword.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>keyword</strong> – (str) Keyword which is to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-extended_subgraph_queries">
+<span id="extended-subgraph-queries"></span><h3>EXTENDED subgraph queries<a class="headerlink" href="#module-extended_subgraph_queries" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="extended_subgraph_queries.full_graph_extended">
+<span class="sig-prename descclassname"><span class="pre">extended_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">full_graph_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_subgraph_queries.full_graph_extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query showing whole graph of the database of EXTENDED structure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extended_subgraph_queries.subgraph_from_amyloid_extended">
+<span class="sig-prename descclassname"><span class="pre">extended_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_amyloid_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amyloid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_subgraph_queries.subgraph_from_amyloid_extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of EXTENDED structure based on name of an amyloid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>amyloid</strong> – (str) Name of an amyloid which s to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extended_subgraph_queries.subgraph_from_interactions_extended">
+<span class="sig-prename descclassname"><span class="pre">extended_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_interactions_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_subgraph_queries.subgraph_from_interactions_extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of EXTENDED structure based on answers to 3 questions:</p>
+<p>1. Is the interactor affecting interactee’s aggregating speed?
+(Faster aggregation/Slower aggregation/No aggregation/No effect/No information)</p>
+<p>2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+(Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)</p>
+<p>3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+(Yes/No/No information)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.:</p></li>
+<li><p><strong>q1</strong> – (str) Answer to the first question defining the interaction. Optional.</p></li>
+<li><p><strong>q2</strong> – (str) Answer to the second question defining the interaction. Optional.</p></li>
+<li><p><strong>q3</strong> – (str) Answer to the third question defining the interaction. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extended_subgraph_queries.subgraph_from_organism_extended">
+<span class="sig-prename descclassname"><span class="pre">extended_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_organism_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">organism</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_subgraph_queries.subgraph_from_organism_extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of EXTENDED structure based on name of an organism.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>organism</strong> – (str) Name of an organism which is to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extended_subgraph_queries.subgraph_from_sequence_extended">
+<span class="sig-prename descclassname"><span class="pre">extended_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_sequence_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_subgraph_queries.subgraph_from_sequence_extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of EXTENDED structure based on sequence or name of a sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>sequence</strong> – (str) Sequence which is to be searched for. Optional.</p></li>
+<li><p><strong>name</strong> – (str) Name of a sequence which is to be searched for. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-extendedV2_queries">
+<span id="extended-v2-queries"></span><h3>EXTENDED v2 queries<a class="headerlink" href="#module-extendedV2_queries" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="extendedV2_queries.contains_fragment_extendedV2">
+<span class="sig-prename descclassname"><span class="pre">extendedV2_queries.</span></span><span class="sig-name descname"><span class="pre">contains_fragment_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fragment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_queries.contains_fragment_extendedV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query filtering the database of EXTENDED v2 structure in search of sequences containing chosen fragment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>fragment</strong> – (str) Sequence fragment which is to be looked for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extendedV2_queries.filter_questions_extendedV2">
+<span class="sig-prename descclassname"><span class="pre">extendedV2_queries.</span></span><span class="sig-name descname"><span class="pre">filter_questions_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_queries.filter_questions_extendedV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a simple query filtering the database of EXTENDED v2 structure based on answers to 3 questions:</p>
+<p>1. Is the interactor affecting interactee’s aggregating speed?
+(Faster aggregation/Slower aggregation/No aggregation/No effect/No information)</p>
+<p>2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+(Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)</p>
+<p>3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+(Yes/No/No information)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>q1</strong> – (str) Answer to the first question defining the interaction. Optional.</p></li>
+<li><p><strong>q2</strong> – (str) Answer to the second question defining the interaction. Optional.</p></li>
+<li><p><strong>q3</strong> – (str) Answer to the third question defining the interaction. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extendedV2_queries.search_phrase_extendedV2">
+<span class="sig-prename descclassname"><span class="pre">extendedV2_queries.</span></span><span class="sig-name descname"><span class="pre">search_phrase_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keyword</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_queries.search_phrase_extendedV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query searching the database of EXTENDED v2 structure for mentions of chosen keyword.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>keyword</strong> – (str) Keyword which is to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-extendedV2_subgraph_queries">
+<span id="extended-v2-subgraph-queries"></span><h3>EXTENDED v2 subgraph queries<a class="headerlink" href="#module-extendedV2_subgraph_queries" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="extendedV2_subgraph_queries.full_graph_extendedV2">
+<span class="sig-prename descclassname"><span class="pre">extendedV2_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">full_graph_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_subgraph_queries.full_graph_extendedV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a query showing whole graph of the database of EXTENDED v2 structure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extendedV2_subgraph_queries.subgraph_from_amyloid_extendedV2">
+<span class="sig-prename descclassname"><span class="pre">extendedV2_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_amyloid_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amyloid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_subgraph_queries.subgraph_from_amyloid_extendedV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of EXTENDED v2 structure based on name of an amyloid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>amyloid</strong> – (str) Name of an amyloid which s to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extendedV2_subgraph_queries.subgraph_from_interactions_extendedV2">
+<span class="sig-prename descclassname"><span class="pre">extendedV2_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_interactions_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_subgraph_queries.subgraph_from_interactions_extendedV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of EXTENDED v2 structure based on answers to 3 questions:</p>
+<p>1. Is the interactor affecting interactee’s aggregating speed?
+(Faster aggregation/Slower aggregation/No aggregation/No effect/No information)</p>
+<p>2. Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?
+(Yes, direct evidence/Yes, implied by kinetics/No/Formation of fibrils by the interactee is inhibited/No information)</p>
+<p>3. Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?
+(Yes/No/No information)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>q1</strong> – (str) Answer to the first question defining the interaction. Optional.</p></li>
+<li><p><strong>q2</strong> – (str) Answer to the second question defining the interaction. Optional.</p></li>
+<li><p><strong>q3</strong> – (str) Answer to the third question defining the interaction. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extendedV2_subgraph_queries.subgraph_from_organism_extendedV2">
+<span class="sig-prename descclassname"><span class="pre">extendedV2_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_organism_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">organism</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_subgraph_queries.subgraph_from_organism_extendedV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of EXTENDED v2 structure based on name of an organism.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>organism</strong> – (str) Name of an organism which is to be searched for.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="extendedV2_subgraph_queries.subgraph_from_sequence_extendedV2">
+<span class="sig-prename descclassname"><span class="pre">extendedV2_subgraph_queries.</span></span><span class="sig-name descname"><span class="pre">subgraph_from_sequence_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'result'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_subgraph_queries.subgraph_from_sequence_extendedV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method executes a subgraph query filtering the database of EXTENDED v2 structure based on sequence or name of a sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (StandardDatabase) Database in which query is to be executed.</p></li>
+<li><p><strong>sequence</strong> – (str) Sequence which is to be searched for. Optional.</p></li>
+<li><p><strong>name</strong> – (str) Name of a sequence which is to be searched for. Optional.</p></li>
+<li><p><strong>filename</strong> – (str) Name of the file where query result is to be saved. Optional.</p></li>
+<li><p><strong>directory</strong> – (str) Path to the directory where file with query result is to be saved. Optional.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="visualisation.html" class="btn btn-neutral float-right" title="Visualisation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="initialisation.html" class="btn btn-neutral float-left" title="Database initialisation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Hanna Porada.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
