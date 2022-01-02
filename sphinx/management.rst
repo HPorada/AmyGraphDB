@@ -3,7 +3,7 @@ Database management
 
 Combined query functions
 -----------------------------
-Combined query functions execute proper query functions based on database structure passed as an argument.
+Combined query functions execute proper query function based on database structure passed as an argument.
 
 .. automodule:: queries
     :members:
