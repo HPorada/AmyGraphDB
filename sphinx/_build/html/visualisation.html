@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Visualisation &mdash; Amyloid Graph Database 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Database management" href="management.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Amyloid Graph Database
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="initialisation.html">Database initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management.html">Database management</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Visualisation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#functions-to-visualise-query-results">Functions to visualise query results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-functions">Additional functions</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Amyloid Graph Database</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Visualisation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/visualisation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="visualisation">
+<h1>Visualisation<a class="headerlink" href="#visualisation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="functions-to-visualise-query-results">
+<h2>Functions to visualise query results<a class="headerlink" href="#functions-to-visualise-query-results" title="Permalink to this headline">¶</a></h2>
+<p>Functions used to visualise query results and other JSON files which have a structure compatible
+with ArangoDB. One of the function uses Graphviz library, the other combines NetworkX to create a graph
+and Pyvis to display it.</p>
+<span class="target" id="module-visualisation_functions"></span><dl class="py function">
+<dt class="sig sig-object py" id="visualisation_functions.graphviz_graph">
+<span class="sig-prename descclassname"><span class="pre">visualisation_functions.</span></span><span class="sig-name descname"><span class="pre">graphviz_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./management/json_data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./management/graphviz'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_questions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequences</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">engine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'dot'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'LR'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualisation_functions.graphviz_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method visualises a chosen JSON file using Graphviz library and saves the result in chosen directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – (str) Name of the JSON file which is to be visualised.</p></li>
+<li><p><strong>input_dir</strong> – (str) Path to the directory with the chosen file.</p></li>
+<li><p><strong>output_dir</strong> – (str) Path to the directory where graph is to be saved.</p></li>
+<li><p><strong>int_questions</strong> – (boolean) Default: False - connections with question nodes are not shown in the graph.</p></li>
+<li><p><strong>sequences</strong> – (boolean) Default: False - labels of sequence nodes are names or “seq:[number]”, not full sequences.</p></li>
+<li><p><strong>engine</strong> – (str) Default: ‘dot’. Graph layout engine. Other: ‘neato’, ‘twopi’, ‘circo’, ‘fdp’, ‘osage’, ‘patchwork’, ‘sfdp’.</p></li>
+<li><p><strong>direction</strong> – (str) Default: ‘LR’. Direction of the graph (left -&gt; right). Other: ‘RL’, ‘TB’, ‘BT’.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="visualisation_functions.networkx_graph">
+<span class="sig-prename descclassname"><span class="pre">visualisation_functions.</span></span><span class="sig-name descname"><span class="pre">networkx_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./management/json_data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./management/networkx'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_questions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequences</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">general_remarks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualisation_functions.networkx_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method visualises a chosen JSON file using NetworkX and Pyvis libraries and saves the result in chosen directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – (str) Name of the JSON file which is to be visualised.</p></li>
+<li><p><strong>input_dir</strong> – (str) Path to the directory with the chosen file.</p></li>
+<li><p><strong>output_dir</strong> – (str) Path to the directory where graph is to be saved.</p></li>
+<li><p><strong>int_questions</strong> – (boolean) Default: False - connections with question nodes are not shown in the graph.</p></li>
+<li><p><strong>sequences</strong> – (boolean) Default: True - full sequences are shown when sequence nodes are being hovered over.</p></li>
+<li><p><strong>general_remarks</strong> – (boolean) Default: True - attributes ‘general remarks’ are shown when interaction nodes are being hovered over.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="additional-functions">
+<h2>Additional functions<a class="headerlink" href="#additional-functions" title="Permalink to this headline">¶</a></h2>
+<p>Supplementary functions used in functions to visualise query results.</p>
+<span class="target" id="module-question_functions"></span><dl class="py function">
+<dt class="sig sig-object py" id="question_functions.question1_shape_graphviz">
+<span class="sig-prename descclassname"><span class="pre">question_functions.</span></span><span class="sig-name descname"><span class="pre">question1_shape_graphviz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">answer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#question_functions.question1_shape_graphviz" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method determines shape of the node in graph_graphviz function based on an answer to the first question.</p>
+<p>(Is the interactor affecting interactee’s aggregating speed?)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>answer</strong> – (str) Answer to the first question.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(str) Node shape.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="question_functions.question1_shape_networkx">
+<span class="sig-prename descclassname"><span class="pre">question_functions.</span></span><span class="sig-name descname"><span class="pre">question1_shape_networkx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">answer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#question_functions.question1_shape_networkx" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method determines shape of the node in graph_networkx function based on an answer to the first question.</p>
+<p>(Is the interactor affecting interactee’s aggregating speed?)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>answer</strong> – (str) Answer to the first question.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(str) Node shape.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="question_functions.question2_color">
+<span class="sig-prename descclassname"><span class="pre">question_functions.</span></span><span class="sig-name descname"><span class="pre">question2_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">answer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#question_functions.question2_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method determines colour of the node based on an answer to the second question.</p>
+<p>(Do fibrils of the interactee elongate by attaching to monomers/oligomers/fibrils of the interactor?)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>answer</strong> – (str) Answer to the second question.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(str) Node colour.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="question_functions.question3_answer_networkx">
+<span class="sig-prename descclassname"><span class="pre">question_functions.</span></span><span class="sig-name descname"><span class="pre">question3_answer_networkx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">answer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#question_functions.question3_answer_networkx" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method determines an indication added to label in graph_networkx function based on an answer to the third question.</p>
+<p>(Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>answer</strong> – (str) Answer to the third question.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(str) Indication of the answer.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="question_functions.question3_border_graphviz">
+<span class="sig-prename descclassname"><span class="pre">question_functions.</span></span><span class="sig-name descname"><span class="pre">question3_border_graphviz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">answer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#question_functions.question3_border_graphviz" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method determines colour of the node’s border in graph_graphviz function based on an answer to the third question.</p>
+<p>(Is interaction resulting in heterogeneous fibrils consisting of interactor and interactee molecules?)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>answer</strong> – (str) Answer to the third question.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(str) Node’s border colour.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="management.html" class="btn btn-neutral float-left" title="Database management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Hanna Porada.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
