@@ -251,8 +251,8 @@ def experiments_extended(input_file, output_dir="./initialisation/extended", joi
                 }
             )
 
-        if sequence not in seq_list:
-            seq_list.append(sequence)
+        if id not in seq_list:
+            seq_list.append(id)
             sequences.append(
                 {
                     "_key": id,

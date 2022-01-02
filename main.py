@@ -12,9 +12,11 @@ new_db = database.connect_to_database('new_extendedV2', 'root', 'Amyloids')
 #e2q.contains_fragment_extendedV2(new_db, "DAEFRHDSG", "result")
 
 #new_db = database.database_start('new_extendedV2', 'root', 'Amyloids', 'extendedv2')
-
-e2q.search_phrase_extendedV2(new_db, 'pH', 'result')
 #
-vf.graphviz_graph('result')
-vf.networkx_graph('result')
+# e2q.search_phrase_extendedV2(new_db, 'pH', 'result')
+# #
+# vf.graphviz_graph('result')
+# vf.networkx_graph('result')
+
+database.create_json_files("extendedV2", "./initialisation/data/questionnaire.xlsx", "./initialisation/data/experiments.xlsx", "./initialisation/extendedV2")
 
