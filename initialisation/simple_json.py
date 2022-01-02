@@ -217,8 +217,8 @@ def experiments_simple(input_file, output_dir="./initialisation/simple", join=Tr
                 }
             )
 
-        if sequence not in seq_list:
-            seq_list.append(sequence)
+        if id not in seq_list:
+            seq_list.append(id)
             sequences.append(
                 {
                     "_key": id,
