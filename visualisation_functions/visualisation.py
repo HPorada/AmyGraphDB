@@ -1,4 +1,4 @@
-from visualisation import question_functions as qf
+from visualisation_functions import question_functions as qf
 import json
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -8,7 +8,7 @@ from pyvis.network import Network
 import plotly.graph_objects as go
 
 
-def graphviz_graph(filename, input_dir='./management/json_data', output_dir='./management/graphviz', int_questions=False, sequences=False, engine='dot', direction='LR'):
+def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_dir='./visualisation_functions/graphviz', int_questions=False, sequences=False, engine='dot', direction='LR'):
     """This method visualises a chosen JSON file using Graphviz library and saves the result in chosen directory.
 
     :param filename: (str) Name of the JSON file which is to be visualised.
@@ -120,7 +120,7 @@ def graphviz_graph(filename, input_dir='./management/json_data', output_dir='./m
     g.view()
 
 
-def networkx_graph(filename, input_dir='./management/json_data', output_dir='./management/networkx', int_questions=False, sequences=True, general_remarks=True):
+def networkx_graph(filename, input_dir='./queries_functions/json_data', output_dir='./visualisation_functions/networkx', int_questions=False, sequences=True, general_remarks=True):
     """This method visualises a chosen JSON file using NetworkX and Pyvis libraries and saves the result in chosen directory.
 
     :param filename: (str) Name of the JSON file which is to be visualised.

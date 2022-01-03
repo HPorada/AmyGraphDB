@@ -1,10 +1,10 @@
 import json
 import os.path
 
-import initialisation.additional_functions as add
+from initialisation_functions import initialisation as add
 
 
-def questionnaire_extendedV2(input_file, output_dir="./initialisation/extendedV2", join=False):
+def questionnaire_extendedV2(input_file, output_dir="./initialisation_functions/extendedV2", join=False):
     """This method generates JSON files from Excel files with questionnaire data for EXTENDED v2 database structure.
 
     :param input_file: (str) Path to the Excel file with questionnaire data.
@@ -247,14 +247,14 @@ def questionnaire_extendedV2(input_file, output_dir="./initialisation/extendedV2
         add.join_json(f"{output_dir}/intque3.json", intque3)
 
 
-def experiments_extendedV2(input_file, output_dir="./initialisation/extendedV2", join=True):
+def experiments_extendedV2(input_file, output_dir="./initialisation_functions/extendedV2", join=True):
     """This method generates JSON files from Excel files with data from electronic laboratory log for EXTENDED v2 database structure.
 
     :param input_file: (str) Path to the Excel file with data from electronic laboratory log.
     :param output_dir: (str) Path to the directory where JSON files are to be saved.
     :param join: (boolean) Default: True - new data is joined with files existing in the directory before method's execution.
     """
-    # sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation/data/experiments.xlsx")
+    # sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation_functions/data/experiments.xlsx")
 
     files = os.listdir(output_dir)
 

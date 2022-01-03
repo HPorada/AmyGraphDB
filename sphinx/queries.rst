@@ -1,4 +1,4 @@
-Management
+Queries
 ===================
 
 Combined query functions

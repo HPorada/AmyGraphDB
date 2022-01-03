@@ -14,7 +14,7 @@
 # vf.graphviz_graph('result')
 # vf.networkx_graph('result')
 
-#database.create_json_files("extendedV2", "./initialisation/data/questionnaire.xlsx", "./initialisation/data/experiments.xlsx", "./initialisation/extendedV2")
+#database.create_json_files("extendedV2", "./initialisation_functions/data/questionnaire.xlsx", "./initialisation_functions/data/experiments.xlsx", "./initialisation_functions/extendedV2")
 
 def example_function(int):
     """ Function takes int and returns int

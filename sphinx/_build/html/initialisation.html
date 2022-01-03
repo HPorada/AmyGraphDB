@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Management" href="management.html" />
+    <link rel="next" title="Visualisation" href="visualisation.html" />
     <link rel="prev" title="Introduction" href="introduction.html" /> 
 </head>
 
@@ -91,18 +91,18 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Initialisation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#module-database">Functions to create and communicate with ArangoDB database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-initialisation">Functions to create and communicate with ArangoDB database</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#functions-to-create-json-files-with-input-data-based-on-excel-files">Functions to create JSON files with input data based on Excel files</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#module-simple_json">SIMPLE database structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-extended_json">EXTENDED database structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-extendedV2_json">EXTENDED v2 database structure</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#additional-functions">Additional functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-functions-to-initialisation-functions">Additional functions to initialisation functions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="management.html">Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="visualisation.html">Visualisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="queries.html">Queries</a></li>
 </ul>
 
             
@@ -172,11 +172,11 @@
             
   <div class="section" id="initialisation">
 <h1>Initialisation<a class="headerlink" href="#initialisation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-database">
-<span id="functions-to-create-and-communicate-with-arangodb-database"></span><h2>Functions to create and communicate with ArangoDB database<a class="headerlink" href="#module-database" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-initialisation">
+<span id="functions-to-create-and-communicate-with-arangodb-database"></span><h2>Functions to create and communicate with ArangoDB database<a class="headerlink" href="#module-initialisation" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="database.connect_to_database">
-<span class="sig-prename descclassname"><span class="pre">database.</span></span><span class="sig-name descname"><span class="pre">connect_to_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#database.connect_to_database" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="initialisation.connect_to_database">
+<span class="sig-prename descclassname"><span class="pre">initialisation.</span></span><span class="sig-name descname"><span class="pre">connect_to_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#initialisation.connect_to_database" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method connects to the chosen database (if database with chosen name does not exist, it is created).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -193,8 +193,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="database.create_graph">
-<span class="sig-prename descclassname"><span class="pre">database.</span></span><span class="sig-name descname"><span class="pre">create_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#database.create_graph" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="initialisation.create_graph">
+<span class="sig-prename descclassname"><span class="pre">initialisation.</span></span><span class="sig-name descname"><span class="pre">create_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#initialisation.create_graph" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method creates a graph in chosen database based on chosen database structure.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -210,8 +210,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="database.create_json_files">
-<span class="sig-prename descclassname"><span class="pre">database.</span></span><span class="sig-name descname"><span class="pre">create_json_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_questionnaire</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_experiments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#database.create_json_files" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="initialisation.create_json_files">
+<span class="sig-prename descclassname"><span class="pre">initialisation.</span></span><span class="sig-name descname"><span class="pre">create_json_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_questionnaire</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_experiments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#initialisation.create_json_files" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method automatically creates JSON files from two input Excel files: first with data from questionnaire,
 second with data from electronic laboratory log, based on chosen database structure and saves them in chosen directory.</p>
 <dl class="field-list simple">
@@ -227,8 +227,8 @@ second with data from electronic laboratory log, based on chosen database struct
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="database.create_view">
-<span class="sig-prename descclassname"><span class="pre">database.</span></span><span class="sig-name descname"><span class="pre">create_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#database.create_view" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="initialisation.create_view">
+<span class="sig-prename descclassname"><span class="pre">initialisation.</span></span><span class="sig-name descname"><span class="pre">create_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#initialisation.create_view" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method creates a view in chosen database based on chosen database structure.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -241,8 +241,8 @@ second with data from electronic laboratory log, based on chosen database struct
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="database.database_start">
-<span class="sig-prename descclassname"><span class="pre">database.</span></span><span class="sig-name descname"><span class="pre">database_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#database.database_start" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="initialisation.database_start">
+<span class="sig-prename descclassname"><span class="pre">initialisation.</span></span><span class="sig-name descname"><span class="pre">database_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#initialisation.database_start" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method automatically creates JSON files from Excel files with data, connects to the chosen database
 (if database with chosen name does not exist, it is created), imports data and creates a graph and a view,
 based on chosen database structure.</p>
@@ -262,8 +262,8 @@ based on chosen database structure.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="database.import_collections">
-<span class="sig-prename descclassname"><span class="pre">database.</span></span><span class="sig-name descname"><span class="pre">import_collections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delete_previous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#database.import_collections" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="initialisation.import_collections">
+<span class="sig-prename descclassname"><span class="pre">initialisation.</span></span><span class="sig-name descname"><span class="pre">import_collections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delete_previous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#initialisation.import_collections" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method automatically imports data from JSON files from chosen directory to the chosen database.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -283,7 +283,7 @@ based on chosen database structure.</p>
 <span id="simple-database-structure"></span><h3>SIMPLE database structure<a class="headerlink" href="#module-simple_json" title="Permalink to this headline">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="simple_json.experiments_simple">
-<span class="sig-prename descclassname"><span class="pre">simple_json.</span></span><span class="sig-name descname"><span class="pre">experiments_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation/simple'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_json.experiments_simple" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">simple_json.</span></span><span class="sig-name descname"><span class="pre">experiments_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation_functions/simple'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_json.experiments_simple" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method generates JSON files from Excel files with data from electronic laboratory log for SIMPLE database structure.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -298,7 +298,7 @@ based on chosen database structure.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="simple_json.questionnaire_simple">
-<span class="sig-prename descclassname"><span class="pre">simple_json.</span></span><span class="sig-name descname"><span class="pre">questionnaire_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation/simple'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_json.questionnaire_simple" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">simple_json.</span></span><span class="sig-name descname"><span class="pre">questionnaire_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation_functions/simple'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_json.questionnaire_simple" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method generates JSON files from Excel files with questionnaire data for SIMPLE database structure.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -316,7 +316,7 @@ based on chosen database structure.</p>
 <span id="extended-database-structure"></span><h3>EXTENDED database structure<a class="headerlink" href="#module-extended_json" title="Permalink to this headline">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="extended_json.experiments_extended">
-<span class="sig-prename descclassname"><span class="pre">extended_json.</span></span><span class="sig-name descname"><span class="pre">experiments_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation/extended'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_json.experiments_extended" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">extended_json.</span></span><span class="sig-name descname"><span class="pre">experiments_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation_functions/extended'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_json.experiments_extended" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method generates JSON files from Excel files with data from electronic laboratory log for EXTENDED database structure.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -331,7 +331,7 @@ based on chosen database structure.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="extended_json.questionnaire_extended">
-<span class="sig-prename descclassname"><span class="pre">extended_json.</span></span><span class="sig-name descname"><span class="pre">questionnaire_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation/extended'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_json.questionnaire_extended" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">extended_json.</span></span><span class="sig-name descname"><span class="pre">questionnaire_extended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation_functions/extended'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extended_json.questionnaire_extended" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method generates JSON files from Excel files with questionnaire data for EXTENDED database structure.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -349,7 +349,7 @@ based on chosen database structure.</p>
 <span id="extended-v2-database-structure"></span><h3>EXTENDED v2 database structure<a class="headerlink" href="#module-extendedV2_json" title="Permalink to this headline">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="extendedV2_json.experiments_extendedV2">
-<span class="sig-prename descclassname"><span class="pre">extendedV2_json.</span></span><span class="sig-name descname"><span class="pre">experiments_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation/extendedV2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_json.experiments_extendedV2" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">extendedV2_json.</span></span><span class="sig-name descname"><span class="pre">experiments_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation_functions/extendedV2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_json.experiments_extendedV2" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method generates JSON files from Excel files with data from electronic laboratory log for EXTENDED v2 database structure.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -364,7 +364,7 @@ based on chosen database structure.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="extendedV2_json.questionnaire_extendedV2">
-<span class="sig-prename descclassname"><span class="pre">extendedV2_json.</span></span><span class="sig-name descname"><span class="pre">questionnaire_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation/extendedV2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_json.questionnaire_extendedV2" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">extendedV2_json.</span></span><span class="sig-name descname"><span class="pre">questionnaire_extendedV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./initialisation_functions/extendedV2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extendedV2_json.questionnaire_extendedV2" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method generates JSON files from Excel files with questionnaire data for EXTENDED v2 database structure.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -379,8 +379,8 @@ based on chosen database structure.</p>
 
 </div>
 </div>
-<div class="section" id="additional-functions">
-<h2>Additional functions<a class="headerlink" href="#additional-functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="additional-functions-to-initialisation-functions">
+<h2>Additional functions to initialisation functions<a class="headerlink" href="#additional-functions-to-initialisation-functions" title="Permalink to this headline">¶</a></h2>
 <p>Supplementary functions used in functions to create JSON files.</p>
 <span class="target" id="module-additional_functions"></span><dl class="py function">
 <dt class="sig sig-object py" id="additional_functions.check_for_greek">
@@ -481,7 +481,7 @@ on chosen temperature or range of temperatures.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="management.html" class="btn btn-neutral float-right" title="Management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="visualisation.html" class="btn btn-neutral float-right" title="Visualisation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

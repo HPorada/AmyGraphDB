@@ -14,9 +14,9 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath('../'))
-sys.path.insert(0, os.path.abspath('../initialisation'))
-sys.path.insert(0, os.path.abspath('../management'))
-sys.path.insert(0, os.path.abspath('../visualisation'))
+sys.path.insert(0, os.path.abspath('../initialisation_functions'))
+sys.path.insert(0, os.path.abspath('../queries_functions'))
+sys.path.insert(0, os.path.abspath('../visualisation_functions'))
 
 # -- Project information -----------------------------------------------------
 
