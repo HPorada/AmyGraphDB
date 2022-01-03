@@ -4,7 +4,7 @@ Initialisation
 Functions to create and communicate with ArangoDB database
 ------------------------------------------------------------
 
-.. automodule:: database
+.. automodule:: initialisation
     :members:
 
 Functions to create JSON files with input data based on Excel files
@@ -28,8 +28,8 @@ EXTENDED v2 database structure
 .. automodule:: extendedV2_json
     :members:
 
-Additional functions
----------------------
+Additional functions to initialisation functions
+----------------------------------------------------
 Supplementary functions used in functions to create JSON files.
 
 .. automodule:: additional_functions

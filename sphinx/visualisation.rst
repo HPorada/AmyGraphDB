@@ -10,8 +10,8 @@ and Pyvis to display it.
 .. automodule:: visualisation_functions
     :members:
 
-Additional functions
----------------------------------
+Additional functions to visualisation functions
+-------------------------------------------------
 Supplementary functions used in functions to visualise query results.
 
 .. automodule:: question_functions

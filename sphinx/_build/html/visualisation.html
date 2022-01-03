@@ -41,7 +41,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Management" href="management.html" /> 
+    <link rel="next" title="Queries" href="queries.html" />
+    <link rel="prev" title="Initialisation" href="initialisation.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,12 +91,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="initialisation.html">Initialisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="management.html">Management</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Visualisation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#functions-to-visualise-query-results">Functions to visualise query results</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#additional-functions">Additional functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-functions-to-visualisation-functions">Additional functions to visualisation functions</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="queries.html">Queries</a></li>
 </ul>
 
             
@@ -170,46 +171,9 @@
 <p>Functions used to visualise query results and other JSON files which have a structure compatible
 with ArangoDB. One of the function uses Graphviz library, the other combines NetworkX to create a graph
 and Pyvis to display it.</p>
-<span class="target" id="module-visualisation_functions"></span><dl class="py function">
-<dt class="sig sig-object py" id="visualisation_functions.graphviz_graph">
-<span class="sig-prename descclassname"><span class="pre">visualisation_functions.</span></span><span class="sig-name descname"><span class="pre">graphviz_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./management/json_data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./management/graphviz'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_questions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequences</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">engine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'dot'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'LR'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualisation_functions.graphviz_graph" title="Permalink to this definition">¶</a></dt>
-<dd><p>This method visualises a chosen JSON file using Graphviz library and saves the result in chosen directory.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>filename</strong> – (str) Name of the JSON file which is to be visualised.</p></li>
-<li><p><strong>input_dir</strong> – (str) Path to the directory with the chosen file.</p></li>
-<li><p><strong>output_dir</strong> – (str) Path to the directory where graph is to be saved.</p></li>
-<li><p><strong>int_questions</strong> – (boolean) Default: False - connections with question nodes are not shown in the graph.</p></li>
-<li><p><strong>sequences</strong> – (boolean) Default: False - labels of sequence nodes are names or “seq:[number]”, not full sequences.</p></li>
-<li><p><strong>engine</strong> – (str) Default: ‘dot’. Graph layout engine. Other: ‘neato’, ‘twopi’, ‘circo’, ‘fdp’, ‘osage’, ‘patchwork’, ‘sfdp’.</p></li>
-<li><p><strong>direction</strong> – (str) Default: ‘LR’. Direction of the graph (left -&gt; right). Other: ‘RL’, ‘TB’, ‘BT’.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="visualisation_functions.networkx_graph">
-<span class="sig-prename descclassname"><span class="pre">visualisation_functions.</span></span><span class="sig-name descname"><span class="pre">networkx_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./management/json_data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./management/networkx'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_questions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequences</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">general_remarks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualisation_functions.networkx_graph" title="Permalink to this definition">¶</a></dt>
-<dd><p>This method visualises a chosen JSON file using NetworkX and Pyvis libraries and saves the result in chosen directory.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>filename</strong> – (str) Name of the JSON file which is to be visualised.</p></li>
-<li><p><strong>input_dir</strong> – (str) Path to the directory with the chosen file.</p></li>
-<li><p><strong>output_dir</strong> – (str) Path to the directory where graph is to be saved.</p></li>
-<li><p><strong>int_questions</strong> – (boolean) Default: False - connections with question nodes are not shown in the graph.</p></li>
-<li><p><strong>sequences</strong> – (boolean) Default: True - full sequences are shown when sequence nodes are being hovered over.</p></li>
-<li><p><strong>general_remarks</strong> – (boolean) Default: True - attributes ‘general remarks’ are shown when interaction nodes are being hovered over.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</div>
-<div class="section" id="additional-functions">
-<h2>Additional functions<a class="headerlink" href="#additional-functions" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-visualisation_functions"></span></div>
+<div class="section" id="additional-functions-to-visualisation-functions">
+<h2>Additional functions to visualisation functions<a class="headerlink" href="#additional-functions-to-visualisation-functions" title="Permalink to this headline">¶</a></h2>
 <p>Supplementary functions used in functions to visualise query results.</p>
 <span class="target" id="module-question_functions"></span><dl class="py function">
 <dt class="sig sig-object py" id="question_functions.question1_shape_graphviz">
@@ -295,7 +259,8 @@ and Pyvis to display it.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="management.html" class="btn btn-neutral float-left" title="Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="queries.html" class="btn btn-neutral float-right" title="Queries" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="initialisation.html" class="btn btn-neutral float-left" title="Initialisation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

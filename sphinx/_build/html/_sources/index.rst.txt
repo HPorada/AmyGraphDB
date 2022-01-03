@@ -16,7 +16,7 @@ database with information about amyloid interactions.
 
    introduction
    initialisation
-   management
    visualisation
+   queries
 
 

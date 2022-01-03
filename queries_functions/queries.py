@@ -1,5 +1,5 @@
 import json
-from management import simple_subgraph_queries, extended_queries, extendedV2_subgraph_queries, \
+from queries_functions import simple_subgraph_queries, extended_queries, extendedV2_subgraph_queries, \
     extended_subgraph_queries, extendedV2_queries, simple_queries
 
 
@@ -19,7 +19,7 @@ def custom_query(database, query, filename="result", directory=None):
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
