@@ -83,477 +83,480 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
-    q1 = q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
-    q2 = q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
-    q3 = q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+    if q1 is not None:
+        q1 = q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+    if q2 is not None:
+        q2 = q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+    if q3 is not None:
+        q3 = q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
 
-    if (
-            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
-            q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
-            q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
+    if q1 is not None and q2 is not None and q3 is not None:
+        if (
+                q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
+                q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
+                q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
+            q1 = "question1/" + q1
+            q2 = "question2/" + q2
+            q3 = "question3/" + q3
 
-        q1 = "question1/" + q1
-        q2 = "question2/" + q2
-        q3 = "question3/" + q3
+            cursor = database.aql.execute(
+                """let ints = (
+                        for i in interactionsE
+                            let que1 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q1 
+                                    return {"interactions": i}
+                            )        
+                            let que2 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q2 
+                                    return {"interactions": i}
+                            )        
+                            let que3 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q3 
+                                    return {"interactions": i}
+                            )
+        
+                            let final = intersection(que1, que2, que3)
+        
+                            for item in final 
+                                return {"interactions": item.interactions}
+                            )
+        
+                    let ints_paths = (
+                        for i in ints
+                            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p}
+                        )
+        
+                    let seqs = (
+                        for i in ints
+                            for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p, "sequences": v}
+                    )
+        
+                    let amys = (
+                        for item in seqs
+                            for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
+                                return distinct {"paths": p, "amyloids": v}
+                    )  
+        
+                    let orgs = (
+                        for item in amys
+                            for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
+                                return distinct {"paths": p, "organisms": v}
+                    )
+        
+                    let props = (
+                        for item in orgs
+                            for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
+                                return distinct {"paths": p, "properties": v}
+                    )
+        
+                    for item in union(
+                        for item in ints_paths return item.paths,
+                        for item in seqs return item.paths,
+                        for item in amys return item.paths,
+                        for item in orgs return item.paths,
+                        for item in props return item.paths
+                    )
+                        return item""",
+                bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
+            )
 
-        cursor = database.aql.execute(
-            """let ints = (
+    elif q1 is not None and q2 is not None:
+        if (
+                q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
+                q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information"):
+            q1 = "question1/" + q1
+            q2 = "question2/" + q2
+
+            cursor = database.aql.execute(
+                """let ints = (
+                        for i in interactionsE
+                            let que1 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q1 
+                                    return {"interactions": i}
+                            )        
+                            let que2 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q2 
+                                    return {"interactions": i}
+                            )        
+            
+                            let final = intersection(que1, que2)
+            
+                            for item in final 
+                                return {"interactions": item.interactions}
+                            )
+            
+                    let ints_paths = (
+                        for i in ints
+                            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p}
+                        )
+            
+                    let seqs = (
+                        for i in ints
+                            for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p, "sequences": v}
+                    )
+            
+                    let amys = (
+                        for item in seqs
+                            for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
+                                return distinct {"paths": p, "amyloids": v}
+                    )  
+            
+                    let orgs = (
+                        for item in amys
+                            for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
+                                return distinct {"paths": p, "organisms": v}
+                    )
+            
+                    let props = (
+                        for item in orgs
+                            for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
+                                return distinct {"paths": p, "properties": v}
+                    )
+            
+                    for item in union(
+                        for item in ints_paths return item.paths,
+                        for item in seqs return item.paths,
+                        for item in amys return item.paths,
+                        for item in orgs return item.paths,
+                        for item in props return item.paths
+                    )
+                        return item""",
+                bind_vars={'q1': q1, 'q2': q2}
+            )
+
+    elif (q2 is not None and q3 is not None):
+        if (
+                q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
+                q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
+            q2 = "question2/" + q2
+            q3 = "question3/" + q3
+
+            cursor = database.aql.execute(
+                """let ints = (
+                        for i in interactionsE       
+                            let que2 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q2 
+                                    return {"interactions": i}
+                            )        
+                            let que3 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q3 
+                                    return {"interactions": i}
+                            )
+            
+                            let final = intersection(que2, que3)
+            
+                            for item in final 
+                                return {"interactions": item.interactions}
+                            )
+            
+                    let ints_paths = (
+                        for i in ints
+                            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p}
+                        )
+            
+                    let seqs = (
+                        for i in ints
+                            for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p, "sequences": v}
+                    )
+            
+                    let amys = (
+                        for item in seqs
+                            for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
+                                return distinct {"paths": p, "amyloids": v}
+                    )  
+            
+                    let orgs = (
+                        for item in amys
+                            for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
+                                return distinct {"paths": p, "organisms": v}
+                    )
+            
+                    let props = (
+                        for item in orgs
+                            for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
+                                return distinct {"paths": p, "properties": v}
+                    )
+            
+                    for item in union(
+                        for item in ints_paths return item.paths,
+                        for item in seqs return item.paths,
+                        for item in amys return item.paths,
+                        for item in orgs return item.paths,
+                        for item in props return item.paths
+                    )
+                        return item""",
+                bind_vars={'q2': q2, 'q3': q3}
+            )
+
+    elif (q1 is not None and q3 is not None):
+        if (
+                q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
+                q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
+            q1 = "question1/" + q1
+            q3 = "question3/" + q3
+
+            cursor = database.aql.execute(
+                """let ints = (
+                        for i in interactionsE
+                            let que1 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q1 
+                                    return {"interactions": i}
+                            )        
+                            let que3 = (
+                                for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
+                                    filter v._id == @q3 
+                                    return {"interactions": i}
+                            )
+            
+                            let final = intersection(que1, que3)
+            
+                            for item in final 
+                                return {"interactions": item.interactions}
+                            )
+            
+                    let ints_paths = (
+                        for i in ints
+                            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p}
+                        )
+            
+                    let seqs = (
+                        for i in ints
+                            for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p, "sequences": v}
+                    )
+            
+                    let amys = (
+                        for item in seqs
+                            for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
+                                return distinct {"paths": p, "amyloids": v}
+                    )  
+            
+                    let orgs = (
+                        for item in amys
+                            for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
+                                return distinct {"paths": p, "organisms": v}
+                    )
+            
+                    let props = (
+                        for item in orgs
+                            for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
+                                return distinct {"paths": p, "properties": v}
+                    )
+            
+                    for item in union(
+                        for item in ints_paths return item.paths,
+                        for item in seqs return item.paths,
+                        for item in amys return item.paths,
+                        for item in orgs return item.paths,
+                        for item in props return item.paths
+                    )
+                        return item""",
+                bind_vars={'q1': q1, 'q3': q3}
+            )
+
+    elif q1 is not None:
+        if q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information":
+
+            q1 = "question1/" + q1
+
+            cursor = database.aql.execute(
+                """
+                let ints = (
+            
                     for i in interactionsE
-                        let que1 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q1 
-                                return {"interactions": i}
-                        )        
-                        let que2 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q2 
-                                return {"interactions": i}
-                        )        
-                        let que3 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q3 
+                        
+                        let q1 = (
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
+                                filter v._id == @q1
                                 return {"interactions": i}
                         )
-    
-                        let final = intersection(que1, que2, que3)
-    
-                        for item in final 
-                            return {"interactions": item.interactions}
-                        )
-    
-                let ints_paths = (
-                    for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p}
-                    )
-    
-                let seqs = (
-                    for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p, "sequences": v}
-                )
-    
-                let amys = (
-                    for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
-                            return distinct {"paths": p, "amyloids": v}
-                )  
-    
-                let orgs = (
-                    for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
-                            return distinct {"paths": p, "organisms": v}
-                )
-    
-                let props = (
-                    for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
-                            return distinct {"paths": p, "properties": v}
-                )
-    
-                for item in union(
-                    for item in ints_paths return item.paths,
-                    for item in seqs return item.paths,
-                    for item in amys return item.paths,
-                    for item in orgs return item.paths,
-                    for item in props return item.paths
-                )
-                    return item""",
-            bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
-        )
-
-    elif (
-            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
-            q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information"):
-
-        q1 = "question1/" + q1
-        q2 = "question2/" + q2
-
-        cursor = database.aql.execute(
-            """let ints = (
-                    for i in interactionsE
-                        let que1 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q1 
-                                return {"interactions": i}
-                        )        
-                        let que2 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q2 
-                                return {"interactions": i}
-                        )        
-        
-                        let final = intersection(que1, que2)
-        
-                        for item in final 
-                            return {"interactions": item.interactions}
-                        )
-        
-                let ints_paths = (
-                    for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p}
-                    )
-        
-                let seqs = (
-                    for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p, "sequences": v}
-                )
-        
-                let amys = (
-                    for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
-                            return distinct {"paths": p, "amyloids": v}
-                )  
-        
-                let orgs = (
-                    for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
-                            return distinct {"paths": p, "organisms": v}
-                )
-        
-                let props = (
-                    for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
-                            return distinct {"paths": p, "properties": v}
-                )
-        
-                for item in union(
-                    for item in ints_paths return item.paths,
-                    for item in seqs return item.paths,
-                    for item in amys return item.paths,
-                    for item in orgs return item.paths,
-                    for item in props return item.paths
-                )
-                    return item""",
-            bind_vars={'q1': q1, 'q2': q2}
-        )
-
-    elif (
-            q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
-            q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
-
-        q2 = "question2/" + q2
-        q3 = "question3/" + q3
-
-        cursor = database.aql.execute(
-            """let ints = (
-                    for i in interactionsE       
-                        let que2 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q2 
-                                return {"interactions": i}
-                        )        
-                        let que3 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q3 
-                                return {"interactions": i}
-                        )
-        
-                        let final = intersection(que2, que3)
-        
-                        for item in final 
-                            return {"interactions": item.interactions}
-                        )
-        
-                let ints_paths = (
-                    for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p}
-                    )
-        
-                let seqs = (
-                    for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p, "sequences": v}
-                )
-        
-                let amys = (
-                    for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
-                            return distinct {"paths": p, "amyloids": v}
-                )  
-        
-                let orgs = (
-                    for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
-                            return distinct {"paths": p, "organisms": v}
-                )
-        
-                let props = (
-                    for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
-                            return distinct {"paths": p, "properties": v}
-                )
-        
-                for item in union(
-                    for item in ints_paths return item.paths,
-                    for item in seqs return item.paths,
-                    for item in amys return item.paths,
-                    for item in orgs return item.paths,
-                    for item in props return item.paths
-                )
-                    return item""",
-            bind_vars={'q2': q2, 'q3': q3}
-        )
-
-    elif (
-            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
-            q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
-
-        q1 = "question1/" + q1
-        q3 = "question3/" + q3
-
-        cursor = database.aql.execute(
-            """let ints = (
-                    for i in interactionsE
-                        let que1 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q1 
-                                return {"interactions": i}
-                        )        
-                        let que3 = (
-                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2" 
-                                filter v._id == @q3 
-                                return {"interactions": i}
-                        )
-        
-                        let final = intersection(que1, que3)
-        
-                        for item in final 
-                            return {"interactions": item.interactions}
-                        )
-        
-                let ints_paths = (
-                    for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p}
-                    )
-        
-                let seqs = (
-                    for i in ints
-                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p, "sequences": v}
-                )
-        
-                let amys = (
-                    for item in seqs
-                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
-                            return distinct {"paths": p, "amyloids": v}
-                )  
-        
-                let orgs = (
-                    for item in amys
-                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
-                            return distinct {"paths": p, "organisms": v}
-                )
-        
-                let props = (
-                    for item in orgs
-                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
-                            return distinct {"paths": p, "properties": v}
-                )
-        
-                for item in union(
-                    for item in ints_paths return item.paths,
-                    for item in seqs return item.paths,
-                    for item in amys return item.paths,
-                    for item in orgs return item.paths,
-                    for item in props return item.paths
-                )
-                    return item""",
-            bind_vars={'q1': q1, 'q3': q3}
-        )
-
-    elif (
-            q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information"):
-
-        q1 = "question1/" + q1
-
-        cursor = database.aql.execute(
-            """
-            let ints = (
-        
-                for i in interactionsE
                     
-                    let q1 = (
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
-                            filter v._id == @q1
-                            return {"interactions": i}
-                    )
+                    for item in q1 
+                        return {"interactions": item.interactions}
+                )
+                 
+                let ints_paths = (
+                        for i in ints
+                            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p}
+                )
                 
-                for item in q1 
-                    return {"interactions": item.interactions}
-            )
-             
-            let ints_paths = (
+                let seqs = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p}
-            )
-            
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
-                        return {"paths": p, "sequences": v}
-            )
+                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
+                            return {"paths": p, "sequences": v}
+                )
+                        
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+                
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
+                            return distinct {"paths": p, "organisms": v}
+                )
+                
+                let props = (
+                    for item in orgs
+                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
+                            return distinct {"paths": p, "properties": v}
+                )
                     
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
+                for item in union(
+                    for item in ints_paths return item.paths,
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths,
+                    for item in props return item.paths
+                )
+                    return item
+                """,
+                bind_vars={'q1': q1}
+            )
+
+    elif q2 is not None:
+        if q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information":
+
+            q2 = "question2/" + q2
+
+            cursor = database.aql.execute(
+                """
+                let ints = (
             
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
-                        return distinct {"paths": p, "organisms": v}
-            )
+                    for i in interactionsE
             
-            let props = (
-                for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
-                        return distinct {"paths": p, "properties": v}
-            )
-                
-            for item in union(
-                for item in ints_paths return item.paths,
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths,
-                for item in props return item.paths
-            )
-                return item
-            """,
-            bind_vars={'q1': q1}
-        )
-
-    elif (
-            q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information"):
-
-        q2 = "question2/" + q2
-
-        cursor = database.aql.execute(
-            """
-            let ints = (
-        
-                for i in interactionsE
-        
-                    let q2 = (
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
-                            filter v._id == @q2
-                            return {"interactions": i}
-                    )
-        
-                for item in q2 
-                    return {"interactions": item.interactions}
-            )
-        
-            let ints_paths = (
+                        let q2 = (
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
+                                filter v._id == @q2
+                                return {"interactions": i}
+                        )
+            
+                    for item in q2 
+                        return {"interactions": item.interactions}
+                )
+            
+                let ints_paths = (
+                        for i in ints
+                            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p}
+                )
+            
+                let seqs = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p}
+                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
+                            return {"paths": p, "sequences": v}
+                )
+            
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+            
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
+                            return distinct {"paths": p, "organisms": v}
+                )
+            
+                let props = (
+                    for item in orgs
+                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
+                            return distinct {"paths": p, "properties": v}
+                )
+            
+                for item in union(
+                    for item in ints_paths return item.paths,
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths,
+                    for item in props return item.paths
+                )
+                    return item
+                """,
+                bind_vars={'q2': q2}
             )
-        
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
-                        return {"paths": p, "sequences": v}
-            )
-        
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-        
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
-                        return distinct {"paths": p, "organisms": v}
-            )
-        
-            let props = (
-                for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
-                        return distinct {"paths": p, "properties": v}
-            )
-        
-            for item in union(
-                for item in ints_paths return item.paths,
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths,
-                for item in props return item.paths
-            )
-                return item
-            """,
-            bind_vars={'q2': q2}
-        )
 
-    elif (
-            q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
+    elif q3 is not None:
+        if q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information":
 
-        q3 = "question3/" + q3
+            q3 = "question3/" + q3
 
-        cursor = database.aql.execute(
-            """
-            let ints = (
-        
-                for i in interactionsE
-        
-                    let q3 = (
-                        for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
-                            filter v._id == @q3
-                            return {"interactions": i}
-                    )
-        
-                for item in q3
-                    return {"interactions": item.interactions}
-            )
-        
-            let ints_paths = (
+            cursor = database.aql.execute(
+                """
+                let ints = (
+            
+                    for i in interactionsE
+            
+                        let q3 = (
+                            for v, e, p in 1..1 outbound i._id graph "ExtendedV2"
+                                filter v._id == @q3
+                                return {"interactions": i}
+                        )
+            
+                    for item in q3
+                        return {"interactions": item.interactions}
+                )
+            
+                let ints_paths = (
+                        for i in ints
+                            for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
+                                return {"paths": p}
+                )
+            
+                let seqs = (
                     for i in ints
-                        for v, e, p in 1..1 outbound i.interactions._id graph "ExtendedV2"
-                            return {"paths": p}
+                        for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
+                            return {"paths": p, "sequences": v}
+                )
+            
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+            
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
+                            return distinct {"paths": p, "organisms": v}
+                )
+            
+                let props = (
+                    for item in orgs
+                        for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
+                            return distinct {"paths": p, "properties": v}
+                )
+            
+                for item in union(
+                    for item in ints_paths return item.paths,
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths,
+                    for item in props return item.paths
+                )
+                    return item
+                """,
+                bind_vars={'q3': q3}
             )
-        
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "ExtendedV2"
-                        return {"paths": p, "sequences": v}
-            )
-        
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "ExtendedV2"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-        
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "ExtendedV2"
-                        return distinct {"paths": p, "organisms": v}
-            )
-        
-            let props = (
-                for item in orgs
-                    for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
-                        return distinct {"paths": p, "properties": v}
-            )
-        
-            for item in union(
-                for item in ints_paths return item.paths,
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths,
-                for item in props return item.paths
-            )
-                return item
-            """,
-            bind_vars={'q3': q3}
-        )
 
     else:
         cursor = database.aql.execute(
@@ -1002,12 +1005,6 @@ def subgraph_from_organism_extendedV2(database, organism, filename="result", dir
                     return distinct {"paths": p, "organisms": v}
         )
         
-        /*let props = (
-            for item in orgs
-                for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
-                    return distinct {"paths": p, "properties": v}
-        )*/
-        
         let props2 = (
             for item in orgs2
                 for v, e, p in 1..1 inbound item.organisms._id graph "ExtendedV2"
@@ -1017,9 +1014,6 @@ def subgraph_from_organism_extendedV2(database, organism, filename="result", dir
         for item in union(
             for item in ints return item.paths,
             for item in ques return item.paths,
-           /* for item in seqs return item.paths,
-            for item in amys return item.paths,
-            for item in props return item.paths,*/
             for item in seqs2 return item.paths,
             for item in amys2 return item.paths,
             for item in orgs2 return item.paths,

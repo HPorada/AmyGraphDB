@@ -8,7 +8,8 @@ from pyvis.network import Network
 import plotly.graph_objects as go
 
 
-def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_dir='./visualisation_functions/graphviz', int_questions=False, sequences=False, engine='dot', direction='LR'):
+def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_dir='./visualisation_functions/graphviz',
+                   int_questions=False, sequences=False, engine='dot', direction='LR'):
     """This method visualises a chosen JSON file using Graphviz library and saves the result in chosen directory.
 
     :param filename: (str) Name of the JSON file which is to be visualised.
@@ -35,7 +36,8 @@ def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_d
 
                 if re.search("^sequences", vertex['_id']) is not None:
                     if sequences:
-                        g.node(vertex['_id'], label=vertex['sequence'] if 'sequence' in vertex else "seq:" + vertex['_key'])
+                        g.node(vertex['_id'],
+                               label=vertex['sequence'] if 'sequence' in vertex else "seq:" + vertex['_key'])
                     else:
                         g.node(vertex['_id'], label=vertex['name'] if 'name' in vertex else "seq:" + vertex['_key'])
 
@@ -125,7 +127,8 @@ def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_d
     g.view()
 
 
-def networkx_graph(filename, input_dir='./queries_functions/json_data', output_dir='./visualisation_functions/networkx', int_questions=False, sequences=True, general_remarks=True):
+def networkx_graph(filename, input_dir='./queries_functions/json_data', output_dir='./visualisation_functions/networkx',
+                   int_questions=False, sequences=True, general_remarks=True):
     """This method visualises a chosen JSON file using NetworkX and Pyvis libraries and saves the result in chosen directory.
 
     :param filename: (str) Name of the JSON file which is to be visualised.
@@ -140,8 +143,8 @@ def networkx_graph(filename, input_dir='./queries_functions/json_data', output_d
 
     G = nx.DiGraph()
 
-    for i in json_data:
-        if 'vertices' in i:
+    if 'vertices' in json_data[0]:
+        for i in json_data:
             for j in i['vertices']:
 
                 if re.search("^question", j['_id']) is not None:
@@ -219,7 +222,8 @@ def networkx_graph(filename, input_dir='./queries_functions/json_data', output_d
                     else:
                         G.add_edge(k['_from'], k['_to'])
 
-        else:
+    else:
+        for i in json_data:
             if '_from' in i:
                 G.add_edge(i['_from'], i['_to'])
             else:
@@ -264,10 +268,10 @@ def networkx_graph(filename, input_dir='./queries_functions/json_data', output_d
                 else:
                     G.add_node(i['_id'], label=i['_key'])
 
-    # nx.draw(
-    #     G,
-    #     with_labels=True
-    # )
+    nx.draw(
+        G,
+        with_labels=True
+    )
 
     # Pyvis
     nt = Network('1000px', '1000px')

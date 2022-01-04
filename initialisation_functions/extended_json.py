@@ -1,7 +1,7 @@
 import json
 import os.path
 
-from initialisation_functions import initialisation as add
+from initialisation_functions import additional_functions as add
 
 
 def questionnaire_extended(input_file, output_dir="./initialisation_functions/extended", join=False):

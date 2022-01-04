@@ -191,8 +191,8 @@ def subgraph_from_organism(structure, database, organism, filename="result", dir
     if structure.lower() == "simple":
         simple_subgraph_queries.subgraph_from_organism_simple(database, organism, filename, directory)
     elif structure.lower() == "extended":
-        extended_subgraph_queries.subgraph_from_amyloid_extended(database, organism, filename, directory)
+        extended_subgraph_queries.subgraph_from_organism_extended(database, organism, filename, directory)
     elif structure.lower() == "extendedv2":
-        extendedV2_subgraph_queries.subgraph_from_amyloid_extendedV2(database, organism, filename, directory)
+        extendedV2_subgraph_queries.subgraph_from_organism_extendedV2(database, organism, filename, directory)
     else:
         print("Available database structures: simple, extended, extendedV2.")
