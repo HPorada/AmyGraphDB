@@ -748,19 +748,19 @@ def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filena
             let ints = (
                 for item in seqs
                     for v, e, p in 1..1 outbound item.sequences._id graph "ExtendedV2"
-                        return {"paths": p, "interactions": v}
+                        return distinct {"paths": p, "interactions": v}
             )
 
             let ques = (
                 for item in ints
                     for v, e, p in 1..1 outbound item.interactions._id graph "ExtendedV2"
-                        return {"paths": p, "questions": v}
+                        return distinct {"paths": p, "questions": v}
             )
 
             let seqs2 = (
                 for item in ints
                     for v, e, p in 1..1 inbound item.interactions._id graph "ExtendedV2"
-                        return {"paths": p, "sequences": v}
+                        return distinct {"paths": p, "sequences": v}
             )
 
             let amys = (
@@ -853,7 +853,7 @@ def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filena
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f",,/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
