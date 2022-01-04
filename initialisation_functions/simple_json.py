@@ -1,6 +1,6 @@
 import os
 
-from initialisation_functions import initialisation as add
+from initialisation_functions import additional_functions as add
 
 
 def questionnaire_simple(input_file, output_dir="./initialisation_functions/simple", join=False):
