@@ -120,7 +120,7 @@ def filter_questions_extended(database, q1, q2, q3, filename="result", directory
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -146,7 +146,7 @@ def contains_fragment_extended(database, fragment, filename="result", directory=
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -172,7 +172,7 @@ def search_phrase_extended(database, keyword, filename="result", directory=None)
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 # def search_connected_extended(database, collection, start, filename="result"):

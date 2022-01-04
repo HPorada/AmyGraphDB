@@ -44,7 +44,7 @@ def full_graph_extended(database, filename="result", directory=None):
                 for item in amys return item.paths,
                 for item in orgs return item.paths
             )
-                return item"""
+                return distinct item"""
     )
 
     inter = [i for i in cursor]
@@ -53,7 +53,7 @@ def full_graph_extended(database, filename="result", directory=None):
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -394,7 +394,7 @@ def subgraph_from_interactions_extended(database, q1=None, q2=None, q3=None, fil
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -580,7 +580,7 @@ def subgraph_from_sequence_extended(database, sequence=None, name=None, filename
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -647,7 +647,7 @@ def subgraph_from_amyloid_extended(database, amyloid, filename="result", directo
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -719,5 +719,5 @@ def subgraph_from_organism_extended(database, organism, filename="result", direc
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)

@@ -60,7 +60,7 @@ def full_graph_extendedV2(database, filename="result", directory=None):
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -608,7 +608,7 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -850,7 +850,7 @@ def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filena
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -941,7 +941,7 @@ def subgraph_from_amyloid_extendedV2(database, amyloid, filename="result", direc
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -1035,5 +1035,5 @@ def subgraph_from_organism_extendedV2(database, organism, filename="result", dir
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
