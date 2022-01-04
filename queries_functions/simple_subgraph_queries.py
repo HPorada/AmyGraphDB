@@ -35,7 +35,7 @@ def full_graph_simple(database, filename="result", directory=None):
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -78,7 +78,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             for item in union(
@@ -106,7 +106,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             for item in union(
@@ -134,7 +134,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             for item in union(
@@ -162,7 +162,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             for item in union(
@@ -189,7 +189,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             for item in union(
@@ -216,7 +216,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             for item in union(
@@ -243,7 +243,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             for item in union(
@@ -266,7 +266,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 for item in seqs
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             for item in union(
@@ -282,7 +282,7 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -309,7 +309,7 @@ def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="
                for item in seqs
                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                        filter v._id like "amyloids%"
-                       return {'paths': p, 'amyloids': v}
+                       return distinct {'paths': p, 'amyloids': v}
            )
            
            for item in union(
@@ -333,7 +333,7 @@ def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="
                for item in seqs
                    for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                        filter v._id like "amyloids%"
-                       return {'paths': p, 'amyloids': v}
+                       return distinct {'paths': p, 'amyloids': v}
            )
            
            for item in union(
@@ -357,7 +357,7 @@ def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="
                     for item in seqs
                         for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                             filter v._id like "amyloids%"
-                            return {'paths': p, 'amyloids': v}
+                            return distinct {'paths': p, 'amyloids': v}
                        )
 
                 for item in union(
@@ -380,7 +380,7 @@ def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="
                     for item in seqs
                         for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                             filter v._id like "amyloids%"
-                            return {'paths': p, 'amyloids': v}
+                            return distinct {'paths': p, 'amyloids': v}
                        )
 
                 for item in union(
@@ -396,7 +396,7 @@ def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -431,7 +431,7 @@ def subgraph_from_amyloid_simple(database, amyloid, filename="result", directory
                 for item in seqs2
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             let seqs_fin = union_distinct(seqs, seqs2)
@@ -450,7 +450,7 @@ def subgraph_from_amyloid_simple(database, amyloid, filename="result", directory
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -491,13 +491,13 @@ def subgraph_from_organism_simple(database, organism, filename="result", directo
                 for item in seqs2
                     for v, e, p in 1..1 inbound item.sequences._id graph "Simple"
                         filter v._id like "amyloids%"
-                        return {'paths': p, 'amyloids': v}
+                        return distinct {'paths': p, 'amyloids': v}
             )
             
             let orgs2 = (
                 for item in amys2
                     for v, e, p in 1..1 inbound item.amyloids._id graph "Simple"
-                        return {'paths': p, 'organisms': v}
+                        return distinct {'paths': p, 'organisms': v}
             )
             
             let amys_fin = union_distinct(amys, amys2)
@@ -519,5 +519,5 @@ def subgraph_from_organism_simple(database, organism, filename="result", directo
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./management/json_data/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)

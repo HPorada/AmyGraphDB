@@ -33,13 +33,13 @@ def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_d
         if 'vertices' in item:
             for vertex in item['vertices']:
 
-                if re.search("^sequencesE", vertex['_id']) is not None:
+                if re.search("^sequences", vertex['_id']) is not None:
                     if sequences:
                         g.node(vertex['_id'], label=vertex['sequence'] if 'sequence' in vertex else "seq:" + vertex['_key'])
                     else:
                         g.node(vertex['_id'], label=vertex['name'] if 'name' in vertex else "seq:" + vertex['_key'])
 
-                elif re.search("^interactionsE", vertex['_id']) is not None:
+                elif re.search("^interactions", vertex['_id']) is not None:
 
                     if 'question_1' in vertex:
                         shape = qf.question1_shape_graphviz(vertex['question_1'])
@@ -61,7 +61,7 @@ def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_d
                     g.attr('node', shape='rectangle', fillcolor='#bfbfbf', fixedsize='false', width='0.5',
                            fontcolor='black', color='#000000', penwidth='1')
 
-                elif re.search("^amyloidsE", vertex['_id']) is not None:
+                elif re.search("^amyloids", vertex['_id']) is not None:
                     g.attr('node', shape='ellipse', fillcolor='aqua')
                     g.node(vertex['_id'], label=vertex['name'])
                     g.attr('node', shape='rectangle', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
@@ -83,13 +83,18 @@ def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_d
             if '_from' in item:
                 g.edge(item['_from'], item['_to'])
             else:
-                if re.search("^sequencesE", item['_id']) is not None:
+                if re.search("^sequences", item['_id']) is not None:
                     if sequences:
                         g.node(item['_id'], label=item['sequence'] if 'sequence' in item else "seq:" + item['_key'])
                     else:
                         g.node(item['_id'], label=item['name'] if 'name' in item else "seq:" + item['_key'])
 
-                elif re.search("^interactionsE", item['_id']) is not None:
+                elif re.search("^amyloids", item['_id']) is not None:
+                    g.attr('node', shape='ellipse', fillcolor='aqua')
+                    g.node(item['_id'], label=item['name'])
+                    g.attr('node', shape='rectangle', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
+
+                elif re.search("^interactions", item['_id']) is not None:
 
                     if 'question_1' in item:
                         shape = qf.question1_shape_graphviz(item['question_1'])
@@ -254,15 +259,15 @@ def networkx_graph(filename, input_dir='./queries_functions/json_data', output_d
                                    label=i['name'] if 'name' in i else "seq:" + i['_key'],
                                    group=3)
                     else:
-                        G.add_node(i['_id'], label=j['name'] if 'name' in i else "seq:" + i['_key'],
+                        G.add_node(i['_id'], label=i['name'] if 'name' in i else "seq:" + i['_key'],
                                    group=3)
                 else:
                     G.add_node(i['_id'], label=i['_key'])
 
-    nx.draw(
-        G,
-        with_labels=True
-    )
+    # nx.draw(
+    #     G,
+    #     with_labels=True
+    # )
 
     # Pyvis
     nt = Network('1000px', '1000px')
