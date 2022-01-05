@@ -7,7 +7,7 @@ Functions used to visualise query results and other JSON files which have a stru
 with ArangoDB. One of the function uses Graphviz library, the other combines NetworkX to create a graph
 and Pyvis to display it.
 
-.. automodule:: visualisation_functions
+.. automodule:: visualisation
     :members:
 
 Additional functions to visualisation functions
