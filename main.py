@@ -11,6 +11,8 @@ db = i.connect_to_database('new_extendedV2', 'root', 'Amyloids')
 
 #q.subgraph_from_interactions('extendedV2', db, q1="Slower aggregation", q3="Yes", filename="result")
 
+#sequence="MEFVAKLFKFFKDLLGKFLGNN"
+
 q.subgraph_from_sequence('extendedV2', db, name="PPT_23", filename='result')
 
 #q.subgraph_from_amyloid("extendedV2", db, amyloid="Sup35", filename="result")
@@ -18,4 +20,4 @@ q.subgraph_from_sequence('extendedV2', db, name="PPT_23", filename='result')
 #q.subgraph_from_organism("extendedV2", db, organism="Coleophoma_crateriformis",  filename="result")
 
 v.graphviz_graph('result')
-v.networkx_pyvis_graph('result')
+v.networkx_pyvis_graph('result', networkx=True)
