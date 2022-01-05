@@ -171,7 +171,47 @@
 <p>Functions used to visualise query results and other JSON files which have a structure compatible
 with ArangoDB. One of the function uses Graphviz library, the other combines NetworkX to create a graph
 and Pyvis to display it.</p>
-<span class="target" id="module-visualisation_functions"></span></div>
+<span class="target" id="module-visualisation"></span><dl class="py function">
+<dt class="sig sig-object py" id="visualisation.graphviz_graph">
+<span class="sig-prename descclassname"><span class="pre">visualisation.</span></span><span class="sig-name descname"><span class="pre">graphviz_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./queries_functions/json_data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./visualisation_functions/graphviz'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_questions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequences</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pdf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">engine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'dot'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'LR'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualisation.graphviz_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method visualises a chosen JSON file using Graphviz library and saves the result in chosen directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – (str) Name of the JSON file which is to be visualised.</p></li>
+<li><p><strong>input_dir</strong> – (str) Path to the directory with the chosen file.</p></li>
+<li><p><strong>output_dir</strong> – (str) Path to the directory where graph is to be saved.</p></li>
+<li><p><strong>int_questions</strong> – (boolean) Default: False - connections with question nodes are not shown in the graph.</p></li>
+<li><p><strong>sequences</strong> – (boolean) Default: False - labels of sequence nodes are names or “seq:[number]”, not full sequences.</p></li>
+<li><p><strong>format</strong> – (str) Default: ‘pdf’. Format of the output file with the generated graph. Other e.g.: ‘dot’, ‘eps’, ‘jpeg’, ‘json’, ‘png’, ‘svg’.</p></li>
+<li><p><strong>engine</strong> – (str) Default: ‘dot’. Graph layout engine. Other: ‘neato’, ‘twopi’, ‘circo’, ‘fdp’, ‘osage’, ‘patchwork’, ‘sfdp’.</p></li>
+<li><p><strong>direction</strong> – (str) Default: ‘LR’. Direction of the graph (left -&gt; right). Other: ‘RL’, ‘TB’, ‘BT’.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="visualisation.networkx_pyvis_graph">
+<span class="sig-prename descclassname"><span class="pre">visualisation.</span></span><span class="sig-name descname"><span class="pre">networkx_pyvis_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./queries_functions/json_data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./visualisation_functions/networkx'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_questions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequences</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">general_remarks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">networkx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pdf'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualisation.networkx_pyvis_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method visualises a chosen JSON file using NetworkX and Pyvis libraries and saves the result in chosen directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – (str) Name of the JSON file which is to be visualised.</p></li>
+<li><p><strong>input_dir</strong> – (str) Path to the directory with the chosen file.</p></li>
+<li><p><strong>output_dir</strong> – (str) Path to the directory where graph is to be saved.</p></li>
+<li><p><strong>int_questions</strong> – (boolean) Default: False - connections with question nodes are not shown in the graph.</p></li>
+<li><p><strong>sequences</strong> – (boolean) Default: True - full sequences are shown when sequence nodes are being hovered over.</p></li>
+<li><p><strong>general_remarks</strong> – (boolean) Default: True - attributes ‘general remarks’ are shown when interaction nodes are being hovered over.</p></li>
+<li><p><strong>networkx</strong> – (boolean) Default: False - graph shown only using Pyvis library, graph generated by NetworkX is ommited.</p></li>
+<li><p><strong>format</strong> – (str) Default: ‘pdf’ - if networkx=True, format determines in what format generated graph will be saved. Other e.g.: ‘png’, ‘ps’, ‘eps’, ‘svg’.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
 <div class="section" id="additional-functions-to-visualisation-functions">
 <h2>Additional functions to visualisation functions<a class="headerlink" href="#additional-functions-to-visualisation-functions" title="Permalink to this headline">¶</a></h2>
 <p>Supplementary functions used in functions to visualise query results.</p>
