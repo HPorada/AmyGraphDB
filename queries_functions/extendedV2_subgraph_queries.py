@@ -853,7 +853,7 @@ def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filena
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f",,/{filename}.json", "w") as outfile:
+        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
