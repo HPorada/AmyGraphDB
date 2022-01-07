@@ -1,11 +1,17 @@
-from visualisation_functions import question_functions as qf
 import json
+import sys
+import re
+
+from visualisation_functions import question_functions as qf
 import networkx as nx
 import matplotlib.pyplot as plt
 from graphviz import Digraph
-import re
 from pyvis.network import Network
 import plotly.graph_objects as go
+
+
+sys.path.append("../")
+sys.path.append("../visualisation_functions")
 
 
 def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_dir='./visualisation_functions/graphviz',

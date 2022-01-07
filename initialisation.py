@@ -1,9 +1,13 @@
 import json
 import os
+import sys
 
 from arango import ArangoClient
 from pathlib import Path
 from initialisation_functions import simple_json, extended_json, extendedV2_json, additional_functions
+
+sys.path.append("../")
+sys.path.append("../initialisation_functions")
 
 
 def database_start(database, username, password, structure):
@@ -17,7 +21,8 @@ def database_start(database, username, password, structure):
     :param structure: (str) Chosen database structure ("simple", "extended" or "extendedv2").
     :return: (StandardDatabase) Database on which all actions were performed.
     """
-    create_json_files(structure, "./initialisation_functions/data/questionnaire.xlsx", "./initialisation_functions/data/experiments.xlsx",
+    create_json_files(structure, "./initialisation_functions/data/questionnaire.xlsx",
+                      "./initialisation_functions/data/experiments.xlsx",
                       f"initialisation_functions/{structure}")
     db_new = connect_to_database(database, username, password)
 
