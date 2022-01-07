@@ -1,6 +1,10 @@
 import json
+import sys
 from queries_functions import simple_subgraph_queries, extended_queries, extendedV2_subgraph_queries, \
     extended_subgraph_queries, extendedV2_queries, simple_queries
+
+sys.path.append("../")
+sys.path.append("../queries_functions")
 
 
 def custom_query(database, query, filename="result", directory=None):

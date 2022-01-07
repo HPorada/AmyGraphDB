@@ -1,6 +1,6 @@
-from initialisation_functions import initialisation as i
-from queries_functions import queries as q
-from visualisation_functions import visualisation as v
+import initialisation as i
+import queries as q
+import visualisation as v
 
 db = i.connect_to_database('new_extendedV2', 'root', 'Amyloids')
 

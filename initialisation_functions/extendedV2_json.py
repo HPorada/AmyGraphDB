@@ -409,29 +409,33 @@ def experiments_extendedV2(input_file, output_dir="./initialisation_functions/ex
 
         temp_results = add.get_temp(temperature)
 
-        for t in temp_results:
-            temorg.append(
-                {
-                    "_from": "temperaturesE/" + t,
-                    "_to": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(",
-                                                                                                                 "").replace(
-                        ")", "").replace("/", "_"),
-                    "values": temperature,
-                }
-            )
+        if temp_results:
+            for t in temp_results:
+                temorg.append(
+                    {
+                        "_from": "temperaturesE/" + t,
+                        "_to": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace(
+                            "(",
+                            "").replace(
+                            ")", "").replace("/", "_"),
+                        "values": temperature,
+                    }
+                )
 
         ph_results = add.get_ph(pH)
 
-        for p in ph_results:
-            phorg.append(
-                {
-                    "_from": "phsE/" + p,
-                    "_to": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace("(",
-                                                                                                                 "").replace(
-                        ")", "").replace("/", "_"),
-                    "values": pH,
-                }
-            )
+        if ph_results:
+            for p in ph_results:
+                phorg.append(
+                    {
+                        "_from": "phsE/" + p,
+                        "_to": "organismsE/" + organism.replace(" ", "_").replace(".", "").replace("-", "_").replace(
+                            "(",
+                            "").replace(
+                            ")", "").replace("/", "_"),
+                        "values": pH,
+                    }
+                )
 
     for row in sheet_interactions.itertuples():
 

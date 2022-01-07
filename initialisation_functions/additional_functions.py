@@ -120,15 +120,20 @@ def get_temp(temp):
 
     for t in temps:
         if float(t) <= 10:
-            results.append("psychrophilic")
+            if "psychrophilic" not in results:
+                results.append("psychrophilic")
         elif 10 < float(t) <= 45:
-            results.append("mesophilic")
+            if "mesophilic" not in results:
+                results.append("mesophilic")
         elif 46 < float(t) <= 75:
-            results.append("thermophilic")
+            if "thermophilic" not in results:
+                results.append("thermophilic")
         elif float(t) > 75:
-            results.append("hyperthermophilic")
+            if "hyperthermophilic" not in results:
+                results.append("hyperthermophilic")
         else:
-            results.append("error")
+            print("Cannot find any temperature values in the input string")
+            #raise ValueError('Cannot find any temperature values')
 
     return results
 
@@ -140,18 +145,22 @@ def get_ph(pH):
         :param pH: (str) pH or range of pH.
         :return: (str) Type of organism.
         """
-    phs = re.findall(r"\d+\.\d+", pH)
+    phs = re.findall(r"\d*\.\d+|\d+", pH)
 
     results = []
 
     for p in phs:
         if float(p) < 5:
-            results.append("acidophilic")
+            if "acidophilic" not in results:
+                results.append("acidophilic")
         elif 5 <= float(p) <= 9:
-            results.append("neutrophilic")
+            if "nutrophilic" not in results:
+                results.append("neutrophilic")
         elif float(p) > 9:
-            results.append("alkaliphilic")
+            if "alkaliphilic" not in results:
+                results.append("alkaliphilic")
         else:
-            results.append("error")
+            print("Cannot find any pH values in the input string")
+            #raise ValueError('Cannot find any pH values')
 
     return results
