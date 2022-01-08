@@ -6,7 +6,7 @@ sys.path.append('../queries_functions')
 
 import unittest
 import pathlib as pl
-import queries_functions.extended_queries as sq
+import queries_functions.extended_queries as q
 import initialisation as i
 from arango import ArangoClient
 
@@ -33,30 +33,30 @@ class TestAdditionalFunctions(unittest.TestCase):
         warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
 
     def test_filter_question_extended(self):
-        sq.filter_questions_extended(self.database, "Slower aggregation", "No", "No information", "test_filter_1",
+        q.filter_questions_extended(self.database, "Slower aggregation", "No", "No information", "test_filter_1",
                                      "../tests/test_json_data")
         path = pl.Path("../tests/test_json_data/test_filter_1.json")
         self.assertEqual((str(path), path.is_file()), (str(path), True))
 
-        sq.filter_questions_extended(self.database, q1="Slower aggregation", q3="No information",
-                                     filename="test_filter_2",
-                                     directory="../tests/test_json_data")
+        q.filter_questions_extended(self.database, q1="Slower aggregation", q3="No information",
+                                    filename="test_filter_2",
+                                    directory="../tests/test_json_data")
         path = pl.Path("../tests/test_json_data/test_filter_2.json")
         self.assertEqual((str(path), path.is_file()), (str(path), True))
 
-        sq.filter_questions_extended(self.database, filename="test_filter_3", directory="../tests/test_json_data")
+        q.filter_questions_extended(self.database, filename="test_filter_3", directory="../tests/test_json_data")
         path = pl.Path("../tests/test_json_data/test_filter_3.json")
         self.assertEqual((str(path), path.is_file()), (str(path), True))
 
     def test_contains_fragment(self):
-        sq.contains_fragment_extended(self.database, "DAEFRHDSG", filename="test_contains_1",
-                                      directory="../tests/test_json_data")
+        q.contains_fragment_extended(self.database, "DAEFRHDSG", filename="test_contains_1",
+                                     directory="../tests/test_json_data")
         path = pl.Path("../tests/test_json_data/test_contains_1.json")
         self.assertEqual((str(path), path.is_file()), (str(path), True))
 
     def test_search_phrase(self):
-        sq.search_phrase_extended(self.database, "pH", filename="test_phrase_1",
-                                  directory="../tests/test_json_data")
+        q.search_phrase_extended(self.database, "pH", filename="test_phrase_1",
+                                 directory="../tests/test_json_data")
         path = pl.Path("../tests/test_json_data/test_phrase_1.json")
         self.assertEqual((str(path), path.is_file()), (str(path), True))
 
