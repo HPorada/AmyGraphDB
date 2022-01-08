@@ -1,9 +1,13 @@
 import os
+import sys
+
+sys.path.append("../")
+sys.path.append("../initialisation_functions")
 
 from initialisation_functions import additional_functions as add
 
 
-def questionnaire_simple(input_file, output_dir="./initialisation_functions/simple", join=False):
+def questionnaire_simple(input_file, output_dir="../initialisation_functions/simple/", join=False):
     """This method generates JSON files from Excel files with questionnaire data for SIMPLE database structure.
 
     :param input_file: (str) Path to the Excel file with questionnaire data.
@@ -148,14 +152,14 @@ def questionnaire_simple(input_file, output_dir="./initialisation_functions/simp
         add.join_json(f"{output_dir}/amyseq.json", amyseq)
 
 
-def experiments_simple(input_file, output_dir="./initialisation_functions/simple", join=True):
+def experiments_simple(input_file, output_dir="../initialisation_functions/simple", join=True):
     """This method generates JSON files from Excel files with data from electronic laboratory log for SIMPLE database structure.
 
     :param input_file: (str) Path to the Excel file with data from electronic laboratory log.
     :param output_dir: (str) Path to the directory where JSON files are to be saved.
     :param join: (boolean) Default: True - new data is joined with files existing in the directory before method's execution.
     """
-    # sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation_functions/data/experiments.xlsx")
+    # sheet_amyloids, sheet_interactions = add.open_experiments("../initialisation_functions/data/experiments.xlsx")
 
     files = os.listdir(output_dir)
 

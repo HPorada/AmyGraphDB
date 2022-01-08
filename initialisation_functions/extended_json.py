@@ -4,7 +4,7 @@ import os.path
 from initialisation_functions import additional_functions as add
 
 
-def questionnaire_extended(input_file, output_dir="./initialisation_functions/extended", join=False):
+def questionnaire_extended(input_file, output_dir="../initialisation_functions/extended", join=False):
     """This method generates JSON files from Excel files with questionnaire data for EXTENDED database structure.
 
     :param input_file: (str) Path to the Excel file with questionnaire data.
@@ -172,14 +172,14 @@ def questionnaire_extended(input_file, output_dir="./initialisation_functions/ex
         add.join_json(f"{output_dir}/seqintE.json", seqint)
 
 
-def experiments_extended(input_file, output_dir="./initialisation_functions/extended", join=True):
+def experiments_extended(input_file, output_dir="../initialisation_functions/extended", join=True):
     """This method generates JSON files from Excel files with data from electronic laboratory log for EXTENDED database structure.
 
     :param input_file: (str) Path to the Excel file with data from electronic laboratory log.
     :param output_dir: (str) Path to the directory where JSON files are to be saved.
     :param join: (boolean) Default: True - new data is joined with files existing in the directory before method's execution.
     """
-    #sheet_amyloids, sheet_interactions = add.open_experiments("./initialisation_functions/data/experiments.xlsx")
+    #sheet_amyloids, sheet_interactions = add.open_experiments("../initialisation_functions/data/experiments.xlsx")
 
     files = os.listdir(output_dir)
 

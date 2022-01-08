@@ -60,7 +60,7 @@ def full_graph_extendedV2(database, filename="result", directory=None):
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -233,7 +233,7 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
                 bind_vars={'q1': q1, 'q2': q2}
             )
 
-    elif (q2 is not None and q3 is not None):
+    elif q2 is not None and q3 is not None:
         if (
                 q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
                 q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
@@ -301,7 +301,7 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
                 bind_vars={'q2': q2, 'q3': q3}
             )
 
-    elif (q1 is not None and q3 is not None):
+    elif q1 is not None and q3 is not None:
         if (
                 q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
                 q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
@@ -371,7 +371,6 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
 
     elif q1 is not None:
         if q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information":
-
             q1 = "question1/" + q1
 
             cursor = database.aql.execute(
@@ -434,7 +433,6 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
 
     elif q2 is not None:
         if q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information":
-
             q2 = "question2/" + q2
 
             cursor = database.aql.execute(
@@ -497,7 +495,6 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
 
     elif q3 is not None:
         if q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information":
-
             q3 = "question3/" + q3
 
             cursor = database.aql.execute(
@@ -611,7 +608,7 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -853,7 +850,7 @@ def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filena
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -944,7 +941,7 @@ def subgraph_from_amyloid_extendedV2(database, amyloid, filename="result", direc
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -1029,5 +1026,5 @@ def subgraph_from_organism_extendedV2(database, organism, filename="result", dir
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)

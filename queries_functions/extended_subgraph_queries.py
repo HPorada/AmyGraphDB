@@ -53,7 +53,7 @@ def full_graph_extended(database, filename="result", directory=None):
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -76,277 +76,277 @@ def subgraph_from_interactions_extended(database, q1=None, q2=None, q3=None, fil
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
-    if (
-            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
-            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
-            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+    if q1 is not None and q2 is not None and q3 is not None:
+        if (
+                q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+                q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
+                q3 == "Yes" or q3 == "No" or q3 == "No information"):
+            cursor = database.aql.execute(
+                """let ints = (
+                    for i in interactionsE
+                        filter i.question_1 == @q1
+                        filter i.question_2 == @q2
+                        filter i.question_3 == @q3
+                        return {'interactions': i}
+                        )
+                    
+                let seqs = (
+                    for i in ints
+                        for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
+                            return {"paths": p, "sequences": v}
+                )
+                    
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+                    
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
+                            return distinct {"paths": p, "organisms": v}
+                )
+                    
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths
+                )
+                    return item""",
+                bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
+            )
 
-        cursor = database.aql.execute(
-            """let ints = (
-                for i in interactionsE
-                    filter i.question_1 == @q1
-                    filter i.question_2 == @q2
-                    filter i.question_3 == @q3
-                    return {'interactions': i}
-                    )
-                
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
-                        return {"paths": p, "sequences": v}
+    elif q1 is not None and q2 is not None:
+        if (
+                q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+                q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
+            cursor = database.aql.execute(
+                """let ints = (
+                    for i in interactionsE
+                        filter i.question_1 == @q1
+                        filter i.question_2 == @q2
+                        return {'interactions': i}
+                        )
+                    
+                let seqs = (
+                    for i in ints
+                        for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
+                            return {"paths": p, "sequences": v}
+                )
+                    
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+                    
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
+                            return distinct {"paths": p, "organisms": v}
+                )
+                    
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths
+                )
+                    return item""",
+                bind_vars={'q1': q1, 'q2': q2}
             )
-                
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-                
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
-                        return distinct {"paths": p, "organisms": v}
-            )
-                
-            for item in union(
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths
-            )
-                return item""",
-            bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
-        )
 
-    elif (
-            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
-            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
+    elif q2 is not None and q3 is not None:
+        if (
+                q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
+                q3 == "Yes" or q3 == "No" or q3 == "No information"):
+            cursor = database.aql.execute(
+                """let ints = (
+                    for i in interactionsE
+                        filter i.question_2 == @q2
+                        filter i.question_3 == @q3
+                        return {'interactions': i}
+                        )
+                    
+                let seqs = (
+                    for i in ints
+                        for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
+                            return {"paths": p, "sequences": v}
+                )
+                    
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+                    
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
+                            return distinct {"paths": p, "organisms": v}
+                )
+                    
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths
+                )
+                    return item""",
+                bind_vars={'q2': q2, 'q3': q3}
+            )
 
-        cursor = database.aql.execute(
-            """let ints = (
-                for i in interactionsE
-                    filter i.question_1 == @q1
-                    filter i.question_2 == @q2
-                    return {'interactions': i}
-                    )
-                
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
-                        return {"paths": p, "sequences": v}
+    elif q1 is not None and q3 is not None:
+        if (
+                q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+                q3 == "Yes" or q3 == "No" or q3 == "No information"):
+            cursor = database.aql.execute(
+                """let ints = (
+                    for i in interactionsE
+                        filter i.question_1 == @q1
+                        filter i.question_3 == @q3
+                        return {'interactions': i}
+                        )
+                    
+                let seqs = (
+                    for i in ints
+                        for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
+                            return {"paths": p, "sequences": v}
+                )
+                    
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+                    
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
+                            return distinct {"paths": p, "organisms": v}
+                )
+                    
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths
+                )
+                    return item""",
+                bind_vars={'q1': q1, 'q3': q3}
             )
-                
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-                
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
-                        return distinct {"paths": p, "organisms": v}
-            )
-                
-            for item in union(
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths
-            )
-                return item""",
-            bind_vars={'q1': q1, 'q2': q2}
-        )
 
-    elif (
-            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
-            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+    elif q1 is not None:
+        if (
+                q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information"):
+            cursor = database.aql.execute(
+                """
+                let ints = (
+                    for i in interactionsE
+                        filter i.question_1 == @q1
+                        return {'interactions': i}
+                        )
+                    
+                let seqs = (
+                    for i in ints
+                        for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
+                            return {"paths": p, "sequences": v}
+                )
+                    
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+                    
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
+                            return distinct {"paths": p, "organisms": v}
+                )
+                    
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths
+                )
+                    return item""",
+                bind_vars={'q1': q1}
+            )
 
-        cursor = database.aql.execute(
-            """let ints = (
-                for i in interactionsE
-                    filter i.question_2 == @q2
-                    filter i.question_3 == @q3
-                    return {'interactions': i}
-                    )
-                
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
-                        return {"paths": p, "sequences": v}
+    elif q2 is not None:
+        if (
+                q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
+            cursor = database.aql.execute(
+                """
+                let ints = (
+                    for i in interactionsE
+                        filter i.question_2 == @q2
+                        return {'interactions': i}
+                        )
+                    
+                let seqs = (
+                    for i in ints
+                        for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
+                            return {"paths": p, "sequences": v}
+                )
+                    
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+                    
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
+                            return distinct {"paths": p, "organisms": v}
+                )
+                    
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths
+                )
+                    return item""",
+                bind_vars={'q2': q2}
             )
-                
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-                
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
-                        return distinct {"paths": p, "organisms": v}
-            )
-                
-            for item in union(
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths
-            )
-                return item""",
-            bind_vars={'q2': q2, 'q3': q3}
-        )
 
-    elif (
-            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
-            q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
-        cursor = database.aql.execute(
-            """let ints = (
-                for i in interactionsE
-                    filter i.question_1 == @q1
-                    filter i.question_3 == @q3
-                    return {'interactions': i}
-                    )
-                
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
-                        return {"paths": p, "sequences": v}
+    elif q3 is not None:
+        if (
+                q3 == "Yes" or q3 == "No" or q3 == "No information"):
+            cursor = database.aql.execute(
+                """
+                let ints = (
+                    for i in interactionsE
+                        filter i.question_3 == @q3
+                        return {'interactions': i}
+                        )
+                    
+                let seqs = (
+                    for i in ints
+                        for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
+                            return {"paths": p, "sequences": v}
+                )
+                    
+                let amys = (
+                    for item in seqs
+                        for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
+                            return distinct {"paths": p, "amyloids": v}
+                )  
+                    
+                let orgs = (
+                    for item in amys
+                        for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
+                            return distinct {"paths": p, "organisms": v}
+                )
+                    
+                for item in union(
+                    for item in seqs return item.paths,
+                    for item in amys return item.paths,
+                    for item in orgs return item.paths
+                )
+                    return item""",
+                bind_vars={'q3': q3}
             )
-                
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-                
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
-                        return distinct {"paths": p, "organisms": v}
-            )
-                
-            for item in union(
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths
-            )
-                return item""",
-            bind_vars={'q1': q1, 'q3': q3}
-        )
-
-    elif (
-            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information"):
-
-        cursor = database.aql.execute(
-            """
-            let ints = (
-                for i in interactionsE
-                    filter i.question_1 == @q1
-                    return {'interactions': i}
-                    )
-                
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
-                        return {"paths": p, "sequences": v}
-            )
-                
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-                
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
-                        return distinct {"paths": p, "organisms": v}
-            )
-                
-            for item in union(
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths
-            )
-                return item""",
-            bind_vars={'q1': q1}
-        )
-
-    elif (
-            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
-
-        cursor = database.aql.execute(
-            """
-            let ints = (
-                for i in interactionsE
-                    filter i.question_2 == @q2
-                    return {'interactions': i}
-                    )
-                
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
-                        return {"paths": p, "sequences": v}
-            )
-                
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-                
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
-                        return distinct {"paths": p, "organisms": v}
-            )
-                
-            for item in union(
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths
-            )
-                return item""",
-            bind_vars={'q2': q2}
-        )
-
-    elif (
-            q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
-        cursor = database.aql.execute(
-            """
-            let ints = (
-                for i in interactionsE
-                    filter i.question_3 == @q3
-                    return {'interactions': i}
-                    )
-                
-            let seqs = (
-                for i in ints
-                    for v, e, p in 1..1 inbound i.interactions._id graph "Extended"
-                        return {"paths": p, "sequences": v}
-            )
-                
-            let amys = (
-                for item in seqs
-                    for v, e, p in 1..1 inbound item.sequences._id graph "Extended"
-                        return distinct {"paths": p, "amyloids": v}
-            )  
-                
-            let orgs = (
-                for item in amys
-                    for v, e, p in 1..1 inbound item.amyloids._id graph "Extended"
-                        return distinct {"paths": p, "organisms": v}
-            )
-                
-            for item in union(
-                for item in seqs return item.paths,
-                for item in amys return item.paths,
-                for item in orgs return item.paths
-            )
-                return item""",
-            bind_vars={'q3': q3}
-        )
 
     else:
         cursor = database.aql.execute(
@@ -394,7 +394,7 @@ def subgraph_from_interactions_extended(database, q1=None, q2=None, q3=None, fil
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -580,7 +580,7 @@ def subgraph_from_sequence_extended(database, sequence=None, name=None, filename
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -647,7 +647,7 @@ def subgraph_from_amyloid_extended(database, amyloid, filename="result", directo
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
 
 
@@ -719,5 +719,5 @@ def subgraph_from_organism_extended(database, organism, filename="result", direc
         with open(f"{directory}/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
     else:
-        with open(f"./queries_functions/json_data/{filename}.json", "w") as outfile:
+        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
             json.dump(inter, outfile)
