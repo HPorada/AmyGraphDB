@@ -76,6 +76,9 @@ def subgraph_from_interactions_extended(database, q1=None, q2=None, q3=None, fil
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
+
+    cursor = None
+
     if q1 is not None and q2 is not None and q3 is not None:
         if (
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
@@ -388,14 +391,15 @@ def subgraph_from_interactions_extended(database, q1=None, q2=None, q3=None, fil
                     return item"""
         )
 
-    inter = [i for i in cursor]
+    if cursor is not None:
+        inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+        if directory is not None:
+            with open(f"{directory}/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
+        else:
+            with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
 
 
 def subgraph_from_sequence_extended(database, sequence=None, name=None, filename="result", directory=None):

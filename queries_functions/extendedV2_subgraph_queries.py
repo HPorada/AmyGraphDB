@@ -83,6 +83,9 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
+
+    cursor = None
+
     if q1 is not None:
         q1 = q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
     if q2 is not None:
@@ -602,14 +605,15 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
                     return item"""
         )
 
-    inter = [i for i in cursor]
+    if cursor is not None:
+        inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+        if directory is not None:
+            with open(f"{directory}/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
+        else:
+            with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
 
 
 def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filename="result", directory=None):
