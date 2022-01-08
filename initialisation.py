@@ -21,17 +21,17 @@ def database_start(database, username, password, structure):
     :param structure: (str) Chosen database structure ("simple", "extended" or "extendedv2").
     :return: (StandardDatabase) Database on which all actions were performed.
     """
-    create_json_files(structure, "./initialisation_functions/data/questionnaire.xlsx",
-                      "./initialisation_functions/data/experiments.xlsx",
-                      f"initialisation_functions/{structure}")
+    create_json_files(structure, "../initialisation_functions/data/questionnaire.xlsx",
+                      "../initialisation_functions/data/experiments.xlsx",
+                      f"../initialisation_functions/{structure}")
     db_new = connect_to_database(database, username, password)
 
     if structure.lower() == "simple":
-        directory = "./initialisation_functions/simple"
+        directory = "../initialisation_functions/simple"
     elif structure.lower() == "extended":
-        directory = "./initialisation_functions/extended"
+        directory = "../initialisation_functions/extended"
     elif structure.lower() == "extendedv2" or structure.lower() == "extended v2":
-        directory = "./initialisation_functions/extendedV2"
+        directory = "../initialisation_functions/extendedV2"
     else:
         directory = None
         print("Available database structures: simple, extended, extendedV2.")
