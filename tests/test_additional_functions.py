@@ -1,9 +1,10 @@
 import sys
-import unittest
-import initialisation_functions.additional_functions as add
 
 sys.path.append('../')
 sys.path.append('../initialisation_functions')
+
+import unittest
+import initialisation_functions.additional_functions as add
 
 
 class TestAdditionalFunctions(unittest.TestCase):

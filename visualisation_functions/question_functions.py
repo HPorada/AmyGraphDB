@@ -71,7 +71,8 @@ def question3_answer_networkx(answer):
     :param answer: (str) Answer to the third question.
     :return: (str) Indication of the answer.
     """
-    switch = {        "Yes": "(Y)",
+    switch = {
+        "Yes": "(Y)",
         "No": "(N)",
         "No information": "(NI)"
     }
