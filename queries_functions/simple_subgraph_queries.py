@@ -58,12 +58,14 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
+
+    cursor = None
+
     if q1 is not None and q2 is not None and q3 is not None:
         if (
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
                 q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
                 q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
             cursor = database.aql.execute(
                 """
                 let seqs = (
@@ -94,7 +96,6 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
         if (
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
                 q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
-
             cursor = database.aql.execute(
                 """let seqs = (
                     for s in sequences
@@ -123,7 +124,6 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
         if (
                 q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
                 q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
             cursor = database.aql.execute(
                 """let seqs = (
                     for s in sequences
@@ -152,7 +152,6 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
         if (
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
                 q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
             cursor = database.aql.execute(
                 """let seqs = (
                     for s in sequences
@@ -180,7 +179,6 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
     elif q1 is not None:
         if (
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information"):
-
             cursor = database.aql.execute(
                 """
                 let seqs = (
@@ -208,7 +206,6 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
     elif q2 is not None:
         if (
                 q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
-
             cursor = database.aql.execute(
                 """
                 let seqs = (
@@ -236,7 +233,6 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
     elif q3 is not None:
         if (
                 q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
             cursor = database.aql.execute(
                 """
                 let seqs = (
@@ -283,14 +279,15 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
                 return item"""
         )
 
-    inter = [doc for doc in cursor]
+    if cursor is not None:
+        inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+        if directory is not None:
+            with open(f"{directory}/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
+        else:
+            with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
 
 
 def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="result", directory=None):

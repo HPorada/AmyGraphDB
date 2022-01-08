@@ -20,12 +20,21 @@ def filter_questions_extendedV2(database, q1=None, q2=None, q3=None, filename="r
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
+
+    cursor = None
+
+    if q1 is not None:
+        q1 = q1.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+    if q2 is not None:
+        q2 = q2.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+    if q3 is not None:
+        q3 = q3.replace(".", "").replace(",", "").replace(";", "").replace(" ", "_")
+
     if q1 is not None and q2 is not None and q3 is not None:
         if (
                 q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
                 q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
                 q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
-
             q1 = "question1/" + q1
             q2 = "question2/" + q2
             q3 = "question3/" + q3
@@ -65,7 +74,6 @@ def filter_questions_extendedV2(database, q1=None, q2=None, q3=None, filename="r
         if (
                 q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
                 q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information"):
-
             q1 = "question1/" + q1
             q2 = "question2/" + q2
 
@@ -99,7 +107,6 @@ def filter_questions_extendedV2(database, q1=None, q2=None, q3=None, filename="r
         if (
                 q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information") and (
                 q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
-
             q2 = "question2/" + q2
             q3 = "question3/" + q3
 
@@ -133,7 +140,6 @@ def filter_questions_extendedV2(database, q1=None, q2=None, q3=None, filename="r
         if (
                 q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information") and (
                 q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
-
             q1 = "question1/" + q1
             q3 = "question3/" + q3
 
@@ -166,7 +172,6 @@ def filter_questions_extendedV2(database, q1=None, q2=None, q3=None, filename="r
     elif q1 is not None:
         if (
                 q1.lower() == "faster_aggregation" or q1.lower() == "slower_aggregation" or q1.lower() == "no_aggregation" or q1.lower() == "no_effect" or q1.lower() == "no_information"):
-
             q1 = "question1/" + q1
 
             cursor = database.aql.execute(
@@ -191,7 +196,6 @@ def filter_questions_extendedV2(database, q1=None, q2=None, q3=None, filename="r
     elif q2 is not None:
         if (
                 q2.lower() == "yes_direct_evidence" or q2.lower() == "yes_implied_by_kinetics" or q2.lower() == "formation_of_fibrils_by_the_interactee_is_inhibited" or q2.lower() == "no" or q2.lower() == "no_information"):
-
             q2 = "question2/" + q2
 
             cursor = database.aql.execute(
@@ -216,7 +220,6 @@ def filter_questions_extendedV2(database, q1=None, q2=None, q3=None, filename="r
     elif q3 is not None:
         if (
                 q3.lower() == "yes" or q3.lower() == "no" or q3.lower() == "no_information"):
-
             q3 = "question3/" + q3
 
             cursor = database.aql.execute(
@@ -256,14 +259,15 @@ def filter_questions_extendedV2(database, q1=None, q2=None, q3=None, filename="r
                     return p"""
         )
 
-    inter = [doc for doc in cursor]
+    if cursor is not None:
+        inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+        if directory is not None:
+            with open(f"{directory}/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
+        else:
+            with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
 
 
 def contains_fragment_extendedV2(database, fragment, filename="result", directory=None):

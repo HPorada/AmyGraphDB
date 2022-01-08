@@ -1,7 +1,7 @@
 import json
 
 
-def filter_questions_extended(database, q1, q2, q3, filename="result", directory=None):
+def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="result", directory=None):
     """This method executes a simple query filtering the database of EXTENDED structure based on answers to 3 questions:
     \n
     1. Is the interactor affecting interactee's aggregating speed?
@@ -20,92 +20,102 @@ def filter_questions_extended(database, q1, q2, q3, filename="result", directory
     :param filename: (str) Name of the file where query result is to be saved. Optional.
     :param directory: (str) Path to the directory where file with query result is to be saved. Optional.
     """
-    if (
-            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
-            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
-            q3 == "Yes" or q3 == "No" or q3 == "No information"):
 
-        cursor = database.aql.execute(
-            """for item in interactionsE
-                for v, e, p in 1..1 any item._id graph "Extended"
-                    filter item.question_1 == @q1
-                    filter item.question_2 == @q2
-                    filter item.question_3 == @q3
-                    return p""",
-            bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
-        )
+    cursor = None
 
-    elif (
-            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
-            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
+    if q1 is not None and q2 is not None and q3 is not None:
+        if (
+                q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+                q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
+                q3 == "Yes" or q3 == "No" or q3 == "No information"):
 
-        cursor = database.aql.execute(
-            """for item in interactionsE
-                for v, e, p in 1..1 any item._id graph "Extended"
-                    filter item.question_1 == @q1
-                    filter item.question_2 == @q2
-                    return p""",
-            bind_vars={'q1': q1, 'q2': q2}
-        )
+            cursor = database.aql.execute(
+                """for item in interactionsE
+                    for v, e, p in 1..1 any item._id graph "Extended"
+                        filter item.question_1 == @q1
+                        filter item.question_2 == @q2
+                        filter item.question_3 == @q3
+                        return p""",
+                bind_vars={'q1': q1, 'q2': q2, 'q3': q3}
+            )
 
-    elif (
-            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
-            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+    elif q1 is not None and q2 is not None:
+        if (
+                q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+                q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
 
-        cursor = database.aql.execute(
-            """for item in interactionsE
-                for v, e, p in 1..1 any item._id graph "Extended"
-                    filter item.question_2 == @q2
-                    filter item.question_3 == @q3
-                    return p""",
-            bind_vars={'q2': q2, 'q3': q3}
-        )
+            cursor = database.aql.execute(
+                """for item in interactionsE
+                    for v, e, p in 1..1 any item._id graph "Extended"
+                        filter item.question_1 == @q1
+                        filter item.question_2 == @q2
+                        return p""",
+                bind_vars={'q1': q1, 'q2': q2}
+            )
 
-    elif (
-            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
-            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+    elif q2 is not None and q3 is not None:
+        if (
+                q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
+                q3 == "Yes" or q3 == "No" or q3 == "No information"):
 
-        cursor = database.aql.execute(
-            """for item in interactionsE
-                for v, e, p in 1..1 any item._id graph "Extended"
-                    filter item.question_1 == @q1
-                    filter item.question_3 == @q3
-                    return p""",
-            bind_vars={'q1': q1, 'q3': q3}
-        )
+            cursor = database.aql.execute(
+                """for item in interactionsE
+                    for v, e, p in 1..1 any item._id graph "Extended"
+                        filter item.question_2 == @q2
+                        filter item.question_3 == @q3
+                        return p""",
+                bind_vars={'q2': q2, 'q3': q3}
+            )
 
-    elif (
-            q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information"):
+    elif q1 is not None and q3 is not None:
+        if (
+                q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
+                q3 == "Yes" or q3 == "No" or q3 == "No information"):
 
-        cursor = database.aql.execute(
-            """for item in interactionsE
-                for v, e, p in 1..1 any item._id graph "Extended"
-                    filter item.question_1 == @q1
-                    return p""",
-            bind_vars={'q1': q1}
-        )
+            cursor = database.aql.execute(
+                """for item in interactionsE
+                    for v, e, p in 1..1 any item._id graph "Extended"
+                        filter item.question_1 == @q1
+                        filter item.question_3 == @q3
+                        return p""",
+                bind_vars={'q1': q1, 'q3': q3}
+            )
 
-    elif (
-            q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
+    elif q1 is not None:
+        if (
+                q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information"):
 
-        cursor = database.aql.execute(
-            """for item in interactionsE
-                for v, e, p in 1..1 any item._id graph "Extended"
-                    filter item.question_2 == @q2
-                    return p""",
-            bind_vars={'q2': q2}
-        )
+            cursor = database.aql.execute(
+                """for item in interactionsE
+                    for v, e, p in 1..1 any item._id graph "Extended"
+                        filter item.question_1 == @q1
+                        return p""",
+                bind_vars={'q1': q1}
+            )
 
-    elif (
-            q3 == "Yes" or q3 == "No" or q3 == "No information"):
+    elif q2 is not None:
+        if (
+                q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
 
-        cursor = database.aql.execute(
-            """for item in interactionsE
-                for v, e, p in 1..1 any item._id graph "Extended"
-                    filter item.question_3 == @q3
-                    return p""",
-            bind_vars={'q3': q3}
-        )
+            cursor = database.aql.execute(
+                """for item in interactionsE
+                    for v, e, p in 1..1 any item._id graph "Extended"
+                        filter item.question_2 == @q2
+                        return p""",
+                bind_vars={'q2': q2}
+            )
+
+    elif q3 is not None:
+        if (
+                q3 == "Yes" or q3 == "No" or q3 == "No information"):
+
+            cursor = database.aql.execute(
+                """for item in interactionsE
+                    for v, e, p in 1..1 any item._id graph "Extended"
+                        filter item.question_3 == @q3
+                        return p""",
+                bind_vars={'q3': q3}
+            )
 
     else:
         cursor = database.aql.execute(
@@ -114,14 +124,15 @@ def filter_questions_extended(database, q1, q2, q3, filename="result", directory
                     return p"""
         )
 
-    inter = [doc for doc in cursor]
+    if cursor is not None:
+        inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+        if directory is not None:
+            with open(f"{directory}/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
+        else:
+            with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+                json.dump(inter, outfile)
 
 
 def contains_fragment_extended(database, fragment, filename="result", directory=None):
