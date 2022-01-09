@@ -9,6 +9,7 @@ import pathlib as pl
 import queries_functions.simple_subgraph_queries as q
 import initialisation as i
 from arango import ArangoClient
+from config.definitions import USERNAME, PASSWORD
 
 import warnings
 
@@ -18,12 +19,12 @@ class TestAdditionalFunctions(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.database = i.database_start("testDB", "root", "Amyloids", "simple")
+        cls.database = i.database_start("testDB", USERNAME, PASSWORD, "simple")
 
     @classmethod
     def tearDownClass(cls):
         client = ArangoClient()
-        sys_db = client.db("_system", username="root", password="Amyloids")
+        sys_db = client.db("_system", username=USERNAME, password=PASSWORD)
         sys_db.delete_database("testDB")
 
         files = os.listdir("../tests/test_json_data")

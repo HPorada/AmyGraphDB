@@ -5,6 +5,7 @@ import sys
 from arango import ArangoClient
 from pathlib import Path
 from initialisation_functions import simple_json, extended_json, extendedV2_json, additional_functions
+from config.definitions import USERNAME, PASSWORD
 
 sys.path.append("../")
 sys.path.append("../initialisation_functions")
@@ -618,3 +619,18 @@ def create_view(database, structure):
         )
     else:
         pass
+
+
+def delete_database(database, username, password):
+    """This method deletes the chosen database if it exists.
+
+    :param database: (str) Name of the database to be deleted.
+    :param username: (str) Username of ArangoDB user.
+    :param password: (str) Password of ArangoDB user.
+    """
+
+    client = ArangoClient()
+    sys_db = client.db("_system", username=username, password=password)
+
+    if sys_db.has_database(database):
+        sys_db.delete_database(database)
