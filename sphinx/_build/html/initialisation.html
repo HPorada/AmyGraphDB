@@ -262,6 +262,21 @@ based on chosen database structure.</p>
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="initialisation.delete_database">
+<span class="sig-prename descclassname"><span class="pre">initialisation.</span></span><span class="sig-name descname"><span class="pre">delete_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#initialisation.delete_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method deletes the chosen database if it exists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database</strong> – (str) Name of the database to be deleted.</p></li>
+<li><p><strong>username</strong> – (str) Username of ArangoDB user.</p></li>
+<li><p><strong>password</strong> – (str) Password of ArangoDB user.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="initialisation.import_collections">
 <span class="sig-prename descclassname"><span class="pre">initialisation.</span></span><span class="sig-name descname"><span class="pre">import_collections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delete_previous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#initialisation.import_collections" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method automatically imports data from JSON files from chosen directory to the chosen database.</p>
