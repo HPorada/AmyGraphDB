@@ -1,5 +1,8 @@
 import json
 
+from config.definitions import ROOT_DIR
+from queries_functions import save_function as save
+
 
 def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="result", directory=None):
     """This method executes a simple query filtering the database of EXTENDED structure based on answers to 3 questions:
@@ -127,12 +130,14 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
     if cursor is not None:
         inter = [doc for doc in cursor]
 
-        if directory is not None:
-            with open(f"{directory}/{filename}.json", "w") as outfile:
-                json.dump(inter, outfile)
-        else:
-            with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-                json.dump(inter, outfile)
+        # if directory is not None:
+        #     with open(f"{directory}/{filename}.json", "w") as outfile:
+        #         json.dump(inter, outfile)
+        # else:
+        #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+        #         json.dump(inter, outfile)
+
+        save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
 def contains_fragment_extended(database, fragment, filename="result", directory=None):
@@ -153,12 +158,14 @@ def contains_fragment_extended(database, fragment, filename="result", directory=
 
     inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+    # if directory is not None:
+    #     with open(f"{directory}/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+    # else:
+    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+
+    save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
 def search_phrase_extended(database, keyword, filename="result", directory=None):
@@ -179,12 +186,14 @@ def search_phrase_extended(database, keyword, filename="result", directory=None)
 
     inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+    # if directory is not None:
+    #     with open(f"{directory}/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+    # else:
+    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+
+    save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 # def search_connected_extended(database, collection, start, filename="result"):
 #     ()
