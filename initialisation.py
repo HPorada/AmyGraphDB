@@ -67,7 +67,8 @@ def create_json_files(structure, input_questionnaire, input_experiments, output_
         extendedV2_json.experiments_extendedV2(input_experiments, output_dir)
 
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def connect_to_database(database, username, password):
@@ -276,6 +277,8 @@ def create_graph(database, structure):
                 )
     else:
         graph = None
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
     return graph
 
@@ -618,7 +621,8 @@ def create_view(database, structure):
             }
         )
     else:
-        pass
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def delete_database(database, username, password):
