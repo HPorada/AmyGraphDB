@@ -1,5 +1,8 @@
 import json
 
+from config.definitions import ROOT_DIR
+from queries_functions import save_function as save
+
 
 def full_graph_simple(database, filename="result", directory=None):
     """This method executes a query showing whole graph of the database of SIMPLE structure.
@@ -31,12 +34,14 @@ def full_graph_simple(database, filename="result", directory=None):
 
     inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+    # if directory is not None:
+    #     with open(f"{directory}/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+    # else:
+    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+
+    save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
 def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filename="result", directory=None):
@@ -282,12 +287,14 @@ def subgraph_from_interactions_simple(database, q1=None, q2=None, q3=None, filen
     if cursor is not None:
         inter = [doc for doc in cursor]
 
-        if directory is not None:
-            with open(f"{directory}/{filename}.json", "w") as outfile:
-                json.dump(inter, outfile)
-        else:
-            with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-                json.dump(inter, outfile)
+        # if directory is not None:
+        #     with open(f"{directory}/{filename}.json", "w") as outfile:
+        #         json.dump(inter, outfile)
+        # else:
+        #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+        #         json.dump(inter, outfile)
+
+        save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
 def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="result", directory=None):
@@ -396,12 +403,14 @@ def subgraph_from_sequence_simple(database, sequence=None, name=None, filename="
 
     inter = [i for i in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+    # if directory is not None:
+    #     with open(f"{directory}/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+    # else:
+    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+
+    save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
 def subgraph_from_amyloid_simple(database, amyloid, filename="result", directory=None):
@@ -450,12 +459,14 @@ def subgraph_from_amyloid_simple(database, amyloid, filename="result", directory
 
     inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+    # if directory is not None:
+    #     with open(f"{directory}/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+    # else:
+    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+
+    save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
 def subgraph_from_organism_simple(database, organism, filename="result", directory=None):
@@ -519,9 +530,11 @@ def subgraph_from_organism_simple(database, organism, filename="result", directo
 
     inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+    # if directory is not None:
+    #     with open(f"{directory}/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+    # else:
+    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+
+    save.save_query_result(ROOT_DIR, directory, filename, inter)
