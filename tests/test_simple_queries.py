@@ -34,7 +34,7 @@ class TestAdditionalFunctions(unittest.TestCase):
 
     def test_filter_question_simple(self):
         q.filter_questions_simple(self.database, "Slower aggregation", "No", "No information", "test_filter_1",
-                                   "../tests/test_json_data")
+                                  "../tests/test_json_data")
         path = pl.Path("../tests/test_json_data/test_filter_1.json")
         self.assertEqual((str(path), path.is_file()), (str(path), True))
 
