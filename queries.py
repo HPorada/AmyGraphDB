@@ -6,6 +6,9 @@ from queries_functions import simple_subgraph_queries, extended_queries, extende
 sys.path.append("../")
 sys.path.append("../queries_functions")
 
+from config.definitions import ROOT_DIR
+from queries_functions import save_function as save
+
 
 def custom_query(database, query, filename="result", directory=None):
     """This method allows to execute a custom query in chosen database and save it with chosen name in chosen directory.
@@ -19,12 +22,14 @@ def custom_query(database, query, filename="result", directory=None):
 
     inter = [doc for doc in cursor]
 
-    if directory is not None:
-        with open(f"{directory}/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
-    else:
-        with open(f"queries_functions/json_data/{filename}.json", "w") as outfile:
-            json.dump(inter, outfile)
+    # if directory is not None:
+    #     with open(f"{directory}/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+    # else:
+    #     with open(f"queries_functions/json_data/{filename}.json", "w") as outfile:
+    #         json.dump(inter, outfile)
+
+    save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
 def full_graph(structure, database, filename="result", directory=None):
@@ -43,7 +48,8 @@ def full_graph(structure, database, filename="result", directory=None):
     elif structure.lower() == "extendedv2":
         extendedV2_subgraph_queries.full_graph_extendedV2(database, filename, directory)
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def filter_questions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
@@ -73,7 +79,8 @@ def filter_questions(structure, database, q1=None, q2=None, q3=None, filename="r
     elif structure.lower() == "extendedv2":
         extendedV2_queries.filter_questions_extendedV2(database, q1, q2, q3, filename, directory)
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def contains_fragment(structure, database, fragment, filename="result", directory=None):
@@ -92,7 +99,8 @@ def contains_fragment(structure, database, fragment, filename="result", director
     elif structure.lower() == "extendedv2":
         extendedV2_queries.contains_fragment_extendedV2(database, fragment, filename, directory)
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def search_phrase(structure, database, keyword, filename="result", directory=None):
@@ -111,7 +119,8 @@ def search_phrase(structure, database, keyword, filename="result", directory=Non
     elif structure.lower() == "extendedv2":
         extendedV2_queries.search_phrase_extendedV2(database, keyword, filename, directory)
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def subgraph_from_interactions(structure, database, q1=None, q2=None, q3=None, filename="result", directory=None):
@@ -141,7 +150,8 @@ def subgraph_from_interactions(structure, database, q1=None, q2=None, q3=None, f
     elif structure.lower() == "extendedv2":
         extendedV2_subgraph_queries.subgraph_from_interactions_extendedV2(database, q1, q2, q3, filename, directory)
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def subgraph_from_sequence(structure, database, sequence=None, name=None, filename="result", directory=None):
@@ -161,7 +171,8 @@ def subgraph_from_sequence(structure, database, sequence=None, name=None, filena
     elif structure.lower() == "extendedv2":
         extendedV2_subgraph_queries.subgraph_from_sequence_extendedV2(database, sequence, name, filename, directory)
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def subgraph_from_amyloid(structure, database, amyloid, filename="result", directory=None):
@@ -180,7 +191,8 @@ def subgraph_from_amyloid(structure, database, amyloid, filename="result", direc
     elif structure.lower() == "extendedv2":
         extendedV2_subgraph_queries.subgraph_from_amyloid_extendedV2(database, amyloid, filename, directory)
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")
 
 
 def subgraph_from_organism(structure, database, organism, filename="result", directory=None):
@@ -199,4 +211,5 @@ def subgraph_from_organism(structure, database, organism, filename="result", dir
     elif structure.lower() == "extendedv2":
         extendedV2_subgraph_queries.subgraph_from_organism_extendedV2(database, organism, filename, directory)
     else:
-        print("Available database structures: simple, extended, extendedV2.")
+        raise ValueError(
+            "Could not recognise database structure. Available database structures: simple, extended, extendedV2.")

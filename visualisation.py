@@ -9,7 +9,6 @@ from graphviz import Digraph
 from pyvis.network import Network
 import plotly.graph_objects as go
 
-
 sys.path.append("../")
 sys.path.append("../visualisation_functions")
 
@@ -134,8 +133,9 @@ def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_d
     g.view()
 
 
-def networkx_pyvis_graph(filename, input_dir='./queries_functions/json_data', output_dir='./visualisation_functions/networkx',
-                   int_questions=False, sequences=True, general_remarks=True, networkx=False, format='pdf'):
+def networkx_pyvis_graph(filename, input_dir='./queries_functions/json_data',
+                         output_dir='./visualisation_functions/networkx',
+                         int_questions=False, sequences=True, general_remarks=True, networkx=False, format='pdf'):
     """This method visualises a chosen JSON file using NetworkX and Pyvis libraries and saves the result in chosen directory.
 
     :param filename: (str) Name of the JSON file which is to be visualised.
