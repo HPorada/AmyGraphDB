@@ -9,23 +9,22 @@ import pathlib as pl
 import queries as q
 import initialisation as i
 from arango import ArangoClient
+from config.definitions import USERNAME, PASSWORD
 
 import warnings
 
 
 class TestAdditionalFunctions(unittest.TestCase):
-    database = None
-
     @classmethod
     def setUpClass(cls):
-        cls.databaseS = i.database_start("testDB_S", "root", "Amyloids", "simple")
-        cls.databaseE = i.database_start("testDB_E", "root", "Amyloids", "extended")
-        cls.databaseE2 = i.database_start("testDB_E2", "root", "Amyloids", "extendedV2")
+        cls.databaseS = i.database_start("testDB_S", USERNAME, PASSWORD, "simple")
+        cls.databaseE = i.database_start("testDB_E", USERNAME, PASSWORD, "extended")
+        cls.databaseE2 = i.database_start("testDB_E2", USERNAME, PASSWORD, "extendedV2")
 
     @classmethod
     def tearDownClass(cls):
         client = ArangoClient()
-        sys_db = client.db("_system", username="root", password="Amyloids")
+        sys_db = client.db("_system", username=USERNAME, password=PASSWORD)
         sys_db.delete_database("testDB_S")
         sys_db.delete_database("testDB_E")
         sys_db.delete_database("testDB_E2")
