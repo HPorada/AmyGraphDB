@@ -16,9 +16,6 @@ class TestAdditionalFunctions(unittest.TestCase):
         for file in files:
             os.remove("../tests/test_json_data/" + file)
 
-    # def test_open_excel_file(self):
-    #     pass
-
     def test_check_for_greek(self):
         self.assertEqual(add.check_for_greek('α-synuclein'), 'alpha-synuclein')
         self.assertEqual(add.check_for_greek('Γ'), 'gamma')

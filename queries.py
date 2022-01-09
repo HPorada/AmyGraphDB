@@ -1,4 +1,3 @@
-import json
 import sys
 from queries_functions import simple_subgraph_queries, extended_queries, extendedV2_subgraph_queries, \
     extended_subgraph_queries, extendedV2_queries, simple_queries
@@ -21,13 +20,6 @@ def custom_query(database, query, filename="result", directory=None):
     cursor = database.aql.execute(query)
 
     inter = [doc for doc in cursor]
-
-    # if directory is not None:
-    #     with open(f"{directory}/{filename}.json", "w") as outfile:
-    #         json.dump(inter, outfile)
-    # else:
-    #     with open(f"queries_functions/json_data/{filename}.json", "w") as outfile:
-    #         json.dump(inter, outfile)
 
     save.save_query_result(ROOT_DIR, directory, filename, inter)
 

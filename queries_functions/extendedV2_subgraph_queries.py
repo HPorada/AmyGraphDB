@@ -1,6 +1,3 @@
-import json
-import os
-
 from config.definitions import ROOT_DIR
 from queries_functions import save_function as save
 
@@ -59,13 +56,6 @@ def full_graph_extendedV2(database, filename="result", directory=None):
     )
 
     inter = [i for i in cursor]
-
-    # if directory is not None:
-    #     with open(f"{directory}/{filename}.json", "w") as outfile:
-    #         json.dump(inter, outfile)
-    # else:
-    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-    #         json.dump(inter, outfile)
 
     save.save_query_result(ROOT_DIR, directory, filename, inter)
 
@@ -614,13 +604,6 @@ def subgraph_from_interactions_extendedV2(database, q1=None, q2=None, q3=None, f
     if cursor is not None:
         inter = [doc for doc in cursor]
 
-        # if directory is not None:
-        #     with open(f"{directory}/{filename}.json", "w") as outfile:
-        #         json.dump(inter, outfile)
-        # else:
-        #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-        #         json.dump(inter, outfile)
-
         save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
@@ -858,13 +841,6 @@ def subgraph_from_sequence_extendedV2(database, sequence=None, name=None, filena
 
     inter = [i for i in cursor]
 
-    # if directory is not None:
-    #     with open(os.path.join(ROOT_DIR, directory, f"{filename}.json"), "w") as outfile:
-    #         json.dump(inter, outfile)
-    # else:
-    #     with open(os.path.join(ROOT_DIR, f"queries_functions\\json_data\\{filename}.json"), "w") as outfile:
-    #         json.dump(inter, outfile)
-
     save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
@@ -951,13 +927,6 @@ def subgraph_from_amyloid_extendedV2(database, amyloid, filename="result", direc
 
     inter = [i for i in cursor]
 
-    # if directory is not None:
-    #     with open(os.path.join(ROOT_DIR, directory, f"{filename}.json"), "w") as outfile:
-    #         json.dump(inter, outfile)
-    # else:
-    #     with open(os.path.join(ROOT_DIR, f"queries_functions\\json_data\\{filename}.json"), "w") as outfile:
-    #         json.dump(inter, outfile)
-
     save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
@@ -1037,12 +1006,5 @@ def subgraph_from_organism_extendedV2(database, organism, filename="result", dir
     )
 
     inter = [i for i in cursor]
-
-    # if directory is not None:
-    #     with open(os.path.join(ROOT_DIR, directory, f"{filename}.json"), "w") as outfile:
-    #         json.dump(inter, outfile)
-    # else:
-    #     with open(os.path.join(ROOT_DIR, f"queries_functions\\json_data\\{filename}.json"), "w") as outfile:
-    #         json.dump(inter, outfile)
 
     save.save_query_result(ROOT_DIR, directory, filename, inter)

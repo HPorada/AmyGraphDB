@@ -9,8 +9,6 @@ sys.path.append('../initialisation_functions/data')
 import unittest
 import pathlib as pl
 import initialisation as i
-import queries as q
-import visualisation as v
 from arango import ArangoClient
 from config.definitions import USERNAME, PASSWORD
 
@@ -71,17 +69,46 @@ class TestAdditionalFunctions(unittest.TestCase):
         i.connect_to_database("testDB", USERNAME, PASSWORD)
         self.assertEqual(self.db_sys.has_database("testDB"), True)
 
-    # def test_import_collections(self):
-    #     pass
-    #
-    # def test_create_graph(self):
-    #     pass
-    #
-    # def test_create_view(self):
-    #     pass
-    #
-    # def test_delete_database(self):
-    #     pass
+    def test_import_collections(self):
+        self.db_sys.create_database("testDB")
+        db = self.client.db("testDB", USERNAME, PASSWORD)
+        i.create_json_files("simple", "../initialisation_functions/data/questionnaire.xlsx",
+                            "../initialisation_functions/data/experiments.xlsx",
+                            "../tests/test_json_data")
+        i.import_collections(db, "../tests/test_json_data")
+
+        self.assertEqual(db.has_collection("amyloids"), True)
+
+    def test_create_graph(self):
+        self.db_sys.create_database("testDB")
+        db = self.client.db("testDB", USERNAME, PASSWORD)
+        i.create_json_files("simple", "../initialisation_functions/data/questionnaire.xlsx",
+                            "../initialisation_functions/data/experiments.xlsx",
+                            "../tests/test_json_data")
+        i.import_collections(db, "../tests/test_json_data")
+
+        i.create_graph(db, "simple")
+
+        self.assertEqual(db.has_graph("Simple"), True)
+
+    def test_create_view(self):
+        self.db_sys.create_database("testDB")
+        db = self.client.db("testDB", USERNAME, PASSWORD)
+        i.create_json_files("simple", "../initialisation_functions/data/questionnaire.xlsx",
+                            "../initialisation_functions/data/experiments.xlsx",
+                            "../tests/test_json_data")
+        i.import_collections(db, "../tests/test_json_data")
+
+        i.create_view(db, "simple")
+
+        self.assertEqual(db.view("simpleView") is not None, True)
+
+    def test_delete_database(self):
+        i.connect_to_database("testDB", USERNAME, PASSWORD)
+        self.assertEqual(self.db_sys.has_database("testDB"), True)
+
+        i.delete_database("testDB", USERNAME, PASSWORD)
+        self.assertEqual(self.db_sys.has_database("testDB"), False)
 
 
 if __name__ == '__main__':

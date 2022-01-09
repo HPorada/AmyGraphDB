@@ -2,7 +2,6 @@ import os
 import sys
 
 sys.path.append('../')
-# sys.path.append('../queries_functions')
 
 import unittest
 import pathlib as pl

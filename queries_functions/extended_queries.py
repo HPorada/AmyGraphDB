@@ -1,5 +1,3 @@
-import json
-
 from config.definitions import ROOT_DIR
 from queries_functions import save_function as save
 
@@ -31,7 +29,6 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
                 q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
                 q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
             cursor = database.aql.execute(
                 """for item in interactionsE
                     for v, e, p in 1..1 any item._id graph "Extended"
@@ -46,7 +43,6 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
         if (
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
                 q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
-
             cursor = database.aql.execute(
                 """for item in interactionsE
                     for v, e, p in 1..1 any item._id graph "Extended"
@@ -60,7 +56,6 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
         if (
                 q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information") and (
                 q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
             cursor = database.aql.execute(
                 """for item in interactionsE
                     for v, e, p in 1..1 any item._id graph "Extended"
@@ -74,7 +69,6 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
         if (
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information") and (
                 q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
             cursor = database.aql.execute(
                 """for item in interactionsE
                     for v, e, p in 1..1 any item._id graph "Extended"
@@ -87,7 +81,6 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
     elif q1 is not None:
         if (
                 q1 == "Faster aggregation" or q1 == "Slower aggregation" or q1 == "No aggregation" or q1 == "No effect" or q1 == "No information"):
-
             cursor = database.aql.execute(
                 """for item in interactionsE
                     for v, e, p in 1..1 any item._id graph "Extended"
@@ -99,7 +92,6 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
     elif q2 is not None:
         if (
                 q2 == "Yes, direct evidence." or q2 == "Yes; implied by kinetics." or q2 == "Formation of fibrils by the interactee is inhibited" or q2 == "No" or q2 == "No information"):
-
             cursor = database.aql.execute(
                 """for item in interactionsE
                     for v, e, p in 1..1 any item._id graph "Extended"
@@ -111,7 +103,6 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
     elif q3 is not None:
         if (
                 q3 == "Yes" or q3 == "No" or q3 == "No information"):
-
             cursor = database.aql.execute(
                 """for item in interactionsE
                     for v, e, p in 1..1 any item._id graph "Extended"
@@ -129,13 +120,6 @@ def filter_questions_extended(database, q1=None, q2=None, q3=None, filename="res
 
     if cursor is not None:
         inter = [doc for doc in cursor]
-
-        # if directory is not None:
-        #     with open(f"{directory}/{filename}.json", "w") as outfile:
-        #         json.dump(inter, outfile)
-        # else:
-        #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-        #         json.dump(inter, outfile)
 
         save.save_query_result(ROOT_DIR, directory, filename, inter)
 
@@ -158,13 +142,6 @@ def contains_fragment_extended(database, fragment, filename="result", directory=
 
     inter = [doc for doc in cursor]
 
-    # if directory is not None:
-    #     with open(f"{directory}/{filename}.json", "w") as outfile:
-    #         json.dump(inter, outfile)
-    # else:
-    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-    #         json.dump(inter, outfile)
-
     save.save_query_result(ROOT_DIR, directory, filename, inter)
 
 
@@ -186,15 +163,4 @@ def search_phrase_extended(database, keyword, filename="result", directory=None)
 
     inter = [doc for doc in cursor]
 
-    # if directory is not None:
-    #     with open(f"{directory}/{filename}.json", "w") as outfile:
-    #         json.dump(inter, outfile)
-    # else:
-    #     with open(f"../queries_functions/json_data/{filename}.json", "w") as outfile:
-    #         json.dump(inter, outfile)
-
     save.save_query_result(ROOT_DIR, directory, filename, inter)
-
-# def search_connected_extended(database, collection, start, filename="result"):
-#     ()
-#
