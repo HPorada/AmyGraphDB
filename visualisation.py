@@ -7,7 +7,6 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from graphviz import Digraph
 from pyvis.network import Network
-import plotly.graph_objects as go
 
 sys.path.append("../")
 sys.path.append("../visualisation_functions")
@@ -33,7 +32,6 @@ def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_d
 
     g = Digraph(graph_name, filename=f"{output_dir}/{graph_name}", format=format, engine=engine,
                 graph_attr={'rankdir': direction})
-    # g.attr(scale='2', label='Searching with starting node', fontsize='18')
     g.attr('node', shape='rectangle', style='filled', fillcolor='#bfbfbf', fixedsize='false', width='0.5')
 
     for item in arango_graph:
@@ -126,10 +124,6 @@ def graphviz_graph(filename, input_dir='./queries_functions/json_data', output_d
                 else:
                     g.node(item['_id'], label=item['_key'])
 
-    # Render to file into some directory
-    # g.render(directory='/tmp/', filename=graph_name)
-
-    # Or just show rendered file using system default program
     g.view()
 
 
@@ -290,7 +284,3 @@ def networkx_pyvis_graph(filename, input_dir='./queries_functions/json_data',
     nt.show_buttons(filter_=['physics'])
     nt.from_nx(G)
     nt.show('nx.html')
-
-    # nx.write_graphml_lxml(G, f"{output_dir}/{filename}.gml")
-    # nx.write_gml(G, f"{filename}.graphml")
-    # nx.write_gexf(G, f"{filename}.gexf")

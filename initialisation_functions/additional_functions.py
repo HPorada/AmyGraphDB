@@ -2,7 +2,6 @@ import json
 import pandas as pd
 import os.path
 import re
-import openpyxl
 
 
 def open_excel_file(path, sheet):

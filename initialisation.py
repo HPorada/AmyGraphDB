@@ -5,7 +5,6 @@ import sys
 from arango import ArangoClient
 from pathlib import Path
 from initialisation_functions import simple_json, extended_json, extendedV2_json, additional_functions
-from config.definitions import USERNAME, PASSWORD
 
 sys.path.append("../")
 sys.path.append("../initialisation_functions")
