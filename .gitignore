@@ -4,3 +4,4 @@ queries_functions/json_data/*
 visualisation_functions/graphviz/*
 visualisation_functions/networkx/*
 nx.html
+main.py
