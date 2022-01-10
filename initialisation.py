@@ -21,8 +21,8 @@ def database_start(database, username, password, structure):
     :param structure: (str) Chosen database structure ("simple", "extended" or "extendedv2").
     :return: (StandardDatabase) Database on which all actions were performed.
     """
-    create_json_files(structure, "../initialisation_functions/data/questionnaire.xlsx",
-                      "../initialisation_functions/data/experiments.xlsx",
+    create_json_files(structure, "../initialisation_functions/data/questionnaire_example.xlsx",
+                      "../initialisation_functions/data/experiments_example.xlsx",
                       f"../initialisation_functions/{structure}")
     db_new = connect_to_database(database, username, password)
 
