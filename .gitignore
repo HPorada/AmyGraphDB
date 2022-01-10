@@ -1,1 +1,6 @@
-
+initialisation_functions/data/experiments.xlsx
+initialisation_functions/data/questionnaire.xlsx
+queries_functions/json_data/*
+visualisation_functions/graphviz/*
+visualisation_functions/networkx/*
+nx.html
