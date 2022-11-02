@@ -8,7 +8,7 @@ def question1_shape_graphviz(answer):
     switch = {
         "Faster aggregation": "triangle",
         "Slower aggregation": "invtriangle",
-        "No aggregation": "octagon",
+        "No aggregation": "square",
         "No effect": "diamond",
         "No information": "box"
     }
