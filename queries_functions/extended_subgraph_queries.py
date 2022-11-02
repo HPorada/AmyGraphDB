@@ -13,7 +13,7 @@ def full_graph_extended(database, filename="result", directory=None):
         """let ints = (
                 for i in interactionsE
                         return {"interactions": i}
-                    )        
+                )        
 
             let ints_paths = (
                 for i in ints
