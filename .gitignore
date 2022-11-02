@@ -5,3 +5,4 @@ visualisation_functions/graphviz/*
 visualisation_functions/networkx/*
 nx.html
 main.py
+test.py
