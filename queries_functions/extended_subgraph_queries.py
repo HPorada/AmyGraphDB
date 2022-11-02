@@ -14,7 +14,7 @@ def full_graph_extended(database, filename="result", directory=None):
                 for i in interactionsE
                         return {"interactions": i}
                 )        
-
+                
             let ints_paths = (
                 for i in ints
                     for v, e, p in 1..1 outbound i.interactions._id graph "Extended"
